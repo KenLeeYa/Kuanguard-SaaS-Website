@@ -1,7 +1,7 @@
 {
   "provider": "Cloudflare official REST API",
   "api_version": "v4",
-  "adapter_version": "1.1.0",
+  "adapter_version": "1.1.1",
   "verified_on": "2026-09-10",
   "lookup_method": "AnySearch code.doc and official URL extraction",
   "sdk": "none; Python standard-library HTTPS",
@@ -32,5 +32,8 @@
   "live_account_tested": true,
   "live_account_evidence": "infra/evidence/cloudflare-discovery-20260910.json",
   "live_kuanguard_zone_crud_tested": false,
+  "live_kuanguard_zone_create_and_readback_tested": true,
+  "live_kuanguard_zone_update_delete_tested": false,
+  "record_ownership": "Explicit comment mode on Free; existing tag mode retained. Both require exact record ownership and inventory drift checks.",
   "v1_1_policy": "kuanguard.com / www / app and Vercel targets DNS-only; admin only actual Tunnel CNAME; qidaigo.com never managed"
 }

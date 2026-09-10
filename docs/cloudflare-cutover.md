@@ -1,6 +1,6 @@
 # KUANGUARD DNS 與邊界接入操作手冊
 
-查核日期：2026-09-10，已套用 v1.1 增量路由。本機工具與回復測試完成，既有 Cloudflare account／active Account Token 已唯讀驗證；KUANGUARD zone、正式 origin 與委派切換仍待啟用。網域固定 `kuanguard.com`；GoDaddy 註冊商保留。這份文件不是正式上線證明。
+查核日期：2026-09-10，已套用 v1.1 增量路由。公開官網已部署至專用 Vercel project；Cloudflare Free zone 已建立並啟用，GoDaddy 與 `.com` parent 已確認委派切換。公開解析快取與 HTTPS 的最終結果另見 [官網發布收據](WEBSITE_PRODUCTION.md)。網域固定 `kuanguard.com`；GoDaddy 註冊商保留。SaaS、admin、API、Tunnel、Access 與資料庫的正式啟用仍依各自 gate 執行。
 
 apex / www / app 改由 Vercel 專用 Projects 承載並強制 Cloudflare DNS-only，www redirect 由 Vercel 保留 path/query。admin 與 /portfolio 採資安專用容器 Tunnel＋Access＋應用授權；api 公開路徑拒絕 internal。既有 local Compose、資料與 backup 證據保留；Vercel / Supabase 共享管理層的 live inventory 見 `docs/shared-saas-inventory.md`。
 
@@ -10,17 +10,19 @@ apex / www / app 改由 Vercel 專用 Projects 承載並強制 Cloudflare DNS-on
 
 apex 的 MX/TXT/CAA/AAAA 與 parent DS 查詢當時沒有 requested-type answer；回傳 SOA 並不表示收到 MX 或 DS。公開查詢無法枚舉完整 zone、所有子域或委派，因此完整原 DNS 匯出仍待提供。DNSSEC chain 未驗證。apex / www 公開憑證檢查成功，app / admin 檢查失敗；公開憑證不證明 origin TLS，也不證明本平台已部署。
 
-Cloudflare account 已核對為 `b1c70202652cd3b77dfec70e5463785f`；以既有 token 查詢該 account 的 `kuanguard.com` zones 回覆空清單，仍需確認 scope 或專用 zone onboarding。KUANGUARD zone_id / assigned nameservers 維持 `null`；QIDAIGO 的 zone／NS 不能代用。證據見 `infra/evidence/cloudflare-discovery-20260910.json`，機器狀態見 `docs/cloudflare-status.json`。
+最初的唯讀觀測保存在 `infra/evidence/cloudflare-discovery-20260910.json`。本次官網接入已核對 Cloudflare account `b1c70202652cd3b77dfec70e5463785f`、專用 zone `ecadb2ab2b13229381ca5c8ceebc8bdd`，實際分配 `liv.ns.cloudflare.com`、`sri.ns.cloudflare.com`。實際官網宣告為 `infra/cloudflare/website-production.json`；QIDAIGO 的 zone／NS 沒有代用。GoDaddy 的完整 6 筆原始匯出與逐筆 reconciliation 存在忽略提交的 `infra/cloudflare/private/website-cutover-20260910/`；原停放官網與 www 已換成 Vercel，原 `_domainconnect` 與 `_dmarc` 的內容／TTL 保留，apex NS 由新供應商管理。
 
 已用交付的 CLI 實際執行 `inspect --config infra/cloudflare/desired.example.json --out infra/evidence/cloudflare-inspect-20260910`，回覆 `pending_action`；`discovery.json` 記錄 account readback success / token active / visible_zone_id null。此目錄沒有 snapshot 或 DNS 匯出，不能接續 apply。
 
 ## 設定事實來源與工具範圍
 
-使用官方 REST API v4，adapter `1.1.0`；沒有 Terraform state 或平行第二套寫入來源。官方 endpoint 與查核來源記錄在 `infra/cloudflare/provider-contract.json`。
+使用官方 REST API v4，adapter `1.1.1`；沒有 Terraform state。官方 endpoint 與查核來源記錄在 `infra/cloudflare/provider-contract.json`。新 zone 的一次性匯入與註冊商 NS 切換使用固定 account／zone／domain 的官方 API 計畫與逐筆 receipt，後續 application DNS 以本 CLI 管理。
 
 `scripts/cloudflare-onboard` 與 `scripts/cloudflare_onboard.py` 是相同 CLI。支援 inspect、plan、apply、verify、rollback。正式帳號的 endpoint smoke 尚待權限配置，單元測試使用明確 synthetic fake provider。
 
-工具只管理明確列入的 application A/AAAA/CNAME。可用名稱限定 apex、www、app、admin、api、assets、status。apex/www/app 的 proxied=true 一律拒絕，其他 Vercel CNAME target 也拒絕 proxy；admin 必須是真實 Tunnel UUID 的 cfargotunnel.com CNAME 且 proxied=true。MX/TXT/CAA/SRV/NS 及 notify / sim 等郵件或演練名稱不由此工具修改。從宣告清單移除一筆不會自動刪除；必須保留同一個 key 並明寫 `state: absent`，而且紀錄已帶 `kuanguard-managed:<key>` 才能刪除。
+工具只管理明確列入的 application A/AAAA/CNAME。可用名稱限定 apex、www、app、admin、api、assets、status。apex/www/app 的 proxied=true 一律拒絕，其他 Vercel CNAME target 也拒絕 proxy；admin 必須是真實 Tunnel UUID 的 cfargotunnel.com CNAME 且 proxied=true。MX/TXT/CAA/SRV/NS 及 notify / sim 等郵件或演練名稱不由此工具修改。從宣告清單移除一筆不會自動刪除；必須保留同一個 key 並明寫 `state: absent`，而且紀錄的 tag 或獨立 comment 片段已帶 `kuanguard-managed:<key>` 才能刪除。
+
+Cloudflare Free 不支援 record tags，官網每筆明設 `ownership_mode: comment`，使用 Free 支援的 100 字元 comment。接管既有紀錄仍須 exact ID/hash；原備註保留，長度不足時拒絕而不截斷。未指定時維持既有 tag 模式。不同內容的同名 A/AAAA 可各自管理，重複內容與 CNAME 衝突仍拒絕。依據：[Cloudflare record attributes](https://developers.cloudflare.com/dns/manage-dns-records/reference/record-attributes/)。
 
 `zone_id` 未填時，inspect 只執行固定 account／apex 的唯讀 discovery，輸出 `discovery.json` 與 `pending_action`，不生成可供 plan 的 snapshot。新 zone 建立與舊 DNS 初始完整匯入須先在已授權帳號完成，再以實際 IDs inspect / reconcile。HTTP transport 限制明確 methods／endpoints，寫入前綁定不可改變的 account＋zone；工具沒有 create-zone、整區 replace、zone delete、registrar NS/DS write 或郵件發送功能。
 
@@ -66,7 +68,7 @@ public verify 查詢兩解析器與每個已觀察到的權威 NS，保留 answe
 
 ## 3. GoDaddy NS 與 DNSSEC 切換
 
-正式變更前先確保候選 origin 已部署到確定 commit，備份、驗證與回復條件都完成。這個階段尚未執行。
+正式變更前先確保候選 origin 已部署到確定 commit，備份、驗證與回復條件都完成。本次公開官網於 2026-09-10 14:48 UTC 執行 nameserver-only PATCH，GoDaddy 回覆 HTTP 204；其後 domain detail 與兩台 `.com` parent readback 均確認新 NS。舊 DS 在切換前經兩台 parent 與兩個 recursive resolver 查核為空；本次沒有移除既有 DS 或停用原 DNSSEC。
 
 1. 保留舊 DNS 供應商運作與完整 zone，不先刪除舊 zone。必要的 TTL 調整須提前按當時 TTL 等待傳播。
 2. 先核對 `.com` parent DS、舊 DNSKEY 與現況。若舊 provider 支援官方 multi-signer active migration，可依相容方案安排；否則移除 registrar 舊 DS，保留舊 provider signing 到 parent DS TTL 真正到期，再確認 validating resolvers 沒有殘留舊 DS。

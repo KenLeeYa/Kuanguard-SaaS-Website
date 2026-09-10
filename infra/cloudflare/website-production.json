@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "apex": "kuanguard.com",
+  "account_id": "b1c70202652cd3b77dfec70e5463785f",
+  "zone_id": "ecadb2ab2b13229381ca5c8ceebc8bdd",
+  "managed_records": [
+    {
+      "key": "website-apex-1",
+      "name": "kuanguard.com",
+      "type": "A",
+      "content": "216.150.1.1",
+      "ttl": 300,
+      "proxied": false,
+      "ownership_mode": "comment"
+    },
+    {
+      "key": "website-apex-2",
+      "name": "kuanguard.com",
+      "type": "A",
+      "content": "216.150.16.1",
+      "ttl": 300,
+      "proxied": false,
+      "ownership_mode": "comment"
+    },
+    {
+      "key": "website-www",
+      "name": "www.kuanguard.com",
+      "type": "CNAME",
+      "content": "795e44d125569cf2.vercel-dns-016.com",
+      "ttl": 300,
+      "proxied": false,
+      "ownership_mode": "comment"
+    }
+  ]
+}

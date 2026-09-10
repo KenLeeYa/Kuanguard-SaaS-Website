@@ -111,6 +111,55 @@ class CloudflareTests(unittest.TestCase):
             cf.apply_plan(self.api, plan, plan["plan_sha256"], self.root / "receipt.json")
         self.assertEqual(self.api.writes, [])
 
+    def test_free_zone_two_apex_addresses_roundtrip_without_paid_tags(self):
+        self.config["managed_records"] = [
+            {"key": f"apex-{index}", "name": cf.APEX, "type": "A", "content": ip,
+             "ttl": 300, "proxied": False, "ownership_mode": "comment"}
+            for index, ip in enumerate(("216.150.1.1", "216.150.16.1"), 1)
+        ]
+        request = self.api.request
+        def free_request(method, path, payload=None, raw=False):
+            if payload and payload.get("tags"):
+                raise cf.Refusal("Free zones do not support record tags")
+            return request(method, path, payload, raw)
+        self.api.request = free_request
+        plan = self.plan()
+        self.assertEqual(len(plan["actions"]), 2)
+        receipt = cf.apply_plan(self.api, plan, plan["plan_sha256"], self.root / "receipt.json")
+        self.assertEqual(self.plan("inspect2")["actions"], [])
+        self.assertEqual(self.api.rows[:4], self.protected)
+        cf.rollback(self.api, receipt, receipt["receipt_sha256"], self.root / "rollback.json")
+        self.assertEqual(self.api.rows, self.protected)
+
+    def test_comment_adoption_preserves_existing_text_and_restores_on_rollback(self):
+        existing = {"id": "e" * 32, "name": "app.kuanguard.com", "type": "CNAME", "content": "previous.host.test",
+                    "ttl": 60, "proxied": False, "comment": "keep this note", "tags": []}
+        self.api.rows.append(copy.deepcopy(existing))
+        self.config["managed_records"][0].update(ownership_mode="comment", adopt_id=existing["id"], adopt_sha256=cf.digest(existing))
+        plan = self.plan()
+        receipt = cf.apply_plan(self.api, plan, plan["plan_sha256"], self.root / "receipt.json")
+        self.assertEqual(self.api.rows[-1]["comment"], "keep this note | kuanguard-managed:app")
+        self.assertEqual(self.plan("inspect2")["actions"], [])
+        self.api.rows[-1]["comment"] += " changed"
+        with self.assertRaises(cf.Refusal):
+            cf.rollback(self.api, receipt, receipt["receipt_sha256"], self.root / "changed.json")
+        self.api.rows[-1]["comment"] = receipt["operations"][0]["result"]["comment"]
+        cf.rollback(self.api, receipt, receipt["receipt_sha256"], self.root / "rollback.json")
+        self.assertEqual(self.api.rows[-1], existing)
+
+    def test_comment_ownership_does_not_allow_protected_deletes_or_truncate_notes(self):
+        self.api.rows[0]["comment"] = "kuanguard-managed:mail"
+        self.config["managed_records"] = [{"key": "mail", "state": "absent"}]
+        with self.assertRaises(cf.Refusal):
+            self.plan()
+        item = {"key": "app", "name": "app.kuanguard.com", "type": "A", "content": "216.150.1.1", "ttl": 300,
+                "proxied": False, "ownership_mode": "comment"}
+        with self.assertRaises(cf.Refusal):
+            cf.desired_payload(item, {"comment": "x" * 100})
+        self.config["managed_records"] = [item, {**item, "key": "duplicate"}]
+        with self.assertRaises(cf.Refusal):
+            self.plan("duplicates")
+
     def test_unmanaged_drift_refuses_before_any_write(self):
         plan = self.plan()
         self.api.rows[0]["ttl"] = 60

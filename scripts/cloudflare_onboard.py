@@ -23,7 +23,7 @@ from urllib.request import Request, build_opener, HTTPRedirectHandler
 
 APEX = "kuanguard.com"
 API_BASE = "https://api.cloudflare.com/client/v4"
-VERSION = "1.1.0"
+VERSION = "1.1.1"
 MANAGED_PREFIX = "kuanguard-managed:"
 ALLOWED_HOSTS = {APEX, *(f"{host}.{APEX}" for host in ("www", "app", "admin", "api", "assets", "status"))}
 VERCEL_HOSTS = {APEX, "www." + APEX, "app." + APEX}
@@ -95,6 +95,11 @@ def record_payload(record: dict) -> dict:
     payload = {key: record[key] for key in CONFIG_FIELDS if key in record}
     payload.setdefault("tags", [])
     return payload
+
+
+def ownership_markers(record: dict) -> list[str]:
+    comments = (record.get("comment") or "").split(" | ")
+    return [value for value in record.get("tags", []) + comments if value.startswith(MANAGED_PREFIX)]
 
 
 def records_hash(records: list[dict]) -> str:
@@ -316,9 +321,22 @@ def desired_payload(item: dict, before: dict | None) -> dict:
     key = item.get("key", "")
     if not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,40}", key):
         raise Refusal("Each managed record needs a stable key")
-    tags = sorted(set((before or {}).get("tags", []) + [MANAGED_PREFIX + key]))
-    # Preserve unrelated record metadata; PATCH only changes declared fields and ownership tag.
-    return {"type": record_type, "name": name, "content": content, "ttl": ttl, "proxied": proxied, "tags": tags}
+    payload = {"type": record_type, "name": name, "content": content, "ttl": ttl, "proxied": proxied}
+    marker = MANAGED_PREFIX + key
+    mode = item.get("ownership_mode", "tag")
+    if mode == "comment":
+        comment = (before or {}).get("comment") or ""
+        if marker not in comment.split(" | "):
+            comment = " | ".join(filter(None, (comment, marker)))
+        if len(comment) > 100:
+            raise Refusal("Ownership comment would exceed the Cloudflare Free 100-character limit; existing text is preserved")
+        payload["comment"] = comment
+    elif mode == "tag":
+        payload["tags"] = sorted(set((before or {}).get("tags", []) + [marker]))
+    else:
+        raise Refusal("ownership_mode must be tag or comment")
+    # PATCH preserves metadata outside the declared fields and ownership marker.
+    return payload
 
 
 def build_plan(config: dict, snapshot: dict, authority: dict, *, created_at=None) -> dict:
@@ -345,7 +363,7 @@ def build_plan(config: dict, snapshot: dict, authority: dict, *, created_at=None
         if not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,40}", key) or key in used_keys:
             raise Refusal("Managed keys must be valid and unique")
         used_keys.add(key)
-        owned = [record for record in records if MANAGED_PREFIX + key in record.get("tags", [])]
+        owned = [record for record in records if MANAGED_PREFIX + key in ownership_markers(record)]
         if len(owned) > 1:
             raise Refusal("Duplicate managed ownership; resolve inventory before planning")
         before = owned[0] if owned else None
@@ -369,7 +387,7 @@ def build_plan(config: dict, snapshot: dict, authority: dict, *, created_at=None
                 if len(found) != 1 or digest(found[0]) != item.get("adopt_sha256"):
                     raise Refusal("Adoption requires an existing record ID and its exact inspected record hash")
                 before = found[0]
-                if any(tag.startswith(MANAGED_PREFIX) for tag in before.get("tags", [])):
+                if ownership_markers(before):
                     raise Refusal("Record already belongs to another managed key")
         payload = desired_payload(item, before)
         if before:
@@ -392,7 +410,10 @@ def build_plan(config: dict, snapshot: dict, authority: dict, *, created_at=None
                 raise Refusal("An MX target must not be proxied as an HTTP origin")
         for action in actions:
             after = action.get("after")
-            if after and after["name"] == payload["name"] and (after["type"] == payload["type"] or "CNAME" in (after["type"], payload["type"])):
+            if after and after["name"] == payload["name"] and (
+                "CNAME" in (after["type"], payload["type"])
+                or (after["type"] == payload["type"] and after["content"] == payload["content"])
+            ):
                 raise Refusal("Desired entries contain conflicting DNS names")
         if not before or any(before.get(field) != value for field, value in payload.items()):
             actions.append({"operation": "update" if before else "create", "key": key, "before": before, "after": payload})
@@ -489,11 +510,11 @@ def rollback(api, receipt: dict, expected_hash: str, output: Path) -> dict:
         if before and result and any(before[field] != result[field] for field in ("id", "type", "name")):
             raise Refusal("Rollback cannot rename or change the type of a record")
         if result:
-            if digest(by_id.get(result["id"])) != digest(result) or MANAGED_PREFIX + item["key"] not in result.get("tags", []):
+            if digest(by_id.get(result["id"])) != digest(result) or MANAGED_PREFIX + item["key"] not in ownership_markers(result):
                 raise Refusal("Managed record changed after apply; rollback refused to overwrite it")
         elif any(record["name"] == before["name"] and (before["type"] == "CNAME" or record["type"] in {before["type"], "CNAME", "NS"}) for record in records):
             raise Refusal("Deleted record name was reused; rollback requires a new conflict review")
-        if before and item["operation"] == "delete" and MANAGED_PREFIX + item["key"] not in before.get("tags", []):
+        if before and item["operation"] == "delete" and MANAGED_PREFIX + item["key"] not in ownership_markers(before):
             raise Refusal("Rollback will only recreate explicitly owned deleted records")
     log = {"schema_version": 1, "source_receipt_sha256": expected_hash, "target": config, "started_at": now(), "state": "running", "operations": []}
     write_json(output, seal(log, "rollback_sha256"), exclusive=True)
@@ -627,7 +648,7 @@ def verify_zone(api, config: dict, *, include_public=False, check_tls=False) -> 
     records = api.records(config)
     checks = []
     for item in config.get("managed_records", []):
-        owned = [row for row in records if MANAGED_PREFIX + item["key"] in row.get("tags", [])]
+        owned = [row for row in records if MANAGED_PREFIX + item["key"] in ownership_markers(row)]
         if item.get("state", "present") == "absent":
             matches = not owned
         else:
