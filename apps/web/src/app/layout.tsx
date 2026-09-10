@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { SessionProvider } from "@/lib/api";
 import "./globals.css";
+import "./commerce.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kuanguard.com"),
-  title: { default: "KUANGUARD｜企業資安服務平台", template: "%s｜KUANGUARD" },
-  description: "整合七項企業資安服務、專業交付、社交工程演練與線上教育訓練，從檢測到改善持續留存紀錄。",
+  title: { default: "KUANGUARD｜讓每一筆生意，更好經營", template: "%s｜KUANGUARD" },
+  description: "從線上點餐、QR Code 掃碼、預約與出單到多門市管理，KUANGUARD 陪伴商家整理日常，並與合作夥伴持續提供專業服務。",
   openGraph: { siteName: "KUANGUARD", type: "website", locale: "zh_TW" },
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="zh-Hant-TW"><body><a className="skip-link" href="#main-content">跳至主要內容</a><SessionProvider>{children}</SessionProvider></body></html>; }

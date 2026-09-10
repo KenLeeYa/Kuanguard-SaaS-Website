@@ -28,6 +28,9 @@ from .portfolio_routes import router as portfolio_router
 from .operations_routes import router as operations_router
 from .draft_routes import router as draft_router
 from .lifecycle_routes import router as lifecycle_router
+from .portal_auth import router as portal_auth_router
+from .partner_routes import router as partner_router
+from .platform_routes import router as platform_router
 from .security import Context, context, create_session, digest, fail, idempotent, owned, paged
 from .seed import PROFILES, fixed
 
@@ -40,6 +43,9 @@ app.include_router(portfolio_router)
 app.include_router(operations_router)
 app.include_router(draft_router)
 app.include_router(lifecycle_router)
+app.include_router(portal_auth_router)
+app.include_router(partner_router)
+app.include_router(platform_router)
 
 _rates = defaultdict(deque)
 
@@ -66,16 +72,35 @@ def error_response(request, status, detail):
 async def boundary(request: Request, call_next):
     request.state.trace_id = str(uuid4())
     try:
+        from .portal_proxy import restore_portal_host
+        restore_portal_host(request)
         protect_internal_boundary(request.headers.get("host", ""), request.url.path, request.headers.get("cf-access-jwt-assertion", ""))
         declared = request.headers.get("content-length", "0")
         if not declared.isdigit() or int(declared) > 6_000_000:
             fail(413, "PAYLOAD_TOO_LARGE", "請求內容超過限制。")
-        response = await call_next(request)
+        cors_origin = None
+        if request.headers.get("origin"):
+            from .db import engine
+            from .partner import valid_origin
+            with engine().begin() as conn:
+                if valid_origin(conn, request.headers["origin"]):
+                    cors_origin = request.headers["origin"]
+        if request.method == "OPTIONS" and request.headers.get("access-control-request-method"):
+            if not cors_origin:
+                fail(403, "ORIGIN_DENIED", "跨來源請求未獲允許。")
+            response = Response(status_code=204)
+        else:
+            response = await call_next(request)
+        if cors_origin:
+            response.headers["Access-Control-Allow-Origin"] = cors_origin
+            response.headers["Access-Control-Allow-Credentials"] = "true"
+            response.headers["Access-Control-Allow-Methods"] = "GET, POST, PATCH, DELETE, OPTIONS"
+            response.headers["Access-Control-Allow-Headers"] = "Content-Type, X-CSRF-Token, Idempotency-Key"
     except HTTPException as exc:
         response = error_response(request, exc.status_code, exc.detail)
     response.headers["X-Request-ID"] = request.state.trace_id
     response.headers["Cache-Control"] = "private, no-store"
-    response.headers["Vary"] = "Cookie, Origin"
+    response.headers["Vary"] = "Cookie, Origin, Host"
     response.headers["X-Content-Type-Options"] = "nosniff"
     response.headers["Referrer-Policy"] = "no-referrer"
     response.headers["X-Robots-Tag"] = "noindex, nofollow"
@@ -162,34 +187,55 @@ class LoginInput(Input):
 
 
 @app.get("/auth/dev/profiles")
-def profiles():
+def profiles(conn=Depends(get_connection)):
     if settings().app_env not in {"development", "test"} or settings().auth_provider != "development":
         fail(404, "NOT_FOUND", "開發登入未啟用。")
-    return {"items": [{"key": key, "label": label, "roles": roles} for key, (_, label, roles) in PROFILES.items()], "development": True}
+    from .partner_setup import PARTNER_PROFILES
+    users = {row["id"] for row in all_rows(conn, m.users, None, m.users.c.active.is_(True))}
+    return {"items": [{"key": key, "label": label, "roles": roles} for key, (_, label, roles) in (PROFILES | PARTNER_PROFILES).items()
+                      if fixed(key) in users], "development": True}
 
 
 @app.post("/auth/dev/login")
 def dev_login(payload: LoginInput, request: Request, response: Response, conn=Depends(get_connection)):
+    from .partner_setup import PARTNER_PROFILES
+    from .partner import base_host, host_name
     if settings().app_env not in {"development", "test"} or settings().auth_provider != "development":
         fail(404, "NOT_FOUND", "開發登入未啟用。")
     rate_limit(request, "dev-login", 60)
     if request.headers.get("origin", "").rstrip("/") not in settings().origins:
         fail(403, "ORIGIN_DENIED", "登入來源未獲允許。")
-    if payload.profile_key not in PROFILES:
+    if not base_host(host_name(request.headers.get("host", ""))):
+        fail(403, "PORTAL_LOGIN_REQUIRED", "自訂網域必須使用中央登入交換流程。")
+    profiles = PROFILES | PARTNER_PROFILES
+    if payload.profile_key not in profiles:
         fail(400, "PROFILE_NOT_FOUND", "無效的開發角色。")
-    suffix, label, roles = PROFILES[payload.profile_key]
+    suffix, label, roles = profiles[payload.profile_key]
     user = one(conn, m.users, None, m.users.c.id == fixed(payload.profile_key), m.users.c.active.is_(True))
     if not user:
         fail(503, "FIXTURE_MISSING", "請先完成 development seed。")
-    csrf = create_session(conn, user["id"], fixed("tenant-"+suffix), response)
+    tenant_id = fixed("tenant-"+suffix)
+    partner_id = tenant_id if suffix.startswith("partner-") else None
+    previous = one(conn, m.sessions, None, m.sessions.c.token_hash == digest(request.cookies.get("kg_session", "")))
+    if previous:
+        change(conn, m.sessions, None, previous["id"], revoked=True)
+    csrf = create_session(conn, user["id"], tenant_id, response, request.headers["host"], partner_id)
     return {"development": True, "csrf_token": csrf, "user": {"id": user["id"], "name": user["name"]},
             "roles": roles, "redirect": "/admin/portfolio" if "portfolio_owner" in roles else "/learn" if roles == ["learner"] else "/dashboard"}
 
 
 @app.get("/auth/me")
 def me(ctx: Context = Depends(context)):
+    from . import partner, partner_models as p
+    platform_admin = bool(one(ctx.conn, p.platform_memberships, None, p.platform_memberships.c.user_id == ctx.user_id,
+                              p.platform_memberships.c.active.is_(True)))
+    features = partner.feature_values(ctx.conn, ctx.tenant_id)
+    branding = partner.public_branding(ctx.conn, partner.active_partner(ctx.conn, ctx.partner_id)) if ctx.partner_id else None
+    set_tenant(ctx.conn, ctx.tenant_id)
     return {"user": {"id": ctx.user_id, "name": ctx.user["name"]}, "tenant": {"id": ctx.tenant_id, "name": ctx.tenant["name"]},
-            "roles": sorted(ctx.roles), "csrf_token": ctx.csrf_token, "development": settings().app_env != "production", "product": "kuanguard"}
+            "roles": sorted(ctx.roles), "csrf_token": ctx.csrf_token, "development": settings().app_env != "production", "product": "kuanguard",
+            "partner_id": ctx.partner_id, "partner_branding": branding, "delegated": ctx.partner_grant_id is not None,
+            "platform_admin": platform_admin, "features": features}
 
 
 @app.post("/auth/logout")
@@ -208,7 +254,7 @@ def providers():
 
 
 @app.get("/auth/oidc/start")
-def oidc_start(conn=Depends(get_connection)):
+def oidc_start(request: Request, intent: str | None = None, conn=Depends(get_connection)):
     import httpx
     config = settings()
     if config.auth_provider != "oidc" or not config.oidc_issuer.startswith("https://"):
@@ -217,7 +263,14 @@ def oidc_start(conn=Depends(get_connection)):
     if discovery.get("issuer") != config.oidc_issuer or not discovery.get("authorization_endpoint", "").startswith("https://"):
         fail(503, "OIDC_METADATA_INVALID", "登入供應商設定不一致。")
     state, nonce, verifier = secrets.token_urlsafe(32), secrets.token_urlsafe(32), secrets.token_urlsafe(48)
-    add(conn, m.oidc_states, state_hash=digest(state), nonce=nonce, verifier=verifier, expires_at=m.now()+timedelta(minutes=5))
+    pending = add(conn, m.oidc_states, state_hash=digest(state), nonce=nonce, verifier=verifier, expires_at=m.now()+timedelta(minutes=5))
+    if intent:
+        from . import portal_auth, partner_models as p
+        portal_auth.central_request(request)
+        if config.oidc_redirect_uri != config.central_auth_url + "/api/auth/oidc/callback":
+            fail(503, "CENTRAL_CALLBACK_REQUIRED", "請先核定中央 OAuth callback。")
+        target = portal_auth.intent_row(conn, intent)
+        add(conn, p.portal_oidc_links, oidc_state_id=pending["id"], intent_id=target["id"])
     challenge = base64.urlsafe_b64encode(hashlib.sha256(verifier.encode()).digest()).decode().rstrip("=")
     url = discovery["authorization_endpoint"]+"?"+urlencode({"client_id": config.oidc_client_id,
         "redirect_uri": config.oidc_redirect_uri, "response_type": "code", "scope": "openid", "state": state, "nonce": nonce,
@@ -236,7 +289,10 @@ def oidc_callback(code: str, state: str, request: Request, conn=Depends(get_conn
     config = settings()
     if config.auth_provider != "oidc" or not hmac.compare_digest(state, request.cookies.get("kg_oidc_state", "")):
         fail(403, "OIDC_STATE_INVALID", "登入狀態驗證失敗。")
-    pending = one(conn, m.oidc_states, None, m.oidc_states.c.state_hash == digest(state), m.oidc_states.c.expires_at > m.now())
+    from sqlalchemy import select
+    locked = conn.execute(select(m.oidc_states).where(m.oidc_states.c.state_hash == digest(state),
+        m.oidc_states.c.expires_at > m.now()).with_for_update()).mappings().first()
+    pending = dict(locked) if locked else None
     if not pending:
         fail(403, "OIDC_STATE_EXPIRED", "登入狀態已失效。")
     metadata = httpx.get(config.oidc_issuer.rstrip("/")+"/.well-known/openid-configuration", timeout=5).json()
@@ -257,14 +313,30 @@ def oidc_callback(code: str, state: str, request: Request, conn=Depends(get_conn
     user = one(conn, m.users, None, m.users.c.oidc_subject == f"{claims['iss']}|{claims['sub']}", m.users.c.active.is_(True))
     if not user:
         fail(403, "MEMBERSHIP_REQUIRED", "此身分尚未獲得企業邀請或角色授權。")
+    from . import portal_auth, partner_models as p
+    link = one(conn, p.portal_oidc_links, None, p.portal_oidc_links.c.oidc_state_id == pending["id"])
+    if link:
+        portal_auth.central_request(request)
+        intent = one(conn, p.portal_login_intents, None, p.portal_login_intents.c.id == link["intent_id"],
+                     p.portal_login_intents.c.expires_at > m.now(), p.portal_login_intents.c.consumed_at.is_(None))
+        if not intent:
+            fail(403, "LOGIN_INTENT_EXPIRED", "登入請求已過期。")
+        destination = portal_auth.finish_identity(conn, intent, user["id"])
+        conn.execute(delete(p.portal_oidc_links).where(p.portal_oidc_links.c.id == link["id"]))
+        conn.execute(delete(m.oidc_states).where(m.oidc_states.c.id == pending["id"]))
+        response = RedirectResponse(destination, status_code=303)
+        response.delete_cookie("kg_oidc_state")
+        return response
     memberships = all_rows(conn, m.memberships, None, m.memberships.c.user_id == user["id"], m.memberships.c.active.is_(True))
     if not memberships:
         fail(403, "MEMBERSHIP_REQUIRED", "此身分尚未獲授權。")
+    if len({row["tenant_id"] for row in memberships}) != 1:
+        fail(409, "EXPLICIT_TENANT_REQUIRED", "請由企業專屬入口選擇登入租戶。")
     conn.execute(delete(m.oidc_states).where(m.oidc_states.c.id == pending["id"]))
     tenant_id = memberships[0]["tenant_id"]
     roles = {membership["role"] for membership in memberships if membership["tenant_id"] == tenant_id}
     response = RedirectResponse(login_destination(roles, request.url.hostname), status_code=303)
-    create_session(conn, user["id"], tenant_id, response)
+    create_session(conn, user["id"], tenant_id, response, request.headers["host"])
     response.delete_cookie("kg_oidc_state")
     return response
 
@@ -396,4 +468,25 @@ def certificate_verify(code: str, conn=Depends(get_connection)):
     return {"valid": True, "course_title": row["course_title"], "issued_at": row["issued_at"], "personal_details": "withheld"}
 
 
-# Portfolio router is included explicitly once its additive migration is installed.
+# Partner operators reuse only these existing tenant-scoped service routes.
+# The original /internal boundary remains protected; context requires a live delegated session here.
+def install_partner_workspace_routes():
+    from fastapi.routing import APIRoute
+    from .project_execution import router as execution_router
+    allowed = ("/internal/projects", "/internal/batches", "/internal/imports", "/internal/evidence",
+               "/internal/findings", "/internal/reports", "/internal/retests", "/internal/quotes",
+               "/internal/changes", "/internal/dispatch", "/internal/questionnaires", "/internal/tickets",
+               "/internal/training", "/internal/billing", "/internal/overview", "/internal/jobs", "/internal/audit",
+               "/internal/report-jobs", "/internal/publications", "/internal/retest-requests", "/internal/tasks",
+               "/internal/cost-projects", "/internal/costs", "/internal/entitlements", "/internal/phishing")
+    # FastAPI 0.141 keeps included routers lazy; read explicit source routers, not its private wrapper types.
+    source_routes = [route for source in (app.router, project_router, execution_router, billing_router, learning_router, operations_router)
+                     for route in list(source.routes)]
+    for route in source_routes:
+        if isinstance(route, APIRoute) and any(route.path == prefix or route.path.startswith(prefix + "/") for prefix in allowed):
+            app.add_api_route("/partner/workspace" + route.path, route.endpoint, methods=route.methods,
+                              response_model=route.response_model, status_code=route.status_code,
+                              name="partner_workspace_" + route.name)
+
+
+install_partner_workspace_routes()

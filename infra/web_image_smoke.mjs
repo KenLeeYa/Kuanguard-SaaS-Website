@@ -4,14 +4,16 @@ import crypto from "node:crypto";
 import http from "node:http";
 
 assert.equal(process.getuid(), 10001);
-assert.equal(process.env.DEPLOYMENT_SURFACE, "internal");
+assert.ok(["internal", "public"].includes(process.env.DEPLOYMENT_SURFACE));
 assert.equal(fs.existsSync("/app/.env"), false);
 const source = JSON.parse(fs.readFileSync("/app/build-source.json", "utf8"));
 assert.equal(source.api, "http://api:8180");
-assert.equal(source.surface, "internal");
+assert.equal(source.surface, process.env.DEPLOYMENT_SURFACE);
 const manifest = JSON.parse(fs.readFileSync("/app/.next/routes-manifest.json", "utf8"));
 const rewrites = Array.isArray(manifest.rewrites) ? manifest.rewrites : Object.values(manifest.rewrites).flat();
-assert.ok(rewrites.some(row => row.source === "/api/:path*" && row.destination === "http://api:8180/:path*"));
+assert.ok(!rewrites.some(row => row.source === "/api/:path*"));
+const appPaths = JSON.parse(fs.readFileSync("/app/.next/server/app-paths-manifest.json", "utf8"));
+assert.ok(appPaths["/api/[...path]/route"], "Same-origin BFF must handle API requests");
 assert.ok(rewrites.some(row => row.source === "/internal/:path*" && row.destination === "http://api:8180/internal/:path*"));
 let ready = false;
 for (let attempt = 0; attempt < 30; attempt++) {
@@ -22,7 +24,7 @@ for (let attempt = 0; attempt < 30; attempt++) {
 assert.ok(ready, "Standalone server must start without host ports or backend connectivity");
 const checks = [];
 let html = "";
-for (const path of ["/login", "/portfolio", "/overview"]) {
+for (const path of (source.surface === "internal" ? ["/login", "/portfolio", "/overview"] : ["/partner/login", "/login", "/merchant"])) {
   const response = await fetch(`http://127.0.0.1:3180${path}`, { headers: { host: "admin.kuanguard.com" }, redirect: "manual" });
   assert.equal(response.status, 200);
   assert.match(response.headers.get("cache-control"), /private/);
@@ -37,6 +39,11 @@ const staticPath = html.match(/src="(\/_next\/static\/[^" ]+)"/)?.[1];
 assert.ok(staticPath);
 const staticResponse = await fetch(`http://127.0.0.1:3180${staticPath}`);
 assert.equal(staticResponse.status, 200);
+assert.equal((await fetch("http://127.0.0.1:3180/api/public/commerce")).status, 503, "Unconfigured BFF fails closed");
+if (source.surface === "public") {
+  assert.equal((await fetch("http://127.0.0.1:3180/admin/platform")).status, 404);
+  assert.equal((await fetch("http://127.0.0.1:3180/api/platform/overview")).status, 404);
+}
 // The raw HTTP client preserves the test Host header independently of fetch normalization.
 const redirect = await new Promise((resolve, reject) => {
   const request = http.get({ hostname: "127.0.0.1", port: 3180, path: "/plan?check=1", headers: { Host: "www.kuanguard.com" } }, response => {

@@ -42,9 +42,28 @@ class Settings(BaseSettings):
     r2_private_bucket: str = ""
     max_import_bytes: int = 5_000_000
     session_hours: int = 8
+    public_site_url: str = "https://kuanguard.com"
+    customer_app_url: str = "https://app.kuanguard.com"
+    internal_app_url: str = "https://admin.kuanguard.com"
+    partner_portal_url: str = "https://partner.kuanguard.com"
+    central_auth_url: str = "https://auth.kuanguard.com"
+    custom_domain_target: str = ""
+    merchant_entry_url: str = "https://app.qidaigo.com/login"
+    portal_proxy_secret: str = Field(default="", repr=False)
 
     @model_validator(mode="after")
     def validate_environment(self):
+        from urllib.parse import urlsplit
+        for name in ("public_site_url", "customer_app_url", "internal_app_url", "partner_portal_url", "central_auth_url"):
+            value = urlsplit(getattr(self, name))
+            if (value.scheme != "https" or not value.hostname or value.username or value.password
+                    or value.path not in {"", "/"} or value.query or value.fragment or value.port
+                    or not (value.hostname == self.company_apex_domain or value.hostname.endswith("." + self.company_apex_domain))):
+                raise ValueError(f"{name} must be an exact HTTPS origin within the configured platform domain")
+        merchant = urlsplit(self.merchant_entry_url)
+        if (merchant.scheme != "https" or merchant.username or merchant.password or merchant.fragment
+                or merchant.query or merchant.hostname not in {"app.qidaigo.com", "app.kuanguard.com"}):
+            raise ValueError("Merchant entry must be an approved existing product login URL")
         if self.product_id != "kuanguard" or self.resource_product_id != "kuanguard":
             raise ValueError("Cross-product resource binding denied")
         if self.company_apex_domain != "kuanguard.com":

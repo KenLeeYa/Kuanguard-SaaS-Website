@@ -182,6 +182,6 @@ def reconciliation(ctx: Context = Depends(context)):
             problems.append({"order_id": order["id"], "code": "PAYMENT_GRANT_MISMATCH"})
     for lot in all_rows(ctx.conn, m.point_lots, ctx.tenant_id):
         values = wallet.balances(ctx.conn, ctx.tenant_id, lot["id"])
-        if sum(values.values()) != lot["quantity"] or min(values.values()) < 0:
+        if sum(values.values()) + wallet.allocated(ctx.conn, ctx.tenant_id, lot["id"]) != lot["quantity"] or min(values.values()) < 0:
             problems.append({"lot_id": lot["id"], "code": "LEDGER_INVARIANT"})
     return {"status": "matched" if not problems else "needs_review", "problems": problems, "checked_at": m.now(), "sandbox": True}

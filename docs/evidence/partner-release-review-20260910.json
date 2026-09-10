@@ -1,0 +1,34 @@
+{
+  "state": "passed",
+  "observed_at": "2026-09-10T12:00:10.134824+00:00",
+  "base_commit": "96ec01972b9841c781a608519bd07d39179e48a2",
+  "files_scanned": 328,
+  "private_paths": 0,
+  "known_credential_matches": 0,
+  "images": [
+    {
+      "image": "kuanguard-api:partner-20260910",
+      "image_id": "sha256:499a56a09baccca135ecf9aa5033c4a228f95d1d54a89f141ce0b69a2cdf3a6f",
+      "staged_source_files_verified": 73
+    },
+    {
+      "image": "kuanguard-worker:partner-20260910",
+      "image_id": "sha256:499a56a09baccca135ecf9aa5033c4a228f95d1d54a89f141ce0b69a2cdf3a6f",
+      "staged_source_files_verified": 73
+    },
+    {
+      "image": "kuanguard-web:partner-final-20260910",
+      "image_id": "sha256:9102948ab604eed64d4a03dd0b32bcebb40c34727849284796c844d2e20a9504",
+      "staged_source_files_verified": 64
+    },
+    {
+      "image": "kuanguard-portal:partner-final-20260910",
+      "image_id": "sha256:5fe22d461101d927bbd1518785e1ecb698253be209a46bd1d65046d7fcd26c2b",
+      "staged_source_files_verified": 64
+    }
+  ],
+  "diff_check": "passed_except_unchanged_archived_spec_markdown_hardbreaks_lines_37_416_470",
+  "archived_spec_sha256": "ad2ab2f1693ffa5cc1537c41908bbb571f1ae70a42e0ba3b2353f035e6dc9a5c",
+  "source_product_modified": false,
+  "external_deployment_performed": false
+}

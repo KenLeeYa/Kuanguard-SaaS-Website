@@ -35,6 +35,13 @@ def entry(conn, tenant, lot_id, kind, business_key, reservation_id=None, reason=
                kind=kind, business_key=business_key, reason=reason, **{key: deltas.get(key, 0) for key in DELTAS})
 
 
+def allocated(conn, tenant, lot_id=None):
+    conditions = [m.wallet_transactions.c.kind == "allocate-out"]
+    if lot_id:
+        conditions.append(m.wallet_transactions.c.lot_id == lot_id)
+    return -sum(row["available_delta"] for row in all_rows(conn, m.wallet_transactions, tenant, *conditions))
+
+
 def grant(conn, tenant, quantity, source, purpose="all", expires_at=None, order_id=None, amount_minor=0):
     if isinstance(quantity, bool) or not isinstance(quantity, int) or quantity <= 0:
         fail(422, "INVALID_POINTS", "點數必須是正整數。")
@@ -139,7 +146,7 @@ def summary(conn, tenant):
         lots.append({**lot, **balance})
     transactions = sorted(all_rows(conn, m.wallet_transactions, tenant), key=lambda row: row["created_at"], reverse=True)
     return {"available": sum(lot["available"] for lot in lots), "reserved": sum(lot["reserved"] for lot in lots),
-            "consumed": sum(lot["consumed"] for lot in lots),
+            "consumed": sum(lot["consumed"] for lot in lots), "allocated": allocated(conn, tenant),
             "expiring": sum(lot["available"] for lot in lots if aware(lot["expires_at"]) < m.now() + timedelta(days=30)),
             "lots": lots, "transactions": transactions[:100], "transaction_total": len(transactions),
             "policy_version": POLICY, "sandbox": True, "frozen": wallet["frozen"]}

@@ -12,6 +12,7 @@ sys.path.insert(0, str(ROOT / "backend"))
 load_dotenv(ROOT / ".env")
 from kuanguard import models as m  # noqa: E402
 from kuanguard.execution_models import EXECUTION_TABLES  # noqa: E402
+from kuanguard.partner_models import PARTNER_TABLES, IMMUTABLE_PARTNER_TABLES  # noqa: E402
 
 
 def migrate():
@@ -124,6 +125,21 @@ def migrate():
                     USING (tenant_id = current_setting('app.tenant_id', true))
                     WITH CHECK (tenant_id = current_setting('app.tenant_id', true))''')
             conn.execute(text("INSERT INTO schema_revisions(version) VALUES ('0010_tenant_lifecycle')"))
+        if not conn.execute(text("SELECT version FROM schema_revisions WHERE version='0011_20260910_partner_platform'")).first():
+            for table in PARTNER_TABLES:
+                table.create(conn, checkfirst=True)
+                if conn.dialect.name == "postgresql" and table.name in m.TENANT_TABLES:
+                    conn.exec_driver_sql(f'ALTER TABLE "{table.name}" ENABLE ROW LEVEL SECURITY')
+                    conn.exec_driver_sql(f'ALTER TABLE "{table.name}" FORCE ROW LEVEL SECURITY')
+                    conn.exec_driver_sql(f'''CREATE POLICY tenant_isolation ON "{table.name}"
+                        USING (tenant_id = current_setting('app.tenant_id', true))
+                        WITH CHECK (tenant_id = current_setting('app.tenant_id', true))''')
+            if conn.dialect.name == "postgresql":
+                for table in IMMUTABLE_PARTNER_TABLES:
+                    conn.exec_driver_sql(f'CREATE TRIGGER immutable_record BEFORE UPDATE OR DELETE ON "{table.name}" FOR EACH ROW EXECUTE FUNCTION deny_immutable_change()')
+            conn.execute(text("INSERT INTO schema_revisions(version) VALUES ('0011_20260910_partner_platform')"))
+        from kuanguard.partner_setup import install_catalog
+        install_catalog(conn)
         if conn.dialect.name == "postgresql":
             # psycopg quotes both identifier and password; neither is interpolated into shell or logs.
             from psycopg import sql
@@ -139,6 +155,7 @@ def migrate():
             conn.exec_driver_sql("REVOKE UPDATE, DELETE ON training_entitlements, training_entitlement_ledger FROM kuanguard")
             conn.exec_driver_sql("REVOKE ALL ON schema_revisions FROM kuanguard")
             conn.exec_driver_sql("REVOKE ALL ON erasure_receipts FROM kuanguard")
+            conn.exec_driver_sql("REVOKE UPDATE, DELETE ON partner_commission_records, credit_allocations, audit_contexts FROM kuanguard")
         print("Versioned schema updates applied/preserved; application role is not database owner")
     # Immutable schema receipt; future schema edits require a new numbered migration.
     out = ROOT / "backend" / "migrations"

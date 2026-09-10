@@ -258,6 +258,14 @@ def create_project(payload: ProjectInput, request: Request, ctx: Context = Depen
                 fail(409, "CONTRACT_NOT_ACTIVE", "請選擇已確認報價且仍有效的同企業合約。")
         row = add(ctx.conn, m.projects, ctx.tenant_id, **payload.model_dump())
         add(ctx.conn, m.grants, ctx.tenant_id, user_id=ctx.user_id, resource_id=row["id"], reason="project owner")
+        if ctx.partner_grant_id:
+            from . import partner_models as p
+            from .db import set_tenant
+            set_tenant(ctx.conn, ctx.partner_id)
+            grant = one(ctx.conn, p.partner_customer_access, ctx.partner_id, p.partner_customer_access.c.id == ctx.partner_grant_id)
+            change(ctx.conn, p.partner_customer_access, ctx.partner_id, grant["id"],
+                   project_ids=grant["project_ids"] + [row["id"]], version=grant["version"] + 1)
+            set_tenant(ctx.conn, ctx.tenant_id)
         for code in sorted(SERVICE_CODES):
             add(ctx.conn, m.work_packages, ctx.tenant_id, project_id=row["id"], service_code=code)
         ctx.audit("project.create", row["id"])
@@ -271,6 +279,8 @@ def create_batch(project_id: str, payload: BatchInput, request: Request, ctx: Co
     ctx.project(project_id)
     if payload.service_code not in SERVICE_CODES:
         fail(422, "INVALID_SERVICE", "未識別的服務。")
+    from .partner import service_feature
+    service_feature(ctx.conn, ctx.tenant_id, payload.service_code)
 
     def run():
         package = one(ctx.conn, m.work_packages, ctx.tenant_id, m.work_packages.c.project_id == project_id,

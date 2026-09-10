@@ -1,0 +1,20 @@
+# Optional shared public/partner surface. Does not replace the existing internal web service.
+# Run with compose.yml as the first file; no public ports or DNS activation are implied.
+services:
+  portal:
+    profiles: [partner]
+    image: kuanguard-portal:partner-final-20260910
+    build:
+      context: ./apps/web
+      dockerfile: ../../infra/Dockerfile.web
+      args:
+        API_INTERNAL_URL: http://api:8180
+        DEPLOYMENT_SURFACE: public
+    environment:
+      API_INTERNAL_URL: http://api:8180
+      PORTAL_PROXY_SECRET: ${PORTAL_PROXY_SECRET:?Configure the shared API/BFF signing key}
+      DEPLOYMENT_SURFACE: public
+      PORT: 3180
+      HOSTNAME: 0.0.0.0
+    expose: [3180]
+    depends_on: [api]

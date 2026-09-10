@@ -64,6 +64,7 @@ services:
         DEPLOYMENT_SURFACE: internal
     environment:
       API_INTERNAL_URL: http://api:8180
+      PORTAL_PROXY_SECRET: ${PORTAL_PROXY_SECRET:?Run scripts/setup_local.py first}
       DEPLOYMENT_SURFACE: internal
       PORT: 3180
       HOSTNAME: 0.0.0.0

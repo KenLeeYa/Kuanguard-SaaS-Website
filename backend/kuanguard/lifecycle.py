@@ -9,7 +9,7 @@ import zipfile
 from fastapi.encoders import jsonable_encoder
 from sqlalchemy import MetaData, select, text
 
-from . import models as m, wallet
+from . import models as m, partner_models as p, wallet
 from .config import settings
 from .db import add, all_rows, aware, change, one, set_tenant
 from .security import digest, fail
@@ -24,6 +24,15 @@ def tenant_tables(conn):
     metadata.reflect(conn)
     # Reflect the dedicated database to cover additive modules and enforce actual FK order.
     return [table for table in metadata.sorted_tables if "tenant_id" in table.c]
+
+
+def auth_sidecars(conn, tenant_id):
+    sessions = select(m.sessions.c.id).where(m.sessions.c.tenant_id == tenant_id)
+    intents = select(p.portal_login_intents.c.id).where(p.portal_login_intents.c.tenant_id == tenant_id)
+    links = all_rows(conn, p.portal_oidc_links, None, p.portal_oidc_links.c.intent_id.in_(intents))
+    return {"session_contexts": all_rows(conn, p.session_contexts, None, p.session_contexts.c.session_id.in_(sessions)),
+            "portal_oidc_links": links,
+            "oidc_states": all_rows(conn, m.oidc_states, None, m.oidc_states.c.id.in_([row["oidc_state_id"] for row in links]))}
 
 
 def object_inventory(tenant_id):
@@ -129,7 +138,9 @@ def erasure_manifest(conn, tenant_id, request_id):
     for table in tenant_tables(conn):
         rows = [dict(row) for row in conn.execute(select(table).where(table.c.tenant_id == tenant_id).order_by(table.c.id)).mappings()]
         tables[table.name] = {"rows": len(rows), "sha256": digest(canonical(rows))}
-    return {"tenant_id": tenant_id, "request_id": request_id, "operation": "erase-v1", "tables": tables,
+    sidecars = {name: {"rows": len(rows), "sha256": digest(canonical(sorted(rows, key=lambda row: row["id"])))}
+                for name, rows in auth_sidecars(conn, tenant_id).items()}
+    return {"tenant_id": tenant_id, "request_id": request_id, "operation": "erase-v1", "tables": tables, "auth_sidecars": sidecars,
             "objects": object_inventory(tenant_id), "policy_version": policy["version"],
             "backup_expiry": aware(request["backup_expiry"]).isoformat(), "retained": ["anonymous receipt", "global presales inquiries under separate policy"]}
 
@@ -141,7 +152,7 @@ def export_archive(conn, tenant_id, destination: Path):
     if destination.exists() or destination.is_relative_to(storage):
         raise ValueError("Export requires a new private path outside the object store")
     files = object_inventory(tenant_id)
-    excluded = {"sessions", "oidc_states", "form_drafts", "jobs", "idempotency", "portfolio_connectors"}
+    excluded = {"sessions", "oidc_states", "form_drafts", "jobs", "idempotency", "portfolio_connectors", "portal_login_intents"}
     tables = [table for table in tenant_tables(conn) if table.name not in excluded]
     manifest = {"tenant_id": tenant_id, "created_at": m.now().isoformat(), "tables": {}, "objects": files,
                 "excluded": sorted(excluded), "format": "kuanguard-private-export-v1"}
@@ -196,6 +207,9 @@ def execute_erasure(db, manifest, confirmed_digest):
                 raise ValueError("Erasure source changed; generate a new plan")
             user_ids = {row["user_id"] for row in all_rows(conn, m.memberships, None, m.memberships.c.tenant_id == tenant)}
             order_ids = [row["id"] for row in all_rows(conn, m.orders, tenant)]
+            sidecars = auth_sidecars(conn, tenant)
+            for table in (p.session_contexts, p.portal_oidc_links, m.oidc_states):
+                conn.execute(table.delete().where(table.c.id.in_([row["id"] for row in sidecars[table.name]])))
             tables = tenant_tables(conn)
             for table in reversed(tables):
                 # Only the reviewed immutable triggers on this table are disabled, inside this transaction.

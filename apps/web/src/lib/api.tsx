@@ -3,11 +3,13 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from "react";
 
 export type Row = Record<string, any>;
-export type Session = { user: { id: string; name: string }; tenant: { id: string; name: string }; roles: string[]; csrf_token: string; development: boolean };
+export type Session = { user: { id: string; name: string }; tenant: { id: string; name: string }; roles: string[]; csrf_token: string; development: boolean; partner_id?: string; partner_branding?: Row; delegated?: boolean; platform_admin?: boolean; features?: Record<string, boolean> };
+let delegatedWorkspace = false;
 export class ApiError extends Error {
   constructor(public status: number, public code: string, message: string, public trace?: string) { super(message); }
 }
 export async function request<T = Row>(path: string, options: { method?: string; body?: unknown; csrf?: string; key?: string; signal?: AbortSignal } = {}): Promise<T> {
+  if (delegatedWorkspace && path.startsWith("/internal/")) path = "/partner/workspace" + path;
   const response = await fetch(`/api${path}`, { method: options.method || "GET", credentials: "same-origin", cache: "no-store", signal: options.signal, headers: {
     ...(options.body !== undefined ? { "Content-Type": "application/json" } : {}),
     ...(options.csrf ? { "X-CSRF-Token": options.csrf } : {}),
@@ -27,8 +29,8 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   const [error, setError] = useState<Error | null>(null);
   const refresh = useCallback(async () => {
     setLoading(true); setError(null);
-    try { setSession(await request<Session>("/auth/me")); }
-    catch (e) { setSession(null); if (!(e instanceof ApiError && e.status === 401)) setError(e as Error); }
+    try { const current = await request<Session>("/auth/me"); delegatedWorkspace = !!current.delegated; setSession(current); }
+    catch (e) { delegatedWorkspace = false; setSession(null); if (!(e instanceof ApiError && e.status === 401)) setError(e as Error); }
     finally { setLoading(false); }
   }, []);
   useEffect(() => { void refresh(); }, [refresh]);

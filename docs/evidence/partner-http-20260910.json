@@ -1,0 +1,380 @@
+{
+  "state": "passed",
+  "observed_at": "2026-09-10T11:46:54.976072+00:00",
+  "base": "http://127.0.0.1:3180",
+  "scope": "actual_node_bff_python_postgres_http_synthetic_sessions",
+  "checks": [
+    {
+      "check": "local development product",
+      "result": [
+        "kuanguard",
+        "development"
+      ]
+    },
+    {
+      "check": "page /",
+      "result": 200
+    },
+    {
+      "check": "canonical /",
+      "result": "https://kuanguard.com"
+    },
+    {
+      "check": "safe content /",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /features",
+      "result": 200
+    },
+    {
+      "check": "canonical /features",
+      "result": "https://kuanguard.com/features"
+    },
+    {
+      "check": "safe content /features",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /pricing",
+      "result": 200
+    },
+    {
+      "check": "canonical /pricing",
+      "result": "https://kuanguard.com/pricing"
+    },
+    {
+      "check": "safe content /pricing",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /partners",
+      "result": 200
+    },
+    {
+      "check": "canonical /partners",
+      "result": "https://kuanguard.com/partners"
+    },
+    {
+      "check": "safe content /partners",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /about",
+      "result": 200
+    },
+    {
+      "check": "canonical /about",
+      "result": "https://kuanguard.com/about"
+    },
+    {
+      "check": "safe content /about",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /contact",
+      "result": 200
+    },
+    {
+      "check": "canonical /contact",
+      "result": "https://kuanguard.com/contact"
+    },
+    {
+      "check": "safe content /contact",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /merchant/apply",
+      "result": 200
+    },
+    {
+      "check": "canonical /merchant/apply",
+      "result": "https://kuanguard.com/merchant/apply"
+    },
+    {
+      "check": "safe content /merchant/apply",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /privacy",
+      "result": 200
+    },
+    {
+      "check": "canonical /privacy",
+      "result": "https://kuanguard.com/privacy"
+    },
+    {
+      "check": "safe content /privacy",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /terms",
+      "result": 200
+    },
+    {
+      "check": "canonical /terms",
+      "result": "https://kuanguard.com/terms"
+    },
+    {
+      "check": "safe content /terms",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /terms/merchants",
+      "result": 200
+    },
+    {
+      "check": "canonical /terms/merchants",
+      "result": "https://kuanguard.com/terms/merchants"
+    },
+    {
+      "check": "safe content /terms/merchants",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /terms/partners",
+      "result": 200
+    },
+    {
+      "check": "canonical /terms/partners",
+      "result": "https://kuanguard.com/terms/partners"
+    },
+    {
+      "check": "safe content /terms/partners",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /security",
+      "result": 200
+    },
+    {
+      "check": "canonical /security",
+      "result": "https://kuanguard.com/security"
+    },
+    {
+      "check": "safe content /security",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /solutions/restaurant",
+      "result": 200
+    },
+    {
+      "check": "canonical /solutions/restaurant",
+      "result": "https://kuanguard.com/solutions/restaurant"
+    },
+    {
+      "check": "safe content /solutions/restaurant",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /solutions/beverage",
+      "result": 200
+    },
+    {
+      "check": "canonical /solutions/beverage",
+      "result": "https://kuanguard.com/solutions/beverage"
+    },
+    {
+      "check": "safe content /solutions/beverage",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /solutions/food-stall",
+      "result": 200
+    },
+    {
+      "check": "canonical /solutions/food-stall",
+      "result": "https://kuanguard.com/solutions/food-stall"
+    },
+    {
+      "check": "safe content /solutions/food-stall",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /solutions/retail",
+      "result": 200
+    },
+    {
+      "check": "canonical /solutions/retail",
+      "result": "https://kuanguard.com/solutions/retail"
+    },
+    {
+      "check": "safe content /solutions/retail",
+      "result": "nosniff"
+    },
+    {
+      "check": "page /solutions/beauty",
+      "result": 200
+    },
+    {
+      "check": "canonical /solutions/beauty",
+      "result": "https://kuanguard.com/solutions/beauty"
+    },
+    {
+      "check": "safe content /solutions/beauty",
+      "result": "nosniff"
+    },
+    {
+      "check": "merchant home positioning",
+      "result": true
+    },
+    {
+      "check": "built static asset",
+      "result": 200
+    },
+    {
+      "check": "private entry /login",
+      "result": 200
+    },
+    {
+      "check": "no cache /login",
+      "result": true
+    },
+    {
+      "check": "private entry /partner/login",
+      "result": 200
+    },
+    {
+      "check": "no cache /partner/login",
+      "result": true
+    },
+    {
+      "check": "private entry /partner",
+      "result": 200
+    },
+    {
+      "check": "no cache /partner",
+      "result": true
+    },
+    {
+      "check": "private entry /admin/platform",
+      "result": 200
+    },
+    {
+      "check": "no cache /admin/platform",
+      "result": true
+    },
+    {
+      "check": "private entry /merchant",
+      "result": 200
+    },
+    {
+      "check": "no cache /merchant",
+      "result": true
+    },
+    {
+      "check": "robots",
+      "result": 200
+    },
+    {
+      "check": "sitemap",
+      "result": 200
+    },
+    {
+      "check": "billing projection disabled",
+      "result": false
+    },
+    {
+      "check": "existing merchant bridge",
+      "result": true
+    },
+    {
+      "check": "unsigned forwarding cannot activate portal.megaprotek.com.tw",
+      "result": 404
+    },
+    {
+      "check": "unsigned forwarding cannot activate not-a-partner.example",
+      "result": 404
+    },
+    {
+      "check": "signed query transport",
+      "result": 200
+    },
+    {
+      "check": "configured partner slug",
+      "result": "megaprotek"
+    },
+    {
+      "check": "partner login",
+      "result": 200
+    },
+    {
+      "check": "host-only session",
+      "result": true
+    },
+    {
+      "check": "HttpOnly session",
+      "result": true
+    },
+    {
+      "check": "foreign customer denied",
+      "result": 403
+    },
+    {
+      "check": "personal delegation",
+      "result": 200
+    },
+    {
+      "check": "delegation session",
+      "result": true
+    },
+    {
+      "check": "reused scoped projects",
+      "result": 200
+    },
+    {
+      "check": "return partner",
+      "result": 200
+    },
+    {
+      "check": "delegation revoked on return",
+      "result": false
+    },
+    {
+      "check": "central login start",
+      "result": 200
+    },
+    {
+      "check": "synthetic central identity",
+      "result": 200
+    },
+    {
+      "check": "callback exact destination",
+      "result": true
+    },
+    {
+      "check": "code without browser binding denied",
+      "result": 403
+    },
+    {
+      "check": "host-bound exchange",
+      "result": 303
+    },
+    {
+      "check": "safe post-login path",
+      "result": "/partner"
+    },
+    {
+      "check": "exchange replay denied",
+      "result": 403
+    },
+    {
+      "check": "restored partner role",
+      "result": true
+    },
+    {
+      "check": "session logout",
+      "result": 200
+    },
+    {
+      "check": "revoked session denied",
+      "result": 401
+    }
+  ],
+  "home_sha256": "fa6bdf19116048f45021a2e2583743b138e7c3c47be067ad04dbe74323d68ca7",
+  "business_data_mutations": 0,
+  "external_providers_called": 0,
+  "visual_browser_qa": "not_performed_administrator_policy",
+  "credentials_tokens_personal_rows_logged": false
+}

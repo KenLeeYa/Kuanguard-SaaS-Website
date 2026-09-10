@@ -1,0 +1,62 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import vm from "node:vm";
+import crypto from "node:crypto";
+import ts from "typescript";
+
+function load(path, env, dependencies = {}, fetcher = fetch) {
+  const source = fs.readFileSync(new URL(path, import.meta.url), "utf8");
+  const js = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
+  const sandbox = { exports: {}, process: { env }, URL, Headers, Response, AbortSignal, fetch: fetcher,
+    require: name => name === "node:crypto" ? crypto : dependencies[name] };
+  vm.runInNewContext(js, sandbox);
+  return sandbox.exports;
+}
+const helper = env => load("../src/lib/server-api.ts", env);
+const key = "synthetic-bff-test-key";
+
+test("unconfigured or misbound BFF cannot silently lose its authenticated host", () => {
+  assert.throws(() => helper({}).portalHeaders("portal.example.test", "GET", "/public/portal"), /signing key/);
+  for (const url of ["https://qidaigo.com", "https://app.qidaigo.com", "https://api.example.test/private", "https://user:pass@api.example.test", "file:///", "ftp://api.example.test"]) {
+    assert.throws(() => helper({ API_INTERNAL_URL: url }).apiOrigin(), /Invalid API binding/);
+  }
+  assert.throws(() => helper({ VERCEL: "1", API_INTERNAL_URL: "http://api.kuanguard.com", PORTAL_PROXY_SECRET: key }).apiOrigin(), /Verified HTTPS/);
+  assert.equal(helper({ VERCEL: "1", API_INTERNAL_URL: "https://api.kuanguard.com", PORTAL_PROXY_SECRET: key }).apiOrigin().host, "api.kuanguard.com");
+});
+
+function request(path, extra = {}) {
+  const req = new Request("http://127.0.0.1:3180/api/" + path, { headers: { host: "portal.partner.example", ...extra } });
+  req.nextUrl = new URL(req.url);
+  return req;
+}
+function route(env, fetcher, surface = "public") {
+  return load("../src/app/api/[...path]/route.ts", env, {
+    "@/lib/server-api": helper(env), "@/lib/surface": { deploymentSurface: () => surface },
+  }, fetcher);
+}
+test("BFF signs actual Host and exact upstream path/query, discards forged forwarding headers", async () => {
+  let captured;
+  const api = route({ API_INTERNAL_URL: "http://api:8180", PORTAL_PROXY_SECRET: key }, async (url, init) => {
+    captured = { url, init };
+    return Response.json({ ok: true }, { headers: { "set-cookie": "kg_session=synthetic; HttpOnly; Path=/; SameSite=Lax" } });
+  });
+  const res = await api.GET(request("public/portal?slug=hello%20world", { "x-forwarded-host": "evil.example", "x-kg-portal-host": "evil.example", cookie: "kg_session=synthetic" }), { params: Promise.resolve({ path: ["public", "portal"] }) });
+  assert.equal(res.status, 200);
+  assert.equal(captured.url.href, "http://api:8180/public/portal?slug=hello%20world");
+  const headers = captured.init.headers;
+  assert.equal(headers.get("x-kg-portal-host"), "portal.partner.example");
+  assert.equal(headers.get("x-forwarded-host"), null);
+  assert.equal(headers.get("x-kg-portal-signature"), crypto.createHmac("sha256", key).update(`GET\n/public/portal?slug=hello%20world\nportal.partner.example\n${headers.get("x-kg-portal-time")}`).digest("hex"));
+  assert.match(res.headers.get("cache-control"), /no-store/);
+  assert.match(res.headers.get("set-cookie"), /HttpOnly/);
+});
+test("public surface denies admin routes and missing signing configuration before any network call", async () => {
+  let called = false;
+  const api = route({}, async () => { called = true; throw new Error("must not fetch"); });
+  for (const path of [["platform", "overview"], ["internal", "projects"]]) {
+    assert.equal((await api.GET(request(path.join("/")), { params: Promise.resolve({ path }) })).status, 404);
+  }
+  assert.equal((await api.GET(request("public/portal"), { params: Promise.resolve({ path: ["public", "portal"] }) })).status, 503);
+  assert.equal(called, false);
+});

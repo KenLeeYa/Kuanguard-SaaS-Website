@@ -1,11 +1,12 @@
 # KUANGUARD
 
-七服務資安平台的可操作本機版本，已增量套用 v1.1。官網、客戶、學員、內部工作台及公司 Portfolio 共用程式，依部署面與已驗證角色隔離。所有現有示範資料、點數與報告均明示合成用途；正式七服務共同 release gate 仍關閉。
+商家點餐／營運 SaaS 官網與 B2B Partner 平台，已接續 v1.1 增量更新。N 家 Partner 共用程式、獨立客戶歸屬與授權；原七服務資安、學員、內部工作台與 Portfolio 保留。商家入口沿用既有點餐產品，未複製其 backend。合成資料明示用途，正式共同 release gate 仍關閉。
 
 ## 直接使用
 
 - 本機入口：<http://127.0.0.1:3180>
-- 登入頁：<http://127.0.0.1:3180/login>，選「示範單一管理者」操作 PM／工程師／覆核／財務與 Portfolio；選企業 A 或學員 A 驗證客戶／學習流程。
+- 登入頁：<http://127.0.0.1:3180/login>，分流商家、Partner、平台管理及既有資安客戶／學員。
+- Partner：<http://127.0.0.1:3180/partner/login?partner=megaprotek>；選三傑示範角色。Platform admin：<http://127.0.0.1:3180/admin/platform>。
 - 內部公司總覽：<http://127.0.0.1:3180/admin/portfolio>；正式目標為 `admin.kuanguard.com/portfolio`。
 - API health：<http://127.0.0.1:8180/health>；OpenAPI：[docs/openapi.json](docs/openapi.json)。
 
@@ -42,6 +43,8 @@ npm --prefix apps/web run build
 
 [需求與驗收矩陣](docs/requirements-traceability.md)、[release readiness](docs/release-readiness.md)、[增量狀態](docs/update-v1.1-status.md)、[啟用清單](docs/activation-checklist.md) 是完成範圍與後續啟用依據。
 
-正式 IdP、Gophish/SMTP、支付／發票、R2/Stream、公司核准模板／教材與独立雲端 Projects 尚待設定及實接驗證。Native AppScan 專有格式並未宣稱支援；WVA 支援已明示的映射 XML。管理政策阻擋瀏覽器自動化，尚無 390/768/1440 視窗、完整鍵盤與錄影驗證。CI workflow 已建置，尚未推送至遠端執行。
+Partner 更新交付：[架構](docs/ARCHITECTURE.md)、[品牌](docs/BRAND_ARCHITECTURE.md)、[遷移](docs/MIGRATION_PLAN.md)、[Partner 操作](docs/PARTNER_PLATFORM.md)、[Auth](docs/AUTH_ARCHITECTURE.md)、[安全](docs/MULTI_TENANT_SECURITY.md)、[RBAC](docs/RBAC.md)、[Billing](docs/BILLING.md)、[Custom domain](docs/CUSTOM_DOMAIN.md)、[三傑](docs/MEGAPROTEK_INTEGRATION.md)、[Cloudflare](docs/CLOUDFLARE_SETUP.md)、[測試](docs/TEST_REPORT.md)、[部署](docs/DEPLOYMENT.md)、[必要人工項目](docs/MANUAL_ACTIONS_REQUIRED.md)。新環境需明示執行 `uv run python scripts/seed_partners.py` 安裝合成 Partner；現有環境已完成。
 
-後續部署延用既有 Cloudflare Account、Vercel Team、Supabase Organization，但採 KUANGUARD 專用 Projects/DB/queue/storage/secrets。現有 QIDAIGO 原始碼、資料庫與部署未修改。本機交付版本以 `git rev-parse HEAD` 查詢；repo 尚無 remote，不能把本機 commit／驗證當成正式發布收據。
+正式 IdP、Gophish/SMTP、支付／發票、R2/Stream、公司核准模板／教材與獨立雲端 Projects 尚待設定及實接驗證。Native AppScan 專有格式並未宣稱支援；WVA 支援已明示的映射 XML。管理政策阻擋瀏覽器自動化，尚無 390/768/1440 視窗、完整鍵盤與錄影驗證。Partner commission／enterprise SSO 等 P2 只提供停用 schema foundation。
+
+後續部署沿用既有 Cloudflare Account、Vercel Team、Supabase Organization，但採 KUANGUARD 專用 Projects/DB/queue/storage/secrets。現有 QIDAIGO 原始碼、資料庫與部署未修改。原始碼同步至 [KenLeeYa/Kuanguard-SaaS-Website](https://github.com/KenLeeYa/Kuanguard-SaaS-Website)，CI 以提交 SHA 查詢；GitHub 同步不代表正式服務已上線。

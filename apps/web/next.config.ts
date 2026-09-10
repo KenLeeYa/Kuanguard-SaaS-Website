@@ -10,7 +10,6 @@ const nextConfig: NextConfig = {
     if (target.hostname === "qidaigo.com" || target.hostname.endsWith(".qidaigo.com")) throw new Error("KUANGUARD cannot use a QIDAIGO API origin");
     if (process.env.VERCEL && (target.protocol !== "https:" || target.hostname !== "api.kuanguard.com")) throw new Error("Vercel requires the verified KUANGUARD HTTPS API origin");
     return [
-      { source: "/api/:path*", destination: `${api.replace(/\/$/, "")}/:path*` },
       { source: "/internal/:path*", destination: `${api.replace(/\/$/, "")}/internal/:path*` },
     ];
   },

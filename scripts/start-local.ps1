@@ -9,6 +9,7 @@ if (-not (Test-Path -LiteralPath $pythonExecutable)) {
     if ($LASTEXITCODE -ne 0) { throw 'Dependency installation failed' }
 }
 & $pythonExecutable scripts/setup_local.py
+$env:PORTAL_PROXY_SECRET = & $pythonExecutable -c 'from dotenv import dotenv_values; print(dotenv_values(".env").get("PORTAL_PROXY_SECRET", ""))'
 & docker compose up -d --no-recreate db queue
 if ($LASTEXITCODE -ne 0) { throw 'Local database/queue start failed' }
 $ready = $false

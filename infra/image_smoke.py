@@ -31,7 +31,7 @@ def main():
     assert int(limits["pids.max"]) == 128
     fonts = list(Path("/usr/share/fonts/opentype/noto").glob("*CJK*"))
     assert fonts, "Redistributable CJK fallback fonts must be present"
-    source_paths = sorted([*[path for root in ("backend", "scripts") for path in Path(root).rglob("*") if path.is_file()], Path("pyproject.toml"), Path("uv.lock")])
+    source_paths = sorted([*[path for root in ("backend", "scripts", "config") for path in Path(root).rglob("*") if path.is_file()], Path("pyproject.toml"), Path("uv.lock")])
     result = {"state": "passed", "python": platform.python_version(), "uid": os.getuid(), "gid": os.getgid(),
               "api_worker_import": "passed", "non_root_storage_write_read_sha256": checksum,
               "cgroup_limits": limits, "fallback_cjk_font_files": len(fonts),

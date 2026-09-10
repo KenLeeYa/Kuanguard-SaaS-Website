@@ -23,6 +23,7 @@ RUN uv sync --locked --no-dev
 
 COPY backend/ ./backend/
 COPY scripts/ ./scripts/
+COPY config/ ./config/
 
 USER 10001:10001
 EXPOSE 8180

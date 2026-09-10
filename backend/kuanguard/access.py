@@ -23,7 +23,7 @@ def validate_access_token(token, issuer, audience, signing_key=None):
 
 def protect_internal_boundary(host, path, token, config=None):
     config = config or settings()
-    if not path.startswith("/internal"):
+    if not path.startswith(("/internal", "/platform")):
         return
     if config.app_env in {"development", "test"} and config.deployment_surface == "local":
         return

@@ -6,6 +6,7 @@ from .catalog import SERVICES, COURSE, COURSE_LESSONS, COURSE_QUESTIONS
 from .config import settings
 from .db import add, one, set_tenant
 from . import execution_models  # noqa: F401 -- register additive tables before create_all
+from . import partner_models  # noqa: F401 -- register additive tables before create_all
 
 PROFILES = {
     "owner-a": ("a", "示範單一管理者", ["portfolio_owner", "pm", "engineer", "reviewer", "finance"]),

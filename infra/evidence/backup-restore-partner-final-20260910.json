@@ -1,0 +1,49 @@
+{
+  "state": "success",
+  "started_at": "2026-09-10T11:54:26.624005+00:00",
+  "completed_at": "2026-09-10T11:54:39.001901+00:00",
+  "source_database": "kuanguard",
+  "restored_database": "kuanguard_restore_partner_final_20260910",
+  "schema_revisions": [
+    "0001_initial",
+    "0002_review_policy",
+    "0003_portfolio_projection",
+    "0004_retest_verification",
+    "0005_worker_claim_token",
+    "0006_service_ledger_immutable",
+    "0007_drafts_tickets",
+    "0008_training_rights",
+    "0009_project_execution",
+    "0010_tenant_lifecycle",
+    "0011_20260910_partner_platform"
+  ],
+  "backup_directory": ".local/backups/20260910-partner-final",
+  "restore_directory": ".local/restores/20260910-partner-final",
+  "manifest_sha256": "681a9f6316c406ee9024c2afb0b4f1e718eaf1d2f3f12cf69f769dbfa964825c",
+  "table_count": 102,
+  "total_rows": 1087,
+  "table_counts_and_ordered_native_json_sha256_match": true,
+  "table_comparison_evidence": "infra/evidence/backup-restore-partner-final-table-comparison-20260910.json",
+  "object_count": 36,
+  "object_bytes": 1165681,
+  "source_archive_restored_object_hashes_match": true,
+  "pause": {
+    "database_queue_preserved": true,
+    "state": "paused",
+    "ids": [
+      22608,
+      43628
+    ]
+  },
+  "running_jobs_at_pause": 0,
+  "source_db_or_objects_modified_by_rehearsal": false,
+  "old_backups_preserved_and_verified": [
+    "b0713bed581a48ca07625b45adfd3a13232e0e90d27cfa12b80b6c4e1cded21f",
+    "4eb4394ad4ec8ecc2d564ec719dcb9d88e581542d622b7c25cf22b7135c4da03",
+    "94ab88f754ab524a9b11151169d275db2ed5b3a0a476b1d6515e74233ccf1abd"
+  ],
+  "source_database_queue_recreated": false,
+  "application_job_redrive": "not_performed",
+  "encryption": "not_performed_by_tool_local_private_destination",
+  "production_rpo_rto": "unverified"
+}
