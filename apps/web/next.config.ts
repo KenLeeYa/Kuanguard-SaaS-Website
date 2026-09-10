@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  output: process.env.VERCEL ? undefined : "standalone",
   poweredByHeader: false,
   async rewrites() {
     if (process.env.KUANGUARD_WEBSITE_ONLY === "true") return [];
