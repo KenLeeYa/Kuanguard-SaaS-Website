@@ -1,0 +1,632 @@
+{
+  "observed_at": "2026-09-10T13:41:00.9261961Z",
+  "status": "VERCEL_PRODUCTION_READY_DNS_PENDING",
+  "commit": "a76f4e563b214d35fc92e07fc878f2365c32bd42",
+  "web_tree": "45931b87861e12ad1ec410b0ba86954a13b09dc1",
+  "deployment_id": "dpl_5VMeeqa674LKMcM1W1PP8A4rw6iz",
+  "project_id": "prj_uZG3hm4ALsnqj2wL3Qa9e85F7tvy",
+  "team_id": "team_MMfsiG94K9Zy3e6w7Ccc9xY4",
+  "production_url": "https://kuanguard-website.vercel.app",
+  "target_domains": [
+    "kuanguard.com",
+    "www.kuanguard.com"
+  ],
+  "ci_url": "https://github.com/KenLeeYa/Kuanguard-SaaS-Website/actions/runs/34483514251",
+  "ci": "success",
+  "unit_tests": 16,
+  "local_http": {
+    "state": "passed",
+    "observed_at": "2026-09-10T13:30:16.133Z",
+    "base_url": "http://127.0.0.1:3181",
+    "public_routes": 39,
+    "checks": [
+      {
+        "path": "/",
+        "status": 200
+      },
+      {
+        "path": "/products",
+        "status": 200
+      },
+      {
+        "path": "/products/ordering",
+        "status": 200
+      },
+      {
+        "path": "/solutions",
+        "status": 200
+      },
+      {
+        "path": "/features",
+        "status": 200
+      },
+      {
+        "path": "/pricing",
+        "status": 200
+      },
+      {
+        "path": "/partners",
+        "status": 200
+      },
+      {
+        "path": "/about",
+        "status": 200
+      },
+      {
+        "path": "/contact",
+        "status": 200
+      },
+      {
+        "path": "/merchant/apply",
+        "status": 200
+      },
+      {
+        "path": "/privacy",
+        "status": 200
+      },
+      {
+        "path": "/terms",
+        "status": 200
+      },
+      {
+        "path": "/terms/merchants",
+        "status": 200
+      },
+      {
+        "path": "/terms/partners",
+        "status": 200
+      },
+      {
+        "path": "/security",
+        "status": 200
+      },
+      {
+        "path": "/solutions/restaurant",
+        "status": 200
+      },
+      {
+        "path": "/solutions/beverage",
+        "status": 200
+      },
+      {
+        "path": "/solutions/food-stall",
+        "status": 200
+      },
+      {
+        "path": "/solutions/retail",
+        "status": 200
+      },
+      {
+        "path": "/solutions/beauty",
+        "status": 200
+      },
+      {
+        "path": "/services",
+        "status": 200
+      },
+      {
+        "path": "/services/va",
+        "status": 200
+      },
+      {
+        "path": "/services/wva",
+        "status": 200
+      },
+      {
+        "path": "/services/shc",
+        "status": 200
+      },
+      {
+        "path": "/services/pt",
+        "status": 200
+      },
+      {
+        "path": "/services/source-code",
+        "status": 200
+      },
+      {
+        "path": "/services/phishing",
+        "status": 200
+      },
+      {
+        "path": "/services/training",
+        "status": 200
+      },
+      {
+        "path": "/plans/annual-security",
+        "status": 200
+      },
+      {
+        "path": "/courses",
+        "status": 200
+      },
+      {
+        "path": "/pricing/credits",
+        "status": 200
+      },
+      {
+        "path": "/request-quote",
+        "status": 200
+      },
+      {
+        "path": "/resources",
+        "status": 200
+      },
+      {
+        "path": "/trust",
+        "status": 200
+      },
+      {
+        "path": "/legal/privacy",
+        "status": 200
+      },
+      {
+        "path": "/legal/terms",
+        "status": 200
+      },
+      {
+        "path": "/legal/credits",
+        "status": 200
+      },
+      {
+        "path": "/legal/acceptable-use",
+        "status": 200
+      },
+      {
+        "path": "/legal/data-processing",
+        "status": 200
+      },
+      {
+        "path": "/contact",
+        "status": 200
+      },
+      {
+        "path": "/pricing",
+        "status": 200
+      },
+      {
+        "path": "/login",
+        "status": 200
+      },
+      {
+        "path": "/partner/login",
+        "status": 200
+      },
+      {
+        "path": "/merchant",
+        "status": 200
+      },
+      {
+        "path": "/admin",
+        "status": 404
+      },
+      {
+        "path": "/admin/platform",
+        "status": 404
+      },
+      {
+        "path": "/dashboard",
+        "status": 404
+      },
+      {
+        "path": "/partner/credits",
+        "status": 404
+      },
+      {
+        "path": "/internal/projects",
+        "status": 404
+      },
+      {
+        "path": "/products/unknown",
+        "status": 404
+      },
+      {
+        "path": "/courses/unknown",
+        "status": 404
+      },
+      {
+        "path": "/api/auth/dev-login",
+        "method": "POST",
+        "status": 404
+      },
+      {
+        "path": "/api/public/leads",
+        "method": "POST",
+        "status": 404
+      },
+      {
+        "path": "/api/partner/credits",
+        "method": "POST",
+        "status": 404
+      },
+      {
+        "path": "/api/platform/overview",
+        "method": "POST",
+        "status": 404
+      },
+      {
+        "path": "/_next/static/chunks/0ino1xijhenwm.css",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/chunks/310vm2bl3xxpt.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/chunks/1mh6a-0e61pyc.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/chunks/2-rtuqsgzmno4.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/chunks/turbopack-30koqklv8_-oi.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/chunks/3s6hmiey4cxe7.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/chunks/27sfef643s8rn.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/chunks/3l5m708vc8qlf.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/chunks/22i43cg4l4-dq.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/chunks/34ukkokgodsvg.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/chunks/0cz1d0mv5g_q7.js",
+        "status": 200
+      },
+      {
+        "path": "www redirect preserves path/query",
+        "status": 308
+      }
+    ],
+    "browser_qa": "not_performed_browser_runtime_unavailable",
+    "mail_sent": false,
+    "database_mutations": 0
+  },
+  "production_http": {
+    "state": "passed",
+    "observed_at": "2026-09-10T13:39:06.165Z",
+    "base_url": "https://kuanguard-website.vercel.app",
+    "public_routes": 39,
+    "checks": [
+      {
+        "path": "/",
+        "status": 200
+      },
+      {
+        "path": "/products",
+        "status": 200
+      },
+      {
+        "path": "/solutions",
+        "status": 200
+      },
+      {
+        "path": "/features",
+        "status": 200
+      },
+      {
+        "path": "/products/ordering",
+        "status": 200
+      },
+      {
+        "path": "/partners",
+        "status": 200
+      },
+      {
+        "path": "/pricing",
+        "status": 200
+      },
+      {
+        "path": "/contact",
+        "status": 200
+      },
+      {
+        "path": "/about",
+        "status": 200
+      },
+      {
+        "path": "/terms/merchants",
+        "status": 200
+      },
+      {
+        "path": "/merchant/apply",
+        "status": 200
+      },
+      {
+        "path": "/terms",
+        "status": 200
+      },
+      {
+        "path": "/privacy",
+        "status": 200
+      },
+      {
+        "path": "/security",
+        "status": 200
+      },
+      {
+        "path": "/terms/partners",
+        "status": 200
+      },
+      {
+        "path": "/solutions/beverage",
+        "status": 200
+      },
+      {
+        "path": "/solutions/restaurant",
+        "status": 200
+      },
+      {
+        "path": "/solutions/retail",
+        "status": 200
+      },
+      {
+        "path": "/solutions/food-stall",
+        "status": 200
+      },
+      {
+        "path": "/services",
+        "status": 200
+      },
+      {
+        "path": "/solutions/beauty",
+        "status": 200
+      },
+      {
+        "path": "/services/shc",
+        "status": 200
+      },
+      {
+        "path": "/services/wva",
+        "status": 200
+      },
+      {
+        "path": "/services/va",
+        "status": 200
+      },
+      {
+        "path": "/services/pt",
+        "status": 200
+      },
+      {
+        "path": "/services/source-code",
+        "status": 200
+      },
+      {
+        "path": "/plans/annual-security",
+        "status": 200
+      },
+      {
+        "path": "/services/phishing",
+        "status": 200
+      },
+      {
+        "path": "/services/training",
+        "status": 200
+      },
+      {
+        "path": "/pricing/credits",
+        "status": 200
+      },
+      {
+        "path": "/request-quote",
+        "status": 200
+      },
+      {
+        "path": "/resources",
+        "status": 200
+      },
+      {
+        "path": "/courses",
+        "status": 200
+      },
+      {
+        "path": "/legal/terms",
+        "status": 200
+      },
+      {
+        "path": "/legal/privacy",
+        "status": 200
+      },
+      {
+        "path": "/legal/credits",
+        "status": 200
+      },
+      {
+        "path": "/trust",
+        "status": 200
+      },
+      {
+        "path": "/legal/acceptable-use",
+        "status": 200
+      },
+      {
+        "path": "/legal/data-processing",
+        "status": 200
+      },
+      {
+        "path": "/contact",
+        "status": 200
+      },
+      {
+        "path": "/pricing",
+        "status": 200
+      },
+      {
+        "path": "/login",
+        "status": 200
+      },
+      {
+        "path": "/partner/login",
+        "status": 200
+      },
+      {
+        "path": "/merchant",
+        "status": 200
+      },
+      {
+        "path": "/admin",
+        "status": 404
+      },
+      {
+        "path": "/admin/platform",
+        "status": 404
+      },
+      {
+        "path": "/dashboard",
+        "status": 404
+      },
+      {
+        "path": "/partner/credits",
+        "status": 404
+      },
+      {
+        "path": "/internal/projects",
+        "status": 404
+      },
+      {
+        "path": "/products/unknown",
+        "status": 404
+      },
+      {
+        "path": "/courses/unknown",
+        "status": 404
+      },
+      {
+        "path": "/api/auth/dev-login",
+        "method": "POST",
+        "status": 404
+      },
+      {
+        "path": "/api/public/leads",
+        "method": "POST",
+        "status": 404
+      },
+      {
+        "path": "/api/partner/credits",
+        "method": "POST",
+        "status": 404
+      },
+      {
+        "path": "/api/platform/overview",
+        "method": "POST",
+        "status": 404
+      },
+      {
+        "path": "/_next/static/immutable/chunks/44u986giwl4d4.css",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/2w7notn4yp6cz.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/3hknac10saw37.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/0-hd8y_5pqohu.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/115wafrul9fhu.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/turbopack-2xu_3c64fnkxq.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/38036v0zrx-fl.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/34bxtogb05ffu.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/3pey21lmzzng3.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/3hjakcdi_gstf.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/09m5pdf7m74fc.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "status": 200
+      }
+    ],
+    "browser_qa": "not_performed_browser_runtime_unavailable",
+    "mail_sent": false,
+    "database_mutations": 0
+  },
+  "contact_email": "ada76145@gmail.com",
+  "contact_transport": "visitor_mail_client",
+  "cloudflare_account_id": "b1c70202652cd3b77dfec70e5463785f",
+  "cloudflare_zone_id": null,
+  "dns_applied": false,
+  "required_dns_records": [
+    {
+      "type": "A",
+      "name": "kuanguard.com",
+      "content": "216.150.1.1",
+      "ttl": 300,
+      "proxied": false
+    },
+    {
+      "type": "A",
+      "name": "kuanguard.com",
+      "content": "216.150.16.1",
+      "ttl": 300,
+      "proxied": false
+    },
+    {
+      "type": "CNAME",
+      "name": "www.kuanguard.com",
+      "content": "795e44d125569cf2.vercel-dns-016.com.",
+      "ttl": 300,
+      "proxied": false
+    }
+  ],
+  "blockers": [
+    "Cloudflare API missing com.cloudflare.api.account.zone.create permission",
+    "GoDaddy API HTTP 401",
+    "Browser runtime failed to start codex app-server"
+  ],
+  "current_nameservers": [
+    "ns37.domaincontrol.com",
+    "ns38.domaincontrol.com"
+  ],
+  "authoritative_export_verified": false,
+  "database_mutations": 0,
+  "other_project_mutations": 0,
+  "runtime_error_scan": {
+    "checked_at": "2026-09-10T13:43:18.6179151Z",
+    "since": "20m",
+    "errors_found": 0
+  }
+}
