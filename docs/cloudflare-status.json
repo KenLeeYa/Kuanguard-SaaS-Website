@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "observed_at": "2026-09-10T08:06:30.136992+00:00",
+  "observed_at": "2026-09-10T14:58:34.825106+00:00",
   "product": "kuanguard",
   "apex": "kuanguard.com",
   "registrar": "godaddy",
@@ -26,7 +26,8 @@
     "kuanguard_dedicated_projects": {
       "state": "pending_action",
       "created": false,
-      "reason": "Dedicated Vercel/Supabase production and nonproduction IDs absent; new compute budget and region pending"
+      "reason": "Public website has a dedicated Vercel project; SaaS Vercel/Supabase production and nonproduction activation remains separate",
+      "website_project_id": "prj_uZG3hm4ALsnqj2wL3Qa9e85F7tvy"
     },
     "cloudflare_account": {
       "state": "success",
@@ -35,50 +36,64 @@
       "evidence": "infra/evidence/cloudflare-inspect-20260910/discovery.json"
     },
     "zone_created_or_reused": {
-      "state": "pending_action",
-      "zone_id": null,
-      "visible_zone_count": 0,
-      "reason": "No KUANGUARD zone visible to the existing token in the verified account; confirm scope or authorized onboarding",
-      "evidence": "infra/evidence/cloudflare-inspect-20260910/discovery.json"
+      "state": "success",
+      "zone_id": "ecadb2ab2b13229381ca5c8ceebc8bdd",
+      "zone_status": "active",
+      "plan": "Free Website",
+      "evidence": "docs/evidence/website-domain-cutover-20260910.json"
     },
     "full_authoritative_zone_export": {
-      "state": "pending_action",
-      "complete_export_available": false,
-      "reason": "Public DNS inventory cannot enumerate all original records"
+      "state": "success",
+      "complete_export_available": true,
+      "original_record_count": 6,
+      "sha256": "6daab562a22ee0a5595659ab58f97b33040d898e4d087a444739f1909aa0060c",
+      "private_evidence_directory": "infra/cloudflare/private/website-cutover-20260910",
+      "evidence": "docs/evidence/website-domain-cutover-20260910.json"
     },
     "dns_applied": {
-      "state": "pending_action",
-      "writes_performed": 0,
-      "evidence": "infra/evidence/infrastructure-tests-20260910.json",
-      "note": "Fake-provider tests are not live DNS apply proof"
+      "state": "success",
+      "writes_performed": 5,
+      "scope": "Initial dedicated-zone import; 3 website records, 2 preserved records",
+      "managed_noop_actions": 0,
+      "evidence": "docs/evidence/website-domain-cutover-20260910.json"
     },
     "godaddy_ns_updated": {
-      "state": "pending_action",
-      "performed": false,
+      "state": "success",
+      "performed": true,
       "observed_nameservers": [
-        "ns37.domaincontrol.com",
-        "ns38.domaincontrol.com"
+        "liv.ns.cloudflare.com",
+        "sri.ns.cloudflare.com"
       ],
-      "assigned_cloudflare_nameservers": null,
-      "evidence": "infra/evidence/public-verification-20260910.json"
+      "assigned_cloudflare_nameservers": [
+        "liv.ns.cloudflare.com",
+        "sri.ns.cloudflare.com"
+      ],
+      "parent_delegation_verified": true,
+      "recursive_cache_propagation": "pending",
+      "evidence": "docs/evidence/website-domain-cutover-20260910.json"
     },
     "dnssec_verified": {
       "state": "unverified",
-      "note": "No requested DS answer observed; independent chain verification and registrar console readback pending"
+      "note": "No old DS observed at two .com parent servers before cutover; Cloudflare DNSSEC remains disabled. No existing signing or DS was disabled by this release.",
+      "evidence": "docs/evidence/website-domain-cutover-20260910.json"
     },
     "tls_verified": {
-      "state": "unverified",
+      "state": "success",
+      "scope": "public apex/www at Vercel; full certificate verification with public Cloudflare DoH lookup",
       "public_apex": "success",
       "public_www": "success",
-      "public_app": "failed",
-      "public_admin": "failed",
-      "origin_tls": "unverified",
-      "evidence": "infra/evidence/public-verification-20260910.json"
+      "public_app": "unverified",
+      "public_admin": "unverified",
+      "evidence": "docs/evidence/website-domain-cutover-20260910.json"
     },
     "application_deployed": {
-      "state": "pending_action",
-      "deployment_id": null,
-      "note": "Local code/Compose retained; no KUANGUARD external deployment performed"
+      "state": "success",
+      "scope": "public_corporate_website_only",
+      "deployment_id": "dpl_5VMeeqa674LKMcM1W1PP8A4rw6iz",
+      "project_id": "prj_uZG3hm4ALsnqj2wL3Qa9e85F7tvy",
+      "production_url": "https://kuanguard.com",
+      "saas_platform_activation": "pending_action",
+      "evidence": "docs/evidence/website-domain-cutover-20260910.json"
     },
     "tunnel_access_applied": {
       "state": "pending_action",
@@ -128,6 +143,12 @@
       "note": "No assertion of QIDAIGO order execution tests"
     }
   },
-  "remote_mutations_performed": [],
+  "remote_mutations_performed": [
+    "Dedicated kuanguard-website Vercel project, website-only environment and production deployment",
+    "Attach kuanguard.com and www with a 308 canonical redirect",
+    "Create dedicated Cloudflare Free zone and 5 initial DNS records",
+    "GoDaddy nameserver-only update to the assigned Cloudflare pair",
+    "Issue Vercel SSL certificate for apex and www"
+  ],
   "remaining_checklist": "docs/activation-checklist.md"
 }

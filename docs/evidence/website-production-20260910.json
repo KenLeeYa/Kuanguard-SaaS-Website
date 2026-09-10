@@ -1,12 +1,12 @@
 {
-  "observed_at": "2026-09-10T13:41:00.9261961Z",
-  "status": "VERCEL_PRODUCTION_READY_DNS_PENDING",
+  "observed_at": "2026-09-10T14:58:34.825106+00:00",
+  "status": "PRODUCTION_LIVE_DNS_PROPAGATING",
   "commit": "a76f4e563b214d35fc92e07fc878f2365c32bd42",
   "web_tree": "45931b87861e12ad1ec410b0ba86954a13b09dc1",
   "deployment_id": "dpl_5VMeeqa674LKMcM1W1PP8A4rw6iz",
   "project_id": "prj_uZG3hm4ALsnqj2wL3Qa9e85F7tvy",
   "team_id": "team_MMfsiG94K9Zy3e6w7Ccc9xY4",
-  "production_url": "https://kuanguard-website.vercel.app",
+  "production_url": "https://kuanguard.com",
   "target_domains": [
     "kuanguard.com",
     "www.kuanguard.com"
@@ -587,8 +587,8 @@
   "contact_email": "ada76145@gmail.com",
   "contact_transport": "visitor_mail_client",
   "cloudflare_account_id": "b1c70202652cd3b77dfec70e5463785f",
-  "cloudflare_zone_id": null,
-  "dns_applied": false,
+  "cloudflare_zone_id": "ecadb2ab2b13229381ca5c8ceebc8bdd",
+  "dns_applied": true,
   "required_dns_records": [
     {
       "type": "A",
@@ -612,21 +612,40 @@
       "proxied": false
     }
   ],
-  "blockers": [
-    "Cloudflare API missing com.cloudflare.api.account.zone.create permission",
-    "GoDaddy API HTTP 401",
-    "Browser runtime failed to start codex app-server"
-  ],
+  "blockers": [],
   "current_nameservers": [
-    "ns37.domaincontrol.com",
-    "ns38.domaincontrol.com"
+    "liv.ns.cloudflare.com",
+    "sri.ns.cloudflare.com"
   ],
-  "authoritative_export_verified": false,
+  "authoritative_export_verified": true,
   "database_mutations": 0,
   "other_project_mutations": 0,
   "runtime_error_scan": {
-    "checked_at": "2026-09-10T13:43:18.6179151Z",
-    "since": "20m",
-    "errors_found": 0
-  }
+    "checked_at": "2026-09-10T14:58:34.825106+00:00",
+    "errors_found": 0,
+    "since": "20m"
+  },
+  "fallback_url": "https://kuanguard-website.vercel.app",
+  "custom_domain_http": {
+    "state": "passed",
+    "observed_at": "2026-09-10T14:55:39.867Z",
+    "base_url": "https://kuanguard.com",
+    "public_routes": 39,
+    "browser_qa": "not_performed_browser_runtime_unavailable",
+    "mail_sent": false,
+    "database_mutations": 0,
+    "dns_resolution": "Public Cloudflare DNS-over-HTTPS answers used for per-process lookup; system resolver still cached old parking records. No hosts-file changes or TLS verification bypass.",
+    "check_count": 67,
+    "evidence": "website-domain-cutover-20260910.json"
+  },
+  "www_redirect": {
+    "observed_at": "2026-09-10T14:55:40.021Z",
+    "url": "https://www.kuanguard.com/products/ordering?utm_source=release",
+    "status": 308,
+    "location": "https://kuanguard.com/products/ordering?utm_source=release",
+    "dns_resolution": "public Cloudflare DoH answers used in this process",
+    "tls_certificate_validation": true
+  },
+  "domain_cutover_evidence": "website-domain-cutover-20260910.json",
+  "dns_propagation": "Some recursive and local caches still return previous GoDaddy parking records; Cloudflare DoH and authoritative DNS are current."
 }

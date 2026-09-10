@@ -8,11 +8,11 @@ apex / www / app 改由 Vercel 專用 Projects 承載並強制 Cloudflare DNS-on
 
 `infra/evidence/public-verification-20260910.json` 記錄兩個 recursive resolvers（1.1.1.1、8.8.8.8）及實際權威 NS 的唯讀查詢。觀察到 `ns37.domaincontrol.com`、`ns38.domaincontrol.com`，apex A 為 `76.223.105.230` 與 `13.248.243.5`。這些是當時既有紀錄，不能當作新平台 origin 或擅自覆蓋。
 
-apex 的 MX/TXT/CAA/AAAA 與 parent DS 查詢當時沒有 requested-type answer；回傳 SOA 並不表示收到 MX 或 DS。公開查詢無法枚舉完整 zone、所有子域或委派，因此完整原 DNS 匯出仍待提供。DNSSEC chain 未驗證。apex / www 公開憑證檢查成功，app / admin 檢查失敗；公開憑證不證明 origin TLS，也不證明本平台已部署。
+apex 的 MX/TXT/CAA/AAAA 與 parent DS 查詢當時沒有 requested-type answer；回傳 SOA 並不表示收到 MX 或 DS。公開查詢無法枚舉完整 zone、所有子域或委派，原始觀測因此沒有完整匯出證據；後續官網接入另取得完整 GoDaddy API 匯出。DNSSEC chain 未驗證。原觀測中的 apex / www 公開憑證檢查成功，app / admin 檢查失敗；舊停放站的公開憑證不證明新平台部署。
 
 最初的唯讀觀測保存在 `infra/evidence/cloudflare-discovery-20260910.json`。本次官網接入已核對 Cloudflare account `b1c70202652cd3b77dfec70e5463785f`、專用 zone `ecadb2ab2b13229381ca5c8ceebc8bdd`，實際分配 `liv.ns.cloudflare.com`、`sri.ns.cloudflare.com`。實際官網宣告為 `infra/cloudflare/website-production.json`；QIDAIGO 的 zone／NS 沒有代用。GoDaddy 的完整 6 筆原始匯出與逐筆 reconciliation 存在忽略提交的 `infra/cloudflare/private/website-cutover-20260910/`；原停放官網與 www 已換成 Vercel，原 `_domainconnect` 與 `_dmarc` 的內容／TTL 保留，apex NS 由新供應商管理。
 
-已用交付的 CLI 實際執行 `inspect --config infra/cloudflare/desired.example.json --out infra/evidence/cloudflare-inspect-20260910`，回覆 `pending_action`；`discovery.json` 記錄 account readback success / token active / visible_zone_id null。此目錄沒有 snapshot 或 DNS 匯出，不能接續 apply。
+最初使用未填 zone 的範例執行 `inspect --config infra/cloudflare/desired.example.json --out infra/evidence/cloudflare-inspect-20260910`，回覆 `pending_action`。這份早期 discovery 不是可 apply 的 snapshot；目前應使用 `infra/cloudflare/website-production.json` 執行新的 inspect，官網接入收據另存於上述 private 目錄。
 
 ## 設定事實來源與工具範圍
 

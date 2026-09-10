@@ -1,0 +1,843 @@
+{
+  "observed_at": "2026-09-10T14:58:34.825106+00:00",
+  "state": "PRODUCTION_LIVE_DNS_PROPAGATING",
+  "scope": "public_corporate_website_only",
+  "production_url": "https://kuanguard.com",
+  "fallback_url": "https://kuanguard-website.vercel.app",
+  "cloudflare": {
+    "account_id": "b1c70202652cd3b77dfec70e5463785f",
+    "zone_id": "ecadb2ab2b13229381ca5c8ceebc8bdd",
+    "plan": "Free Website",
+    "zone_status": "active",
+    "nameservers": [
+      "liv.ns.cloudflare.com",
+      "sri.ns.cloudflare.com"
+    ],
+    "dns_match": "success",
+    "managed_records": [
+      {
+        "key": "website-apex-1",
+        "name": "kuanguard.com",
+        "type": "A",
+        "content": "216.150.1.1",
+        "ttl": 300,
+        "proxied": false,
+        "ownership_mode": "comment"
+      },
+      {
+        "key": "website-apex-2",
+        "name": "kuanguard.com",
+        "type": "A",
+        "content": "216.150.16.1",
+        "ttl": 300,
+        "proxied": false,
+        "ownership_mode": "comment"
+      },
+      {
+        "key": "website-www",
+        "name": "www.kuanguard.com",
+        "type": "CNAME",
+        "content": "795e44d125569cf2.vercel-dns-016.com",
+        "ttl": 300,
+        "proxied": false,
+        "ownership_mode": "comment"
+      }
+    ],
+    "unmanaged_records_preserved": [
+      {
+        "name": "_domainconnect.kuanguard.com",
+        "type": "CNAME",
+        "ttl": 3600
+      },
+      {
+        "name": "_dmarc.kuanguard.com",
+        "type": "TXT",
+        "ttl": 3600
+      }
+    ],
+    "original_export_record_count": 6,
+    "original_export_sha256": "6daab562a22ee0a5595659ab58f97b33040d898e4d087a444739f1909aa0060c",
+    "reconciliation_sha256": "f9a2ec567388d5c67a9ee85049e5898e238be7ad5a4d6acd53d2db66a8521aef",
+    "managed_noop_plan_sha256": "3a40ef7a2245bdcc9eaf2055ab4b6382543a0844cf516c3d0b4888f73224cf97",
+    "managed_noop_actions": 0,
+    "initial_import_receipt_sha256": "4a7a944cbf7e95cf09fa42db83e4c9e6e1d29c5ef54573af4362f896aab283d5",
+    "private_evidence_directory": "infra/cloudflare/private/website-cutover-20260910"
+  },
+  "registrar": {
+    "provider": "GoDaddy",
+    "update_http_status": 204,
+    "accepted_at": "2026-09-10T14:48:08.949658+00:00",
+    "nameserver_readback": {
+      "observed_at": "2026-09-10T14:48:59.2879594Z",
+      "domain": "kuanguard.com",
+      "status": "ACTIVE",
+      "nameServers": [
+        "liv.ns.cloudflare.com",
+        "sri.ns.cloudflare.com"
+      ]
+    },
+    "plan_sha256": "ceb5c62462c4779cd9f83966aa7b57243f6f2a1004b9b2a356079ff0e3d8e671",
+    "receipt_sha256": "ffd596ce3d5d9ebf0b0c1c0f66d7bc953e0bb238899b95876466473aed835272",
+    "parent_nameservers_match": true,
+    "parent_servers_checked": [
+      "192.5.6.30",
+      "192.33.14.30"
+    ],
+    "other_domain_fields_changed": false,
+    "original_dns_records_deleted": false
+  },
+  "vercel_domain_config": [
+    {
+      "domain": "kuanguard.com",
+      "misconfigured": false,
+      "configuredBy": "A",
+      "nameservers": [
+        "sri.ns.cloudflare.com",
+        "liv.ns.cloudflare.com"
+      ]
+    },
+    {
+      "domain": "www.kuanguard.com",
+      "misconfigured": false,
+      "configuredBy": "CNAME",
+      "nameservers": [
+        "sri.ns.cloudflare.com",
+        "liv.ns.cloudflare.com"
+      ]
+    }
+  ],
+  "deployment_id": "dpl_5VMeeqa674LKMcM1W1PP8A4rw6iz",
+  "deployment_source_commit": "a76f4e563b214d35fc92e07fc878f2365c32bd42",
+  "web_tree": "45931b87861e12ad1ec410b0ba86954a13b09dc1",
+  "https": {
+    "status": "success",
+    "certificate_checks": [
+      {
+        "host": "kuanguard.com",
+        "address": "216.150.1.1",
+        "protocol": "TLSv1.3",
+        "issuer": [
+          [
+            [
+              "countryName",
+              "US"
+            ]
+          ],
+          [
+            [
+              "organizationName",
+              "Let's Encrypt"
+            ]
+          ],
+          [
+            [
+              "commonName",
+              "YR1"
+            ]
+          ]
+        ],
+        "subjectAltName": [
+          [
+            "DNS",
+            "kuanguard.com"
+          ],
+          [
+            "DNS",
+            "www.kuanguard.com"
+          ]
+        ],
+        "expires": "Dec  9 13:53:32 2026 GMT"
+      },
+      {
+        "host": "kuanguard.com",
+        "address": "216.150.16.1",
+        "protocol": "TLSv1.3",
+        "issuer": [
+          [
+            [
+              "countryName",
+              "US"
+            ]
+          ],
+          [
+            [
+              "organizationName",
+              "Let's Encrypt"
+            ]
+          ],
+          [
+            [
+              "commonName",
+              "YR1"
+            ]
+          ]
+        ],
+        "subjectAltName": [
+          [
+            "DNS",
+            "kuanguard.com"
+          ],
+          [
+            "DNS",
+            "www.kuanguard.com"
+          ]
+        ],
+        "expires": "Dec  9 13:53:32 2026 GMT"
+      },
+      {
+        "host": "www.kuanguard.com",
+        "address": "216.150.1.129",
+        "protocol": "TLSv1.3",
+        "issuer": [
+          [
+            [
+              "countryName",
+              "US"
+            ]
+          ],
+          [
+            [
+              "organizationName",
+              "Let's Encrypt"
+            ]
+          ],
+          [
+            [
+              "commonName",
+              "YR1"
+            ]
+          ]
+        ],
+        "subjectAltName": [
+          [
+            "DNS",
+            "kuanguard.com"
+          ],
+          [
+            "DNS",
+            "www.kuanguard.com"
+          ]
+        ],
+        "expires": "Dec  9 13:53:32 2026 GMT"
+      }
+    ],
+    "certificate_issuance": "Vercel CLI certs issue kuanguard.com www.kuanguard.com succeeded",
+    "certificate_validation_disabled": false
+  },
+  "custom_domain_http": {
+    "state": "passed",
+    "observed_at": "2026-09-10T14:55:39.867Z",
+    "base_url": "https://kuanguard.com",
+    "public_routes": 39,
+    "checks": [
+      {
+        "path": "/",
+        "status": 200
+      },
+      {
+        "path": "/products",
+        "status": 200
+      },
+      {
+        "path": "/features",
+        "status": 200
+      },
+      {
+        "path": "/solutions",
+        "status": 200
+      },
+      {
+        "path": "/products/ordering",
+        "status": 200
+      },
+      {
+        "path": "/pricing",
+        "status": 200
+      },
+      {
+        "path": "/partners",
+        "status": 200
+      },
+      {
+        "path": "/contact",
+        "status": 200
+      },
+      {
+        "path": "/about",
+        "status": 200
+      },
+      {
+        "path": "/merchant/apply",
+        "status": 200
+      },
+      {
+        "path": "/terms/merchants",
+        "status": 200
+      },
+      {
+        "path": "/privacy",
+        "status": 200
+      },
+      {
+        "path": "/terms",
+        "status": 200
+      },
+      {
+        "path": "/solutions/beverage",
+        "status": 200
+      },
+      {
+        "path": "/terms/partners",
+        "status": 200
+      },
+      {
+        "path": "/solutions/restaurant",
+        "status": 200
+      },
+      {
+        "path": "/security",
+        "status": 200
+      },
+      {
+        "path": "/services",
+        "status": 200
+      },
+      {
+        "path": "/solutions/retail",
+        "status": 200
+      },
+      {
+        "path": "/solutions/food-stall",
+        "status": 200
+      },
+      {
+        "path": "/solutions/beauty",
+        "status": 200
+      },
+      {
+        "path": "/services/shc",
+        "status": 200
+      },
+      {
+        "path": "/services/va",
+        "status": 200
+      },
+      {
+        "path": "/services/wva",
+        "status": 200
+      },
+      {
+        "path": "/services/pt",
+        "status": 200
+      },
+      {
+        "path": "/services/training",
+        "status": 200
+      },
+      {
+        "path": "/plans/annual-security",
+        "status": 200
+      },
+      {
+        "path": "/services/phishing",
+        "status": 200
+      },
+      {
+        "path": "/services/source-code",
+        "status": 200
+      },
+      {
+        "path": "/courses",
+        "status": 200
+      },
+      {
+        "path": "/resources",
+        "status": 200
+      },
+      {
+        "path": "/request-quote",
+        "status": 200
+      },
+      {
+        "path": "/pricing/credits",
+        "status": 200
+      },
+      {
+        "path": "/trust",
+        "status": 200
+      },
+      {
+        "path": "/legal/privacy",
+        "status": 200
+      },
+      {
+        "path": "/legal/terms",
+        "status": 200
+      },
+      {
+        "path": "/legal/credits",
+        "status": 200
+      },
+      {
+        "path": "/legal/acceptable-use",
+        "status": 200
+      },
+      {
+        "path": "/legal/data-processing",
+        "status": 200
+      },
+      {
+        "path": "/contact",
+        "status": 200
+      },
+      {
+        "path": "/pricing",
+        "status": 200
+      },
+      {
+        "path": "/login",
+        "status": 200
+      },
+      {
+        "path": "/partner/login",
+        "status": 200
+      },
+      {
+        "path": "/merchant",
+        "status": 200
+      },
+      {
+        "path": "/admin",
+        "status": 404
+      },
+      {
+        "path": "/admin/platform",
+        "status": 404
+      },
+      {
+        "path": "/dashboard",
+        "status": 404
+      },
+      {
+        "path": "/partner/credits",
+        "status": 404
+      },
+      {
+        "path": "/internal/projects",
+        "status": 404
+      },
+      {
+        "path": "/products/unknown",
+        "status": 404
+      },
+      {
+        "path": "/courses/unknown",
+        "status": 404
+      },
+      {
+        "path": "/api/auth/dev-login",
+        "method": "POST",
+        "status": 404
+      },
+      {
+        "path": "/api/public/leads",
+        "method": "POST",
+        "status": 404
+      },
+      {
+        "path": "/api/partner/credits",
+        "method": "POST",
+        "status": 404
+      },
+      {
+        "path": "/api/platform/overview",
+        "method": "POST",
+        "status": 404
+      },
+      {
+        "path": "/_next/static/immutable/chunks/44u986giwl4d4.css",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/2w7notn4yp6cz.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/3hknac10saw37.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/0-hd8y_5pqohu.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/115wafrul9fhu.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/turbopack-2xu_3c64fnkxq.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/38036v0zrx-fl.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/34bxtogb05ffu.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/3pey21lmzzng3.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/3hjakcdi_gstf.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/09m5pdf7m74fc.js",
+        "status": 200
+      },
+      {
+        "path": "/_next/static/immutable/chunks/0c0hxoamwjsbw.js",
+        "status": 200
+      }
+    ],
+    "browser_qa": "not_performed_browser_runtime_unavailable",
+    "mail_sent": false,
+    "database_mutations": 0,
+    "dns_resolution": "Public Cloudflare DNS-over-HTTPS answers used for per-process lookup; system resolver still cached old parking records. No hosts-file changes or TLS verification bypass."
+  },
+  "www_redirect": {
+    "observed_at": "2026-09-10T14:55:40.021Z",
+    "url": "https://www.kuanguard.com/products/ordering?utm_source=release",
+    "status": 308,
+    "location": "https://kuanguard.com/products/ordering?utm_source=release",
+    "dns_resolution": "public Cloudflare DoH answers used in this process",
+    "tls_certificate_validation": true
+  },
+  "public_dns": {
+    "status": "propagating",
+    "cloudflare_doh": "current apex A and NS; www CNAME current",
+    "google_doh": "apex A and NS cached old GoDaddy records; www CNAME current",
+    "system_resolver": "old parked apex A still cached at verification",
+    "observations": [
+      {
+        "response": {
+          "Status": 0,
+          "TC": false,
+          "RD": true,
+          "RA": true,
+          "AD": false,
+          "CD": false,
+          "Question": [
+            {
+              "name": "kuanguard.com",
+              "type": 1
+            }
+          ],
+          "Answer": [
+            {
+              "name": "kuanguard.com",
+              "type": 1,
+              "TTL": 300,
+              "data": "216.150.1.1"
+            },
+            {
+              "name": "kuanguard.com",
+              "type": 1,
+              "TTL": 300,
+              "data": "216.150.16.1"
+            }
+          ]
+        },
+        "type": "A",
+        "name": "kuanguard.com",
+        "provider": "https://cloudflare-dns.com/dns-query",
+        "observed_at": "2026-09-10T14:57:12.3625039Z"
+      },
+      {
+        "response": {
+          "Status": 0,
+          "TC": false,
+          "RD": true,
+          "RA": true,
+          "AD": false,
+          "CD": false,
+          "Question": [
+            {
+              "name": "kuanguard.com.",
+              "type": 1
+            }
+          ],
+          "Answer": [
+            {
+              "name": "kuanguard.com.",
+              "type": 1,
+              "TTL": 3072,
+              "data": "13.248.243.5"
+            },
+            {
+              "name": "kuanguard.com.",
+              "type": 1,
+              "TTL": 3072,
+              "data": "76.223.105.230"
+            }
+          ]
+        },
+        "type": "A",
+        "name": "kuanguard.com",
+        "provider": "https://dns.google/resolve",
+        "observed_at": "2026-09-10T14:57:12.4035402Z"
+      },
+      {
+        "response": {
+          "Status": 0,
+          "TC": false,
+          "RD": true,
+          "RA": true,
+          "AD": false,
+          "CD": false,
+          "Question": [
+            {
+              "name": "kuanguard.com",
+              "type": 2
+            }
+          ],
+          "Answer": [
+            {
+              "name": "kuanguard.com",
+              "type": 2,
+              "TTL": 86041,
+              "data": "liv.ns.cloudflare.com."
+            },
+            {
+              "name": "kuanguard.com",
+              "type": 2,
+              "TTL": 86041,
+              "data": "sri.ns.cloudflare.com."
+            }
+          ]
+        },
+        "type": "NS",
+        "name": "kuanguard.com",
+        "provider": "https://cloudflare-dns.com/dns-query",
+        "observed_at": "2026-09-10T14:57:12.4284504Z"
+      },
+      {
+        "response": {
+          "Status": 0,
+          "TC": false,
+          "RD": true,
+          "RA": true,
+          "AD": false,
+          "CD": false,
+          "Question": [
+            {
+              "name": "kuanguard.com.",
+              "type": 2
+            }
+          ],
+          "Answer": [
+            {
+              "name": "kuanguard.com.",
+              "type": 2,
+              "TTL": 2451,
+              "data": "ns37.domaincontrol.com."
+            },
+            {
+              "name": "kuanguard.com.",
+              "type": 2,
+              "TTL": 2451,
+              "data": "ns38.domaincontrol.com."
+            }
+          ]
+        },
+        "type": "NS",
+        "name": "kuanguard.com",
+        "provider": "https://dns.google/resolve",
+        "observed_at": "2026-09-10T14:57:12.4557407Z"
+      },
+      {
+        "response": {
+          "Status": 0,
+          "TC": false,
+          "RD": true,
+          "RA": true,
+          "AD": false,
+          "CD": false,
+          "Question": [
+            {
+              "name": "www.kuanguard.com",
+              "type": 1
+            }
+          ],
+          "Answer": [
+            {
+              "name": "www.kuanguard.com",
+              "type": 5,
+              "TTL": 202,
+              "data": "795e44d125569cf2.vercel-dns-016.com."
+            },
+            {
+              "name": "795e44d125569cf2.vercel-dns-016.com",
+              "type": 1,
+              "TTL": 202,
+              "data": "216.150.1.193"
+            },
+            {
+              "name": "795e44d125569cf2.vercel-dns-016.com",
+              "type": 1,
+              "TTL": 202,
+              "data": "216.150.16.193"
+            }
+          ]
+        },
+        "type": "A",
+        "name": "www.kuanguard.com",
+        "provider": "https://cloudflare-dns.com/dns-query",
+        "observed_at": "2026-09-10T14:57:12.4807589Z"
+      },
+      {
+        "response": {
+          "Status": 0,
+          "TC": false,
+          "RD": true,
+          "RA": true,
+          "AD": false,
+          "CD": false,
+          "Question": [
+            {
+              "name": "www.kuanguard.com.",
+              "type": 1
+            }
+          ],
+          "Answer": [
+            {
+              "name": "www.kuanguard.com.",
+              "type": 5,
+              "TTL": 300,
+              "data": "795e44d125569cf2.vercel-dns-016.com."
+            },
+            {
+              "name": "795e44d125569cf2.vercel-dns-016.com.",
+              "type": 1,
+              "TTL": 300,
+              "data": "216.150.16.129"
+            },
+            {
+              "name": "795e44d125569cf2.vercel-dns-016.com.",
+              "type": 1,
+              "TTL": 300,
+              "data": "216.150.1.129"
+            }
+          ],
+          "Comment": "Response from 2600:9000:5306:bb00::1."
+        },
+        "type": "A",
+        "name": "www.kuanguard.com",
+        "provider": "https://dns.google/resolve",
+        "observed_at": "2026-09-10T14:57:12.6800170Z"
+      },
+      {
+        "response": {
+          "Status": 0,
+          "TC": false,
+          "RD": true,
+          "RA": true,
+          "AD": false,
+          "CD": false,
+          "Question": [
+            {
+              "name": "www.kuanguard.com",
+              "type": 2
+            }
+          ],
+          "Answer": [
+            {
+              "name": "www.kuanguard.com",
+              "type": 5,
+              "TTL": 300,
+              "data": "795e44d125569cf2.vercel-dns-016.com."
+            }
+          ],
+          "Authority": [
+            {
+              "name": "vercel-dns-016.com",
+              "type": 6,
+              "TTL": 900,
+              "data": "ns1.vercel-dns-016.com. awsdns-hostmaster.amazon.com. 1 3600 900 1209600 900"
+            }
+          ]
+        },
+        "type": "NS",
+        "name": "www.kuanguard.com",
+        "provider": "https://cloudflare-dns.com/dns-query",
+        "observed_at": "2026-09-10T14:57:12.7144340Z"
+      },
+      {
+        "response": {
+          "Status": 0,
+          "TC": false,
+          "RD": true,
+          "RA": true,
+          "AD": false,
+          "CD": false,
+          "Question": [
+            {
+              "name": "www.kuanguard.com.",
+              "type": 2
+            }
+          ],
+          "Answer": [
+            {
+              "name": "www.kuanguard.com.",
+              "type": 5,
+              "TTL": 300,
+              "data": "795e44d125569cf2.vercel-dns-016.com."
+            }
+          ],
+          "Authority": [
+            {
+              "name": "vercel-dns-016.com.",
+              "type": 6,
+              "TTL": 900,
+              "data": "ns1.vercel-dns-016.com. awsdns-hostmaster.amazon.com. 1 3600 900 1209600 900"
+            }
+          ],
+          "Comment": "Response from 2600:9000:5301:5200::1."
+        },
+        "type": "NS",
+        "name": "www.kuanguard.com",
+        "provider": "https://dns.google/resolve",
+        "observed_at": "2026-09-10T14:57:12.8095668Z"
+      }
+    ],
+    "full_global_propagation_claimed": false
+  },
+  "dnssec": {
+    "parent_ds_before": [],
+    "parent_ds_checked_at_two_authorities": true,
+    "cloudflare_status": "disabled",
+    "existing_dnssec_disabled_by_this_release": false,
+    "signed_chain_verified": false
+  },
+  "tool_validation": {
+    "commit": "9fea676d9820d04d1bcebc6672976c4e47eaeaf0",
+    "adapter_version": "1.1.1",
+    "test_count": 25,
+    "subtest_count": 45,
+    "ruff": "passed",
+    "ci": "success",
+    "ci_url": "https://github.com/KenLeeYa/Kuanguard-SaaS-Website/actions/runs/34492032092"
+  },
+  "runtime_errors": {
+    "checked_at": "2026-09-10T14:58:34.825106+00:00",
+    "range": "20m",
+    "errors_found": 0
+  },
+  "browser_visual_qa": "not_performed_browser_runtime_unavailable",
+  "mail_messages_sent": 0,
+  "database_mutations": 0,
+  "other_project_mutations": 0
+}
