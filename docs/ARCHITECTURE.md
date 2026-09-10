@@ -1,6 +1,6 @@
 # KUANGUARD architecture — Partner increment, 2026-09-10
 
-公共品牌以商家點餐與營運 SaaS 為核心。此 checkout 負責官網、產品入口、Partner 與既有資安業務；既有 Stallorder 系統繼續管理訂单、出單、商家角色、UsageEvent 與計費交易。沒有複製另一套點餐 backend，也沒有修改另一個產品的資料庫或部署。
+公共品牌依最新指示定位為數位科技公司，商家點餐與營運 SaaS 為旗下產品之一，產品頁為 `/products/ordering`。此 checkout 負責官網、產品入口、Partner 與既有資安業務；既有 Stallorder 系統繼續管理訂單、出單、商家角色、UsageEvent 與計費交易。沒有複製另一套點餐 backend，也沒有修改另一個產品的資料庫或部署。
 
 ```mermaid
 flowchart LR

@@ -1,8 +1,11 @@
 # 品牌與產品邊界
 
+最新品牌修正：KUANGUARD 主站定位為數位科技公司，商家點餐系統為旗下 SaaS 產品之一。公司首頁、產品總覽與解決方案採新的數位科技視覺；原點餐頁保留於 `/products/ordering`。設計來源與最新驗證見 [CORPORATE_WEBSITE_DESIGN](CORPORATE_WEBSITE_DESIGN.md)。
+
 | 入口 | 定位 | 本輪狀態 |
 | --- | --- | --- |
-| kuanguard.com | 點餐、QR、預約、出單及商家營運 | 本機官網完成 |
+| kuanguard.com | 數位科技公司／產品與平台總覽 | 本機官網完成 |
+| kuanguard.com/products/ordering | 點餐、QR、預約、出單及商家營運產品 | 原商家設計保留 |
 | app.kuanguard.com | 既有商家產品入口 | 本機 bridge；来源 domain/SSO 尚未啟用 |
 | partner.kuanguard.com | N 家 Partner 共用平台 | 本機角色與流程完成 |
 | portal.megaprotek.com.tw | 三傑科技 Partner 品牌 | 設定映射 PENDING，沒有正式 DNS/TLS 啟用 |

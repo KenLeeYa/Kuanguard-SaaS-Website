@@ -1,10 +1,11 @@
 # KUANGUARD
 
-商家點餐／營運 SaaS 官網與 B2B Partner 平台，已接續 v1.1 增量更新。N 家 Partner 共用程式、獨立客戶歸屬與授權；原七服務資安、學員、內部工作台與 Portfolio 保留。商家入口沿用既有點餐產品，未複製其 backend。合成資料明示用途，正式共同 release gate 仍關閉。
+KUANGUARD 數位科技官網，旗下提供商家 SaaS、合作夥伴平台與企業資安服務。主站以產品與平台為入口，點餐系統是其中一項產品。N 家 Partner 共用程式、獨立客戶歸屬與授權；原七服務、學員、內部工作台與 Portfolio 保留。合成資料明示用途，正式共同 release gate 仍關閉。
 
 ## 直接使用
 
 - 本機入口：<http://127.0.0.1:3180>
+- 點餐產品：<http://127.0.0.1:3180/products/ordering>，保留原本簡潔的商家頁面；[公司官網設計與參考](docs/CORPORATE_WEBSITE_DESIGN.md)。
 - 登入頁：<http://127.0.0.1:3180/login>，分流商家、Partner、平台管理及既有資安客戶／學員。
 - Partner：<http://127.0.0.1:3180/partner/login?partner=megaprotek>；選三傑示範角色。Platform admin：<http://127.0.0.1:3180/admin/platform>。
 - 內部公司總覽：<http://127.0.0.1:3180/admin/portfolio>；正式目標為 `admin.kuanguard.com/portfolio`。

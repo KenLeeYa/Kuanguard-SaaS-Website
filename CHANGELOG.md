@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-10 — Corporate digital technology website
+
+- 依最新指示將 KUANGUARD 改為數位科技公司主品牌，加入 `/products`、`/solutions` 與公司導覽；SaaS、Partner 平台與資安服務分項呈現。
+- 原點餐首頁與暖白／綠色樣式保留於 `/products/ordering`，原功能、收費、產業與申請路徑保持可用。
+- 公司主站採霧白、石墨藍、細網格與原創產品關係示意；更新關於我們、聯絡頁、metadata、canonical 與 sitemap。
+- 參考 Vercel、Cloudflare、Linear 的官方資訊架構，保留產品聲明與正式啟用界線；不變更 API、資料庫或既有產品部署。
+
 ## 2026-09-10 — Merchant website / Partner platform increment
 
 - 將公共網站定位為商家點餐與營運 SaaS，加入功能、五產業、可配置價格、Partner、分流登入與 lead 表單；新增 SEO、同源 BFF、responsive 與繁中介面。

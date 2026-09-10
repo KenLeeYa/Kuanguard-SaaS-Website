@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { deploymentSurface } from "./lib/surface";
+import { commercePaths } from "./lib/commerce";
 
 const internalRoots = new Set(["overview", "portfolio", "imports", "review", "dispatch", "crm", "billing", "integrations", "audit", "settings", "shc", "pt", "source", "templates", "question-banks", "phishing-operations", "customers", "retests", "changes", "tickets"]);
 export function proxy(request: NextRequest) {
@@ -9,6 +10,7 @@ export function proxy(request: NextRequest) {
   try { path = new URL(decodeURIComponent(url.pathname), "http://route-policy.invalid").pathname; }
   catch { return new NextResponse("Invalid path", { status: 400, headers: { "Cache-Control": "private, no-store" } }); }
   const root = path.split("/")[1];
+  if (root === "products" && !commercePaths.includes(path.replace(/\/$/, "").slice(1))) return new NextResponse("Not found", { status: 404, headers: { "Cache-Control": "private, no-store", "X-Robots-Tag": "noindex, nofollow" } });
   const host = (request.headers.get("host") || "").split(":")[0].toLowerCase();
   const isAdmin = path === "/admin" || path.startsWith("/admin/") || internalRoots.has(root);
   const internalApi = path === "/api/internal" || path.startsWith("/api/internal/") || path === "/internal" || path.startsWith("/internal/") || path === "/api/platform" || path.startsWith("/api/platform/");

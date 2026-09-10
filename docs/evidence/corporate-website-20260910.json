@@ -1,0 +1,258 @@
+{
+  "state": "passed",
+  "observed_at": "2026-09-10T12:46:27.611559+00:00",
+  "baseline_commit": "560c50c7d8f5c69d250612b870500a43a28def85",
+  "scope": "corporate_public_website_readonly_http_and_source_preservation",
+  "frontend_tests": 14,
+  "typecheck": "passed",
+  "next_production_build": "passed",
+  "checks": [
+    "corporate home returns 200",
+    "company positioning is primary h1",
+    "company metadata",
+    "home does not present per-order price as company pricing",
+    "company/product/service navigation",
+    "route /",
+    "nosniff /",
+    "canonical /",
+    "route /about",
+    "nosniff /about",
+    "canonical /about",
+    "route /contact",
+    "nosniff /contact",
+    "canonical /contact",
+    "route /features",
+    "nosniff /features",
+    "canonical /features",
+    "route /login",
+    "nosniff /login",
+    "route /merchant/apply",
+    "nosniff /merchant/apply",
+    "canonical /merchant/apply",
+    "route /partner/login",
+    "nosniff /partner/login",
+    "route /partners",
+    "nosniff /partners",
+    "canonical /partners",
+    "route /pricing",
+    "nosniff /pricing",
+    "canonical /pricing",
+    "route /privacy",
+    "nosniff /privacy",
+    "canonical /privacy",
+    "route /products",
+    "nosniff /products",
+    "canonical /products",
+    "route /products/ordering",
+    "nosniff /products/ordering",
+    "canonical /products/ordering",
+    "route /security",
+    "nosniff /security",
+    "canonical /security",
+    "route /services",
+    "nosniff /services",
+    "canonical /services",
+    "route /solutions",
+    "nosniff /solutions",
+    "canonical /solutions",
+    "route /solutions/beauty",
+    "nosniff /solutions/beauty",
+    "canonical /solutions/beauty",
+    "route /solutions/beverage",
+    "nosniff /solutions/beverage",
+    "canonical /solutions/beverage",
+    "route /solutions/food-stall",
+    "nosniff /solutions/food-stall",
+    "canonical /solutions/food-stall",
+    "route /solutions/restaurant",
+    "nosniff /solutions/restaurant",
+    "canonical /solutions/restaurant",
+    "route /solutions/retail",
+    "nosniff /solutions/retail",
+    "canonical /solutions/retail",
+    "route /terms",
+    "nosniff /terms",
+    "canonical /terms",
+    "original merchant hero",
+    "ordering product context",
+    "existing pricing still available in product",
+    "ordering metadata scoped to product",
+    "original ordering design classes",
+    "about identifies multi-product technology brand",
+    "general company contact form",
+    "new public routes in sitemap",
+    "unknown product fails closed",
+    "www preserves product path and query",
+    "production asset /_next/static/chunks/19mx3mg6lkumu.js",
+    "production asset /_next/static/chunks/1mh6a-0e61pyc.js",
+    "production asset /_next/static/chunks/2-rtuqsgzmno4.js",
+    "production asset /_next/static/chunks/turbopack-30koqklv8_-oi.js",
+    "production asset /_next/static/chunks/3s6hmiey4cxe7.js",
+    "production asset /_next/static/chunks/27sfef643s8rn.js",
+    "production asset /_next/static/chunks/3l5m708vc8qlf.js",
+    "production asset /_next/static/chunks/22i43cg4l4-dq.js",
+    "production asset /_next/static/chunks/14r9s19y0hzex.js",
+    "production asset /_next/static/chunks/0cz1d0mv5g_q7.js",
+    "production asset /_next/static/chunks/310vm2bl3xxpt.js",
+    "production asset /_next/static/chunks/0ino1xijhenwm.css",
+    "corporate CSS included in actual build",
+    "existing BFF healthy",
+    "original ordering home implementation preserved",
+    "original ordering stylesheet byte-identical",
+    "backend and data definitions unchanged",
+    "AA normal text tokens: body",
+    "AA normal text tokens: muted",
+    "AA normal text tokens: accent",
+    "AA normal text tokens: button",
+    "AA normal text tokens: dark section"
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "h1": "數位科技，走進每一天的營運。"
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "h1": "關於 KUANGUARD"
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "h1": "聯絡 KUANGUARD"
+    },
+    {
+      "path": "/features",
+      "status": 200,
+      "h1": "一套入口，連接每天的營運。"
+    },
+    {
+      "path": "/login",
+      "status": 200,
+      "h1": "選擇你的工作空間"
+    },
+    {
+      "path": "/merchant/apply",
+      "status": 200,
+      "h1": "申請商家開通"
+    },
+    {
+      "path": "/partner/login",
+      "status": 200,
+      "h1": "登入合作夥伴工作空間"
+    },
+    {
+      "path": "/partners",
+      "status": 200,
+      "h1": "用你的專業，建立長久的客戶關係。"
+    },
+    {
+      "path": "/pricing",
+      "status": 200,
+      "h1": "你的生意成長，費用才跟著成長。"
+    },
+    {
+      "path": "/privacy",
+      "status": 200,
+      "h1": "隱私權政策"
+    },
+    {
+      "path": "/products",
+      "status": 200,
+      "h1": "讓數位工具，成為工作的助力。"
+    },
+    {
+      "path": "/products/ordering",
+      "status": 200,
+      "h1": "每一筆生意，都值得好好經營。"
+    },
+    {
+      "path": "/security",
+      "status": 200,
+      "h1": "資料安全與信任"
+    },
+    {
+      "path": "/services",
+      "status": 200,
+      "h1": "企業資安，需要完整的視角。"
+    },
+    {
+      "path": "/solutions",
+      "status": 200,
+      "h1": "好的數位方案，從理解工作開始。"
+    },
+    {
+      "path": "/solutions/beauty",
+      "status": 200,
+      "h1": "把服務預約，安排得更有條理。"
+    },
+    {
+      "path": "/solutions/beverage",
+      "status": 200,
+      "h1": "甜度、冰塊與加料，一單看清楚。"
+    },
+    {
+      "path": "/solutions/food-stall",
+      "status": 200,
+      "h1": "從一個 QR Code，開始數位接單。"
+    },
+    {
+      "path": "/solutions/restaurant",
+      "status": 200,
+      "h1": "尖峰時段，也能從容接單。"
+    },
+    {
+      "path": "/solutions/retail",
+      "status": 200,
+      "h1": "商品、顧客與門市，放在同一個視野。"
+    },
+    {
+      "path": "/terms",
+      "status": 200,
+      "h1": "服務條款"
+    }
+  ],
+  "contrast_tokens": [
+    {
+      "pair": "body",
+      "ratio": 16.19
+    },
+    {
+      "pair": "muted",
+      "ratio": 5.77
+    },
+    {
+      "pair": "accent",
+      "ratio": 5.75
+    },
+    {
+      "pair": "button",
+      "ratio": 12.39
+    },
+    {
+      "pair": "dark section",
+      "ratio": 7.94
+    }
+  ],
+  "ordering_home_sha256": "15fe72053844e4c2b23be893eddfd615355ce88fd4c7ccbd72fbb46282735cdf",
+  "ordering_stylesheet_sha256": "a069892ddc959287536f491aa8061944bd9d8d23f5a9c79f0add0cc9540ea907",
+  "database_mutations": 0,
+  "browser_visual_or_viewport_qa": "not_performed_existing_administrator_policy",
+  "external_deployment": false,
+  "references": [
+    "https://vercel.com/",
+    "https://www.cloudflare.com/",
+    "https://linear.app/"
+  ],
+  "source_files_sha256": {
+    "apps/web/src/app/[[...path]]/page.tsx": "bfa08a446fab249c8954dc64653296782f56b1197bc2535759163b7318fa5e3b",
+    "apps/web/src/app/layout.tsx": "6aa14e837c50507a057f78b7ba0b83256974ad8109f3eeaba0de381c7d213a7d",
+    "apps/web/src/components/commerce-site.tsx": "8c7cf11990b74ade1a824837e9aa77f4823bf02550d8c4d9ca779a3caa85eca2",
+    "apps/web/src/lib/commerce.ts": "849408585a5f1d77600cb09a9b9725e4ce0a573bc6f28c9c01b043e3c6e8dcfe",
+    "apps/web/src/proxy.ts": "7fbd7baaf2658c2f95d7271c1285276d1b8674f97b1096308ca52fa7f3fef3d8",
+    "apps/web/tests/portal.test.mjs": "ab0988e616dba93949053565fcf10a86cf265549672fc90536da24db71c9bc30",
+    "apps/web/src/app/corporate.css": "ec6b838dee1cf4c6de591265843fee59f2c601d85b1a0ec4468b9dc60309e375",
+    "apps/web/src/components/corporate-site.tsx": "ab32355518903f7e226525b0ecf6009b77a22f5a12d05dc182575916133ac504"
+  }
+}

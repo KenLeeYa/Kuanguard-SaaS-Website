@@ -60,3 +60,18 @@ test("public surface denies admin routes and missing signing configuration befor
   assert.equal((await api.GET(request("public/portal"), { params: Promise.resolve({ path: ["public", "portal"] }) })).status, 503);
   assert.equal(called, false);
 });
+
+test("unknown product URLs return a real 404 before streaming, while product entries reach the page", () => {
+  class NextResponse extends Response {
+    static next() { return new Response(null, { status: 200 }); }
+  }
+  const routes = load("../src/lib/commerce.ts", {});
+  const policy = load("../src/proxy.ts", {}, {
+    "next/server": { NextResponse }, "./lib/surface": { deploymentSurface: () => "public" }, "./lib/commerce": routes,
+  });
+  for (const [path, expected] of [["/products", 200], ["/products/ordering", 200], ["/products/unknown", 404], ["/products/ordering/unknown", 404]]) {
+    const response = policy.proxy({ nextUrl: { clone: () => new URL("https://kuanguard.com" + path) }, headers: new Headers({ host: "kuanguard.com" }) });
+    assert.equal(response.status, expected, path);
+    if (expected === 404) assert.match(response.headers.get("x-robots-tag"), /noindex/);
+  }
+});
