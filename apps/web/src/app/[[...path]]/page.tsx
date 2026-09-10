@@ -10,10 +10,14 @@ import { CommerceFooter, CommerceHeader, CommerceHome, CommerceInfo, FeaturesPag
 import { WorkspacePage } from "@/components/workspace";
 import { LoginRouter, MerchantEntry, PartnerPortal, PlatformAdmin } from "@/components/partner-portal";
 import { CorporateFooter, CorporateHeader, CorporateHome, CorporateProducts, CorporateSolutions, OrderingBreadcrumb } from "@/components/corporate-site";
+import { isWebsitePath, websiteContactEmail, websiteEntryPaths, websiteOnly } from "@/lib/website";
+import { WebsiteContact, WebsiteEntry } from "@/components/website-contact";
+import websiteCommerce from "@/lib/website-commerce.json";
 
 type Props = { params: Promise<{ path?: string[] }>; searchParams: Promise<Record<string, string | string[] | undefined>> };
 export const dynamic = "force-dynamic";
 async function publicData(path: string) {
+  if (websiteOnly()) return path === "/public/commerce" ? websiteCommerce : null;
   const host = (await headers()).get("host") || "127.0.0.1:3180";
   try { const response = await fetch(new URL(path, apiOrigin()), { cache: "no-store", headers: portalHeaders(host, "GET", path), signal: AbortSignal.timeout(5000) }); return response.ok ? await response.json() : null; }
   catch { return null; }
@@ -34,6 +38,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params, searchParams }: Props) {
   const path = (await params).path?.join("/") || "";
   const query = await searchParams;
+  if (websiteOnly()) {
+    if (!isWebsitePath(path)) notFound();
+    const contactTitle = path === "merchant/apply" ? "申請商家產品諮詢" : path === "request-quote" ? "洽詢企業資安服務" : query.kind === "partner" ? "洽詢合作夥伴方案" : "聯絡 KUANGUARD";
+    const standalone = ["contact", "merchant/apply", "request-quote"].includes(path)
+      ? <WebsiteContact email={websiteContactEmail} title={contactTitle} />
+      : websiteEntryPaths.includes(path) || path === "courses" ? <WebsiteEntry email={websiteContactEmail} courses={path === "courses"} /> : null;
+    if (standalone) return <><CorporateHeader /><main id="main-content" className="kg-corporate-surface">{standalone}</main><CorporateFooter /></>;
+  }
   if (path.startsWith("admin") && deploymentSurface() === "public") notFound();
   if (path.startsWith("admin/platform")) return <PlatformAdmin section={path.split("/")[2]} />;
   if (path.startsWith("partner/workspace/")) return <WorkspacePage path={path.replace("partner/workspace/", "admin/")} />;

@@ -68,10 +68,38 @@ test("unknown product URLs return a real 404 before streaming, while product ent
   const routes = load("../src/lib/commerce.ts", {});
   const policy = load("../src/proxy.ts", {}, {
     "next/server": { NextResponse }, "./lib/surface": { deploymentSurface: () => "public" }, "./lib/commerce": routes,
+    "./lib/website": { websiteOnly: () => false },
   });
   for (const [path, expected] of [["/products", 200], ["/products/ordering", 200], ["/products/unknown", 404], ["/products/ordering/unknown", 404]]) {
     const response = policy.proxy({ nextUrl: { clone: () => new URL("https://kuanguard.com" + path) }, headers: new Headers({ host: "kuanguard.com" }) });
     assert.equal(response.status, expected, path);
     if (expected === 404) assert.match(response.headers.get("x-robots-tag"), /noindex/);
+  }
+});
+
+test("website release blocks all backend forwarding even with otherwise valid credentials", async () => {
+  let calls = 0;
+  const api = route({ KUANGUARD_WEBSITE_ONLY: "true", API_INTERNAL_URL: "https://api.kuanguard.com", PORTAL_PROXY_SECRET: key }, async () => { calls++; return Response.json({ ok: true }); });
+  for (const path of ["auth/dev-login", "public/leads", "partner/credits", "internal/projects", "platform/overview"]) {
+    const response = await api.POST(request(path), { params: Promise.resolve({ path: path.split("/") }) });
+    assert.equal(response.status, 404, path);
+    assert.match(response.headers.get("cache-control"), /no-store/);
+  }
+  assert.equal(calls, 0);
+});
+
+test("website release allows only public pages and keeps Vercel hostnames on the corporate home", () => {
+  class NextResponse extends Response { static next() { return new Response(null, { status: 200 }); } }
+  const commerce = load("../src/lib/commerce.ts", {});
+  const catalog = load("../src/lib/catalog.ts", {});
+  const env = { KUANGUARD_WEBSITE_ONLY: "true" };
+  const website = load("../src/lib/website.ts", env, { "./commerce": commerce, "./catalog": catalog });
+  const policy = load("../src/proxy.ts", env, {
+    "next/server": { NextResponse }, "./lib/surface": { deploymentSurface: () => "public" }, "./lib/commerce": commerce, "./lib/website": website,
+  });
+  for (const [path, status] of [["/", 200], ["/contact", 200], ["/services/va", 200], ["/login", 200], ["/partner/login", 200], ["/admin", 404], ["/partner/credits", 404], ["/dashboard", 404], ["/api/auth/dev-login", 404], ["/api/public/leads", 404], ["/internal/projects", 404], ["/not-a-page", 404]]) {
+    for (const host of ["kuanguard.com", "kuanguard-website.vercel.app"]) {
+      assert.equal(policy.proxy({ nextUrl: { clone: () => new URL(`https://${host}${path}`) }, headers: new Headers({ host }) }).status, status, `${host}${path}`);
+    }
   }
 });

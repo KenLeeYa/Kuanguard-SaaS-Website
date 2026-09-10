@@ -1,0 +1,23 @@
+[
+  {
+    "type": "A",
+    "name": "kuanguard.com",
+    "content": "216.150.1.1",
+    "ttl": 300,
+    "proxied": false
+  },
+  {
+    "type": "A",
+    "name": "kuanguard.com",
+    "content": "216.150.16.1",
+    "ttl": 300,
+    "proxied": false
+  },
+  {
+    "type": "CNAME",
+    "name": "www.kuanguard.com",
+    "content": "795e44d125569cf2.vercel-dns-016.com.",
+    "ttl": 300,
+    "proxied": false
+  }
+]

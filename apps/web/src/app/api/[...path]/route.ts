@@ -5,6 +5,7 @@ import { apiOrigin, portalHeaders } from "@/lib/server-api";
 export const dynamic = "force-dynamic";
 type Context = { params: Promise<{ path: string[] }> };
 async function forward(request: NextRequest, context: Context) {
+  if (process.env.KUANGUARD_WEBSITE_ONLY === "true") return new Response("Not found", { status: 404, headers: { "Cache-Control": "private, no-store", "X-Robots-Tag": "noindex, nofollow" } });
   const { path } = await context.params;
   if (path.some(part => part === "." || part === ".." || /[\\/\x00]/.test(part))) return new Response("Invalid path", { status: 400 });
   if (deploymentSurface() === "public" && ["internal", "platform"].includes(path[0])) return new Response("Not found", { status: 404 });
