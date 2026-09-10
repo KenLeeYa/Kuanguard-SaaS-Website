@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-09-10T07:11:14.585Z",
+  "base": "http://127.0.0.1:3180",
+  "browser_verified": false,
+  "checks": [
+    {
+      "name": "23 public SSR routes and seven services; quote form has no assessment upload",
+      "status": "passed"
+    },
+    {
+      "name": "eight private development SSR routes emit revalidation and noindex (production no-store tested separately)",
+      "status": "passed"
+    },
+    {
+      "name": "Next same-origin API rewrite reaches seven-service backend catalog",
+      "status": "passed"
+    },
+    {
+      "name": "development profiles originate from backend capability endpoint",
+      "status": "passed"
+    },
+    {
+      "name": "customer contract endpoints work; internal imports and portfolio denied",
+      "status": "passed"
+    },
+    {
+      "name": "learner enrollment query works with wallet/report/owner isolation",
+      "status": "passed"
+    },
+    {
+      "name": "seven owner portfolio sections preserve disconnected QIDAIGO and null totals",
+      "status": "passed"
+    },
+    {
+      "name": "quote submission is persisted and readable by authorized PM without sending email",
+      "status": "passed"
+    },
+    {
+      "name": "authenticated mutation rejects invalid CSRF",
+      "status": "passed"
+    }
+  ]
+}

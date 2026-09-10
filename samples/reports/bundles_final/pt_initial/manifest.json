@@ -1,0 +1,129 @@
+{
+  "schema_version": "kuanguard.bundle/1",
+  "snapshot_id": "snap_c46b984bdd4146cbe423a73c",
+  "snapshot_hash": "c46b984bdd4146cbe423a73c7c6a82a4ae352f0aedcb577617c09939ba9adc12",
+  "batch_id": "synthetic-pt_initial",
+  "report_version": "1",
+  "trace_id": "trace-synthetic-pt_initial",
+  "parser_version": "kuanguard-parsers/1.0.0",
+  "generator_version": "kuanguard-reports/1.0.0",
+  "template_version": "kuanguard-development/1",
+  "rule_version": "no-exclusions/1",
+  "reviewer_id": "synthetic-reviewer",
+  "reviewed_at": "2026-09-10T06:00:00Z",
+  "sources": [
+    {
+      "sha256": "ac2bcab007d2a9e5be47f2420dfec51c9755df94fdb5a15c6024178200c6f6a3",
+      "format": "pt-json"
+    }
+  ],
+  "statistics": {
+    "severity_counts": {
+      "Critical": 0,
+      "High": 1,
+      "Medium": 0,
+      "Low": 0
+    },
+    "source_severity_counts": {
+      "Critical": 0,
+      "High": 1,
+      "Medium": 0,
+      "Low": 0,
+      "Informational": 0,
+      "Unknown": 0
+    },
+    "occurrence_count": 1,
+    "definition_count": 1,
+    "affected_asset_count": 1,
+    "source_record_count": 1,
+    "informational_count": 0,
+    "unknown_count": 0,
+    "planned_asset_count": 2,
+    "completed_asset_count": 1,
+    "coverage_ratio": 0.5,
+    "coverage_counts": {
+      "completed": 1,
+      "not_tested": 1
+    },
+    "assets": [
+      {
+        "asset": "https://app.example.test",
+        "status": "completed",
+        "planned": true,
+        "risk_count": 1,
+        "severity_counts": {
+          "Critical": 0,
+          "High": 1,
+          "Medium": 0,
+          "Low": 0
+        }
+      },
+      {
+        "asset": "https://portal.example.test",
+        "status": "not_tested",
+        "planned": true,
+        "risk_count": 0,
+        "severity_counts": {
+          "Critical": 0,
+          "High": 0,
+          "Medium": 0,
+          "Low": 0
+        }
+      }
+    ],
+    "denominator": "預定範圍資產數；未預定的新資產另列，不擴大分母",
+    "risk_denominator": "四級弱點實例，資訊與未知另外列示"
+  },
+  "synthetic": true,
+  "disclosure": "合成示範資料，僅供本機開發驗證；未使用正式核准模板，不代表實際客戶檢測。",
+  "artifacts": [
+    {
+      "format": "docx",
+      "filename": "report.docx",
+      "bytes": 40204,
+      "sha256": "ff50897172172b52bb2bb3937db0be19ef35b78a10f9e0d708febc55b3e2b696"
+    },
+    {
+      "format": "pdf",
+      "filename": "report.pdf",
+      "bytes": 136928,
+      "sha256": "abd45febb09d465852e6935df980172f1beff20c761a84dac6f4fc06b76573a1"
+    },
+    {
+      "format": "pptx",
+      "filename": "summary.pptx",
+      "bytes": 46479,
+      "sha256": "5dcf0afd4e62b5104814cb0c48540e0603fc335d690a355ec6810a5ae1ce9020"
+    },
+    {
+      "format": "xlsx",
+      "filename": "summary.xlsx",
+      "bytes": 8905,
+      "sha256": "5a02e9e03eb7940d6ed7cad1f6c6e6020dc0ede3ac3e08fa5688d6b9e6aa6d2a"
+    },
+    {
+      "format": "csv",
+      "filename": "all.csv",
+      "bytes": 790,
+      "sha256": "a8a92e6d8f183ba1b4d9c9d550b765b00804fd707e36b9da3981a4afb61cf6e8"
+    }
+  ],
+  "qa": {
+    "structural": "generated_and_reopened",
+    "fonts": {
+      "status": "available_local",
+      "chinese": "標楷體",
+      "latin": "Times New Roman",
+      "licensing_for_container_distribution": "unverified"
+    },
+    "visual": "requires_per_page_review",
+    "office_render": "not_performed_by_generator",
+    "pdf_engine": "reportlab_native_pdf_not_office_conversion",
+    "production_ready": false,
+    "production_blockers": [
+      "尚未提供核准模板與使用權紀錄",
+      "Office 全頁渲染與人工版面覆核待完成"
+    ],
+    "pdf_pages": 3
+  }
+}

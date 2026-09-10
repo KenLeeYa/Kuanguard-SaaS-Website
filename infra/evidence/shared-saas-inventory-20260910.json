@@ -1,0 +1,104 @@
+{
+  "observed_at": "2026-09-10T06:58:07.153Z",
+  "scope": "read_only_provider_account_inventory",
+  "vercel": {
+    "teams": [
+      {
+        "name": "ada76145-8663's projects",
+        "slug": "ada76145-8663s-projects",
+        "id": "team_MMfsiG94K9Zy3e6w7Ccc9xY4",
+        "saml": {},
+        "plan": "pro"
+      }
+    ],
+    "projects": [
+      {
+        "id": "prj_uoG4FNJIgnF1LdKRiXnfRaieXnUP",
+        "name": "stallorder-platform",
+        "accountId": "team_MMfsiG94K9Zy3e6w7Ccc9xY4",
+        "createdAt": 1784211512823,
+        "link": {
+          "type": "github",
+          "org": "KenLeeYa",
+          "repo": "Stallorder-Platform"
+        }
+      },
+      {
+        "id": "prj_S8ryMyEGjyenihjsJTU8QZqAUI2I",
+        "name": "beauty-saas-platform",
+        "accountId": "team_MMfsiG94K9Zy3e6w7Ccc9xY4",
+        "createdAt": 1785227619711,
+        "link": null
+      }
+    ]
+  },
+  "supabase": {
+    "organizations": [
+      {
+        "id": "urxujyhcggjgwsjtleys",
+        "slug": "urxujyhcggjgwsjtleys",
+        "name": "KuanGuard"
+      }
+    ],
+    "projects": [
+      {
+        "id": "dfuhylsmhrysbmhpeylx",
+        "name": "beauty-saas-production",
+        "organization_id": "urxujyhcggjgwsjtleys",
+        "region": "ap-northeast-1",
+        "status": "ACTIVE_HEALTHY"
+      },
+      {
+        "id": "eyuctbnlvnbnivwasvqr",
+        "name": "stallorder-production",
+        "organization_id": "urxujyhcggjgwsjtleys",
+        "region": "ap-northeast-1",
+        "status": "ACTIVE_HEALTHY"
+      },
+      {
+        "id": "daeqwtpaxcebmtwxqdkj",
+        "name": "stallorder-dr",
+        "organization_id": "urxujyhcggjgwsjtleys",
+        "region": "ap-northeast-1",
+        "status": "ACTIVE_HEALTHY"
+      }
+    ],
+    "organization_plan": "pro",
+    "new_project_quote": {"amount": 10, "recurrence": "monthly", "source": "supabase_get_cost_for_verified_organization", "new_projects_created": 0}
+  },
+  "cloudflare": {
+    "account_id": "b1c70202652cd3b77dfec70e5463785f",
+    "zone_id": null,
+    "state": "account_readback_success_kuanguard_zone_pending",
+    "account_token_status": "active",
+    "kuanguard_visible_zone_count": 0,
+    "zone_visibility_scope": "existing_token_on_verified_shared_account",
+    "evidence": "infra/evidence/cloudflare-discovery-20260910.json"
+  },
+  "kuanguard_resources": {
+    "vercel_project_id": null,
+    "supabase_production_project_id": null,
+    "supabase_nonproduction_project_id": null,
+    "created": false
+  },
+  "qidaigo_deployment_baseline": {
+    "observed_at": "2026-09-10T06:57:51.586Z",
+    "id": "prj_uoG4FNJIgnF1LdKRiXnfRaieXnUP",
+    "name": "stallorder-platform",
+    "account_id": "team_MMfsiG94K9Zy3e6w7Ccc9xY4",
+    "framework": "nextjs",
+    "latest_deployments": [],
+    "live": false,
+    "latest_deployment": {
+      "id": "dpl_6X7u13QaCXwXC9LUFvJytWjgvQRQ",
+      "url": "stallorder-platform-l070hyjep-ada76145-8663s-projects.vercel.app",
+      "readyState": "READY",
+      "target": "production",
+      "createdAt": 1788937124246
+    },
+    "domains": [
+      "stallorder-platform-ada76145-8663s-projects.vercel.app"
+    ]
+  },
+  "remote_mutations_performed": []
+}

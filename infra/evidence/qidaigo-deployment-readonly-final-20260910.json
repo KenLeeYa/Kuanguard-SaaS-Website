@@ -1,0 +1,15 @@
+{
+  "observed_at": "2026-09-10T07:02:03.314Z",
+  "id": "prj_uoG4FNJIgnF1LdKRiXnfRaieXnUP",
+  "latest_deployment": {
+    "id": "dpl_6X7u13QaCXwXC9LUFvJytWjgvQRQ",
+    "url": "stallorder-platform-l070hyjep-ada76145-8663s-projects.vercel.app",
+    "readyState": "READY",
+    "target": "production"
+  },
+  "domains": [
+    "stallorder-platform-ada76145-8663s-projects.vercel.app"
+  ],
+  "unchanged_deployment_from_baseline": true,
+  "remote_mutations_performed": []
+}

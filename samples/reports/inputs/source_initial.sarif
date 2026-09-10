@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [{
+    "tool": {"driver": {"name": "KUANGUARD synthetic SARIF fixture", "version": "1.0", "rules": [{"id": "SYNTH-SOURCE-001", "shortDescription": {"text": "合成範例 輸入驗證"}, "properties": {"security-severity": "7.5"}, "help": {"text": "依實際規則與框架完成輸入驗證並保留測試。"}}]}},
+    "versionControlProvenance": [{"repositoryUri": "https://example.test/synthetic/fixture", "revisionId": "synthetic-commit-not-a-real-git-revision", "branch": "synthetic-only"}],
+    "invocations": [{"executionSuccessful": true}],
+    "properties": {"kuanguard": {"covered_paths": ["src/demo.py"], "excluded_paths": ["src/excluded.py"]}},
+    "results": [{"ruleId": "SYNTH-SOURCE-001", "level": "error", "message": {"text": "合成規則發現僅用於匯入與報告驗證。來源檔未執行。"}, "partialFingerprints": {"stableOccurrence": "synthetic-source-occurrence-001"}, "locations": [{"physicalLocation": {"artifactLocation": {"uri": "src/demo.py"}, "region": {"startLine": 12, "startColumn": 1}}}]}]
+  }]
+}

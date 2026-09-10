@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.1",
+  "observed_at": "2026-09-10T08:06:30.136992+00:00",
+  "product": "kuanguard",
+  "apex": "kuanguard.com",
+  "registrar": "godaddy",
+  "state_values": [
+    "success",
+    "failed",
+    "pending_action",
+    "unverified"
+  ],
+  "checks": {
+    "shared_vercel_team": {
+      "state": "success",
+      "team_id": "team_MMfsiG94K9Zy3e6w7Ccc9xY4",
+      "plan": "pro",
+      "evidence": "infra/evidence/shared-saas-inventory-20260910.json"
+    },
+    "shared_supabase_organization": {
+      "state": "success",
+      "organization_id": "urxujyhcggjgwsjtleys",
+      "plan": "pro",
+      "evidence": "infra/evidence/shared-saas-inventory-20260910.json"
+    },
+    "kuanguard_dedicated_projects": {
+      "state": "pending_action",
+      "created": false,
+      "reason": "Dedicated Vercel/Supabase production and nonproduction IDs absent; new compute budget and region pending"
+    },
+    "cloudflare_account": {
+      "state": "success",
+      "account_id": "b1c70202652cd3b77dfec70e5463785f",
+      "account_token_status": "active",
+      "evidence": "infra/evidence/cloudflare-inspect-20260910/discovery.json"
+    },
+    "zone_created_or_reused": {
+      "state": "pending_action",
+      "zone_id": null,
+      "visible_zone_count": 0,
+      "reason": "No KUANGUARD zone visible to the existing token in the verified account; confirm scope or authorized onboarding",
+      "evidence": "infra/evidence/cloudflare-inspect-20260910/discovery.json"
+    },
+    "full_authoritative_zone_export": {
+      "state": "pending_action",
+      "complete_export_available": false,
+      "reason": "Public DNS inventory cannot enumerate all original records"
+    },
+    "dns_applied": {
+      "state": "pending_action",
+      "writes_performed": 0,
+      "evidence": "infra/evidence/infrastructure-tests-20260910.json",
+      "note": "Fake-provider tests are not live DNS apply proof"
+    },
+    "godaddy_ns_updated": {
+      "state": "pending_action",
+      "performed": false,
+      "observed_nameservers": [
+        "ns37.domaincontrol.com",
+        "ns38.domaincontrol.com"
+      ],
+      "assigned_cloudflare_nameservers": null,
+      "evidence": "infra/evidence/public-verification-20260910.json"
+    },
+    "dnssec_verified": {
+      "state": "unverified",
+      "note": "No requested DS answer observed; independent chain verification and registrar console readback pending"
+    },
+    "tls_verified": {
+      "state": "unverified",
+      "public_apex": "success",
+      "public_www": "success",
+      "public_app": "failed",
+      "public_admin": "failed",
+      "origin_tls": "unverified",
+      "evidence": "infra/evidence/public-verification-20260910.json"
+    },
+    "application_deployed": {
+      "state": "pending_action",
+      "deployment_id": null,
+      "note": "Local code/Compose retained; no KUANGUARD external deployment performed"
+    },
+    "tunnel_access_applied": {
+      "state": "pending_action",
+      "tunnel_id": null,
+      "access_audience": null,
+      "evidence": "infra/cloudflare/tunnel.example.yml"
+    },
+    "mail_verified": {
+      "state": "unverified",
+      "messages_sent": 0,
+      "reason": "Authorized test mailbox, sender provider and permissions pending"
+    },
+    "payment_verified": {
+      "state": "unverified",
+      "real_transactions": 0,
+      "reason": "Merchant configuration and policy pending; development sandbox is separate"
+    },
+    "local_backup_restore": {
+      "state": "success",
+      "environment": "local_synthetic_v1_1_post_UAT_0001_through_0006_before_worker_resume_checkpoint",
+      "tables": 67,
+      "rows": 642,
+      "objects": 36,
+      "evidence": "infra/evidence/backup-restore-v1_1-20260910.json",
+      "previous_checkpoint_preserved": "infra/evidence/backup-restore-20260910.json"
+    },
+    "local_container_build": {
+      "state": "success",
+      "images": ["kuanguard-api", "kuanguard-worker", "kuanguard-web"],
+      "source_hashes_match": true,
+      "evidence": ["infra/evidence/api-worker-build-runtime-20260910.json", "infra/evidence/web-image-build-smoke-20260910.json"],
+      "production_deployed": false
+    },
+    "production_backup_restore": {
+      "state": "unverified",
+      "reason": "Encrypted/offsite destination, production scale RPO/RTO and application recovery pending"
+    },
+    "qidaigo_preserved": {
+      "state": "success",
+      "scope": "bounded_read_only_code_and_deployment_inventory",
+      "repo_unchanged": true,
+      "deployment_unchanged": true,
+      "evidence": [
+        "infra/evidence/qidaigo-readonly-final-20260910.json",
+        "infra/evidence/qidaigo-deployment-readonly-final-20260910.json"
+      ],
+      "note": "No assertion of QIDAIGO order execution tests"
+    }
+  },
+  "remote_mutations_performed": [],
+  "remaining_checklist": "docs/activation-checklist.md"
+}

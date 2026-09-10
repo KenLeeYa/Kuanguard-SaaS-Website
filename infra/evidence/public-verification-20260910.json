@@ -1,0 +1,538 @@
+{
+  "observed_at": "2026-09-10T06:43:24.839515+00:00",
+  "apex": "kuanguard.com",
+  "scope": "public_dns_sample_not_complete_zone_export",
+  "queries": [
+    {
+      "server": "1.1.1.1",
+      "address": "1.1.1.1",
+      "type": "NS",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [
+        "ns37.domaincontrol.com.",
+        "ns38.domaincontrol.com."
+      ],
+      "answer": [
+        "kuanguard.com. 3600 IN NS ns37.domaincontrol.com.\nkuanguard.com. 3600 IN NS ns38.domaincontrol.com."
+      ],
+      "authority": [],
+      "state": "answers_observed"
+    },
+    {
+      "server": "1.1.1.1",
+      "address": "1.1.1.1",
+      "type": "SOA",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [
+        "ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "answer": [
+        "kuanguard.com. 3600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "authority": [],
+      "state": "answers_observed"
+    },
+    {
+      "server": "1.1.1.1",
+      "address": "1.1.1.1",
+      "type": "A",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [
+        "76.223.105.230",
+        "13.248.243.5"
+      ],
+      "answer": [
+        "kuanguard.com. 3600 IN A 76.223.105.230\nkuanguard.com. 3600 IN A 13.248.243.5"
+      ],
+      "authority": [],
+      "state": "answers_observed"
+    },
+    {
+      "server": "1.1.1.1",
+      "address": "1.1.1.1",
+      "type": "AAAA",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "1.1.1.1",
+      "address": "1.1.1.1",
+      "type": "MX",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "1.1.1.1",
+      "address": "1.1.1.1",
+      "type": "TXT",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "1.1.1.1",
+      "address": "1.1.1.1",
+      "type": "CAA",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "1.1.1.1",
+      "address": "1.1.1.1",
+      "type": "DS",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "com. 900 IN SOA a.gtld-servers.net. nstld.verisign-grs.com. 1789022583 1800 900 604800 900",
+        "com. 900 IN RRSIG SOA 13 1 900 20260917064303 20260910053303 41446 com. b+wUkqrAlv4NuI6xj43geKaV0fpWSDn6 XTFVECm+l5h1iWx5H9G+V47IexuC612+ 8mfvjCyZbpyR5Rx4+imltQ==",
+        "31JESOSM0K8T2PRQGU5OT57MQH8AQJN8.com. 900 IN NSEC3 1 1 0 - 31jf554e3c9b1l6m93igfqtfh81338me NS DS RRSIG",
+        "31JESOSM0K8T2PRQGU5OT57MQH8AQJN8.com. 900 IN RRSIG NSEC3 13 2 900 20260914011553 20260907000553 41446 com. Q0j7p7oM+/pjmHJks2FFboOABVrVb3dr +AetKrDbLmYjgjHdd/ApYM7IS5C2B0ss ly145tgjYSPsoCNejdEKgg==",
+        "CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 900 IN NSEC3 1 1 0 - ck0q35hrs4h76g6chnb9414cjn6s5upl NS SOA RRSIG DNSKEY NSEC3PARAM",
+        "CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 900 IN RRSIG NSEC3 13 2 900 20260915002614 20260907231614 41446 com. UFj3+89gOovYUhSy2FrnNYD4FVaSNTNA XXc+ZniyqU3L8EASe95v0WcMczbabWpz v2yn+5f+puwfiKtxbqvthA=="
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "8.8.8.8",
+      "address": "8.8.8.8",
+      "type": "NS",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [
+        "ns38.domaincontrol.com.",
+        "ns37.domaincontrol.com."
+      ],
+      "answer": [
+        "kuanguard.com. 3451 IN NS ns38.domaincontrol.com.\nkuanguard.com. 3451 IN NS ns37.domaincontrol.com."
+      ],
+      "authority": [],
+      "state": "answers_observed"
+    },
+    {
+      "server": "8.8.8.8",
+      "address": "8.8.8.8",
+      "type": "SOA",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [
+        "ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "answer": [
+        "kuanguard.com. 3600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "authority": [],
+      "state": "answers_observed"
+    },
+    {
+      "server": "8.8.8.8",
+      "address": "8.8.8.8",
+      "type": "A",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [
+        "76.223.105.230",
+        "13.248.243.5"
+      ],
+      "answer": [
+        "kuanguard.com. 3451 IN A 76.223.105.230\nkuanguard.com. 3451 IN A 13.248.243.5"
+      ],
+      "authority": [],
+      "state": "answers_observed"
+    },
+    {
+      "server": "8.8.8.8",
+      "address": "8.8.8.8",
+      "type": "AAAA",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "8.8.8.8",
+      "address": "8.8.8.8",
+      "type": "MX",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "8.8.8.8",
+      "address": "8.8.8.8",
+      "type": "TXT",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 451 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "8.8.8.8",
+      "address": "8.8.8.8",
+      "type": "CAA",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "8.8.8.8",
+      "address": "8.8.8.8",
+      "type": "DS",
+      "scope": "recursive",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": false,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 751 IN NSEC3 1 1 0 - ck0q35hrs4h76g6chnb9414cjn6s5upl NS SOA RRSIG DNSKEY NSEC3PARAM",
+        "CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 751 IN RRSIG NSEC3 13 2 900 20260915002614 20260907231614 41446 com. UFj3+89gOovYUhSy2FrnNYD4FVaSNTNA XXc+ZniyqU3L8EASe95v0WcMczbabWpz v2yn+5f+puwfiKtxbqvthA==",
+        "com. 751 IN SOA a.gtld-servers.net. nstld.verisign-grs.com. 1789022433 1800 900 604800 900",
+        "com. 751 IN RRSIG SOA 13 1 900 20260917064033 20260910053033 41446 com. mDhgOztdsdGsEZCheSUEd+M7vTNiWL3P Mh/cD1d6oIs38Yp1GZzsKnpJTxoUkNWa AEMTtUUzt0kIGxMU74VlrA==",
+        "31JESOSM0K8T2PRQGU5OT57MQH8AQJN8.com. 751 IN NSEC3 1 1 0 - 31jf554e3c9b1l6m93igfqtfh81338me NS DS RRSIG",
+        "31JESOSM0K8T2PRQGU5OT57MQH8AQJN8.com. 751 IN RRSIG NSEC3 13 2 900 20260914011553 20260907000553 41446 com. Q0j7p7oM+/pjmHJks2FFboOABVrVb3dr +AetKrDbLmYjgjHdd/ApYM7IS5C2B0ss ly145tgjYSPsoCNejdEKgg=="
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "address": "97.74.108.19",
+      "type": "NS",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [
+        "ns37.domaincontrol.com.",
+        "ns38.domaincontrol.com."
+      ],
+      "answer": [
+        "kuanguard.com. 3600 IN NS ns37.domaincontrol.com.\nkuanguard.com. 3600 IN NS ns38.domaincontrol.com."
+      ],
+      "authority": [],
+      "state": "answers_observed"
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "address": "97.74.108.19",
+      "type": "SOA",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [
+        "ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "answer": [
+        "kuanguard.com. 3600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "authority": [
+        "kuanguard.com. 3600 IN NS ns37.domaincontrol.com.\nkuanguard.com. 3600 IN NS ns38.domaincontrol.com."
+      ],
+      "state": "answers_observed"
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "address": "97.74.108.19",
+      "type": "A",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [
+        "76.223.105.230",
+        "13.248.243.5"
+      ],
+      "answer": [
+        "kuanguard.com. 3600 IN A 76.223.105.230\nkuanguard.com. 3600 IN A 13.248.243.5"
+      ],
+      "authority": [
+        "kuanguard.com. 3600 IN NS ns38.domaincontrol.com.\nkuanguard.com. 3600 IN NS ns37.domaincontrol.com."
+      ],
+      "state": "answers_observed"
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "address": "97.74.108.19",
+      "type": "AAAA",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "address": "97.74.108.19",
+      "type": "MX",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "address": "97.74.108.19",
+      "type": "TXT",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "address": "97.74.108.19",
+      "type": "CAA",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "address": "173.201.76.19",
+      "type": "NS",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [
+        "ns37.domaincontrol.com.",
+        "ns38.domaincontrol.com."
+      ],
+      "answer": [
+        "kuanguard.com. 3600 IN NS ns37.domaincontrol.com.\nkuanguard.com. 3600 IN NS ns38.domaincontrol.com."
+      ],
+      "authority": [],
+      "state": "answers_observed"
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "address": "173.201.76.19",
+      "type": "SOA",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [
+        "ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "answer": [
+        "kuanguard.com. 3600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "authority": [
+        "kuanguard.com. 3600 IN NS ns37.domaincontrol.com.\nkuanguard.com. 3600 IN NS ns38.domaincontrol.com."
+      ],
+      "state": "answers_observed"
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "address": "173.201.76.19",
+      "type": "A",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [
+        "76.223.105.230",
+        "13.248.243.5"
+      ],
+      "answer": [
+        "kuanguard.com. 3600 IN A 76.223.105.230\nkuanguard.com. 3600 IN A 13.248.243.5"
+      ],
+      "authority": [
+        "kuanguard.com. 3600 IN NS ns38.domaincontrol.com.\nkuanguard.com. 3600 IN NS ns37.domaincontrol.com."
+      ],
+      "state": "answers_observed"
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "address": "173.201.76.19",
+      "type": "AAAA",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "address": "173.201.76.19",
+      "type": "MX",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "address": "173.201.76.19",
+      "type": "TXT",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "address": "173.201.76.19",
+      "type": "CAA",
+      "scope": "authoritative",
+      "rcode": "NOERROR",
+      "authenticated_data": false,
+      "authoritative_answer": true,
+      "requested_answers": [],
+      "answer": [],
+      "authority": [
+        "kuanguard.com. 600 IN SOA ns37.domaincontrol.com. dns.jomax.net. 2026090901 28800 7200 604800 600"
+      ],
+      "state": "no_requested_type_answer_observed"
+    }
+  ],
+  "observed_authoritative_nameservers": [
+    "ns37.domaincontrol.com",
+    "ns38.domaincontrol.com"
+  ],
+  "delegation_matches_assigned_cloudflare": "unverified",
+  "dnssec_chain_verified": "unverified",
+  "dnssec_method": "two_recursive_resolver_AD_flags_plus_exact_provider_DS_comparison; not independent_validation",
+  "complete_zone_export": false,
+  "public_tls": [
+    {
+      "host": "kuanguard.com",
+      "status": "success",
+      "protocol": "TLSv1.3",
+      "expires": "Mar 27 05:35:29 2027 GMT"
+    },
+    {
+      "host": "www.kuanguard.com",
+      "status": "success",
+      "protocol": "TLSv1.3",
+      "expires": "Mar 27 05:35:29 2027 GMT"
+    },
+    {
+      "host": "app.kuanguard.com",
+      "status": "failed"
+    },
+    {
+      "host": "admin.kuanguard.com",
+      "status": "failed"
+    }
+  ],
+  "origin_tls_verified": "unverified; public TLS may terminate at an edge"
+}

@@ -1,0 +1,24 @@
+{
+  "observed_at": "2026-09-10T07:18:16.231375+00:00",
+  "scope": "local_infrastructure_and_v1_1_dns_policy",
+  "test_command": "python -B -m unittest discover -s tests -p test_infra.py -v",
+  "tests_passed": 21,
+  "tests_failed": 0,
+  "exit_code": 0,
+  "lint_command": ".venv/Scripts/python.exe -m ruff check scripts/cloudflare_onboard.py scripts/backup_restore.py tests/test_infra.py",
+  "lint_exit_code": 0,
+  "network_used_by_tests": false,
+  "cloudflare_provider": "synthetic_contract_double",
+  "actual_postgres_restore_evidence": "infra/evidence/backup-restore-20260910.json",
+  "new_v1_1_behavior": [
+    "Vercel hosts refuse proxy",
+    "Vercel target refuses proxy",
+    "admin refuses direct origin and Vercel alias",
+    "admin accepts UUID-form Tunnel origin only",
+    "transport refuses zone deletion/settings writes and foreign discovery",
+    "transport requires immutable account and zone binding before DNS writes",
+    "missing zone returns pending discovery without a fabricated snapshot"
+  ],
+  "live_account_read_only_evidence": "infra/evidence/cloudflare-inspect-20260910/discovery.json",
+  "production_security_proof": false
+}

@@ -1,0 +1,70 @@
+{
+  "observed_at": "2026-09-10T09:45:05.525976+00:00",
+  "state": "LOCAL_SYNTHETIC_READY",
+  "production_state": "BLOCKED",
+  "api_tests": {
+    "passed": 214,
+    "subtests_passed": 45,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "junit_testcase_count": 259,
+    "seconds": 110.664,
+    "evidence": "docs/evidence/api-tests.xml",
+    "existing_third_party_deprecation_warnings": 2
+  },
+  "ruff": "passed",
+  "openapi_paths": 158,
+  "frontend_tests_passed": 10,
+  "frontend_build": "docs/evidence/web-build-final.json",
+  "http_increment_groups": 5,
+  "container_images": "infra/evidence/final-increment-images-20260910.json",
+  "restore": "infra/evidence/backup-restore-complete-20260910.json",
+  "restore_tables": 80,
+  "restore_rows": 811,
+  "prior_object_hashes_unchanged": 36,
+  "schema_revisions": [
+    "0001_initial",
+    "0002_review_policy",
+    "0003_portfolio_projection",
+    "0004_retest_verification",
+    "0005_worker_claim_token",
+    "0006_service_ledger_immutable",
+    "0007_drafts_tickets",
+    "0008_training_rights",
+    "0009_project_execution",
+    "0010_tenant_lifecycle"
+  ],
+  "updated_api_worker_restarted": true,
+  "database_queue_and_web_preserved": true,
+  "post_restart_http": [
+    {
+      "url": "http://127.0.0.1:8180/health",
+      "status": 200,
+      "cache_control": "private, no-store"
+    },
+    {
+      "url": "http://127.0.0.1:3180/login",
+      "status": 200,
+      "cache_control": "private, no-store"
+    },
+    {
+      "url": "http://127.0.0.1:3180/organization/data",
+      "status": 200,
+      "cache_control": "private, no-store"
+    },
+    {
+      "url": "http://127.0.0.1:3180/admin/overview",
+      "status": 200,
+      "cache_control": "private, no-store"
+    }
+  ],
+  "browser_verified": false,
+  "real_emails_sent": 0,
+  "real_payments": 0,
+  "remote_mutations": [],
+  "qidaigo_source_or_deployment_mutations": [],
+  "existing_tenant_offboarding_or_erasure": false,
+  "production_blockers": "docs/activation-checklist.md",
+  "repository_review": "docs/evidence/source-review-final.json"
+}

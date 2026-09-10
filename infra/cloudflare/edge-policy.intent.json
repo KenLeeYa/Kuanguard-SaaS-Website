@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "state": "reviewable_intent_not_applied_by_dns_tool",
+  "apex": "kuanguard.com",
+  "vercel_dns_only_hosts": ["kuanguard.com", "www.kuanguard.com", "app.kuanguard.com"],
+  "vercel_edge_controls": "Vercel TLS/CDN/firewall plus application authorization; Cloudflare WAF/Access do not protect DNS-only traffic",
+  "tls_mode": "strict",
+  "tls_mode_scope": "applicable proxied HTTP origins only; Tunnel validates its own origin path",
+  "origin_tls_evidence": null,
+  "origin_direct_access": "deny except validated Cloudflare origin path or approved Tunnel",
+  "private_cache_rule": {
+    "phase": "http_request_cache_settings",
+    "description": "KUANGUARD bypass sensitive application and API responses",
+    "expression": "http.host in {\"admin.kuanguard.com\" \"api.kuanguard.com\" \"sim.kuanguard.com\"}",
+    "action": "set_cache_settings",
+    "action_parameters": {"cache": false}
+  },
+  "application_headers": {"sensitive_cache_control": "private, no-store", "cookie_domain": "host-only"},
+  "access": {"hostname": "admin.kuanguard.com", "team_domain": null, "policy_audience": null, "initial_principal": "existing_verified_owner", "allowed_employee_group": null, "origin_validation": ["RS256 signature", "issuer", "audience", "expiration", "application role and resource scope"], "portfolio_scope": "owner_or_explicit_portfolio_grant", "public_api_internal": "must_be_rejected"},
+  "webhook_policy": "dedicated signed callback routes; no interactive challenge; no global API bypass",
+  "turnstile": {"state": "pending_provider_keys_and_server_verification", "hostname_allowlist": ["kuanguard.com", "app.kuanguard.com"]},
+  "hsts": {"state": "deferred_until_all_relevant_tls_and_rollback_verified", "includeSubDomains": false, "preload": false},
+  "waf": {"state": "pending_account_plan_and_route_validation", "exception_scope": "specific reviewed employee import route and individual rule only"},
+  "rates": {"state": "pending_measured_load_and_plan_limits", "separate_budgets": ["login", "quote", "point_purchase", "webhook"]},
+  "r2": {"public_bucket": null, "private_quarantine_bucket": null, "private_evidence_bucket": null, "private_reports_bucket": null, "data_residency": "contract_review_required; location hint is not a country guarantee"},
+  "stream": {"state": "pending_credentials_and_entitlement_tests", "requireSignedURLs": true, "allow_original_download": false}
+}

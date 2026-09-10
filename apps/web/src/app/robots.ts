@@ -1,0 +1,2 @@
+import type { MetadataRoute } from "next";
+export default function robots(): MetadataRoute.Robots { return { rules: { userAgent: "*", allow: "/", disallow: ["/api/", "/admin/", "/portfolio", "/dashboard", "/projects", "/findings", "/reports", "/phishing", "/training", "/wallet", "/learn", "/organization", "/quotes", "/contracts", "/orders", "/calendar", "/support", "/login", "/onboarding", "/entitlements"] }, sitemap: "https://kuanguard.com/sitemap.xml" }; }

@@ -1,0 +1,6 @@
+# Preserved local layout iterations; only bundles_final and qa_final are delivery evidence.
+/bundles/
+/qa/
+/bundles_checked/
+/qa_checked/
+__pycache__/

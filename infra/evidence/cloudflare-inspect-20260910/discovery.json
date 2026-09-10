@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "tool_version": "1.1.0",
+  "observed_at": "2026-09-10T07:18:16.231375+00:00",
+  "apex": "kuanguard.com",
+  "account_id": "b1c70202652cd3b77dfec70e5463785f",
+  "account_readback": "success",
+  "account_token_status": "active",
+  "state": "pending_action",
+  "visible_zone_id": null,
+  "reason": "No matching zone visible to this token; confirm scope or authorized zone onboarding",
+  "ready_for_plan": false,
+  "complete_zone_export": false,
+  "writes_performed": 0,
+  "note": "Scoped listing cannot prove that a zone is absent from every Cloudflare account"
+}

@@ -1,0 +1,155 @@
+{
+  "qa_schema": "kuanguard.sample-qa/1",
+  "date": "2026-09-10",
+  "runtime": "3.12.14",
+  "libraries": {
+    "python-docx": "1.2.0",
+    "python-pptx": "1.0.2",
+    "reportlab": "4.4.9",
+    "openpyxl": "3.1.5",
+    "pypdf": "6.10.0",
+    "defusedxml": "0.7.1"
+  },
+  "samples": [
+    {
+      "sample": "pt_initial",
+      "snapshot_id": "snap_c46b984bdd4146cbe423a73c",
+      "snapshot_hash": "c46b984bdd4146cbe423a73c7c6a82a4ae352f0aedcb577617c09939ba9adc12",
+      "artifacts_verified": 5,
+      "pdf_pages": 3,
+      "slide_count": 6,
+      "rendered_page_count": 3,
+      "csv_rows": 1,
+      "statistics": {
+        "Critical": 0,
+        "High": 1,
+        "Medium": 0,
+        "Low": 0
+      },
+      "checksums": "pass",
+      "snapshot_and_counts": "pass",
+      "no_excel_formulas": "pass",
+      "pdf_visual_review": "all_pages_inspected_no_clipping_or_missing_glyphs",
+      "office_visual_review": "not_performed_bundled_libreoffice_unavailable",
+      "production_ready": false
+    },
+    {
+      "sample": "shc_initial",
+      "snapshot_id": "snap_6c49a4beaab5cd1d5c078bc5",
+      "snapshot_hash": "6c49a4beaab5cd1d5c078bc580c9f11afb32330e315af4a9f9f66a89f4ef47be",
+      "artifacts_verified": 5,
+      "pdf_pages": 4,
+      "slide_count": 7,
+      "rendered_page_count": 4,
+      "csv_rows": 4,
+      "statistics": {
+        "Critical": 0,
+        "High": 1,
+        "Medium": 0,
+        "Low": 0
+      },
+      "checksums": "pass",
+      "snapshot_and_counts": "pass",
+      "no_excel_formulas": "pass",
+      "pdf_visual_review": "all_pages_inspected_no_clipping_or_missing_glyphs",
+      "office_visual_review": "not_performed_bundled_libreoffice_unavailable",
+      "production_ready": false
+    },
+    {
+      "sample": "source_initial",
+      "snapshot_id": "snap_3b736b68f17e849827cfe9a6",
+      "snapshot_hash": "3b736b68f17e849827cfe9a6d6aea2bae88d65ff2ae1b7562d26da12034b88c4",
+      "artifacts_verified": 5,
+      "pdf_pages": 3,
+      "slide_count": 6,
+      "rendered_page_count": 3,
+      "csv_rows": 1,
+      "statistics": {
+        "Critical": 0,
+        "High": 1,
+        "Medium": 0,
+        "Low": 0
+      },
+      "checksums": "pass",
+      "snapshot_and_counts": "pass",
+      "no_excel_formulas": "pass",
+      "pdf_visual_review": "all_pages_inspected_no_clipping_or_missing_glyphs",
+      "office_visual_review": "not_performed_bundled_libreoffice_unavailable",
+      "production_ready": false
+    },
+    {
+      "sample": "va_initial",
+      "snapshot_id": "snap_310653fa1f99358a7dee550a",
+      "snapshot_hash": "310653fa1f99358a7dee550a72c97ec14a2f5c80f9b27cae7c5cd29b0b70b381",
+      "artifacts_verified": 5,
+      "pdf_pages": 4,
+      "slide_count": 6,
+      "rendered_page_count": 4,
+      "csv_rows": 3,
+      "statistics": {
+        "Critical": 0,
+        "High": 1,
+        "Medium": 1,
+        "Low": 0
+      },
+      "checksums": "pass",
+      "snapshot_and_counts": "pass",
+      "no_excel_formulas": "pass",
+      "pdf_visual_review": "all_pages_inspected_no_clipping_or_missing_glyphs",
+      "office_visual_review": "not_performed_bundled_libreoffice_unavailable",
+      "production_ready": false
+    },
+    {
+      "sample": "va_retest",
+      "snapshot_id": "snap_06c6a576b9d3afed2ef05905",
+      "snapshot_hash": "06c6a576b9d3afed2ef05905b3183ce3393af1fd8298a1c3e7913377e75c2ac5",
+      "artifacts_verified": 5,
+      "pdf_pages": 3,
+      "slide_count": 7,
+      "rendered_page_count": 3,
+      "csv_rows": 1,
+      "statistics": {
+        "Critical": 0,
+        "High": 0,
+        "Medium": 1,
+        "Low": 0
+      },
+      "checksums": "pass",
+      "snapshot_and_counts": "pass",
+      "no_excel_formulas": "pass",
+      "pdf_visual_review": "all_pages_inspected_no_clipping_or_missing_glyphs",
+      "office_visual_review": "not_performed_bundled_libreoffice_unavailable",
+      "production_ready": false
+    },
+    {
+      "sample": "wva_initial",
+      "snapshot_id": "snap_196d1140b3ed6e5bb9178f9c",
+      "snapshot_hash": "196d1140b3ed6e5bb9178f9c054578eec74f067302a62fa88945c83319f51d79",
+      "artifacts_verified": 5,
+      "pdf_pages": 3,
+      "slide_count": 6,
+      "rendered_page_count": 3,
+      "csv_rows": 2,
+      "statistics": {
+        "Critical": 1,
+        "High": 0,
+        "Medium": 0,
+        "Low": 1
+      },
+      "checksums": "pass",
+      "snapshot_and_counts": "pass",
+      "no_excel_formulas": "pass",
+      "pdf_visual_review": "all_pages_inspected_no_clipping_or_missing_glyphs",
+      "office_visual_review": "not_performed_bundled_libreoffice_unavailable",
+      "production_ready": false
+    }
+  ],
+  "pdf_pages_reviewed": 20,
+  "production_ready": false,
+  "limits": [
+    "合成樣本，不是工具對真實資產的測試結果",
+    "尚無正式核准模板",
+    "DOCX 目錄與 PPTX 實際 Office 全頁渲染尚未驗證",
+    "字型容器散布權未核定"
+  ]
+}

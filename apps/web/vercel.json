@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "installCommand": "npm ci --ignore-scripts",
+  "buildCommand": "npm run build",
+  "env": { "DEPLOYMENT_SURFACE": "public" },
+  "redirects": [{ "source": "/:path*", "has": [{ "type": "host", "value": "www.kuanguard.com" }], "destination": "https://kuanguard.com/:path*", "permanent": true }],
+  "headers": [
+    { "source": "/api/:path*", "headers": [{ "key": "Cache-Control", "value": "private, no-store" }, { "key": "X-Robots-Tag", "value": "noindex, nofollow" }] },
+    { "source": "/(dashboard|projects|findings|reports|wallet|learn|phishing|training|organization|orders|quotes|contracts|calendar|support|login|onboarding|entitlements)(.*)", "headers": [{ "key": "Cache-Control", "value": "private, no-store" }, { "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
+  ]
+}

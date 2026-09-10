@@ -1,0 +1,99 @@
+{
+  "checked_at": "2026-09-10T07:50:04.3986175Z",
+  "next": "16.3.4",
+  "react": "19.3.0",
+  "typescript": "5.9.3",
+  "typecheck": "passed",
+  "build": "passed",
+  "frontend_tests": "4 passed",
+  "operations_http_checks": "7 groups passed",
+  "public_surface_http_checks": "57 blocked route/host combinations; 11 no-store/noindex pages; www/app routing passed",
+  "browser_verified": false,
+  "external_deployment": false,
+  "source_files": [
+    {
+      "file": "package.json",
+      "sha256": "9ba0b83a8cbb8f7c7152f02ae9c63243b4a5ef781171b7e8c5745d7e5bf1ed37"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "004060961c07fddb8f31bac270d8cbef4703b4fbccce91a018e560f5e03c98f9"
+    },
+    {
+      "file": "next.config.ts",
+      "sha256": "8c6daaacf030615fa7f60f4b3abd5bda3f4f7f4c1638a6a3a2afa764b372c0a5"
+    },
+    {
+      "file": "vercel.json",
+      "sha256": "abff584b08571f53c7d18493ed0acfde65f8e9bba78c2a0aab23ba335d8b5ee0"
+    },
+    {
+      "file": "tsconfig.json",
+      "sha256": "331ea13fbe614879b21814af3fe49e605fa11962b7647f1a1b984ab38ea04c85"
+    },
+    {
+      "file": "src/proxy.ts",
+      "sha256": "53e28f431975026a3be9e3e8e1e73b2ecfe790822d9d90d09981f774ca21d5bc"
+    },
+    {
+      "file": "src/lib/api.tsx",
+      "sha256": "125cb8417b34ddd64a4b800a4efd151cf03462fd658f0d0cb33836634cfef924"
+    },
+    {
+      "file": "src/lib/surface.ts",
+      "sha256": "dc08967d3682fd543ce7e37b2ce7f6196534d39b33308a28d74c9cbe7da26acc"
+    },
+    {
+      "file": "src/components/workspace.tsx",
+      "sha256": "5b00613b5233db611d3e8cfc8c494266679717b279591a0554e77bc9b1c4a38a"
+    },
+    {
+      "file": "src/components/customer.tsx",
+      "sha256": "7edf4ceb22825ba288ad35a607e9f78f8f340970375cc1aa5f70e3e9837631d0"
+    },
+    {
+      "file": "src/components/internal.tsx",
+      "sha256": "30f6cb3e375070a96bb583972c89c04c5f1bd5e80413aedfd4cfc4dd54348585"
+    },
+    {
+      "file": "src/components/campaign-events.tsx",
+      "sha256": "b514dbe14d84bf901b420c952a15b9533e0294dee44847e8e6b78b092bef986d"
+    },
+    {
+      "file": "src/components/recipient-groups.tsx",
+      "sha256": "26e221bcf51b39e707f6ce68cfe76fad9041adc34804e7bf1f98c32b5b07eee2"
+    },
+    {
+      "file": "src/components/delivery-reconciliation.tsx",
+      "sha256": "0013675e9dda75fe65b231c1f8e95fae3d0a00384fd4a1afd9b1a70b65efe5b6"
+    },
+    {
+      "file": "src/components/operations-workspace.tsx",
+      "sha256": "3c4e322984e9e4cea57abc056db427a5edd1fd843274f9cb3209de92b0bd1685"
+    },
+    {
+      "file": "src/components/project-controls.tsx",
+      "sha256": "e88cce006a474100521eaff1ec7dd562ee1529eb445485dec9c94b384a622ace"
+    },
+    {
+      "file": "src/components/operations-forms.tsx",
+      "sha256": "03dd755ee02b0d02421f39b322287888b8a2f01dd8244a324a335ff6c3fc1ac5"
+    },
+    {
+      "file": "src/components/portfolio.tsx",
+      "sha256": "da0a8ce6da9b2e13b50c319d88a4462e13a7217c681916a6d8c2ddbb06f68b56"
+    },
+    {
+      "file": "src/components/learner.tsx",
+      "sha256": "89e236423a84975ff3b0b43cd6fd74cf5962f27448931d3daadf670b989b78ba"
+    },
+    {
+      "file": "src/components/public-site.tsx",
+      "sha256": "d9e265ca7718fbec756d71c42d8392065838b7a251323f873bfb55f932e63423"
+    },
+    {
+      "file": "src/app/globals.css",
+      "sha256": "243c7de30baaf5a09a8184ec55c2bb5445283d0d2680fbd876ade1de1f4bf8da"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+FROM python:3.12.14-slim-bookworm@sha256:782412e85d0f0984994c290652577d4018aff08145c85b262bb63dc0c7522254
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app/backend \
+    UV_PYTHON_DOWNLOADS=never \
+    UV_LINK_MODE=copy \
+    PATH=/app/.venv/bin:$PATH \
+    LOCAL_DATA_DIR=/data/storage
+
+WORKDIR /app
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ca-certificates fonts-noto-cjk \
+    && rm -rf /var/lib/apt/lists/* \
+    && python -m pip install --no-cache-dir uv==0.12.12 \
+    && groupadd --gid 10001 kuanguard \
+    && useradd --uid 10001 --gid 10001 --create-home --shell /usr/sbin/nologin kuanguard \
+    && install -d -o kuanguard -g kuanguard /data/storage
+
+COPY pyproject.toml uv.lock ./
+RUN uv sync --locked --no-dev
+
+COPY backend/ ./backend/
+COPY scripts/ ./scripts/
+
+USER 10001:10001
+EXPOSE 8180
+CMD ["uvicorn", "kuanguard.api:app", "--host", "0.0.0.0", "--port", "8180"]

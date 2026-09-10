@@ -1,0 +1,13 @@
+{
+  "apex": "kuanguard.com",
+  "provider": null,
+  "captured_at": null,
+  "reviewed_by": null,
+  "complete_zone_export": false,
+  "authoritative_nameservers": [],
+  "parent_ds_records": [],
+  "zone_export": {"path": null, "sha256": null},
+  "reconciled_into_cloudflare": false,
+  "reconciliation_evidence": {"path": null, "sha256": null},
+  "note": "Populate only after full authoritative provider export and candidate-zone reconciliation. Public DNS and quick scan are insufficient."
+}

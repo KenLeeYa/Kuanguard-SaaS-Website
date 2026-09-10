@@ -1,0 +1,19 @@
+# Review template only. Fill real IDs from the shared owner's KUANGUARD resources.
+# This file does not create a Tunnel or publish local ports.
+tunnel: REPLACE_WITH_VERIFIED_KUANGUARD_TUNNEL_ID
+credentials-file: /run/secrets/kuanguard-tunnel-credentials.json
+ingress:
+  - hostname: admin.kuanguard.com
+    service: http://admin-gateway:8080
+    originRequest:
+      httpHostHeader: admin.kuanguard.com
+      access:
+        required: true
+        teamName: REPLACE_WITH_VERIFIED_ACCESS_TEAM_NAME
+        audTag:
+          - REPLACE_WITH_VERIFIED_ADMIN_ACCESS_AUDIENCE
+  - hostname: api.kuanguard.com
+    service: http://public-api-gateway:8080
+    originRequest:
+      httpHostHeader: api.kuanguard.com
+  - service: http_status:404

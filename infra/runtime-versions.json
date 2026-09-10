@@ -1,0 +1,38 @@
+{
+  "verified_on": "2026-09-10",
+  "python": {
+    "release": "3.12.14",
+    "release_date": "2026-08-12",
+    "source": "https://www.python.org/downloads/release/python-31214/",
+    "image": "python:3.12.14-slim-bookworm",
+    "image_index_digest": "sha256:782412e85d0f0984994c290652577d4018aff08145c85b262bb63dc0c7522254",
+    "linux_amd64_digest": "sha256:9c47360a2a0355e2da18516d0b1c2126ec22c195d2185e97347c9d98398c5bef",
+    "registry_verified": true
+  },
+  "uv": {
+    "release": "0.12.12",
+    "source": "https://pypi.org/project/uv/",
+    "container_install": "exact_version_pinned"
+  },
+  "python_dependencies": "uv.lock",
+  "node": {
+    "release": "24.21.0",
+    "lts": true,
+    "release_date": "2026-09-08",
+    "source": "https://nodejs.org/en/blog/release/v24.21.0",
+    "lookup_method": "AnySearch official Node release extraction followed by Docker registry manifest readback",
+    "image": "node:24.21.0-bookworm-slim",
+    "image_index_digest": "sha256:2fe369e969550cde8e867afc3fe370b260140cab4a23d467074295b42163d553",
+    "linux_amd64_digest": "sha256:713cfbf4a0ac19f40e1bb9919893e126b74a5c8cf5d0623c9f89515c8f74c6fa"
+  },
+  "container_fonts": {
+    "package": "fonts-noto-cjk",
+    "intended_usage": "redistributable fallback; exact approved typography requires separate QA"
+  },
+  "local_api_worker_images_built": true,
+  "local_image_build_evidence": "infra/evidence/final-increment-images-20260910.json",
+  "local_image_smoke_evidence": "infra/evidence/final-increment-images-20260910.json",
+  "local_web_image_built": true,
+  "local_web_image_evidence": "infra/evidence/final-increment-images-20260910.json",
+  "production_image_built_and_deployed": false
+}

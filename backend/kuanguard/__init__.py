@@ -1,0 +1,1 @@
+"""KUANGUARD application package."""

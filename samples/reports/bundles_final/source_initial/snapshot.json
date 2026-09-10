@@ -1,0 +1,171 @@
+{
+  "schema_version": "kuanguard.snapshot/1",
+  "generator_version": "kuanguard-reports/1.0.0",
+  "parser_version": "kuanguard-parsers/1.0.0",
+  "normalized_dataset_version": "1.0",
+  "sources": [
+    {
+      "sha256": "a57d9c324a3025bfdbca4f91278dc3419f32fa26458e881f5e9e5a994cd9fd49",
+      "format": "sarif"
+    }
+  ],
+  "source_comparison": [],
+  "source_hash": "a57d9c324a3025bfdbca4f91278dc3419f32fa26458e881f5e9e5a994cd9fd49",
+  "service_code": "SOURCE",
+  "batch_id": "synthetic-source_initial",
+  "scope_version": "synthetic-scope/1",
+  "report_version": "1",
+  "reviewer_id": "synthetic-reviewer",
+  "reviewed_at": "2026-09-10T06:00:00Z",
+  "source_timezone": "UTC",
+  "business_timezone": "Asia/Taipei",
+  "project_name": "2026 年度合成示範專案",
+  "trace_id": "trace-synthetic-source_initial",
+  "synthetic": true,
+  "template_version": "kuanguard-development/1",
+  "rule_version": "no-exclusions/1",
+  "translation_version": "original-source/no-ai",
+  "knowledge_version": "source-only/1",
+  "findings": [
+    {
+      "source_id": "SYNTH-SOURCE-001",
+      "asset": "src/demo.py",
+      "title": "合成範例 輸入驗證",
+      "severity": "High",
+      "description": "合成規則發現僅用於匯入與報告驗證。來源檔未執行。",
+      "solution": "依實際規則與框架完成輸入驗證並保留測試。",
+      "location": "src/demo.py",
+      "location_hash": "6fad5c2689ac8e57c6c59438fd186206ad90f34c059348ba9e1691ec28c31a18",
+      "rule_id": "SYNTH-SOURCE-001",
+      "line": 12,
+      "column": 1,
+      "source_fingerprint": "c636c6036d2c0cc4aab49a056a6100711a988a240cdf2f0f63ec07ff7142748e",
+      "snippet": "",
+      "method": "sarif:KUANGUARD synthetic SARIF fixture",
+      "suppressed": false,
+      "port": null,
+      "protocol": "",
+      "evidence": "",
+      "fingerprint": "56ce6ed7c5d5a4ab0d52ca5626bcb63f8a3c947e3bc20d44050f3c99e44d8705",
+      "occurrence_id": "3dccd4206b3c53fecb75e7511134e7161834f96c0c95ce5fec98b8650b5e82d3"
+    }
+  ],
+  "coverage": [
+    {
+      "asset": "src/demo.py",
+      "status": "completed"
+    },
+    {
+      "asset": "src/excluded.py",
+      "status": "not_tested"
+    }
+  ],
+  "planned_assets": [
+    "src/demo.py",
+    "src/excluded.py"
+  ],
+  "statistics": {
+    "severity_counts": {
+      "Critical": 0,
+      "High": 1,
+      "Medium": 0,
+      "Low": 0
+    },
+    "source_severity_counts": {
+      "Critical": 0,
+      "High": 1,
+      "Medium": 0,
+      "Low": 0,
+      "Informational": 0,
+      "Unknown": 0
+    },
+    "occurrence_count": 1,
+    "definition_count": 1,
+    "affected_asset_count": 1,
+    "source_record_count": 1,
+    "informational_count": 0,
+    "unknown_count": 0,
+    "planned_asset_count": 2,
+    "completed_asset_count": 1,
+    "coverage_ratio": 0.5,
+    "coverage_counts": {
+      "completed": 1,
+      "not_tested": 1
+    },
+    "assets": [
+      {
+        "asset": "src/demo.py",
+        "status": "completed",
+        "planned": true,
+        "risk_count": 1,
+        "severity_counts": {
+          "Critical": 0,
+          "High": 1,
+          "Medium": 0,
+          "Low": 0
+        }
+      },
+      {
+        "asset": "src/excluded.py",
+        "status": "not_tested",
+        "planned": true,
+        "risk_count": 0,
+        "severity_counts": {
+          "Critical": 0,
+          "High": 0,
+          "Medium": 0,
+          "Low": 0
+        }
+      }
+    ],
+    "denominator": "預定範圍資產數；未預定的新資產另列，不擴大分母",
+    "risk_denominator": "四級弱點實例，資訊與未知另外列示"
+  },
+  "metadata": {
+    "source_bytes": 1133,
+    "service_code": "SOURCE",
+    "format": "sarif",
+    "source_schema": "2.1.0",
+    "tools": [
+      {
+        "name": "KUANGUARD synthetic SARIF fixture",
+        "version": "1.0"
+      }
+    ],
+    "disabled_rules": [],
+    "excluded_paths": [
+      "src/excluded.py"
+    ],
+    "raw_rows": 1,
+    "source_execution": "never",
+    "version_control": [
+      {
+        "repository_uri": "https://example.test/synthetic/fixture",
+        "commit": "synthetic-commit-not-a-real-git-revision",
+        "branch": "synthetic-only"
+      }
+    ],
+    "subservices": [
+      "SAST result import"
+    ],
+    "valid_rows": 1,
+    "duplicate_rows": 0,
+    "duplicate_audit": [],
+    "planned_assets": [
+      "src/demo.py",
+      "src/excluded.py"
+    ]
+  },
+  "warnings": [],
+  "retest": [],
+  "publication_gates": {
+    "review_approved": true,
+    "production_ready": false,
+    "production_blockers": [
+      "尚未提供核准模板與使用權紀錄",
+      "Office 全頁渲染與人工版面覆核待完成"
+    ]
+  },
+  "snapshot_hash": "3b736b68f17e849827cfe9a6d6aea2bae88d65ff2ae1b7562d26da12034b88c4",
+  "snapshot_id": "snap_3b736b68f17e849827cfe9a6"
+}

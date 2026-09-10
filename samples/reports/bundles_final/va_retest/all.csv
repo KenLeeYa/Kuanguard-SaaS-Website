@@ -1,0 +1,2 @@
+﻿snapshot_id,report_version,service,occurrence_id,source_id,asset,severity,title,description,solution,port,location,check_status,evidence,source_hash,synthetic,disclosure,rule_id,line,column,source_fingerprint
+snap_06c6a576b9d3afed2ef05905,1,VA,3350d10fad403e493015cc44a5182ec35858353f2d7893e03a8b8ab1c41b1325,100002,192.0.2.10,Medium,合成範例 設定待改善,合成複測仍保留相同設定發現。,依原改善建議處理。,8443,,,合成證據 RETEST-002。,3b041771b6ef30883d298457f596587a34aedce7da8a5662cac9b0347dc9592c,True,合成示範資料，僅供本機開發驗證；未使用正式核准模板，不代表實際客戶檢測。,,,,

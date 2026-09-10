@@ -1,0 +1,141 @@
+{
+  "schema_version": "kuanguard.bundle/1",
+  "snapshot_id": "snap_06c6a576b9d3afed2ef05905",
+  "snapshot_hash": "06c6a576b9d3afed2ef05905b3183ce3393af1fd8298a1c3e7913377e75c2ac5",
+  "batch_id": "synthetic-va_retest",
+  "report_version": "1",
+  "trace_id": "trace-synthetic-va_retest",
+  "parser_version": "kuanguard-parsers/1.0.0",
+  "generator_version": "kuanguard-reports/1.0.0",
+  "template_version": "kuanguard-development/1",
+  "rule_version": "no-exclusions/1",
+  "reviewer_id": "synthetic-reviewer",
+  "reviewed_at": "2026-09-10T06:00:00Z",
+  "sources": [
+    {
+      "sha256": "3b041771b6ef30883d298457f596587a34aedce7da8a5662cac9b0347dc9592c",
+      "format": "nessus-xml"
+    }
+  ],
+  "statistics": {
+    "severity_counts": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 1,
+      "Low": 0
+    },
+    "source_severity_counts": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 1,
+      "Low": 0,
+      "Informational": 0,
+      "Unknown": 0
+    },
+    "occurrence_count": 1,
+    "definition_count": 1,
+    "affected_asset_count": 1,
+    "source_record_count": 1,
+    "informational_count": 0,
+    "unknown_count": 0,
+    "planned_asset_count": 3,
+    "completed_asset_count": 1,
+    "coverage_ratio": 0.3333333333333333,
+    "coverage_counts": {
+      "completed": 1,
+      "not_tested": 2
+    },
+    "assets": [
+      {
+        "asset": "192.0.2.10",
+        "status": "completed",
+        "planned": true,
+        "risk_count": 1,
+        "severity_counts": {
+          "Critical": 0,
+          "High": 0,
+          "Medium": 1,
+          "Low": 0
+        }
+      },
+      {
+        "asset": "192.0.2.20",
+        "status": "not_tested",
+        "planned": true,
+        "risk_count": 0,
+        "severity_counts": {
+          "Critical": 0,
+          "High": 0,
+          "Medium": 0,
+          "Low": 0
+        }
+      },
+      {
+        "asset": "192.0.2.30",
+        "status": "not_tested",
+        "planned": true,
+        "risk_count": 0,
+        "severity_counts": {
+          "Critical": 0,
+          "High": 0,
+          "Medium": 0,
+          "Low": 0
+        }
+      }
+    ],
+    "denominator": "預定範圍資產數；未預定的新資產另列，不擴大分母",
+    "risk_denominator": "四級弱點實例，資訊與未知另外列示"
+  },
+  "synthetic": true,
+  "disclosure": "合成示範資料，僅供本機開發驗證；未使用正式核准模板，不代表實際客戶檢測。",
+  "artifacts": [
+    {
+      "format": "docx",
+      "filename": "report.docx",
+      "bytes": 40023,
+      "sha256": "fc704ad114529e10ffe2fb0c36ddd5ed0407520639c1a2e4d98c5834c1575525"
+    },
+    {
+      "format": "pdf",
+      "filename": "report.pdf",
+      "bytes": 108868,
+      "sha256": "b5568635a98d6bc6df97f43d982ed67b868b9a40167d74e1f5ea4633c3472e7a"
+    },
+    {
+      "format": "pptx",
+      "filename": "summary.pptx",
+      "bytes": 48688,
+      "sha256": "1f5ed9d3c463c38b2e1acb9cfe93d0dae21bbc1ed0a3ad85fe49d55e31181973"
+    },
+    {
+      "format": "xlsx",
+      "filename": "summary.xlsx",
+      "bytes": 9337,
+      "sha256": "ad4cdf5b68b0ec337bbd5ee06ebf2ef59acaa71989652fa6d60231eee268dc61"
+    },
+    {
+      "format": "csv",
+      "filename": "all.csv",
+      "bytes": 656,
+      "sha256": "bb7c868916bd9f8e682bc289902b78716fc75076142ee36210a49cc1761af799"
+    }
+  ],
+  "qa": {
+    "structural": "generated_and_reopened",
+    "fonts": {
+      "status": "available_local",
+      "chinese": "標楷體",
+      "latin": "Times New Roman",
+      "licensing_for_container_distribution": "unverified"
+    },
+    "visual": "requires_per_page_review",
+    "office_render": "not_performed_by_generator",
+    "pdf_engine": "reportlab_native_pdf_not_office_conversion",
+    "production_ready": false,
+    "production_blockers": [
+      "尚未提供核准模板與使用權紀錄",
+      "Office 全頁渲染與人工版面覆核待完成"
+    ],
+    "pdf_pages": 3
+  }
+}

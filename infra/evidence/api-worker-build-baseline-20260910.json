@@ -1,0 +1,59 @@
+{
+  "observed_at": "2026-09-10T07:26:23.163429+00:00",
+  "before_successful_build_services": [
+    {
+      "ID": "c6a391867a0c",
+      "Service": "db",
+      "Name": "kuanguard-db-1",
+      "Image": "postgres:17.9-bookworm",
+      "State": "running",
+      "Health": "healthy",
+      "Publishers": [
+        {
+          "URL": "127.0.0.1",
+          "TargetPort": 5432,
+          "PublishedPort": 55438,
+          "Protocol": "tcp"
+        }
+      ]
+    },
+    {
+      "ID": "934d804c3fdc",
+      "Service": "queue",
+      "Name": "kuanguard-queue-1",
+      "Image": "redis:7.4.8-bookworm",
+      "State": "running",
+      "Health": "healthy",
+      "Publishers": [
+        {
+          "URL": "127.0.0.1",
+          "TargetPort": 6379,
+          "PublishedPort": 6388,
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  ],
+  "source_files_sha256": {
+    "compose.yml": "d4957861806d0cc82aafb3289c4eb5551db4b6e36f0cbaac3b627d5ecb5756bc",
+    "infra/Dockerfile.api": "22e44ae7a0ccfa2b5ca6a2c2f7083f7d870a7e62cfffce93f1ff2e5f860f2081",
+    "pyproject.toml": "a5accd20d9f024837cfbdf5925e611453514a50ca32f68435596ac05c04339ff",
+    "uv.lock": "bba37bd1202945f1345a7a083d3e0158b7406d22dcb2c697fa1844d1c3baa4cb",
+    ".dockerignore": "5f90fbc7c10eea75e67449b8654116293a624299ddc486c9344597bfabc32185"
+  },
+  "worker_limits": {
+    "cpus": 1,
+    "mem_limit": "1073741824",
+    "pids_limit": 128
+  },
+  "initial_build_attempt": {
+    "command": "docker compose build api worker",
+    "exit_code": 1,
+    "error": "Dockerfile COPY samples conflicts with root .dockerignore samples exclusion"
+  },
+  "initial_capture_attempt": {
+    "error": "Windows cp950 decode of Docker UTF-8 output",
+    "fix": "Decode explicitly as UTF-8; no product code changed"
+  },
+  "preservation_policy": "Build images only; do not stop or recreate existing services; preserve named volumes and ports"
+}

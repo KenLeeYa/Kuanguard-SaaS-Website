@@ -1,0 +1,60 @@
+name: KUANGUARD local-contract gates
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  api:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17.9-bookworm
+        env:
+          POSTGRES_USER: kuanguard_owner
+          POSTGRES_PASSWORD: ephemeral-ci-owner
+          POSTGRES_DB: kuanguard
+        ports: ['55438:5432']
+        options: --health-cmd "pg_isready -U kuanguard_owner -d kuanguard" --health-interval 5s --health-retries 12
+    env:
+      APP_ENV: test
+      DATABASE_URL: postgresql+psycopg://kuanguard:ephemeral-ci-app@127.0.0.1:55438/kuanguard
+      MIGRATION_DATABASE_URL: postgresql+psycopg://kuanguard_owner:ephemeral-ci-owner@127.0.0.1:55438/kuanguard
+      POSTGRES_APP_PASSWORD: ephemeral-ci-app
+      PG_TEST_ALLOW_ISOLATED: 'true'
+      PG_TEST_DATABASE_URL: postgresql+psycopg://kuanguard:ephemeral-ci-app@127.0.0.1:55438/kuanguard
+      PYTHONPATH: backend
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: '0.12.12'
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
+      - run: uv sync --locked
+      - run: uv run python scripts/migrate.py
+      - run: uv run python scripts/seed_local.py
+      - run: uv run ruff check backend scripts tests
+      - run: uv run pytest --junitxml=test-results/api.xml
+      - run: uv run python scripts/export_openapi.py --check
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: always()
+        with:
+          name: api-test-results
+          path: test-results/api.xml
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '24.18.0'
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build

@@ -1,0 +1,129 @@
+{
+  "observed_at": "2026-09-10T07:32:04.984929+00:00",
+  "command": "docker compose build api worker",
+  "exit_code": 0,
+  "initial_failure": {
+    "command": "docker compose build api worker",
+    "exit_code": 1,
+    "error": "Dockerfile COPY samples conflicts with root .dockerignore samples exclusion"
+  },
+  "minimal_fix": "Remove COPY samples from runtime Dockerfile; root .dockerignore continues excluding synthetic samples",
+  "images": [
+    {
+      "Id": "sha256:380900c54f05d4ba03a54f994754a5bb4177f18fff9a462e2597f8e6ffacff4c",
+      "RepoTags": [
+        "kuanguard-api:latest"
+      ],
+      "RepoDigests": [
+        "kuanguard-api@sha256:380900c54f05d4ba03a54f994754a5bb4177f18fff9a462e2597f8e6ffacff4c"
+      ],
+      "Created": "2026-09-10T07:28:55.543923279Z",
+      "Architecture": "amd64",
+      "Os": "linux",
+      "Size": 242994808
+    },
+    {
+      "Id": "sha256:444bf2ac19e678cbf5426aaa47cdceabf09c4ab595b2372b82e2124a9c56abfc",
+      "RepoTags": [
+        "kuanguard-worker:latest"
+      ],
+      "RepoDigests": [
+        "kuanguard-worker@sha256:444bf2ac19e678cbf5426aaa47cdceabf09c4ab595b2372b82e2124a9c56abfc"
+      ],
+      "Created": "2026-09-10T07:28:55.543923279Z",
+      "Architecture": "amd64",
+      "Os": "linux",
+      "Size": 242994811
+    }
+  ],
+  "source_files_sha256_at_observation": {
+    "compose.yml": "d4957861806d0cc82aafb3289c4eb5551db4b6e36f0cbaac3b627d5ecb5756bc",
+    "infra/Dockerfile.api": "feb89c6b145446a5494499dac49a20c9c2588c5ea6f621311e1e52597eecabaf",
+    "pyproject.toml": "a5accd20d9f024837cfbdf5925e611453514a50ca32f68435596ac05c04339ff",
+    "uv.lock": "bba37bd1202945f1345a7a083d3e0158b7406d22dcb2c697fa1844d1c3baa4cb",
+    ".dockerignore": "5f90fbc7c10eea75e67449b8654116293a624299ddc486c9344597bfabc32185"
+  },
+  "worker_limits": {
+    "cpus": 1,
+    "mem_limit": "1073741824",
+    "pids_limit": 128
+  },
+  "before_services": [
+    {
+      "ID": "c6a391867a0c",
+      "Service": "db",
+      "Name": "kuanguard-db-1",
+      "Image": "postgres:17.9-bookworm",
+      "State": "running",
+      "Health": "healthy",
+      "Publishers": [
+        {
+          "URL": "127.0.0.1",
+          "TargetPort": 5432,
+          "PublishedPort": 55438,
+          "Protocol": "tcp"
+        }
+      ]
+    },
+    {
+      "ID": "934d804c3fdc",
+      "Service": "queue",
+      "Name": "kuanguard-queue-1",
+      "Image": "redis:7.4.8-bookworm",
+      "State": "running",
+      "Health": "healthy",
+      "Publishers": [
+        {
+          "URL": "127.0.0.1",
+          "TargetPort": 6379,
+          "PublishedPort": 6388,
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  ],
+  "after_services": [
+    {
+      "ID": "c6a391867a0c",
+      "Service": "db",
+      "Name": "kuanguard-db-1",
+      "Image": "postgres:17.9-bookworm",
+      "State": "running",
+      "Health": "healthy",
+      "Publishers": [
+        {
+          "URL": "127.0.0.1",
+          "TargetPort": 5432,
+          "PublishedPort": 55438,
+          "Protocol": "tcp"
+        }
+      ]
+    },
+    {
+      "ID": "934d804c3fdc",
+      "Service": "queue",
+      "Name": "kuanguard-queue-1",
+      "Image": "redis:7.4.8-bookworm",
+      "State": "running",
+      "Health": "healthy",
+      "Publishers": [
+        {
+          "URL": "127.0.0.1",
+          "TargetPort": 6379,
+          "PublishedPort": 6388,
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  ],
+  "existing_containers_identical": true,
+  "container_actions": [
+    "docker compose build api worker",
+    "ephemeral docker run --rm --network none for each image"
+  ],
+  "live_services_recreated": false,
+  "web_build_performed": false,
+  "deployed_to_production": false,
+  "smoke_evidence": "infra/evidence/api-worker-image-smoke-20260910.json",
+  "source_freeze": "Images reflect build-time context; backend agents still editing. Final image refresh after source handback pending."
+}

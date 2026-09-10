@@ -1,0 +1,189 @@
+{
+  "schema_version": "kuanguard.snapshot/1",
+  "generator_version": "kuanguard-reports/1.0.0",
+  "parser_version": "kuanguard-parsers/1.0.0",
+  "normalized_dataset_version": "1.0",
+  "sources": [
+    {
+      "sha256": "3b041771b6ef30883d298457f596587a34aedce7da8a5662cac9b0347dc9592c",
+      "format": "nessus-xml"
+    }
+  ],
+  "source_comparison": [],
+  "source_hash": "3b041771b6ef30883d298457f596587a34aedce7da8a5662cac9b0347dc9592c",
+  "service_code": "VA",
+  "batch_id": "synthetic-va_retest",
+  "scope_version": "synthetic-scope/1",
+  "report_version": "1",
+  "reviewer_id": "synthetic-reviewer",
+  "reviewed_at": "2026-09-10T06:00:00Z",
+  "source_timezone": "UTC",
+  "business_timezone": "Asia/Taipei",
+  "project_name": "2026 年度合成示範專案",
+  "trace_id": "trace-synthetic-va_retest",
+  "synthetic": true,
+  "template_version": "kuanguard-development/1",
+  "rule_version": "no-exclusions/1",
+  "translation_version": "original-source/no-ai",
+  "knowledge_version": "source-only/1",
+  "findings": [
+    {
+      "source_id": "100002",
+      "asset": "192.0.2.10",
+      "title": "合成範例 設定待改善",
+      "severity": "Medium",
+      "description": "合成複測仍保留相同設定發現。",
+      "solution": "依原改善建議處理。",
+      "location": "",
+      "location_hash": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+      "port": 8443,
+      "protocol": "tcp",
+      "evidence": "合成證據 RETEST-002。",
+      "cve": "",
+      "method": "nessus",
+      "fingerprint": "6d73845055f30d6712e6aae04033d503d32478101fdfe32d41a0c16d9d8b9b5b",
+      "occurrence_id": "3350d10fad403e493015cc44a5182ec35858353f2d7893e03a8b8ab1c41b1325"
+    }
+  ],
+  "coverage": [
+    {
+      "asset": "192.0.2.10",
+      "status": "completed"
+    },
+    {
+      "asset": "192.0.2.20",
+      "status": "not_tested"
+    },
+    {
+      "asset": "192.0.2.30",
+      "status": "not_tested"
+    }
+  ],
+  "planned_assets": [
+    "192.0.2.10",
+    "192.0.2.20",
+    "192.0.2.30"
+  ],
+  "statistics": {
+    "severity_counts": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 1,
+      "Low": 0
+    },
+    "source_severity_counts": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 1,
+      "Low": 0,
+      "Informational": 0,
+      "Unknown": 0
+    },
+    "occurrence_count": 1,
+    "definition_count": 1,
+    "affected_asset_count": 1,
+    "source_record_count": 1,
+    "informational_count": 0,
+    "unknown_count": 0,
+    "planned_asset_count": 3,
+    "completed_asset_count": 1,
+    "coverage_ratio": 0.3333333333333333,
+    "coverage_counts": {
+      "completed": 1,
+      "not_tested": 2
+    },
+    "assets": [
+      {
+        "asset": "192.0.2.10",
+        "status": "completed",
+        "planned": true,
+        "risk_count": 1,
+        "severity_counts": {
+          "Critical": 0,
+          "High": 0,
+          "Medium": 1,
+          "Low": 0
+        }
+      },
+      {
+        "asset": "192.0.2.20",
+        "status": "not_tested",
+        "planned": true,
+        "risk_count": 0,
+        "severity_counts": {
+          "Critical": 0,
+          "High": 0,
+          "Medium": 0,
+          "Low": 0
+        }
+      },
+      {
+        "asset": "192.0.2.30",
+        "status": "not_tested",
+        "planned": true,
+        "risk_count": 0,
+        "severity_counts": {
+          "Critical": 0,
+          "High": 0,
+          "Medium": 0,
+          "Low": 0
+        }
+      }
+    ],
+    "denominator": "預定範圍資產數；未預定的新資產另列，不擴大分母",
+    "risk_denominator": "四級弱點實例，資訊與未知另外列示"
+  },
+  "metadata": {
+    "source_bytes": 655,
+    "service_code": "VA",
+    "format": "nessus-xml",
+    "source_schema": "NessusClientData_v2",
+    "coverage_evidence": "HOST_START and HOST_END; failed status takes precedence",
+    "raw_rows": 1,
+    "valid_rows": 1,
+    "duplicate_rows": 0,
+    "duplicate_audit": [],
+    "planned_assets": [
+      "192.0.2.10",
+      "192.0.2.20",
+      "192.0.2.30"
+    ]
+  },
+  "warnings": [],
+  "retest": [
+    {
+      "occurrence_id": "815edd1771728a9176c431bb1fe361917b2f0d179f448458e0458f26fca9e232",
+      "asset": "192.0.2.10",
+      "source_id": "100001",
+      "status": "verified_remediated",
+      "evidence": "合成驗證紀錄 RETEST-001；確認原連接埠與原檢測方法完成。",
+      "baseline_snapshot_id": "snap_310653fa1f99358a7dee550a"
+    },
+    {
+      "occurrence_id": "3350d10fad403e493015cc44a5182ec35858353f2d7893e03a8b8ab1c41b1325",
+      "asset": "192.0.2.10",
+      "source_id": "100002",
+      "status": "persistent",
+      "evidence": "當次來源仍有此發現",
+      "baseline_snapshot_id": "snap_310653fa1f99358a7dee550a"
+    },
+    {
+      "occurrence_id": "ee9e3d212e2d71f7c8634fcbd4bd8b5dbaa67e8ca0d1adaa6609148162c875b9",
+      "asset": "192.0.2.10",
+      "source_id": "100003",
+      "status": "indeterminate",
+      "evidence": "未提供充分且經覆核的個別修復驗證",
+      "baseline_snapshot_id": "snap_310653fa1f99358a7dee550a"
+    }
+  ],
+  "publication_gates": {
+    "review_approved": true,
+    "production_ready": false,
+    "production_blockers": [
+      "尚未提供核准模板與使用權紀錄",
+      "Office 全頁渲染與人工版面覆核待完成"
+    ]
+  },
+  "snapshot_hash": "06c6a576b9d3afed2ef05905b3183ce3393af1fd8298a1c3e7913377e75c2ac5",
+  "snapshot_id": "snap_06c6a576b9d3afed2ef05905"
+}

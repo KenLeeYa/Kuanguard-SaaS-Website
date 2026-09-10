@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XmlReport schemaVersion="kuanguard-appscan-1" productVersion="synthetic-mapped-profile">
+  <Issues>
+    <Issue IssueTypeID="SYNTH-WVA-001" Severity="Critical"><Name>合成範例 存取條件待核實</Name><Url>https://app.example.test/account?token=synthetic-sensitive-value&amp;view=profile</Url><Method>GET</Method><Parameter>account</Parameter><Description>合成案例呈現需要優先確認的存取條件。此內容未對任何真實網站發送請求。</Description><FixRecommendation>確認伺服器端授權條件，加入與角色及資源範圍一致的檢查。</FixRecommendation><Evidence>合成遮罩證據 WVA-001。</Evidence></Issue>
+    <Issue IssueTypeID="SYNTH-WVA-002" Severity="Low"><Name>合成範例 回應設定待改善</Name><Url>https://app.example.test/help</Url><Method>GET</Method><Parameter>response</Parameter><Description>合成回應設定與本案例維護基準有差異。</Description><FixRecommendation>依核准基準檢查回應設定並重新驗證。</FixRecommendation><Evidence>合成證據 WVA-002。</Evidence></Issue>
+  </Issues>
+  <Coverage><Target url="https://app.example.test" status="completed" /><Target url="https://portal.example.test" status="failed" /></Coverage>
+</XmlReport>

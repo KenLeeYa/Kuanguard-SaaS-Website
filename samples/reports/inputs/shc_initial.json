@@ -1,0 +1,11 @@
+{
+  "schema": "kuanguard.shc/1",
+  "checklist_version": "synthetic-checklist/1",
+  "coverage": [{"asset": "192.0.2.10", "status": "completed"}],
+  "checks": [
+    {"id": "SYNTH-SHC-001", "asset": "192.0.2.10", "title": "合成範例 日誌保存", "severity": "Medium", "status": "passed", "expected": "案例基準有保存紀錄", "observed": "案例有紀錄", "evidence": "合成紀錄 LOG-001", "reviewer": "synthetic-reviewer", "solution": "維持紀錄並定期覆核。"},
+    {"id": "SYNTH-SHC-002", "asset": "192.0.2.10", "title": "合成範例 備份還原紀錄", "severity": "High", "status": "failed", "expected": "本案例有完成的還原演練", "observed": "本案例尚未演練", "evidence": "合成紀錄 BACKUP-001", "reviewer": "synthetic-reviewer", "solution": "排定受控還原演練並保留結果。"},
+    {"id": "SYNTH-SHC-003", "asset": "192.0.2.10", "title": "合成範例 證據不足", "severity": "Medium", "status": "passed", "expected": "案例有可核對證據", "observed": "未提供", "evidence": "", "reviewer": "synthetic-reviewer", "solution": "補充來源證據後再判定。"},
+    {"id": "SYNTH-SHC-004", "asset": "192.0.2.10", "title": "合成範例 不適用服務", "severity": "Low", "status": "not_applicable", "applicability_reason": "合成資產沒有此案例元件。"}
+  ]
+}

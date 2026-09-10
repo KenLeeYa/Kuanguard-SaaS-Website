@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "activation": "definitions_ready_scheduler_and_alert_destination_not_configured",
+  "timezone": "Asia/Taipei",
+  "log_policy": "trace IDs and aggregate counts only; no evidence, recipient lists, download tokens, or credentials",
+  "checks": [
+    {"name": "api_health", "source": "GET /health", "cadence_seconds": 60, "failure": "three consecutive failures"},
+    {"name": "durable_jobs", "source": "authorized internal jobs state", "cadence_seconds": 60, "failure": "failed jobs or oldest pending exceeds measured processing budget"},
+    {"name": "parser_and_render", "source": "worker durations, failures, queue age and memory", "cadence_seconds": 60, "failure": "threshold to be frozen after load baseline"},
+    {"name": "mail_reconciliation", "source": "unknown provider outcomes and dead letter messages", "cadence_seconds": 300, "failure": "unknown outcome overdue; do not auto resend"},
+    {"name": "payment_reconciliation", "source": "signed payment inbox, orders and ledger drift", "cadence_seconds": 300, "failure": "unreconciled mismatch or unknown outcome"},
+    {"name": "database_and_objects_backup", "source": "separately stored successful manifest and restore receipt", "cadence_seconds": 3600, "failure": "older than approved RPO or checksum failure"},
+    {"name": "tls_expiry", "source": "public and origin certificate notAfter", "cadence_seconds": 86400, "failure": "less than 21 days; validate renewal path"},
+    {"name": "dns_drift", "source": "read-only Cloudflare inspect plus public verify", "cadence_seconds": 3600, "failure": "managed changes or unexpected NS/DS; never auto apply"},
+    {"name": "storage_video_budget", "source": "provider usage under a read-only credential", "cadence_seconds": 86400, "failure": "approved budget threshold; no automatic purchase"}
+  ]
+}

@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.local
+.venv
+.git
+**/node_modules
+**/.next
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+**/*.log
+samples
+docs/evidence
+test-results
+playwright-report
+infra/cloudflare/private

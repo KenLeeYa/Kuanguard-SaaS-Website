@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.1",
+  "product": "kuanguard",
+  "state": "reviewable_plan_not_provisioned",
+  "shared_owner": "existing_single_owner",
+  "shared_controls": {
+    "cloudflare_account_id": "b1c70202652cd3b77dfec70e5463785f",
+    "vercel_team_id": "team_MMfsiG94K9Zy3e6w7Ccc9xY4",
+    "supabase_organization_id": "urxujyhcggjgwsjtleys"
+  },
+  "dedicated_resources": {
+    "production": {
+      "vercel_public_project_id": null,
+      "vercel_customer_project_id": null,
+      "supabase_project_id": null,
+      "cloudflare_zone_id": null,
+      "cloudflare_tunnel_id": null,
+      "container_host": null,
+      "region": null,
+      "budget_approved": false
+    },
+    "nonproduction": {
+      "vercel_project_id": null,
+      "supabase_project_id": null,
+      "container_host": null,
+      "region": null,
+      "budget_approved": false
+    }
+  },
+  "forbidden_foreign_resource_ids": [
+    "prj_uoG4FNJIgnF1LdKRiXnfRaieXnUP",
+    "prj_S8ryMyEGjyenihjsJTU8QZqAUI2I",
+    "eyuctbnlvnbnivwasvqr",
+    "daeqwtpaxcebmtwxqdkj",
+    "dfuhylsmhrysbmhpeylx",
+    "8f8070a80ad4182e4af0c11a1b496968"
+  ],
+  "host_routes": [
+    {
+      "host": "kuanguard.com",
+      "deployment": "Vercel public project",
+      "cloudflare_proxied": false
+    },
+    {
+      "host": "www.kuanguard.com",
+      "deployment": "Vercel redirect to apex, preserving path/query",
+      "cloudflare_proxied": false
+    },
+    {
+      "host": "app.kuanguard.com",
+      "deployment": "Vercel customer/learner project",
+      "cloudflare_proxied": false
+    },
+    {
+      "host": "admin.kuanguard.com",
+      "deployment": "dedicated container via Tunnel + Access",
+      "cloudflare_proxied": true,
+      "public_origin_port": false,
+      "portfolio_requires": "owner_or_explicit_grant"
+    },
+    {
+      "host": "api.kuanguard.com",
+      "deployment": "dedicated container public API gateway",
+      "allowed_route_families": [
+        "health",
+        "auth",
+        "public",
+        "customer",
+        "learner",
+        "webhooks",
+        "app/drafts"
+      ],
+      "blocked_route_families": [
+        "internal",
+        "portfolio",
+        "development"
+      ],
+      "interactive_access_challenge": false,
+      "draft_route_limit": "/app/drafts/{campaign|training|purchase}/new only; authenticated tenant and actor scope"
+    }
+  ],
+  "database": {
+    "writer": "FastAPI_only",
+    "migration_owner": "existing_KUANGUARD_migration_tool",
+    "sensitive_schema": "not_exposed_to_Supabase_Data_API",
+    "runtime_role": "non_owner_without_BYPASSRLS",
+    "managed_schemas_modified": false
+  },
+  "retained_local_evidence": [
+    "infra/evidence/backup-restore-20260910.json",
+    "infra/evidence/backup-restore-v1_1-20260910.json",
+    "infra/evidence/backup-restore-complete-20260910.json"
+  ],
+  "local_api_worker_build": {
+    "state": "built_source_bound_and_ephemeral_smoke_passed",
+    "evidence": "infra/evidence/final-increment-images-20260910.json",
+    "live_services_recreated": false,
+    "worker_limits": {
+      "cpus": 1.0,
+      "memory_bytes": 1073741824,
+      "pids": 128
+    }
+  },
+  "local_web_build": {
+    "state": "built_source_bound_and_http_smoke_passed",
+    "evidence": "infra/evidence/final-increment-images-20260910.json",
+    "surface": "internal",
+    "compiled_api_origin": "http://api:8180",
+    "published_smoke_ports": []
+  },
+  "migration": {
+    "strategy": "expand_contract_then_drain_and_switch_single_writer",
+    "source": "existing_local_development_PostgreSQL_retained",
+    "uncontrolled_dual_write": false,
+    "destination": "dedicated_Supabase_project_pending",
+    "completed": false
+  },
+  "rollback": "Keep source DB/objects and former image intact; switch only after destination restore, tenant/ledger/job validation. No automatic destructive down migration.",
+  "remote_mutations_performed": []
+}

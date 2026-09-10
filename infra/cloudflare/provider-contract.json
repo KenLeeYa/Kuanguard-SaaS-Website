@@ -1,0 +1,36 @@
+{
+  "provider": "Cloudflare official REST API",
+  "api_version": "v4",
+  "adapter_version": "1.1.0",
+  "verified_on": "2026-09-10",
+  "lookup_method": "AnySearch code.doc and official URL extraction",
+  "sdk": "none; Python standard-library HTTPS",
+  "state_source": "live account-bound zone readback and fully paginated official DNS inventory",
+  "endpoint_scope": [
+    "GET /accounts/{account_id}",
+    "GET /accounts/{account_id}/tokens/verify",
+    "GET /zones?name=kuanguard.com&account.id={account_id}&per_page=50",
+    "GET /zones/{zone_id}",
+    "GET /zones/{zone_id}/dns_records",
+    "GET /zones/{zone_id}/dns_records/export",
+    "POST /zones/{zone_id}/dns_records",
+    "PATCH /zones/{zone_id}/dns_records/{record_id}",
+    "DELETE /zones/{zone_id}/dns_records/{record_id}",
+    "GET /zones/{zone_id}/dnssec",
+    "GET /zones/{zone_id}/settings/ssl"
+  ],
+  "sources": [
+    "https://developers.cloudflare.com/api/resources/accounts/subresources/tokens/methods/verify/",
+    "https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/list/",
+    "https://developers.cloudflare.com/api/resources/dns/subresources/records/methods/edit/",
+    "https://developers.cloudflare.com/dns/manage-dns-records/how-to/import-and-export/",
+    "https://developers.cloudflare.com/dns/dnssec/",
+    "https://developers.cloudflare.com/cache/how-to/cache-rules/settings/",
+    "https://developers.cloudflare.com/r2/api/s3/presigned-urls/",
+    "https://www.godaddy.com/help/change-my-domain-nameservers-664"
+  ],
+  "live_account_tested": true,
+  "live_account_evidence": "infra/evidence/cloudflare-discovery-20260910.json",
+  "live_kuanguard_zone_crud_tested": false,
+  "v1_1_policy": "kuanguard.com / www / app and Vercel targets DNS-only; admin only actual Tunnel CNAME; qidaigo.com never managed"
+}

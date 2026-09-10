@@ -1,0 +1,58 @@
+{
+  "observed_at": "2026-09-10T07:32:02.690Z",
+  "scope": "local_ephemeral_runtime_no_live_resources",
+  "images": {
+    "api": {
+      "state": "passed",
+      "python": "3.12.14",
+      "uid": 10001,
+      "gid": 10001,
+      "api_worker_import": "passed",
+      "non_root_storage_write_read_sha256": "471ecff15bfaa1fdb8e3dae4cad89972e93db1cb4bfe41538e22e656191c718e",
+      "cgroup_limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "1073741824",
+        "pids.max": "128"
+      },
+      "fallback_cjk_font_files": 4,
+      "approved_report_font_embedding_qa": "unverified",
+      "host_env_copied": false,
+      "network": "none",
+      "source_database_or_objects_mounted": false,
+      "dependencies": {
+        "fastapi": "0.141.1",
+        "psycopg": "3.3.5",
+        "sqlalchemy": "2.0.52",
+        "cryptography": "50.0.1",
+        "reportlab": "4.5.1",
+        "pypdf": "6.18.0"
+      }
+    },
+    "worker": {
+      "state": "passed",
+      "python": "3.12.14",
+      "uid": 10001,
+      "gid": 10001,
+      "api_worker_import": "passed",
+      "non_root_storage_write_read_sha256": "471ecff15bfaa1fdb8e3dae4cad89972e93db1cb4bfe41538e22e656191c718e",
+      "cgroup_limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "1073741824",
+        "pids.max": "128"
+      },
+      "fallback_cjk_font_files": 4,
+      "approved_report_font_embedding_qa": "unverified",
+      "host_env_copied": false,
+      "network": "none",
+      "source_database_or_objects_mounted": false,
+      "dependencies": {
+        "fastapi": "0.141.1",
+        "psycopg": "3.3.5",
+        "sqlalchemy": "2.0.52",
+        "cryptography": "50.0.1",
+        "reportlab": "4.5.1",
+        "pypdf": "6.18.0"
+      }
+    }
+  }
+}

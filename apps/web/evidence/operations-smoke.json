@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-09-10T07:46:25.925Z",
+  "base": "http://127.0.0.1:3180",
+  "browser_verified": false,
+  "external_mail_sent": false,
+  "real_payment": false,
+  "synthetic_records_created": true,
+  "checks": [
+    {
+      "name": "eight added private SSR routes and OIDC learner alias resolve with noindex",
+      "status": "passed"
+    },
+    {
+      "name": "XLSX import persists valid recipient and returns duplicate/invalid row errors",
+      "status": "passed"
+    },
+    {
+      "name": "unknown delivery finance reconciliation is authorized, evidenced and idempotent without resending",
+      "status": "passed"
+    },
+    {
+      "name": "questionnaire answer/review uses current revision and denies stale or cross-tenant access",
+      "status": "passed"
+    },
+    {
+      "name": "user-owned ticket detail and PM status update preserve original text and reject stale status",
+      "status": "passed"
+    },
+    {
+      "name": "personal notification pagination works for customer, owner and learner roles",
+      "status": "passed"
+    },
+    {
+      "name": "finite entitlement, customer-confirmed change version, scope application and release work through Next API proxy",
+      "status": "passed"
+    }
+  ]
+}

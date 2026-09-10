@@ -1,0 +1,10 @@
+{
+  "observed_at": "2026-09-10T06:53:25.484064+00:00",
+  "repo": "C:\\Users\\KY\\Documents\\Codex projects\\Stallorder-Platform",
+  "head": "d506ff58e538bcca72045302ddca291ec85ab91b",
+  "branch": "",
+  "status_sha256": "fb6c4878d8fe01078ec6e53ecb256e5cd6be577b05e8ee959cd114e5c9df7f53",
+  "tracked_diff_sha256": "0a8db76d197413f622bab2f645737b1b85720ce94afcaaf56a546f200b34bf19",
+  "codegraph_present": true,
+  "operation": "read_only_inventory"
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NessusClientData_v2><Report name="KUANGUARD synthetic retest">
+  <ReportHost name="192.0.2.10">
+    <HostProperties><tag name="HOST_START">2026-09-10T03:00:00Z</tag><tag name="HOST_END">2026-09-10T04:00:00Z</tag></HostProperties>
+    <ReportItem pluginID="100002" pluginName="合成範例 設定待改善" port="8443" protocol="tcp" severity="2"><risk_factor>Medium</risk_factor><description>合成複測仍保留相同設定發現。</description><solution>依原改善建議處理。</solution><plugin_output>合成證據 RETEST-002。</plugin_output></ReportItem>
+  </ReportHost>
+</Report></NessusClientData_v2>

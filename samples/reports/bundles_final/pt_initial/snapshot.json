@@ -1,0 +1,153 @@
+{
+  "schema_version": "kuanguard.snapshot/1",
+  "generator_version": "kuanguard-reports/1.0.0",
+  "parser_version": "kuanguard-parsers/1.0.0",
+  "normalized_dataset_version": "1.0",
+  "sources": [
+    {
+      "sha256": "ac2bcab007d2a9e5be47f2420dfec51c9755df94fdb5a15c6024178200c6f6a3",
+      "format": "pt-json"
+    }
+  ],
+  "source_comparison": [],
+  "source_hash": "ac2bcab007d2a9e5be47f2420dfec51c9755df94fdb5a15c6024178200c6f6a3",
+  "service_code": "PT",
+  "batch_id": "synthetic-pt_initial",
+  "scope_version": "synthetic-scope/1",
+  "report_version": "1",
+  "reviewer_id": "synthetic-reviewer",
+  "reviewed_at": "2026-09-10T06:00:00Z",
+  "source_timezone": "UTC",
+  "business_timezone": "Asia/Taipei",
+  "project_name": "2026 年度合成示範專案",
+  "trace_id": "trace-synthetic-pt_initial",
+  "synthetic": true,
+  "template_version": "kuanguard-development/1",
+  "rule_version": "no-exclusions/1",
+  "translation_version": "original-source/no-ai",
+  "knowledge_version": "source-only/1",
+  "findings": [
+    {
+      "source_id": "SYNTH-PT-001",
+      "asset": "https://app.example.test",
+      "title": "合成範例 報告範圍驗證",
+      "severity": "High",
+      "description": "合成案例檢查報告物件是否套用企業與專案範圍。",
+      "solution": "在伺服器端以已驗證身分與專案關聯驗權。",
+      "location": "https://app.example.test/reports",
+      "location_hash": "e4bb17636bd84afa509fd8eaf9da77483e0d058d79c1e7296901dac798761adc",
+      "evidence": "合成 assertion 紀錄 PT-001；未使用真實帳密。",
+      "reviewed": true,
+      "reviewer": "synthetic-reviewer",
+      "preconditions": "僅使用兩組合成帳號與合成報告物件。",
+      "reproduction": "在本機測試替身以不同企業的物件識別執行授權斷言。",
+      "impact": "若缺少範圍檢查，可能造成不當資料存取。",
+      "risk_reason": "本案例涉及報告存取範圍，需要優先完成修補驗證。",
+      "method": "synthetic-manual-case-review/1",
+      "port": null,
+      "protocol": "",
+      "fingerprint": "6b7fd5f9009ad3d526d68642e825efd6bb7eea5db61ed46887ae88ef02113bb1",
+      "occurrence_id": "68d0020ff33fcca0a715a89fe14780c22746522ba9f757203d05a6a7913ef105"
+    }
+  ],
+  "coverage": [
+    {
+      "asset": "https://app.example.test",
+      "status": "completed"
+    },
+    {
+      "asset": "https://portal.example.test",
+      "status": "not_tested"
+    }
+  ],
+  "planned_assets": [
+    "https://app.example.test",
+    "https://portal.example.test"
+  ],
+  "statistics": {
+    "severity_counts": {
+      "Critical": 0,
+      "High": 1,
+      "Medium": 0,
+      "Low": 0
+    },
+    "source_severity_counts": {
+      "Critical": 0,
+      "High": 1,
+      "Medium": 0,
+      "Low": 0,
+      "Informational": 0,
+      "Unknown": 0
+    },
+    "occurrence_count": 1,
+    "definition_count": 1,
+    "affected_asset_count": 1,
+    "source_record_count": 1,
+    "informational_count": 0,
+    "unknown_count": 0,
+    "planned_asset_count": 2,
+    "completed_asset_count": 1,
+    "coverage_ratio": 0.5,
+    "coverage_counts": {
+      "completed": 1,
+      "not_tested": 1
+    },
+    "assets": [
+      {
+        "asset": "https://app.example.test",
+        "status": "completed",
+        "planned": true,
+        "risk_count": 1,
+        "severity_counts": {
+          "Critical": 0,
+          "High": 1,
+          "Medium": 0,
+          "Low": 0
+        }
+      },
+      {
+        "asset": "https://portal.example.test",
+        "status": "not_tested",
+        "planned": true,
+        "risk_count": 0,
+        "severity_counts": {
+          "Critical": 0,
+          "High": 0,
+          "Medium": 0,
+          "Low": 0
+        }
+      }
+    ],
+    "denominator": "預定範圍資產數；未預定的新資產另列，不擴大分母",
+    "risk_denominator": "四級弱點實例，資訊與未知另外列示"
+  },
+  "metadata": {
+    "source_bytes": 1196,
+    "service_code": "PT",
+    "format": "pt-json",
+    "raw_rows": 1,
+    "authorization_reference": "synthetic-auth-pt-001",
+    "methodology": "synthetic-manual-case-review/1",
+    "test_window": "2026-09-10T01:00:00Z/2026-09-10T02:00:00Z",
+    "stop_conditions": "合成案例；不對外發送請求，需求變更或範圍不明即停止。",
+    "valid_rows": 1,
+    "duplicate_rows": 0,
+    "duplicate_audit": [],
+    "planned_assets": [
+      "https://app.example.test",
+      "https://portal.example.test"
+    ]
+  },
+  "warnings": [],
+  "retest": [],
+  "publication_gates": {
+    "review_approved": true,
+    "production_ready": false,
+    "production_blockers": [
+      "尚未提供核准模板與使用權紀錄",
+      "Office 全頁渲染與人工版面覆核待完成"
+    ]
+  },
+  "snapshot_hash": "c46b984bdd4146cbe423a73c7c6a82a4ae352f0aedcb577617c09939ba9adc12",
+  "snapshot_id": "snap_c46b984bdd4146cbe423a73c"
+}

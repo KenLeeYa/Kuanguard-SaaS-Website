@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NessusClientData_v2>
+  <Report name="KUANGUARD synthetic fixture">
+    <ReportHost name="192.0.2.10">
+      <HostProperties><tag name="HOST_START">2026-09-10T01:00:00Z</tag><tag name="HOST_END">2026-09-10T02:00:00Z</tag></HostProperties>
+      <ReportItem pluginID="100001" pluginName="合成範例 維護版本待更新" port="443" protocol="tcp" severity="3">
+        <risk_factor>High</risk_factor><description>合成服務版本落後於本案例指定的維護基準。此敘述僅驗證報告資料流，不對應真實主機或實際漏洞。</description>
+        <solution>依核准變更程序更新維護版本，保留回復設定，再由工程師確認原資產與連接埠。</solution><plugin_output>合成證據 VA-001；未連線或掃描任何設備。</plugin_output>
+      </ReportItem>
+      <ReportItem pluginID="100002" pluginName="合成範例 設定待改善" port="8443" protocol="tcp" severity="2">
+        <risk_factor>Medium</risk_factor><description>合成設定未符合本案例的核准組態。</description><solution>確認適用基準並調整組態，保留驗證輸出。</solution><plugin_output>合成證據 VA-002。</plugin_output>
+      </ReportItem>
+      <ReportItem pluginID="100003" pluginName="合成範例 資產資訊" port="0" protocol="tcp" severity="0">
+        <risk_factor>None</risk_factor><description>資訊列用於驗證 Informational 不納入四級弱點統計。</description><solution>無修補結論。</solution>
+      </ReportItem>
+    </ReportHost>
+    <ReportHost name="192.0.2.20"><HostProperties><tag name="HOST_START">2026-09-10T01:00:00Z</tag><tag name="HOST_END">2026-09-10T02:00:00Z</tag></HostProperties></ReportHost>
+  </Report>
+</NessusClientData_v2>

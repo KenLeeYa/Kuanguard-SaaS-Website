@@ -1,0 +1,43 @@
+{
+  "observed_at": "2026-09-10T08:42:14.7651946Z",
+  "state": "passed_local_isolated_tests",
+  "source_files_sha256": {
+    "backend/kuanguard/execution_models.py": "40d4a915cd269a71497ffda57cd270d4c820416451f99100ad28b51c1267f742",
+    "backend/kuanguard/project_execution.py": "8e864bbac468f1d1ee76a6b7e61d6c6e3c61f06dfd610607326975608f815e20",
+    "backend/kuanguard/project_routes.py": "a8d7700b8576dd811a3fa60b6e28f5f37b35fb802acdaabeff8e7a2e534d067e",
+    "backend/tests/test_project_execution.py": "c7b7aa38c46aa8f3577654a02e710ed2b96f0c5317f256247962b871dddb5b89"
+  },
+  "validation": [
+    {
+      "exit_code": 0,
+      "warnings": "Two upstream FastAPI/Starlette test-client deprecation warnings",
+      "duration_seconds": 10.34,
+      "passed": 15,
+      "command": ".venv/Scripts/python.exe -m pytest backend/tests/test_project_execution.py -q"
+    },
+    {
+      "exit_code": 0,
+      "duration_seconds": 34.08,
+      "passed": 27,
+      "command": ".venv/Scripts/python.exe -m pytest backend/tests/test_project_operations.py backend/tests/test_report_workflow.py backend/tests/test_final_workflows.py backend/tests/test_platform.py -q"
+    },
+    {
+      "command": "ruff check execution_models.py project_execution.py project_routes.py test_project_execution.py",
+      "exit_code": 0
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "boundaries": [
+    "All PM tests used isolated temporary SQLite databases",
+    "No live database or object writes by this validation",
+    "Migration 0009 and explicit synthetic seed were integrated by root",
+    "Customer projections exclude internal notes and hidden task references",
+    "PM/finance cost and margin views require project grants",
+    "Cross-tenant people reservations are global; explicitly configured tool pools are tenant scoped",
+    "Production provider activation and cloud deployment remain pending",
+    "Prior image and backup receipts remain historical checkpoints until final source freeze"
+  ]
+}

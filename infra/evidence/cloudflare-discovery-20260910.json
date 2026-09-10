@@ -1,0 +1,51 @@
+{
+  "observed_at": "2026-09-10T07:08:16.340760+00:00",
+  "token_value_logged": false,
+  "writes_performed": [],
+  "queries": [
+    {
+      "label": "token_status",
+      "success": false,
+      "http_status": 401
+    },
+    {
+      "label": "kuanguard_zone",
+      "success": true,
+      "zones": []
+    },
+    {
+      "label": "qidaigo_zone",
+      "success": true,
+      "zones": [
+        {
+          "id": "8f8070a80ad4182e4af0c11a1b496968",
+          "name": "qidaigo.com",
+          "status": "active",
+          "account": {
+            "id": "b1c70202652cd3b77dfec70e5463785f"
+          },
+          "name_servers": [
+            "liv.ns.cloudflare.com",
+            "sri.ns.cloudflare.com"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "shared_account",
+      "success": true,
+      "account_id": "b1c70202652cd3b77dfec70e5463785f"
+    },
+    {
+      "label": "account_token_status",
+      "success": true,
+      "status": "active"
+    },
+    {
+      "label": "kuanguard_account_zone",
+      "success": true,
+      "zones": []
+    }
+  ],
+  "completed_at": "2026-09-10T07:09:36.137738+00:00"
+}

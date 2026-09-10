@@ -1,0 +1,14 @@
+{
+  "schema": "kuanguard.pt/1",
+  "authorization_reference": "synthetic-auth-pt-001",
+  "methodology": "synthetic-manual-case-review/1",
+  "test_window": "2026-09-10T01:00:00Z/2026-09-10T02:00:00Z",
+  "stop_conditions": "合成案例；不對外發送請求，需求變更或範圍不明即停止。",
+  "coverage": [{"asset": "https://app.example.test", "status": "completed"}],
+  "findings": [{
+    "id": "SYNTH-PT-001", "asset": "https://app.example.test", "location": "https://app.example.test/reports",
+    "title": "合成範例 報告範圍驗證", "severity": "High", "description": "合成案例檢查報告物件是否套用企業與專案範圍。", "solution": "在伺服器端以已驗證身分與專案關聯驗權。",
+    "preconditions": "僅使用兩組合成帳號與合成報告物件。", "reproduction": "在本機測試替身以不同企業的物件識別執行授權斷言。", "impact": "若缺少範圍檢查，可能造成不當資料存取。",
+    "risk_reason": "本案例涉及報告存取範圍，需要優先完成修補驗證。", "evidence": "合成 assertion 紀錄 PT-001；未使用真實帳密。", "reviewed": true, "reviewer": "synthetic-reviewer"
+  }]
+}

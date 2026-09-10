@@ -1,0 +1,655 @@
+{
+  "observed_at": "2026-09-10T09:38:52.731592+00:00",
+  "source_database": "kuanguard",
+  "restored_database": "kuanguard_restore_20260910_complete",
+  "equal": true,
+  "different_tables": [],
+  "table_count": 80,
+  "total_rows": 811,
+  "source_tables": {
+    "acceptances": {
+      "rows": 5,
+      "ordered_json_sha256": "140f32ba8ef5529b3c00f533645854832425735b157a054d2da486ddb0e056ec"
+    },
+    "attempts": {
+      "rows": 1,
+      "ordered_json_sha256": "c1e64ba32e4d6fcdf21a158ebac1864cc9cfbcf7142e79fee29125d9a20d011d"
+    },
+    "audit_events": {
+      "rows": 98,
+      "ordered_json_sha256": "310e86588b51670de0acf116bcc8ad6c766a8b65cfdf3a3557c35a65cd3ef66c"
+    },
+    "batches": {
+      "rows": 20,
+      "ordered_json_sha256": "ee91ba09438642a58dd82d018e9f932203f46e2d95f16c05ab1799fc5246c9d3"
+    },
+    "campaigns": {
+      "rows": 2,
+      "ordered_json_sha256": "c07eaa70bbddbc2ded1574fa8d77edd59604c940dbb658142a6a013af8727263"
+    },
+    "certificates": {
+      "rows": 1,
+      "ordered_json_sha256": "23d5c4c06f4604d4b6ca8d90885064205ab5d1f633032b3f1a5f15a582f23d11"
+    },
+    "changes": {
+      "rows": 1,
+      "ordered_json_sha256": "305cf3762ecc5da3db943d088de4a9e1646a1a14b99dd731a9bf5c5d9bbda632"
+    },
+    "comments": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "contracts": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "courses": {
+      "rows": 1,
+      "ordered_json_sha256": "8d1279ceeddb72c6bf8da8cee37c3a43ec47306bf8e7efe8533c821aa74df90f"
+    },
+    "coverage": {
+      "rows": 11,
+      "ordered_json_sha256": "6ced45558b4f62a03a47f360f5c44c86aa24fc4b47489a42f16206f762f8438d"
+    },
+    "deletion_requests": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "dispatch_policies": {
+      "rows": 1,
+      "ordered_json_sha256": "14f505253293ee8b69f360c1dbef58dcb352795be32356d9f4fcafb54214f269"
+    },
+    "dispatch_qualifications": {
+      "rows": 28,
+      "ordered_json_sha256": "1c5fec2e77bd3a7d114c3e90b614f9545b58813888482b7b293afd7c4fe0edde"
+    },
+    "dispatch_tools": {
+      "rows": 5,
+      "ordered_json_sha256": "f99fb8d326e82a6445b5bbd1d2e758f387e3d3b4445ab6b2d073ac10868e9474"
+    },
+    "dispositions": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "enrollments": {
+      "rows": 2,
+      "ordered_json_sha256": "c060b84c838ca56f0743543863b22582602d31c411ace63baedf512fcb065386"
+    },
+    "entitlement_ledger": {
+      "rows": 32,
+      "ordered_json_sha256": "09f22e9cb5d38f3edbf0f584b0cb657273f8f64aef7b00ae6a3ee92474c36a67"
+    },
+    "entitlements": {
+      "rows": 20,
+      "ordered_json_sha256": "bd00cb7c6e7c000b9812ea9823a623b7c5af84fc5f16121cd3683cf5143346a5"
+    },
+    "erasure_receipts": {
+      "rows": 5,
+      "ordered_json_sha256": "c554e3226507103827121e6dfd7781a554bf0e0b0bec603e9d3d2a2af65f1886"
+    },
+    "findings": {
+      "rows": 11,
+      "ordered_json_sha256": "006e31f1a8991e3b56424b18d81e45bab15287b0b779bbedc8ba3fd8cca47d4d"
+    },
+    "form_drafts": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "grants": {
+      "rows": 6,
+      "ordered_json_sha256": "8fd0ebadb90fbd5e97bfd7e5e39fd1e3bef56724dadc79aaf74db4477e233798"
+    },
+    "idempotency": {
+      "rows": 82,
+      "ordered_json_sha256": "997ed717443e8af425f27e0fc6d4fcc39298b71c3d446d676a107f2b429cf5d3"
+    },
+    "imports": {
+      "rows": 5,
+      "ordered_json_sha256": "bdf08b9a6390ed1e6012276ca192fbdcc1eab0ad7bbf64e0adcabe080b0ee885"
+    },
+    "inbox": {
+      "rows": 1,
+      "ordered_json_sha256": "628a5ec09e9daa3578c7e110f839517417fdff224e56caa6e30173f294103ce7"
+    },
+    "invitations": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "invoices": {
+      "rows": 1,
+      "ordered_json_sha256": "e9029479a684f7e3f2a7600ba4348691f8d131410cb43bc8fa74e59623a2b6fb"
+    },
+    "jobs": {
+      "rows": 10,
+      "ordered_json_sha256": "2dbf912b12b84742ba9c54bbcf7324200949d1d35916b614464dc2eafbea24b2"
+    },
+    "leads": {
+      "rows": 1,
+      "ordered_json_sha256": "b4d00084390b31b42be81c405c00308cda0f8a06b1fc21a6ebd38fbff0a184c1"
+    },
+    "lessons": {
+      "rows": 3,
+      "ordered_json_sha256": "766a79469b502b9ec24a3a0750087adde6a6854ecf15461d0a350fb86cb95c9e"
+    },
+    "lifecycle_plans": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "meeting_decisions": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "memberships": {
+      "rows": 22,
+      "ordered_json_sha256": "494bc422c95c481ebf3613bbcfa8af28642180c5bfd2ee733ff4abc1eade5761"
+    },
+    "message_plans": {
+      "rows": 2,
+      "ordered_json_sha256": "527b76f6cc4205b5c7224c5601d6eb71ae8bc1f85cd83b26d9d0eb79495a05c4"
+    },
+    "notifications": {
+      "rows": 5,
+      "ordered_json_sha256": "6d62f960140654395db288d27a62d94417b2ac7ab0778ff4213b2aa5a59e3f12"
+    },
+    "oidc_states": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "orders": {
+      "rows": 1,
+      "ordered_json_sha256": "4afbc3d1b244fcfc71379c9bd4b7d3d8f6275933e8c0d8c2012b82354f8574f0"
+    },
+    "payment_routes": {
+      "rows": 1,
+      "ordered_json_sha256": "f1b98cb497899ee9518b144c147ff9fec862ad30d049d755d3e256e43ac7993e"
+    },
+    "payments": {
+      "rows": 1,
+      "ordered_json_sha256": "38828164db40ae833d094d3d8b7e8fff3751ff94b98c3c100bb0f2563d413225"
+    },
+    "point_lots": {
+      "rows": 10,
+      "ordered_json_sha256": "08a1427744e04b6c1856652f621a90a6bc26de0c43ab6069ed2ed6d0beb1aaa4"
+    },
+    "portfolio_connectors": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "progress_events": {
+      "rows": 3,
+      "ordered_json_sha256": "53a37848f864a3b6d7e9d71c394b2a87fe5597540fb329b2d3c06e2cd2c25880"
+    },
+    "project_cost_entries": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "projects": {
+      "rows": 2,
+      "ordered_json_sha256": "374cec45c6f339cbab00883395afeebcb6f530dea4d8ae302003af2bcddb5e98"
+    },
+    "publications": {
+      "rows": 5,
+      "ordered_json_sha256": "7e41b22062c7a92e45500e29bae897cc3525f85fbe91e49c921f5b6450cbad02"
+    },
+    "questionnaire_answers": {
+      "rows": 1,
+      "ordered_json_sha256": "e7ae02bae2fd5db95b75c5b8cbee483dcae43549eb64828f2a5122600fb4d337"
+    },
+    "questionnaires": {
+      "rows": 1,
+      "ordered_json_sha256": "747092db516b5ddcf10fd115b3b8d2d7c214c10f41816f4fdd34ff6147dbfe15"
+    },
+    "questions": {
+      "rows": 5,
+      "ordered_json_sha256": "c736b11ba3e5e0617b9077b71fe573accc6c161a84fb44a1c59e4f0aa094a900"
+    },
+    "quotes": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "raw_events": {
+      "rows": 1,
+      "ordered_json_sha256": "c238be350e110df8fd4bd8fdfe3c27233e33eea9ec62b94955fcf0bba62bb17a"
+    },
+    "recipient_groups": {
+      "rows": 2,
+      "ordered_json_sha256": "d26ab4374a7bfc1d6a3349977c2621f9bacdc2a916ede31b3c77a0ba86520c65"
+    },
+    "recipients": {
+      "rows": 2,
+      "ordered_json_sha256": "2a067916afb84fe4237db71e530358fbe25757ab8765e17840d2830b538c0293"
+    },
+    "refunds": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "report_jobs": {
+      "rows": 5,
+      "ordered_json_sha256": "1471f9ca88739e2079bb433b762debfe67ec10ca92b7aed8e7fc40ca97742661"
+    },
+    "reservation_lots": {
+      "rows": 53,
+      "ordered_json_sha256": "1f96eb7ef094f9a342a1f198dc7521ccecbf2171d7bf605718c6328424a741f7"
+    },
+    "reservations": {
+      "rows": 53,
+      "ordered_json_sha256": "6b9364d84ab8562fbcafdff97104cffe96bbbf137ae3f1417b8a3a2686e2d403"
+    },
+    "resource_slots": {
+      "rows": 15,
+      "ordered_json_sha256": "a3852bd027ab1083868498a0cb21d7de8e83ba24efd7b1e574d07a39ef8b3a10"
+    },
+    "retention_policies": {
+      "rows": 8,
+      "ordered_json_sha256": "7f37219538c35dc1d8bb73c631c10ab84efcb32c77e748dd4f9ce31dbae7198f"
+    },
+    "retest_checks": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "retest_requests": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "schedule_history": {
+      "rows": 5,
+      "ordered_json_sha256": "f1c2ec6d34d5110c68a1564c76b9ab5a9be94ca0e958fdb24e2d1e1816c6ec44"
+    },
+    "schema_revisions": {
+      "rows": 10,
+      "ordered_json_sha256": "bd5621246fb07c90467650ebcdca11f0c567a69ffc2f5d1df9e283bb118b4ddd"
+    },
+    "scope_assets": {
+      "rows": 28,
+      "ordered_json_sha256": "07366c3412921a204d89c5112e9aa508196b42b552e126692d36297ffb2648e8"
+    },
+    "service_catalog": {
+      "rows": 7,
+      "ordered_json_sha256": "e377f3ca4bb7faf56c3a816df3f5bc47de5453f69374f49c4d5c569c6beb58c3"
+    },
+    "sessions": {
+      "rows": 23,
+      "ordered_json_sha256": "15f1cdba4c663eb98670f0eda103c21a8cf1103943bc71717080b0622cb94faf"
+    },
+    "snapshots": {
+      "rows": 5,
+      "ordered_json_sha256": "6471fb31a33f680f8cc935edce72acdc8dbf3f09e467d8842e50780ea9281ab5"
+    },
+    "task_dependencies": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "task_details": {
+      "rows": 1,
+      "ordered_json_sha256": "0a76e52166345680b86fee40f7b586c7c01e1df1e0345bc37ac8120f745e6254"
+    },
+    "tasks": {
+      "rows": 15,
+      "ordered_json_sha256": "1262f838d1080117bf69d7415360501176b73bd055c07f9ec6e5799aa6b1ec25"
+    },
+    "tenants": {
+      "rows": 12,
+      "ordered_json_sha256": "1f1a239fc2cf2e8299b7c62e4cbd0c0cfab1d42080b859ba14b583cbec062de3"
+    },
+    "ticket_messages": {
+      "rows": 2,
+      "ordered_json_sha256": "a8d11c6ee11bf451a55f115efbd3cf6abc78883597837f1f7847c834d63a0d07"
+    },
+    "tickets": {
+      "rows": 2,
+      "ordered_json_sha256": "bf3064f685ce189c3fa200702fabad86f226145dde2d03c038b065a7b2797590"
+    },
+    "time_entries": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "training_entitlement_ledger": {
+      "rows": 2,
+      "ordered_json_sha256": "f0f2ae091b8313f1aad0e2a6148c95e573a2a6139b8d96ca1340d3aec6bf3078"
+    },
+    "training_entitlements": {
+      "rows": 1,
+      "ordered_json_sha256": "84c8cdb31bd4b96b3932fa6aaa6010717b3569b8f905a57080c4bc8998942f3d"
+    },
+    "users": {
+      "rows": 10,
+      "ordered_json_sha256": "0e901ebae29ab3e04646d0fedadbb2cd1a247f318b440161bec3acf3ecc44774"
+    },
+    "wallet_transactions": {
+      "rows": 116,
+      "ordered_json_sha256": "a55e8a8e38b3bbed6b6fd1096db358b9732c90b1bec42822cdcd4963d83b94d3"
+    },
+    "wallets": {
+      "rows": 7,
+      "ordered_json_sha256": "a83f8483015a8ae9fcf2c9d54fa6915f8f586fab5790545cf2ea002c2c71a70e"
+    },
+    "work_packages": {
+      "rows": 14,
+      "ordered_json_sha256": "beebb95aceef7218795b1f1334266293f97289b7caea032a8e60658c3689e5ec"
+    }
+  },
+  "restored_tables": {
+    "acceptances": {
+      "rows": 5,
+      "ordered_json_sha256": "140f32ba8ef5529b3c00f533645854832425735b157a054d2da486ddb0e056ec"
+    },
+    "attempts": {
+      "rows": 1,
+      "ordered_json_sha256": "c1e64ba32e4d6fcdf21a158ebac1864cc9cfbcf7142e79fee29125d9a20d011d"
+    },
+    "audit_events": {
+      "rows": 98,
+      "ordered_json_sha256": "310e86588b51670de0acf116bcc8ad6c766a8b65cfdf3a3557c35a65cd3ef66c"
+    },
+    "batches": {
+      "rows": 20,
+      "ordered_json_sha256": "ee91ba09438642a58dd82d018e9f932203f46e2d95f16c05ab1799fc5246c9d3"
+    },
+    "campaigns": {
+      "rows": 2,
+      "ordered_json_sha256": "c07eaa70bbddbc2ded1574fa8d77edd59604c940dbb658142a6a013af8727263"
+    },
+    "certificates": {
+      "rows": 1,
+      "ordered_json_sha256": "23d5c4c06f4604d4b6ca8d90885064205ab5d1f633032b3f1a5f15a582f23d11"
+    },
+    "changes": {
+      "rows": 1,
+      "ordered_json_sha256": "305cf3762ecc5da3db943d088de4a9e1646a1a14b99dd731a9bf5c5d9bbda632"
+    },
+    "comments": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "contracts": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "courses": {
+      "rows": 1,
+      "ordered_json_sha256": "8d1279ceeddb72c6bf8da8cee37c3a43ec47306bf8e7efe8533c821aa74df90f"
+    },
+    "coverage": {
+      "rows": 11,
+      "ordered_json_sha256": "6ced45558b4f62a03a47f360f5c44c86aa24fc4b47489a42f16206f762f8438d"
+    },
+    "deletion_requests": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "dispatch_policies": {
+      "rows": 1,
+      "ordered_json_sha256": "14f505253293ee8b69f360c1dbef58dcb352795be32356d9f4fcafb54214f269"
+    },
+    "dispatch_qualifications": {
+      "rows": 28,
+      "ordered_json_sha256": "1c5fec2e77bd3a7d114c3e90b614f9545b58813888482b7b293afd7c4fe0edde"
+    },
+    "dispatch_tools": {
+      "rows": 5,
+      "ordered_json_sha256": "f99fb8d326e82a6445b5bbd1d2e758f387e3d3b4445ab6b2d073ac10868e9474"
+    },
+    "dispositions": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "enrollments": {
+      "rows": 2,
+      "ordered_json_sha256": "c060b84c838ca56f0743543863b22582602d31c411ace63baedf512fcb065386"
+    },
+    "entitlement_ledger": {
+      "rows": 32,
+      "ordered_json_sha256": "09f22e9cb5d38f3edbf0f584b0cb657273f8f64aef7b00ae6a3ee92474c36a67"
+    },
+    "entitlements": {
+      "rows": 20,
+      "ordered_json_sha256": "bd00cb7c6e7c000b9812ea9823a623b7c5af84fc5f16121cd3683cf5143346a5"
+    },
+    "erasure_receipts": {
+      "rows": 5,
+      "ordered_json_sha256": "c554e3226507103827121e6dfd7781a554bf0e0b0bec603e9d3d2a2af65f1886"
+    },
+    "findings": {
+      "rows": 11,
+      "ordered_json_sha256": "006e31f1a8991e3b56424b18d81e45bab15287b0b779bbedc8ba3fd8cca47d4d"
+    },
+    "form_drafts": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "grants": {
+      "rows": 6,
+      "ordered_json_sha256": "8fd0ebadb90fbd5e97bfd7e5e39fd1e3bef56724dadc79aaf74db4477e233798"
+    },
+    "idempotency": {
+      "rows": 82,
+      "ordered_json_sha256": "997ed717443e8af425f27e0fc6d4fcc39298b71c3d446d676a107f2b429cf5d3"
+    },
+    "imports": {
+      "rows": 5,
+      "ordered_json_sha256": "bdf08b9a6390ed1e6012276ca192fbdcc1eab0ad7bbf64e0adcabe080b0ee885"
+    },
+    "inbox": {
+      "rows": 1,
+      "ordered_json_sha256": "628a5ec09e9daa3578c7e110f839517417fdff224e56caa6e30173f294103ce7"
+    },
+    "invitations": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "invoices": {
+      "rows": 1,
+      "ordered_json_sha256": "e9029479a684f7e3f2a7600ba4348691f8d131410cb43bc8fa74e59623a2b6fb"
+    },
+    "jobs": {
+      "rows": 10,
+      "ordered_json_sha256": "2dbf912b12b84742ba9c54bbcf7324200949d1d35916b614464dc2eafbea24b2"
+    },
+    "leads": {
+      "rows": 1,
+      "ordered_json_sha256": "b4d00084390b31b42be81c405c00308cda0f8a06b1fc21a6ebd38fbff0a184c1"
+    },
+    "lessons": {
+      "rows": 3,
+      "ordered_json_sha256": "766a79469b502b9ec24a3a0750087adde6a6854ecf15461d0a350fb86cb95c9e"
+    },
+    "lifecycle_plans": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "meeting_decisions": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "memberships": {
+      "rows": 22,
+      "ordered_json_sha256": "494bc422c95c481ebf3613bbcfa8af28642180c5bfd2ee733ff4abc1eade5761"
+    },
+    "message_plans": {
+      "rows": 2,
+      "ordered_json_sha256": "527b76f6cc4205b5c7224c5601d6eb71ae8bc1f85cd83b26d9d0eb79495a05c4"
+    },
+    "notifications": {
+      "rows": 5,
+      "ordered_json_sha256": "6d62f960140654395db288d27a62d94417b2ac7ab0778ff4213b2aa5a59e3f12"
+    },
+    "oidc_states": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "orders": {
+      "rows": 1,
+      "ordered_json_sha256": "4afbc3d1b244fcfc71379c9bd4b7d3d8f6275933e8c0d8c2012b82354f8574f0"
+    },
+    "payment_routes": {
+      "rows": 1,
+      "ordered_json_sha256": "f1b98cb497899ee9518b144c147ff9fec862ad30d049d755d3e256e43ac7993e"
+    },
+    "payments": {
+      "rows": 1,
+      "ordered_json_sha256": "38828164db40ae833d094d3d8b7e8fff3751ff94b98c3c100bb0f2563d413225"
+    },
+    "point_lots": {
+      "rows": 10,
+      "ordered_json_sha256": "08a1427744e04b6c1856652f621a90a6bc26de0c43ab6069ed2ed6d0beb1aaa4"
+    },
+    "portfolio_connectors": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "progress_events": {
+      "rows": 3,
+      "ordered_json_sha256": "53a37848f864a3b6d7e9d71c394b2a87fe5597540fb329b2d3c06e2cd2c25880"
+    },
+    "project_cost_entries": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "projects": {
+      "rows": 2,
+      "ordered_json_sha256": "374cec45c6f339cbab00883395afeebcb6f530dea4d8ae302003af2bcddb5e98"
+    },
+    "publications": {
+      "rows": 5,
+      "ordered_json_sha256": "7e41b22062c7a92e45500e29bae897cc3525f85fbe91e49c921f5b6450cbad02"
+    },
+    "questionnaire_answers": {
+      "rows": 1,
+      "ordered_json_sha256": "e7ae02bae2fd5db95b75c5b8cbee483dcae43549eb64828f2a5122600fb4d337"
+    },
+    "questionnaires": {
+      "rows": 1,
+      "ordered_json_sha256": "747092db516b5ddcf10fd115b3b8d2d7c214c10f41816f4fdd34ff6147dbfe15"
+    },
+    "questions": {
+      "rows": 5,
+      "ordered_json_sha256": "c736b11ba3e5e0617b9077b71fe573accc6c161a84fb44a1c59e4f0aa094a900"
+    },
+    "quotes": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "raw_events": {
+      "rows": 1,
+      "ordered_json_sha256": "c238be350e110df8fd4bd8fdfe3c27233e33eea9ec62b94955fcf0bba62bb17a"
+    },
+    "recipient_groups": {
+      "rows": 2,
+      "ordered_json_sha256": "d26ab4374a7bfc1d6a3349977c2621f9bacdc2a916ede31b3c77a0ba86520c65"
+    },
+    "recipients": {
+      "rows": 2,
+      "ordered_json_sha256": "2a067916afb84fe4237db71e530358fbe25757ab8765e17840d2830b538c0293"
+    },
+    "refunds": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "report_jobs": {
+      "rows": 5,
+      "ordered_json_sha256": "1471f9ca88739e2079bb433b762debfe67ec10ca92b7aed8e7fc40ca97742661"
+    },
+    "reservation_lots": {
+      "rows": 53,
+      "ordered_json_sha256": "1f96eb7ef094f9a342a1f198dc7521ccecbf2171d7bf605718c6328424a741f7"
+    },
+    "reservations": {
+      "rows": 53,
+      "ordered_json_sha256": "6b9364d84ab8562fbcafdff97104cffe96bbbf137ae3f1417b8a3a2686e2d403"
+    },
+    "resource_slots": {
+      "rows": 15,
+      "ordered_json_sha256": "a3852bd027ab1083868498a0cb21d7de8e83ba24efd7b1e574d07a39ef8b3a10"
+    },
+    "retention_policies": {
+      "rows": 8,
+      "ordered_json_sha256": "7f37219538c35dc1d8bb73c631c10ab84efcb32c77e748dd4f9ce31dbae7198f"
+    },
+    "retest_checks": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "retest_requests": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "schedule_history": {
+      "rows": 5,
+      "ordered_json_sha256": "f1c2ec6d34d5110c68a1564c76b9ab5a9be94ca0e958fdb24e2d1e1816c6ec44"
+    },
+    "schema_revisions": {
+      "rows": 10,
+      "ordered_json_sha256": "bd5621246fb07c90467650ebcdca11f0c567a69ffc2f5d1df9e283bb118b4ddd"
+    },
+    "scope_assets": {
+      "rows": 28,
+      "ordered_json_sha256": "07366c3412921a204d89c5112e9aa508196b42b552e126692d36297ffb2648e8"
+    },
+    "service_catalog": {
+      "rows": 7,
+      "ordered_json_sha256": "e377f3ca4bb7faf56c3a816df3f5bc47de5453f69374f49c4d5c569c6beb58c3"
+    },
+    "sessions": {
+      "rows": 23,
+      "ordered_json_sha256": "15f1cdba4c663eb98670f0eda103c21a8cf1103943bc71717080b0622cb94faf"
+    },
+    "snapshots": {
+      "rows": 5,
+      "ordered_json_sha256": "6471fb31a33f680f8cc935edce72acdc8dbf3f09e467d8842e50780ea9281ab5"
+    },
+    "task_dependencies": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "task_details": {
+      "rows": 1,
+      "ordered_json_sha256": "0a76e52166345680b86fee40f7b586c7c01e1df1e0345bc37ac8120f745e6254"
+    },
+    "tasks": {
+      "rows": 15,
+      "ordered_json_sha256": "1262f838d1080117bf69d7415360501176b73bd055c07f9ec6e5799aa6b1ec25"
+    },
+    "tenants": {
+      "rows": 12,
+      "ordered_json_sha256": "1f1a239fc2cf2e8299b7c62e4cbd0c0cfab1d42080b859ba14b583cbec062de3"
+    },
+    "ticket_messages": {
+      "rows": 2,
+      "ordered_json_sha256": "a8d11c6ee11bf451a55f115efbd3cf6abc78883597837f1f7847c834d63a0d07"
+    },
+    "tickets": {
+      "rows": 2,
+      "ordered_json_sha256": "bf3064f685ce189c3fa200702fabad86f226145dde2d03c038b065a7b2797590"
+    },
+    "time_entries": {
+      "rows": 0,
+      "ordered_json_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "training_entitlement_ledger": {
+      "rows": 2,
+      "ordered_json_sha256": "f0f2ae091b8313f1aad0e2a6148c95e573a2a6139b8d96ca1340d3aec6bf3078"
+    },
+    "training_entitlements": {
+      "rows": 1,
+      "ordered_json_sha256": "84c8cdb31bd4b96b3932fa6aaa6010717b3569b8f905a57080c4bc8998942f3d"
+    },
+    "users": {
+      "rows": 10,
+      "ordered_json_sha256": "0e901ebae29ab3e04646d0fedadbb2cd1a247f318b440161bec3acf3ecc44774"
+    },
+    "wallet_transactions": {
+      "rows": 116,
+      "ordered_json_sha256": "a55e8a8e38b3bbed6b6fd1096db358b9732c90b1bec42822cdcd4963d83b94d3"
+    },
+    "wallets": {
+      "rows": 7,
+      "ordered_json_sha256": "a83f8483015a8ae9fcf2c9d54fa6915f8f586fab5790545cf2ea002c2c71a70e"
+    },
+    "work_packages": {
+      "rows": 14,
+      "ordered_json_sha256": "beebb95aceef7218795b1f1334266293f97289b7caea032a8e60658c3689e5ec"
+    }
+  },
+  "private_rows_logged": false,
+  "scope": "read_only_public_table_data_comparison_during_verified_api_worker_pause"
+}

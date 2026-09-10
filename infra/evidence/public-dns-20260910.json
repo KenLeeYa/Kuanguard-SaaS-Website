@@ -1,0 +1,648 @@
+{
+  "observed_at_utc": "2026-09-10T06:40:55.8498415Z",
+  "apex": "kuanguard.com",
+  "scope": "public_dns_sample_only_not_a_complete_zone_export",
+  "dnssec_chain_verified": false,
+  "queries": [
+    {
+      "server": "1.1.1.1",
+      "type": "NS",
+      "state": "answers_observed",
+      "answers": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": "ns37.domaincontrol.com",
+          "IPAddress": null,
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        },
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": "ns38.domaincontrol.com",
+          "IPAddress": null,
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        }
+      ],
+      "authority": []
+    },
+    {
+      "server": "1.1.1.1",
+      "type": "SOA",
+      "state": "answers_observed",
+      "answers": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": null,
+          "IPAddress": null,
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ],
+      "authority": []
+    },
+    {
+      "server": "1.1.1.1",
+      "type": "DS",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 900,
+          "PrimaryServer": "a.gtld-servers.net"
+        }
+      ]
+    },
+    {
+      "server": "1.1.1.1",
+      "type": "MX",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "1.1.1.1",
+      "type": "A",
+      "state": "answers_observed",
+      "answers": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "A",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": null,
+          "IPAddress": "76.223.105.230",
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        },
+        {
+          "Name": "kuanguard.com",
+          "Type": "A",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": null,
+          "IPAddress": "13.248.243.5",
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        }
+      ],
+      "authority": []
+    },
+    {
+      "server": "1.1.1.1",
+      "type": "AAAA",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "1.1.1.1",
+      "type": "TXT",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "1.1.1.1",
+      "type": "CAA",
+      "state": "query_failed",
+      "error": "Installed Resolve-DnsName client does not support CAA; full provider export still required"
+    },
+    {
+      "server": "8.8.8.8",
+      "type": "NS",
+      "state": "answers_observed",
+      "answers": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": "ns38.domaincontrol.com",
+          "IPAddress": null,
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        },
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": "ns37.domaincontrol.com",
+          "IPAddress": null,
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        }
+      ],
+      "authority": []
+    },
+    {
+      "server": "8.8.8.8",
+      "type": "SOA",
+      "state": "answers_observed",
+      "answers": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": null,
+          "IPAddress": null,
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ],
+      "authority": []
+    },
+    {
+      "server": "8.8.8.8",
+      "type": "DS",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 900,
+          "PrimaryServer": "a.gtld-servers.net"
+        }
+      ]
+    },
+    {
+      "server": "8.8.8.8",
+      "type": "MX",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "8.8.8.8",
+      "type": "A",
+      "state": "answers_observed",
+      "answers": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "A",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": null,
+          "IPAddress": "13.248.243.5",
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        },
+        {
+          "Name": "kuanguard.com",
+          "Type": "A",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": null,
+          "IPAddress": "76.223.105.230",
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        }
+      ],
+      "authority": []
+    },
+    {
+      "server": "8.8.8.8",
+      "type": "AAAA",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "8.8.8.8",
+      "type": "TXT",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "8.8.8.8",
+      "type": "CAA",
+      "state": "query_failed",
+      "error": "Installed Resolve-DnsName client does not support CAA; full provider export still required"
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "type": "NS",
+      "state": "answers_observed",
+      "answers": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": "ns37.domaincontrol.com",
+          "IPAddress": null,
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        },
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": "ns38.domaincontrol.com",
+          "IPAddress": null,
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        }
+      ],
+      "authority": []
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "type": "SOA",
+      "state": "answers_observed",
+      "answers": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": null,
+          "IPAddress": null,
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Authority",
+          "TTL": 3600,
+          "PrimaryServer": null
+        },
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Authority",
+          "TTL": 3600,
+          "PrimaryServer": null
+        }
+      ]
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "type": "DS",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "type": "MX",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "type": "A",
+      "state": "answers_observed",
+      "answers": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "A",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": null,
+          "IPAddress": "76.223.105.230",
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        },
+        {
+          "Name": "kuanguard.com",
+          "Type": "A",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": null,
+          "IPAddress": "13.248.243.5",
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        }
+      ],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Authority",
+          "TTL": 3600,
+          "PrimaryServer": null
+        },
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Authority",
+          "TTL": 3600,
+          "PrimaryServer": null
+        }
+      ]
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "type": "AAAA",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "type": "TXT",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "ns37.domaincontrol.com",
+      "type": "CAA",
+      "state": "query_failed",
+      "error": "Installed Resolve-DnsName client does not support CAA; full provider export still required"
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "type": "NS",
+      "state": "answers_observed",
+      "answers": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": "ns37.domaincontrol.com",
+          "IPAddress": null,
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        },
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": "ns38.domaincontrol.com",
+          "IPAddress": null,
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        }
+      ],
+      "authority": []
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "type": "SOA",
+      "state": "answers_observed",
+      "answers": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": null,
+          "IPAddress": null,
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Authority",
+          "TTL": 3600,
+          "PrimaryServer": null
+        },
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Authority",
+          "TTL": 3600,
+          "PrimaryServer": null
+        }
+      ]
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "type": "DS",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "type": "MX",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "type": "A",
+      "state": "answers_observed",
+      "answers": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "A",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": null,
+          "IPAddress": "76.223.105.230",
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        },
+        {
+          "Name": "kuanguard.com",
+          "Type": "A",
+          "Section": "Answer",
+          "TTL": 3600,
+          "NameHost": null,
+          "IPAddress": "13.248.243.5",
+          "NameExchange": null,
+          "Strings": null,
+          "PrimaryServer": null
+        }
+      ],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Authority",
+          "TTL": 3600,
+          "PrimaryServer": null
+        },
+        {
+          "Name": "kuanguard.com",
+          "Type": "NS",
+          "Section": "Authority",
+          "TTL": 3600,
+          "PrimaryServer": null
+        }
+      ]
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "type": "AAAA",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "type": "TXT",
+      "state": "no_requested_type_answer_observed",
+      "answers": [],
+      "authority": [
+        {
+          "Name": "kuanguard.com",
+          "Type": "SOA",
+          "Section": "Authority",
+          "TTL": 600,
+          "PrimaryServer": "ns37.domaincontrol.com"
+        }
+      ]
+    },
+    {
+      "server": "ns38.domaincontrol.com",
+      "type": "CAA",
+      "state": "query_failed",
+      "error": "Installed Resolve-DnsName client does not support CAA; full provider export still required"
+    }
+  ]
+}

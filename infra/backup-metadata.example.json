@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "brand": "KUANGUARD",
+  "apex": "kuanguard.com",
+  "business_timezone": "Asia/Taipei",
+  "object_backend": "local_development",
+  "config_version": "pending_release_configuration",
+  "deployment_commit": null,
+  "key_references": []
+}

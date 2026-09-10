@@ -1,0 +1,78 @@
+{
+  "status": "LOCAL_SYNTHETIC_UAT_PASSED",
+  "run_id": "ca39663a-70d2-44a3-8df0-4ae5bfd24a0c",
+  "completed_at": "2026-09-10T07:52:34.530821+00:00",
+  "scope": "existing loopback API and PostgreSQL; additive fixtures; no production claims",
+  "reports": [
+    {
+      "service": "VA",
+      "publication_id": "f8da5e14-1024-44b8-9645-b97e4c2d9a6c",
+      "snapshot_hash": "52e2884841349e0fb5b96af9deabbe1a61ea0ec3a2ed27463d118109f8bab008",
+      "artifact_sha256": {
+        "docx": "4852fe0692f8188c668d682cff9fbdde0cc95964c08d5038ccbb2c47585a9aab",
+        "pdf": "9688cd82f7f18cc60945ae36f9e0dcc925ab2b12f7e4f977e5b3a1d9b8fa5a48",
+        "pptx": "e782b7c69425da6a9465fbd2c5639c6086b1d59f7af69c3ae03cbb6c72e78e95",
+        "xlsx": "2d4028f19e4941510a1ba13f91f79eecf5513f2da143fff3ab4c8c21b2dce63b",
+        "csv": "2927ced31a9a564cc3d331af4f11b99be7a5458e6fee2f9cb0b9cebb8ded2a41"
+      }
+    },
+    {
+      "service": "WVA",
+      "publication_id": "ccff7f34-a4dc-40d5-bcf4-6a8417e339ed",
+      "snapshot_hash": "488ea01bc9e6b7648ab29a1a2a91eea8e206e9cc3ee4aa7a6c18f9aa167af900",
+      "artifact_sha256": {
+        "docx": "2034ccf50eec2e0a66bd907fc7c04c7f1c94719a40c1b9d471394a11f4b48daa",
+        "pdf": "b34274b501021afc141c61ca3e1840919dea946ca062c560599775f6f7b4544b",
+        "pptx": "33fa38fe7ab89fe6de2065482b08e764b300e81e431d7b067712bf92354814ba",
+        "xlsx": "ee8f71c9a38b29271cebe38591b38b3857f5abd24a497e26f5d2e33bc49317e0",
+        "csv": "0f0b18670692512aa2d6487dcfa102d1ee19227b6290ef16695e05e39feeb654"
+      }
+    },
+    {
+      "service": "SHC",
+      "publication_id": "eb447725-2f03-4339-add6-4423e6a1ecbd",
+      "snapshot_hash": "2db9f26d49a1aa53620587246199417f03364fe0c474ac28b0f9e9c40c95c040",
+      "artifact_sha256": {
+        "docx": "c21acda3c8c29a2331ee86dfa62856c7d0d4642747504ee232817bee353da35b",
+        "pdf": "95de204eaf1ef1f673743789b3953297df1e4279d95ff05d7f042ade97d81e41",
+        "pptx": "f1462978c339ef62f066adcc46c6eb9e4da6d10cb06798f6388b215b29aae607",
+        "xlsx": "d549241a2ba69b9b65aa9c2b343f00e6030db29123d8c7e1ea9e57b53d3c237a",
+        "csv": "2b3601da1c89469ab2f2461afffb0393bd9f126d6999f2738ec5c068b2a2a205"
+      }
+    },
+    {
+      "service": "PT",
+      "publication_id": "241215ac-b075-4a1b-8525-06f5871de1be",
+      "snapshot_hash": "3b8bc4f50e04c3d2d3c2bf840c254d6c962e0e17f218c5d0f3e6d862f087fddc",
+      "artifact_sha256": {
+        "docx": "05fd601d501e8b27fa7a9c18f1cfdc44b99c570578c45a4c88fe6acf38d1717e",
+        "pdf": "adcd879652fde661e388674810189a8e29c95a1bdd8217eee2e335625d9396f1",
+        "pptx": "64952cad64bcc420b74ac672d4ec0b72fc72cab0b16e6605987cad0525c3ab34",
+        "xlsx": "2e87540eedc9fabd8cee3c26e72dda728cfb2415f2496307b7c0a5a015dff908",
+        "csv": "de7c17ab73e88ee6350cfd621aa82257ec75859cb8343fce7a0d6562ee988a31"
+      }
+    },
+    {
+      "service": "SOURCE",
+      "publication_id": "bf24dda3-5b01-4bf3-853f-e1f7005d8006",
+      "snapshot_hash": "0902e077e2e07546c014bca96619b2eeac21f383c8469cf14a63b0333e30519d",
+      "artifact_sha256": {
+        "docx": "d5fe2b6e3238ed6d816e9d027ab0d7c8e53977e6724f3a4e4a441bac525a68c6",
+        "pdf": "617c4e21fb43f10ef704fe132bb5b8d7945c74c9e192a67abff21717be2bdcbf",
+        "pptx": "f0ae7cc270d235d494b8b6b7bcbb76aa73b3ed97731cabfaa1a2ddf9b6d9d5ef",
+        "xlsx": "2556da944fd120974d3b0513a57e544ec7bf3c8898f6cc7bd907bcb4cd7cc3eb",
+        "csv": "84743a5e900c0e80d68510464f8a8ec344909d0c3011e5820e749054ade0958d"
+      }
+    }
+  ],
+  "campaign_id": "37a48f9f-6a1c-4fab-b010-8599e40726ac",
+  "real_mail_sent": 0,
+  "real_money_charged": 0,
+  "certificate_id": "09666fde-53c6-4825-9345-9beb4db2cc1c",
+  "sample_dashboard_latency_ms": {
+    "n": 20,
+    "p50": 70.26,
+    "p95": 97.24
+  },
+  "browser_visual_verified": false
+}

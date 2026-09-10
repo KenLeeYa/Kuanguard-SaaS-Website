@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+from cloudflare_onboard import main
+
+raise SystemExit(main())

@@ -1,0 +1,129 @@
+{
+  "checked_at": "2026-09-10T07:49:27.830Z",
+  "base": "http://127.0.0.1:3181",
+  "deployed": false,
+  "checks": [
+    {
+      "path": "/admin",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/admin/overview",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/admin/portfolio",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/portfolio",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/portfolio/finance",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/imports",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/review",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/overview",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/api/internal/projects",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/api/internal/portfolio",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/internal/projects",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/api/%69nternal/projects",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/%61dmin/portfolio",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/admin/phishing-operations",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/admin/changes",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/admin/questionnaires",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/admin/tickets",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/api/internal/questionnaires",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/api/internal/phishing/messages",
+      "status": "blocked_on_all_three_hosts"
+    },
+    {
+      "path": "/dashboard",
+      "status": "private_no_store_noindex"
+    },
+    {
+      "path": "/projects",
+      "status": "private_no_store_noindex"
+    },
+    {
+      "path": "/findings",
+      "status": "private_no_store_noindex"
+    },
+    {
+      "path": "/reports",
+      "status": "private_no_store_noindex"
+    },
+    {
+      "path": "/wallet",
+      "status": "private_no_store_noindex"
+    },
+    {
+      "path": "/learn",
+      "status": "private_no_store_noindex"
+    },
+    {
+      "path": "/login",
+      "status": "private_no_store_noindex"
+    },
+    {
+      "path": "/learn/courses",
+      "status": "private_no_store_noindex"
+    },
+    {
+      "path": "/learn/notifications",
+      "status": "private_no_store_noindex"
+    },
+    {
+      "path": "/questionnaires",
+      "status": "private_no_store_noindex"
+    },
+    {
+      "path": "/notifications",
+      "status": "private_no_store_noindex"
+    }
+  ],
+  "www_redirect_preserves_path_and_query": true,
+  "app_routes_to_dashboard": true
+}

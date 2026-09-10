@@ -1,0 +1,22 @@
+{
+  "observed_at": "2026-09-10T09:35:37.997Z",
+  "state": "passed",
+  "checks": [
+    "six new private SSR routes preserve no-store and noindex",
+    "server draft create, stale-write conflict, actor/tenant scope and versioned cleanup",
+    "dedicated PostgreSQL seat grant/enrollment/cancel does not reserve or debit wallet",
+    "ticket reply and internal-note visibility through Next API rewrite",
+    "project tasks, private costs, dispatch and lifecycle reads use live authorized endpoints"
+  ],
+  "browser_verified": false,
+  "real_email": false,
+  "real_payment": false,
+  "offboarding_executed": false,
+  "existing_records_preserved": true,
+  "synthetic_ids": {
+    "seat_grant": "e7b84336-8ada-4229-92fc-562787140597",
+    "cancelled_enrollment": "fd13757d-dff6-4eaa-aad1-c75a90d49ced",
+    "ticket": "7bc2829c-36c6-498e-a235-6a532c6209df",
+    "task": "5d60b3af-4bb9-433f-9dd6-6c55afa2e0cc"
+  }
+}

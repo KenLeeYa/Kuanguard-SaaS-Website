@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "apex": "kuanguard.com",
+  "account_id": "b1c70202652cd3b77dfec70e5463785f",
+  "zone_id": null,
+  "managed_records": [],
+  "activation_state": "pending_real_account_zone_and_provider_origin",
+  "planned_hosts": [
+    {"name": "kuanguard.com", "purpose": "vercel_public_site", "proxied": false, "origin": null},
+    {"name": "www.kuanguard.com", "purpose": "vercel_permanent_redirect_preserving_path_and_query", "proxied": false, "origin": null},
+    {"name": "app.kuanguard.com", "purpose": "vercel_customer_and_learner_application", "proxied": false, "origin": null},
+    {"name": "admin.kuanguard.com", "purpose": "container_tunnel_access_and_app_rbac", "proxied": true, "origin": null},
+    {"name": "api.kuanguard.com", "purpose": "optional_signed_webhooks", "origin": null},
+    {"name": "assets.kuanguard.com", "purpose": "optional_public_assets_only", "origin": null},
+    {"name": "status.kuanguard.com", "purpose": "optional_public_status", "origin": null}
+  ]
+}

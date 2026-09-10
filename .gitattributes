@@ -1,0 +1,2 @@
+# Keep authored source, frozen migrations and evidence byte-identical to their checksums.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

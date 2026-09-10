@@ -1,0 +1,75 @@
+name: kuanguard
+services:
+  db:
+    image: postgres:17.9-bookworm
+    environment:
+      POSTGRES_DB: kuanguard
+      POSTGRES_USER: kuanguard_owner
+      POSTGRES_PASSWORD: ${POSTGRES_OWNER_PASSWORD:?Run scripts/setup_local.py first}
+    ports: ["127.0.0.1:55438:5432"]
+    volumes: ["postgres_data:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kuanguard_owner -d kuanguard"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+  queue:
+    image: redis:7.4.8-bookworm
+    command: ["redis-server", "--appendonly", "yes"]
+    ports: ["127.0.0.1:6388:6379"]
+    volumes: ["redis_data:/data"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  api:
+    build:
+      context: .
+      dockerfile: infra/Dockerfile.api
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://kuanguard:${POSTGRES_APP_PASSWORD}@db:5432/kuanguard
+      REDIS_URL: redis://queue:6379/0
+      LOCAL_DATA_DIR: /data/storage
+    command: ["uvicorn", "kuanguard.api:app", "--host", "0.0.0.0", "--port", "8180"]
+    ports: ["127.0.0.1:8180:8180"]
+    volumes: ["object_data:/data/storage"]
+    depends_on:
+      db: {condition: service_healthy}
+      queue: {condition: service_healthy}
+  worker:
+    build:
+      context: .
+      dockerfile: infra/Dockerfile.api
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+psycopg://kuanguard:${POSTGRES_APP_PASSWORD}@db:5432/kuanguard
+      REDIS_URL: redis://queue:6379/0
+      LOCAL_DATA_DIR: /data/storage
+    command: ["python", "-m", "kuanguard.worker"]
+    cpus: "1.0"
+    mem_limit: 1024m
+    pids_limit: 128
+    volumes: ["object_data:/data/storage"]
+    depends_on:
+      db: {condition: service_healthy}
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: ../../infra/Dockerfile.web
+      args:
+        API_INTERNAL_URL: http://api:8180
+        DEPLOYMENT_SURFACE: internal
+    environment:
+      API_INTERNAL_URL: http://api:8180
+      DEPLOYMENT_SURFACE: internal
+      PORT: 3180
+      HOSTNAME: 0.0.0.0
+    ports: ["127.0.0.1:3180:3180"]
+    depends_on: [api]
+volumes:
+  postgres_data:
+  redis_data:
+  object_data:
