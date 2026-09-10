@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-10 — Security architecture continuation
+
+- 官網樣式交由另一工作區；核對三份原 prompt，加入逐 Phase／ENG 工程缺口與資安架構，修正過時 GitHub／provider／備份狀態。
+- Redis 原子共用限流取代單程序記憶體額度；失聯回 503，429 帶 Retry-After，保留本機有界 memory 選項。
+- 新增 tenant-scoped 內部維運彙總：任務佇列／逾期 lease、unknown 寄送、付款入點不一致與 Redis 連線；拒絕未授權角色／委派與跨租戶查詢。
+- 89 項不同測試、Ruff、247 paths OpenAPI 通過；沒有前端樣式、schema migration、原交易回放或正式部署。
+
 ## 2026-09-10 — Corporate digital technology website
 
 - 依最新指示將 KUANGUARD 改為數位科技公司主品牌，加入 `/products`、`/solutions` 與公司導覽；SaaS、Partner 平台與資安服務分項呈現。

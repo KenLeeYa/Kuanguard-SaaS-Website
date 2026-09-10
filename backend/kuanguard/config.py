@@ -1,5 +1,6 @@
 from functools import lru_cache
 from pathlib import Path
+from typing import Literal
 
 from pydantic import Field, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -21,6 +22,7 @@ class Settings(BaseSettings):
     business_timezone: str = "Asia/Taipei"
     database_url: str = "sqlite:///.local/kuanguard.db"
     redis_url: str = ""
+    rate_limit_backend: Literal["auto", "memory", "redis"] = "auto"
     allowed_origins: str = "http://127.0.0.1:3180,http://localhost:3180,http://127.0.0.1:8180"
     local_data_dir: Path = Path(".local/storage")
     auth_provider: str = "development"

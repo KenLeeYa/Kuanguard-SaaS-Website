@@ -21,6 +21,9 @@ Incremental revisions preserve existing rows and completed jobs:
 - `0008_training_rights`: immutable finite included/gift/manual seats and usage ledger.
 - `0009_project_execution`: task sidecars/dependencies, meeting decisions, costs and explicit dispatch resources.
 - `0010_tenant_lifecycle`: reviewed offboarding plans and privileged erasure receipts (no runtime grants on receipts).
+- `0011_20260910_partner_platform`: additive Partner ownership, individual delegation, identity routing, credits, branding/domains, feature flags and audit; existing customer service tables and data are retained.
+
+The subsequent security runtime increment adds Redis rate limits and read-only operational aggregates only; it has no database revision and must not rerun prior migrations or seed data.
 
 Revisions 0009 and 0010 are independent additions; a deployment may have received 0010 first while the
 execution module was still under test. Applying the remaining numbered revision is idempotent and does

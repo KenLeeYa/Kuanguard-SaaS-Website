@@ -2,6 +2,8 @@
 
 基準為 `implementation-spec.md` 的 CORE-01～14、ENH-01～09、QA-01～22，加上增量 UPD-01～08；未另取得完整 v1.1 prompt，不虛構 CORE-15～17 或 QA-23～32。狀態「本機通過」只指明示合成/隔離環境；「部分」必須列缺口，不能充當 production gate。
 
+2026-09-10 資安架構稽核：官網樣式由另一工作區接手，本區新增 Redis 共用限流與目前租戶的維運彙總，89 項不同測試通過。逐 Phase 及仍需工程的 ENG-01～07 見 [SECURITY_PHASE_STATUS](SECURITY_PHASE_STATUS.md)，完整本機／正式界線見 [SECURITY_ARCHITECTURE](SECURITY_ARCHITECTURE.md)。
+
 測試別名：`platform`=`backend/tests/test_platform.py`；`report`=`test_report_workflow.py`；`parser`=`test_parsers_reports.py`；`final`=`test_final_workflows.py`；`PM`=`test_project_operations.py`；`worker`=`test_worker_recovery.py`；`PG`=`test_postgres_runtime.py`；`ops`=`test_operations.py`；其餘檔案同目錄。執行收據見 `docs/evidence/api-tests.xml`、`live-uat.json`、`apps/web/evidence/` 與 `infra/evidence/`。
 
 ## CORE
@@ -13,11 +15,11 @@
 | CORE-03 | 無 customer raw upload；API reject；platform/前端 surface smoke | 本機通過 |
 | CORE-04 | published projections、downloads、reply、retest、calendar；report | 本機通過；未開客戶 evidence upload |
 | CORE-05 | SARIF import、review、retest rule evidence；parser/report | 本機通過；無客戶 source upload 或任意 Git fetch |
-| CORE-06 | campaign_routes、worker、adapters；platform/final | 部分：真實 Gophish 核心／SMTP 未接，sandbox 明示 |
-| CORE-07 | 原創文字課程、派課、server progress/grade/certificate；platform/live UAT | 部分：可售影片／字幕／正式教材待提供與上架 |
+| CORE-06 | campaign_routes、worker、adapters；platform/final | 部分：GophishAdapter 只有拒絕執行，worker 只處理 sandbox_mail；實際 tenant cell／dispatch／provider reconciliation 尚需工程（ENG-01） |
+| CORE-07 | 原創文字課程、派課、server progress/grade/certificate；platform/live UAT | 部分：影片 token 固定 503；內容上架版本、Stream 簽章／字幕與正式教材仍需工程／權利（ENG-02） |
 | CORE-08 | wallet lots/append-only ledger、獨立 entitlements；PG/PM | 本機通過；正式核定價目尚缺 |
 | CORE-09 | 無密碼 schema/HTML form，候選與人類分類；platform/final | 本機通過；真實 provider 事件仍待接 |
-| CORE-10 | 購點、campaign、training inputs 不需 project；platform | 本機通過；全新企業 IdP 驗證／邀請待啟用 |
+| CORE-10 | 購點、campaign、training inputs 不需 project；platform | 現有企業本機通過；新企業管理權驗證／邀請／加入流程仍需工程與 IdP 實接（ENG-05） |
 | CORE-11 | draft/publication separation、project grant、learner restrictions | 本機通過，含跨企業下載拒絕 |
 | CORE-12 | single approved immutable snapshot、checksum、dashboard統計；report/parser | 本機通過；AI provider 關閉 |
 | CORE-13 | 官網詢價；有限服務 batch quota；PM | 本機通過；正式範圍／頻率／費用仍需合約核定 |
@@ -56,7 +58,7 @@
 | QA-13 | HMAC、額度/幣別、亂序、duplicate、partial refund、chargeback | sandbox 通過；invoice provider 真實 retry 未啟用 |
 | QA-14 | 首啟一次、取消/過期 release、重訓新cohort；platform/worker/learning_entitlements | 本機通過：年度內含／贈送／人工席次優先，無雙扣；到期/離職釋放未啟動授權，調部門與跨企業身分保留 |
 | QA-15 | 無密碼、多次候選不超分母、人工判讀、learner denial | 本機通過；真實郵件設備辨識待 provider evidence |
-| QA-16 | private download、hash、session/tenant checks；LMS過期重播 | 本機通過；R2/Stream 真實 token 與 bucket未驗證 |
+| QA-16 | private download、hash、session/tenant checks；LMS過期重播 | 本機檔案通過；R2 adapter／Stream token 尚未實作完成，不只缺 bucket 驗證（ENG-02／04） |
 | QA-17 | XML entity、ZIP/path/ratio、公式、HTML inert/模板hash、不執行repo | 本機通過；正式 malware provider/大檔隔離待啟用 |
 | QA-18 | bounded tables/表單與HTTP contracts，CSS breakpoints；三流程server草稿/CAS/dirty提示/分頁匯出 | 邏輯測試已補；CUA 管理政策仍阻擋 viewport/keyboard/screenshots；大型資料與實際焦點尚需瀏覽器驗證 |
 | QA-19 | 22 infra tests、57 publicsurface blocks、11private headers、read-only DNS清冊；草稿精確路徑 gateway allowlist | 未正式切換：zone完整匯出、DS/NS/TLS/Access實環境待啟用 |

@@ -7025,6 +7025,22 @@
         ]
       }
     },
+    "/internal/operations/health": {
+      "get": {
+        "operationId": "operations_health_internal_operations_health_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Operations Health"
+      }
+    },
     "/internal/overview": {
       "get": {
         "operationId": "overview_internal_overview_get",

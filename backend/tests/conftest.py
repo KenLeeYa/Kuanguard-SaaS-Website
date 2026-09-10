@@ -10,6 +10,7 @@ def platform(tmp_path, monkeypatch):
     from kuanguard.seed import seed
     monkeypatch.setenv("DATABASE_URL", f"sqlite:///{tmp_path / 'test.db'}")
     monkeypatch.setenv("APP_ENV", "test")
+    monkeypatch.setenv("RATE_LIMIT_BACKEND", "memory")
     monkeypatch.setenv("AUTH_PROVIDER", "development")
     monkeypatch.setenv("DEPLOYMENT_SURFACE", "local")
     monkeypatch.setenv("LOCAL_DATA_DIR", str(tmp_path / "objects"))
@@ -25,7 +26,8 @@ def platform(tmp_path, monkeypatch):
     training_metadata.create_all(db)
     with db.begin() as conn:
         seed(conn)
-    from kuanguard.api import app, _rates
+    from kuanguard.api import app
+    from kuanguard.rate_limits import _rates
     _rates.clear()
     clients = []
 

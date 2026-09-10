@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-09-10T13:33:40.190740+00:00",
+  "status": "passed",
+  "checks": [
+    "existing_website_responds",
+    "bff_api_health",
+    "anonymous_monitor_denied",
+    "pm-a_login",
+    "pm-a_monitor_authorization",
+    "runtime_redis_enabled",
+    "production_gate_closed",
+    "tenant_scope_server_owned",
+    "monitor_no_store_noindex",
+    "scope_query_denied",
+    "partner_monitor_alias_absent",
+    "pm-a_logout",
+    "learner-a_login",
+    "learner-a_monitor_authorization",
+    "learner-a_logout",
+    "forged_ip_invalid_profile_71",
+    "forged_ip_invalid_profile_72",
+    "forged_ip_invalid_profile_73",
+    "actual_uvicorn_peer_quota_shared_despite_forged_ip",
+    "forged_forwarded_ip_does_not_create_quota"
+  ],
+  "transport": "existing Node BFF to restarted FastAPI to existing PostgreSQL and Redis",
+  "count": 20,
+  "real_email": 0,
+  "real_payment": 0,
+  "writes": "synthetic development login/logout and expiring rate-limit keys only; no business mutation",
+  "browser_automation": false
+}

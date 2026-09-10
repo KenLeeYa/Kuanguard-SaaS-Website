@@ -2,6 +2,16 @@
 
 日期：2026-09-10，Asia/Taipei。
 
+## 最新資安檢查點
+
+此工作區依最新指示接續資安架構；官網樣式交由另一工作區。本輪基準 `c59b018`、`main`、有 `origin`，其 GitHub CI 已通過；不再是尚無 commit／remote 的狀態。新增 Redis 共用限流及 tenant-scoped 維運端點，89 項不同測試通過，OpenAPI 247 paths。沒有變更 `apps/web` 或套用 migration。
+
+已存在 `0001`～`0011` revisions／102 tables；最新已完成備份為 Partner 的 102 tables／1,087 rows／36 objects 檢查點。具體來源與本輪 fresh readback 見 [Phase 稽核收據](evidence/security-phase-audit-20260910.json)。原 0～9 均有實作但仍有工程缺口，10～11 未完成正式啟用；詳 [逐 Phase 狀態](SECURITY_PHASE_STATUS.md)。
+
+## v1.1 歷史檢查點
+
+以下保留當時原始盤點、測試數量與備份，不能當成目前 GitHub／Partner 增量的最新狀態。
+
 原始工作目錄為空；本次任務建立的程式現存於同一個 `KuanGuard` 目錄。v1.1 到達時已存在的 API/UI、資料表、兩租戶合成資料、報告樣本、PostgreSQL/Redis 和備份成果全部保留。v1.1 檢查點的 Git 為 `main`、當時尚無初始 commit／remote；未提交檔案皆歸本次任務，不混入其他產品工作樹。完成驗證後建立本機交付 commit，使用 `git rev-parse HEAD` 查詢；無 push 或遠端部署。沒有 `.codegraph/`，未擅自建立索引。
 
 原需求檔存為 `implementation-spec.md`；增量檔存為 `update-spec-v1.1.md`。原檔 SHA-256 分別為 `e893a88a9bb8d4e072846a36e7b1f7204b5b48db2e81fc6eaa9c381255a862a1`、`789016b656a26f5ccbc6c7af25cb05054cc9e423fe8c5370a103222f9ba115bb`。

@@ -4,6 +4,8 @@ KUANGUARD 數位科技官網，旗下提供商家 SaaS、合作夥伴平台與�
 
 ## 直接使用
 
+目前工作區分工：官網樣式由另一工作區執行；此區接續資安系統架構與七服務。原 Phase 0～9 已有實作但仍有工程／驗收缺口，Phase 10～11 正式部署與啟用未完成。詳 [資安 Phase 狀態](docs/SECURITY_PHASE_STATUS.md) 與 [資安架構](docs/SECURITY_ARCHITECTURE.md)。新增內部 `GET /internal/operations/health` 維運彙總與 Redis 共用限流。
+
 - 本機入口：<http://127.0.0.1:3180>
 - 點餐產品：<http://127.0.0.1:3180/products/ordering>，保留原本簡潔的商家頁面；[公司官網設計與參考](docs/CORPORATE_WEBSITE_DESIGN.md)。
 - 登入頁：<http://127.0.0.1:3180/login>，分流商家、Partner、平台管理及既有資安客戶／學員。

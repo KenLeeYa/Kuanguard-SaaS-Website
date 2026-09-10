@@ -26,7 +26,7 @@
 
 ## 尚未認定完成的控制
 
-正式 MFA、IdP 邀請與 tenant onboarding、R2 signed tokens/生命周期、影片簽章、malware provider、正式事件分類／webhook、集中 distributed rate limits、SIEM/on-call、異地加密備份尚需啟用與驗證。系統沒有聲稱已通過外部滲透測試或認證。
+正式 MFA、IdP 邀請與 tenant onboarding、R2 signed tokens/生命周期、影片簽章、malware provider、正式事件分類／webhook、SIEM/on-call、異地加密備份仍有工程／啟用／驗證缺口。集中 distributed rate limits 已以 Redis 原子窗口補上；正式 Redis ACL／TLS／HA、edge client-IP 信任與容量仍待驗收。內部維運彙總只接受目前租戶的 PM／platform admin，拒絕 project delegation；不提供原始證據或自動重送。詳 [資安架構](SECURITY_ARCHITECTURE.md)。系統沒有聲稱已通過外部滲透測試或認證。
 
 保存政策資料表原有項目仍是未核定草案。新增的 server 草稿、private archive、退場與 erasure executor 已完成本機實作和合成隔離測試，詳 `data-lifecycle.md`。正式 legal basis、各資料類別保存日數、legal hold、備份淘汰及 DSAR 身分核對未核定前，不啟用 destructive purge。本次僅刪除新建測試專用 tenant；既有資料保留。QA-20 的異地 key recovery／正式規模仍未通過。
 

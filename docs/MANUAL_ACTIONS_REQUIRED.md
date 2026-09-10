@@ -1,5 +1,7 @@
 # 需要 Owner／網域管理者／合作方的項目
 
+資安 Phase 最新稽核見 [SECURITY_PHASE_STATUS](SECURITY_PHASE_STATUS.md)。Gophish／SMTP、Stream、R2、正式支付／發票與企業 onboarding 仍含程式工程，不能只提供 credentials 就當成完成。已補上的 Redis 限流與內部維運彙總不改變正式七服務共同 gate。
+
 本輪能在現有本機安全完成的 P0/P1 程式、資料遷移與驗證已接續處理。以下是外部啟用所缺的帳號、權限、商业決策與第三方驗收，不影響本機程式操作；不得以假資料或關閉 release gate 取代。
 
 | 項目 | 需要提供／決定 | 準備完成後的動作 |

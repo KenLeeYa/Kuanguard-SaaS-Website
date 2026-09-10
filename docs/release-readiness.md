@@ -2,6 +2,8 @@
 
 狀態：**LOCAL_SYNTHETIC_READY / PRODUCTION_BLOCKED**。已套用 v1.1，並接續完成原 Phase 2～9 的主要本機資料流及 Phase 10～11 的本機建置／還原／UAT。沒有新建其他產品、搬遷正式資料或對外上線。
 
+最新資安架構稽核：新增 Redis 共用限流與 `GET /internal/operations/health`，89 項不同測試、Ruff、247 paths OpenAPI 通過；網站程式保留。實際未完成工程與 Phase 狀態見 [SECURITY_PHASE_STATUS](SECURITY_PHASE_STATUS.md)，不再把 Gophish、影片、R2 或新企業 onboarding 全部歸類為僅缺 credentials。Partner 的 250 tests／45 subtests／102-table restore 是後續已保存證據，見 [TEST_REPORT](TEST_REPORT.md)。GitHub CI 已實際執行；下方原驗證表與「尚未 push」敘述屬 v1.1 歷史檢查點。
+
 ## 實際完成
 
 - 官網七服務、詢價入庫、CRM、版本報價／合約、七工作包、有限服務額度、排程、範圍／費用確認、客戶單批驗收。
@@ -38,7 +40,7 @@ Python 測試有兩項第三方 TestClient/httpx/AnyIO deprecation warnings，�
 1. 專用 Supabase/Vercel Projects、容器主機／地區／預算、KUANGUARD zone 範圍與完整原權威匯出、NS/DS/TLS/Access/WAF 實際切換。
 2. 真實 IdP／MFA／邀請與停權、正式 tenant onboarding；Gophish source+adapter、SMTP／事件回執、商店／發票、private R2／Stream 必須實接及驗證。目前 disabled/sandbox 不能靠 env flag 改名為正式成功。
 3. 合法核定 templates／公司資料／可售教材字幕題庫、原生 AppScan 樣本與格式；完整 Office 每頁字型／長內容／TOC／版面 QA。
-4. 正式服務假日／SLA／技能與工具清冊、全企業保存與法律保留／備份淘汰 attestation、完整正式監控及 distributed rate limits 仍需核定與實環境驗證；不能套用本機合成政策。內含課程授權、資料退場、依賴／成本與草稿已接續實作，證據見 traceability。
+4. 正式服務假日／SLA／技能與工具清冊、全企業保存與法律保留／備份淘汰 attestation、完整正式監控仍需核定與實環境驗證。Redis distributed rate limits 與本機維運彙總已補實作，正式 edge／代理信任、Redis ACL／TLS／HA／故障切換與外部告警仍待驗收；不能套用本機合成政策。內含課程授權、資料退場、依賴／成本與草稿已接續實作，證據見 traceability。
 5. CUA 管理政策拒絕 browser automation；未繞過，390/768/1440、完整鍵盤／焦點／錄影尚無證據。
 
 ## 下一次啟用

@@ -1,5 +1,7 @@
 # 集中啟用清單
 
+2026-09-10 資安稽核補充：此表列外部帳戶／權利／決策，**不代表所有 provider 程式已完成**。仍需實作的 Gophish、影片／課程上架、支付／發票、R2、企業 onboarding、公平排隊與外部監控，集中見 [SECURITY_PHASE_STATUS 的 ENG-01～07](SECURITY_PHASE_STATUS.md)。原帳戶／方案／價格 readback 是歷史收據，正式動作前需重新核實；本輪沒有變更遠端資源。
+
 更新：2026-09-10 v1.1。單一 owner 共用既有 Cloudflare Account / Vercel Team / Supabase Org 已核定；三個管理範圍均已 live readback，Cloudflare Account Token active，Vercel／Supabase 方案為 Pro。下列項目不阻擋本機實作，但目前不能宣稱正式七服務上線。提供秘密時使用 secret manager / 環境配置，不貼入 repo、issue、聊天或測試輸出。已完成本機開發的部分不需逐 Phase 再次批准。
 
 | ID | 目前缺少或待核定 | 負責人 | 安全配置／輸入位置 | 完成後重跑驗證 |

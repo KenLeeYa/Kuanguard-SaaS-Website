@@ -1,5 +1,7 @@
 # v1.1 incremental update status
 
+最新接續：官網樣式由另一工作區負責，此區完成資安 Phase 稽核與共用限流／維運彙總增量。原 Phase 0～9 並非未開始，但 Gophish／影片／provider／onboarding 等仍有工程，Phase 10～11 正式啟用未完成；[SECURITY_PHASE_STATUS](SECURITY_PHASE_STATUS.md) 明列 ENG-01～07 與 Partner P2。下方 U0～U5 為保留的歷史收據；本輪 89 項不同測試與 247 paths OpenAPI 通過，沒有重跑全部 Phase 或重送交易。
+
 Checkpoint: 2026-09-10 Asia/Taipei. Source: `update-spec-v1.1.md`.
 
 ## Existing progress at U0 (historical checkpoint)

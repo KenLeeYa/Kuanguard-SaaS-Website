@@ -18,6 +18,7 @@ from backend.tests.test_postgres_runtime import pg  # noqa: F401 -- shared expli
 def test_partner_force_rls_parallel_allocation_and_immutable_receipt(pg, monkeypatch):  # noqa: F811 - imported pytest fixture
     monkeypatch.setenv("DATABASE_URL", pg.url.render_as_string(hide_password=False))
     monkeypatch.setenv("APP_ENV", "test")
+    monkeypatch.setenv("RATE_LIMIT_BACKEND", "memory")
     monkeypatch.setenv("DEPLOYMENT_SURFACE", "local")
     monkeypatch.setenv("ALLOWED_ORIGINS", "http://127.0.0.1:3180")
     settings.cache_clear()

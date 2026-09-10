@@ -1,10 +1,8 @@
-from collections import defaultdict, deque
 from datetime import timedelta
 import base64
 import hashlib
 import logging
 import secrets
-import time
 from urllib.parse import urlencode
 from uuid import uuid4
 
@@ -31,6 +29,8 @@ from .lifecycle_routes import router as lifecycle_router
 from .portal_auth import router as portal_auth_router
 from .partner_routes import router as partner_router
 from .platform_routes import router as platform_router
+from .runtime_operations import router as runtime_operations_router
+from .rate_limits import rate_limit as rate_limit
 from .security import Context, context, create_session, digest, fail, idempotent, owned, paged
 from .seed import PROFILES, fixed
 
@@ -46,26 +46,17 @@ app.include_router(lifecycle_router)
 app.include_router(portal_auth_router)
 app.include_router(partner_router)
 app.include_router(platform_router)
-
-_rates = defaultdict(deque)
-
-
-def rate_limit(request, category, limit=20):
-    key = (request.client.host if request.client else "unknown", category)
-    queue = _rates[key]
-    current = time.monotonic()
-    while queue and queue[0] < current-60:
-        queue.popleft()
-    if len(queue) >= limit:
-        fail(429, "RATE_LIMITED", "操作過於頻繁，請稍候再試。")
-    queue.append(current)
+app.include_router(runtime_operations_router)
 
 
 def error_response(request, status, detail):
     if not isinstance(detail, dict):
         detail = {"code": "REQUEST_ERROR", "message": str(detail)}
     detail = {**detail, "trace_id": getattr(request.state, "trace_id", str(uuid4()))}
-    return JSONResponse({"detail": detail}, status_code=status, headers={"Cache-Control": "no-store"})
+    headers = {"Cache-Control": "no-store"}
+    if detail.get("code") == "RATE_LIMITED":
+        headers["Retry-After"] = str(detail["retry_after_seconds"])
+    return JSONResponse({"detail": detail}, status_code=status, headers=headers)
 
 
 @app.middleware("http")

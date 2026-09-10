@@ -1,0 +1,85 @@
+{
+  "checked_at": "2026-09-10T13:35:12.318362+00:00",
+  "source_base": "c59b01898677d1597b699cf381de5fa30ae2930f",
+  "scope": "security architecture; website styling handled in another workspace",
+  "prompts": [
+    {
+      "original": "kuanguard_codex_prompt.md",
+      "saved": "docs/implementation-spec.md",
+      "sha256": "e893a88a9bb8d4e072846a36e7b1f7204b5b48db2e81fc6eaa9c381255a862a1",
+      "equal": true
+    },
+    {
+      "original": "kuanguard_codex_update_v1_1.md",
+      "saved": "docs/update-spec-v1.1.md",
+      "sha256": "789016b656a26f5ccbc6c7af25cb05054cc9e423fe8c5370a103222f9ba115bb",
+      "equal": true
+    },
+    {
+      "original": "Kuanguard_SaaS_Website_Partner_Portal_Update_Prompt.md",
+      "saved": "docs/partner-platform-update-spec.md",
+      "sha256": "ad2ab2f1693ffa5cc1537c41908bbb571f1ae70a42e0ba3b2353f035e6dc9a5c",
+      "equal": true
+    }
+  ],
+  "postgres": {
+    "role": {
+      "name": "kuanguard",
+      "rolsuper": false,
+      "rolbypassrls": false
+    },
+    "table_count": 102,
+    "running_jobs": 0,
+    "read_only": "on",
+    "revisions": [
+      "0001_initial",
+      "0002_review_policy",
+      "0003_portfolio_projection",
+      "0004_retest_verification",
+      "0005_worker_claim_token",
+      "0006_service_ledger_immutable",
+      "0007_drafts_tickets",
+      "0008_training_rights",
+      "0009_project_execution",
+      "0010_tenant_lifecycle",
+      "0011_20260910_partner_platform"
+    ],
+    "revision_readback_role": "kuanguard_owner",
+    "revision_readback_read_only": "on"
+  },
+  "existing_objects": {
+    "count": 36,
+    "bytes": 1165681
+  },
+  "website_diff": "",
+  "schema_diff": "",
+  "sources": {
+    "backend/kuanguard/api.py": "ebc9074ce50edfd58e8d2a8471bc8e31e749b5509cc5cba755fbdd4c171dafb8",
+    "backend/kuanguard/config.py": "8fc97d51f1af2853afa6255864a1aa2d6f45eff0b93a301280e501db41b2ff75",
+    "backend/kuanguard/rate_limits.py": "76ef26579d8d11afec61c3dfba745d58bd9956259025bf09effbce69802b2497",
+    "backend/kuanguard/runtime_operations.py": "0aec4c1f15df09b273bb35f33cc5fca07d50b9ec588e29f9d8447b22b342973e",
+    "backend/tests/test_runtime_operations.py": "7f9cf78cce82e7b76fe7d836af2ef68f9da777a7c4c7a944a35d10557f017557",
+    "docs/openapi.json": "f76c7abbc2101f9f02a5c05eae88bbfca930cced2b678b91468ac54c40c6a470"
+  },
+  "validation": {
+    "tests": 89,
+    "affected_suite": 88,
+    "runtime_suite": 14,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "openapi_paths": 247
+  },
+  "production_ready": false,
+  "phase_10_remote_activation": "not_executed",
+  "phase_11_formal_uat": "not_completed",
+  "not_performed": [
+    "full phase rerun",
+    "migration",
+    "seed replay",
+    "real email",
+    "real payment",
+    "DNS apply",
+    "cloud deployment"
+  ]
+}

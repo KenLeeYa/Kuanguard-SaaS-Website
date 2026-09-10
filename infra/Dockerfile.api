@@ -27,4 +27,4 @@ COPY config/ ./config/
 
 USER 10001:10001
 EXPOSE 8180
-CMD ["uvicorn", "kuanguard.api:app", "--host", "0.0.0.0", "--port", "8180"]
+CMD ["uvicorn", "kuanguard.api:app", "--host", "0.0.0.0", "--port", "8180", "--no-proxy-headers"]

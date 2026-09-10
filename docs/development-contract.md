@@ -4,6 +4,8 @@ Working root: `C:/Users/KY/Documents/Codex projects/KuanGuard`.
 Specification: `docs/implementation-spec.md` (user-authorized input).
 All data created here are synthetic development fixtures. No production activation.
 
+Current user-directed ownership: public website styling is handled in another workspace. This workspace continues the security backend, tenant/Partner authorization, reports, campaigns, LMS, billing and operational architecture. Preserve `apps/web` while auditing phases; coordinate shared API contract changes with the website workspace. The historical module ownership below does not authorize spawning agents or editing another workspace. Current phase gaps: `docs/SECURITY_PHASE_STATUS.md`.
+
 ## Ownership
 
 - Main: `backend/kuanguard` except parsers/reports, database, API, wallet, campaigns, LMS, tests and integration documentation.

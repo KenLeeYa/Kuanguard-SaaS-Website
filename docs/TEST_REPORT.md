@@ -1,5 +1,7 @@
 # Partner increment 驗證報告 — 2026-09-10
 
+後續資安架構增量：89 項不同測試通過（88 項回歸加 1 項新代理邊界檢查；runtime 專項共 14 項），20 項真實 Node→API→PostgreSQL／Redis HTTP 檢查、Ruff 與 OpenAPI 247 paths 通過。新 API／worker 共用映像 non-root／network-none smoke 與來源 hash 相符。詳 [SECURITY_PHASE_STATUS](SECURITY_PHASE_STATUS.md) 的收據索引；官網樣式、schema 與既有 worker 保留。下表保留原 Partner 增量驗證，不將歷史測試重算為本輪結果。
+
 | 驗證 | 結果／證據 |
 | --- | --- |
 | Python 全套 | 250 passed、45 subtests passed；2 個既有第三方 deprecation warnings；[JUnit](evidence/partner-tests-20260910.xml) |

@@ -1,5 +1,7 @@
 # KUANGUARD architecture — Partner increment, 2026-09-10
 
+最新工作區分工：官網樣式由另一工作區負責；此區保留既有程式，接續資安系統。資安 runtime、共用限流、維運監控與未完成整合見 [SECURITY_ARCHITECTURE](SECURITY_ARCHITECTURE.md)，逐 Phase 查核見 [SECURITY_PHASE_STATUS](SECURITY_PHASE_STATUS.md)。下方保留原 Partner 架構背景。
+
 公共品牌依最新指示定位為數位科技公司，商家點餐與營運 SaaS 為旗下產品之一，產品頁為 `/products/ordering`。此 checkout 負責官網、產品入口、Partner 與既有資安業務；既有 Stallorder 系統繼續管理訂單、出單、商家角色、UsageEvent 與計費交易。沒有複製另一套點餐 backend，也沒有修改另一個產品的資料庫或部署。
 
 ```mermaid

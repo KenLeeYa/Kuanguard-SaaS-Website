@@ -51,7 +51,7 @@ function Start-KuanGuardProcess {
         ConvertTo-Json | Set-Content -LiteralPath $pidFile -Encoding utf8
     Write-Output "$Name started (PID $($started.Id))"
 }
-Start-KuanGuardProcess -Name 'api' -Executable $pythonExecutable -Arguments @('-m','uvicorn','kuanguard.api:app','--host','127.0.0.1','--port','8180','--no-access-log') -WorkingDirectory $projectRoot -Port 8180
+Start-KuanGuardProcess -Name 'api' -Executable $pythonExecutable -Arguments @('-m','uvicorn','kuanguard.api:app','--host','127.0.0.1','--port','8180','--no-access-log','--no-proxy-headers') -WorkingDirectory $projectRoot -Port 8180
 Start-KuanGuardProcess -Name 'worker' -Executable $pythonExecutable -Arguments @('-m','kuanguard.worker') -WorkingDirectory $projectRoot
 $webDirectory = Join-Path $projectRoot 'apps\web'
 if (-not (Test-Path -LiteralPath (Join-Path $webDirectory 'node_modules\next'))) {
