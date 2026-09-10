@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   output: "standalone",
   poweredByHeader: false,
   async rewrites() {
+    if (process.env.KUANGUARD_WEBSITE_ONLY === "true") return [];
     const api = process.env.API_INTERNAL_URL || "http://127.0.0.1:8180";
     const target = new URL(api);
     if (target.username || target.password || target.search || target.hash || target.pathname !== "/") throw new Error("API_INTERNAL_URL must be an origin without credentials, path, query, or fragment");

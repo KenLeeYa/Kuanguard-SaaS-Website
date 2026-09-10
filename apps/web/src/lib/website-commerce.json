@@ -1,0 +1,60 @@
+{
+  "capabilities": [
+    {
+      "code": "ordering",
+      "status": "available"
+    },
+    {
+      "code": "qr",
+      "status": "available"
+    },
+    {
+      "code": "reservation",
+      "status": "available"
+    },
+    {
+      "code": "printing",
+      "status": "available"
+    },
+    {
+      "code": "pos",
+      "status": "beta"
+    },
+    {
+      "code": "crm",
+      "status": "beta"
+    },
+    {
+      "code": "multi_store",
+      "status": "available"
+    },
+    {
+      "code": "analytics",
+      "status": "available"
+    },
+    {
+      "code": "payments",
+      "status": "planned"
+    },
+    {
+      "code": "delivery",
+      "status": "planned"
+    }
+  ],
+  "pricing": {
+    "currency": "TWD",
+    "unit_amount_minor": 100,
+    "unit": "successful_order",
+    "monthly_fee_minor": 0,
+    "buyout_fee_minor": 0,
+    "charge_enabled": false,
+    "excluded_states": [
+      "failed",
+      "cancelled",
+      "refunded"
+    ],
+    "policy_reference": "merchant-website-20260910-v1",
+    "note": "公開方案；實際啟用與成功訂單認定依商家合約。金流、設備及第三方費用另計。"
+  },
+  "version": 1
+}

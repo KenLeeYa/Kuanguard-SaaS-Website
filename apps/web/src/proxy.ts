@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { deploymentSurface } from "./lib/surface";
 import { commercePaths } from "./lib/commerce";
+import { isWebsitePath, websiteOnly } from "./lib/website";
 
 const internalRoots = new Set(["overview", "portfolio", "imports", "review", "dispatch", "crm", "billing", "integrations", "audit", "settings", "shc", "pt", "source", "templates", "question-banks", "phishing-operations", "customers", "retests", "changes", "tickets"]);
 export function proxy(request: NextRequest) {
@@ -16,6 +17,12 @@ export function proxy(request: NextRequest) {
   const internalApi = path === "/api/internal" || path.startsWith("/api/internal/") || path === "/internal" || path.startsWith("/internal/") || path === "/api/platform" || path.startsWith("/api/platform/");
   if (surface === "public" && (isAdmin || internalApi || host === "admin.kuanguard.com")) return new NextResponse("Not found", { status: 404, headers: { "Cache-Control": "private, no-store", "X-Robots-Tag": "noindex, nofollow" } });
   if (host === "www.kuanguard.com") { url.hostname = "kuanguard.com"; url.port = ""; url.protocol = "https:"; return NextResponse.redirect(url, 308); }
+  if (websiteOnly()) {
+    if (!isWebsitePath(path.replace(/\/$/, "").slice(1))) return new NextResponse("Not found", { status: 404, headers: { "Cache-Control": "private, no-store", "X-Robots-Tag": "noindex, nofollow" } });
+    const response = NextResponse.next();
+    if (!commercePaths.includes(path.slice(1)) && ["login", "partner", "merchant"].includes(root)) response.headers.set("X-Robots-Tag", "noindex, nofollow");
+    return response;
+  }
   if ((surface === "internal" || host === "admin.kuanguard.com") && !path.startsWith("/api/") && !path.startsWith("/internal/") && !path.startsWith("/admin") && path !== "/login") {
     url.pathname = path === "/" ? "/admin/overview" : `/admin${path}`;
     return NextResponse.rewrite(url, { headers: { "Cache-Control": "private, no-store", "X-Robots-Tag": "noindex, nofollow" } });
