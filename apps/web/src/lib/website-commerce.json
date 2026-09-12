@@ -53,8 +53,9 @@
       "cancelled",
       "refunded"
     ],
-    "policy_reference": "merchant-website-20260910-v1",
-    "note": "公開方案；實際啟用與成功訂單認定依商家合約。金流、設備及第三方費用另計。"
+    "policy_reference": "qidaigo-public-20260912",
+    "note": "公開方案；實際啟用與成功訂單認定依商家合約。金流、設備及第三方費用另計。",
+    "monthly_cap_minor": 149900
   },
   "version": 1
 }

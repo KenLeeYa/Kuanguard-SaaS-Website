@@ -89,17 +89,24 @@ test("website release blocks all backend forwarding even with otherwise valid cr
 });
 
 test("website release allows only public pages and keeps Vercel hostnames on the corporate home", () => {
-  class NextResponse extends Response { static next() { return new Response(null, { status: 200 }); } }
+  class NextResponse extends Response {
+    static next() { return new Response(null, { status: 200 }); }
+    static redirect(url, options = 307) { return new Response(null, { ...(typeof options === "number" ? { status: options } : options), headers: { location: String(url) } }); }
+  }
   const commerce = load("../src/lib/commerce.ts", {});
   const catalog = load("../src/lib/catalog.ts", {});
   const env = { KUANGUARD_WEBSITE_ONLY: "true" };
   const website = load("../src/lib/website.ts", env, { "./commerce": commerce, "./catalog": catalog });
   const policy = load("../src/proxy.ts", env, {
     "next/server": { NextResponse }, "./lib/surface": { deploymentSurface: () => "public" }, "./lib/commerce": commerce, "./lib/website": website,
+    "./lib/locales": load("../src/lib/locales.ts", env), "./lib/product-links": load("../src/lib/product-links.ts", env),
+    "./lib/translate": { translate: value => value },
   });
-  for (const [path, status] of [["/", 200], ["/contact", 200], ["/services/va", 200], ["/login", 200], ["/partner/login", 200], ["/admin", 404], ["/partner/credits", 404], ["/dashboard", 404], ["/api/auth/dev-login", 404], ["/api/public/leads", 404], ["/internal/projects", 404], ["/not-a-page", 404]]) {
+  for (const [path, status] of [["/", 307], ["/contact", 307], ["/services/va", 307], ["/login", 307], ["/partner/login", 307], ["/en", 200], ["/ja/products", 200], ["/admin", 404], ["/partner/credits", 404], ["/dashboard", 404], ["/api/auth/dev-login", 404], ["/api/public/leads", 404], ["/internal/projects", 404], ["/not-a-page", 404]]) {
     for (const host of ["kuanguard.com", "kuanguard-website.vercel.app"]) {
-      assert.equal(policy.proxy({ nextUrl: { clone: () => new URL(`https://${host}${path}`) }, headers: new Headers({ host }) }).status, status, `${host}${path}`);
+      const response = policy.proxy({ nextUrl: { clone: () => new URL(`https://${host}${path}`) }, headers: new Headers({ host }), cookies: { get: () => undefined } });
+      assert.equal(response.status, status, `${host}${path}`);
+      if (status === 307) assert.equal(new URL(response.headers.get("location")).pathname, `/zh-TW${path === "/" ? "" : path}`);
     }
   }
 });

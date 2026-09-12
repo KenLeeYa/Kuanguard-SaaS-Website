@@ -4,13 +4,13 @@
 
 Production 與 Preview 均設定 `KUANGUARD_WEBSITE_ONLY=true`。此模式只提供明示的公開頁面，關閉 API 轉送、internal rewrite、後台與工作空間。頁面不載入 session，也不連到本機或正式資料庫；既有 SaaS、provider、登入與資料遷移 release gate 保留。
 
-公開聯絡／商家諮詢／資安詢價使用 `ada76145@gmail.com`。表單僅產生 mailto，訪客必須在自己的郵件程式完成寄送；網站不保存內容，也不宣稱已送達。平台登入與課程入口說明尚未開放。
+公開聯絡／資安詢價使用 `ada76145@gmail.com`。表單僅產生 mailto，訪客必須在自己的郵件程式完成寄送；網站不保存內容，也不宣稱已送達。2026-09-12 起，商家申請改連到攤點通 Google 表單，商家登入直接前往 `https://app.qidaigo.com/login`。其他平台與課程仍說明尚未開放。
 
-`apps/web/src/lib/website-commerce.json` 是 2026-09-10 既有本機公開商品資訊的發布快照，保留公開價目版本 `merchant-website-20260910-v1`、功能狀態及 charge_enabled=false。它不代表付款、外送或正式平台已啟用。價格／功能修改需同步此公開快照及來源核定資訊。
+`apps/web/src/lib/website-commerce.json` 保留既有公開功能狀態與 charge_enabled=false；2026-09-12 對照攤點通正式官網更新價目參考為 `qidaigo-public-20260912`，新增每月訂單費用 NT$1,499 上限。此快照不代表付款、外送或其他平台已啟用。價格／功能修改需同步此公開快照及來源核定資訊。
 
 正式網域為 `https://kuanguard.com`，`www.kuanguard.com` 永久轉址至主網域並保留 path/query。Cloudflare 使用 DNS only，記錄內容以此 Vercel 專案實際回覆為準。本次已從 GoDaddy 取得完整 DNS 匯出並逐筆核對後切換 nameserver；後續變更仍須重新 inspect、備份、核對 drift 與產生具體 plan。
 
-驗證：`npm --prefix apps/web test`、`npm --prefix apps/web run typecheck`，以及帶 `KUANGUARD_WEBSITE_ONLY=true` 的 production build／HTTP smoke。Preview 驗證通過後才指派正式網域。部署證據另記錄實際 commit、deployment、DNS 與 HTTP 結果。
+驗證：`npm --prefix apps/web test`、`npm --prefix apps/web run typecheck`，以及帶 `KUANGUARD_WEBSITE_ONLY=true` 的 production build／HTTP smoke。七語版本使用 `node apps/web/tests/website-language-smoke.mjs <base-url> <evidence-path>`。Preview 驗證通過後才指派正式網域。部署證據另記錄實際 commit、deployment、DNS 與 HTTP 結果。[七語與產品入口說明](WEBSITE_LOCALIZATION.md)。
 
 ## 2026-09-10 發布結果
 

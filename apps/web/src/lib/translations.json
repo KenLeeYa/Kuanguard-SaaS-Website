@@ -1,0 +1,3906 @@
+{
+  "攤點通｜餐飲點餐系統": [
+    "摊点通｜餐饮点餐系统",
+    "StallOrder · Restaurant ordering",
+    "StallOrder｜飲食店向け注文システム",
+    "StallOrder · 음식점 주문 시스템",
+    "StallOrder · ระบบสั่งอาหาร",
+    "StallOrder · Hệ thống gọi món"
+  ],
+  "從掃碼點餐、廚房出單到門市管理，讓每一天的營運更有條理。": [
+    "从扫码点餐、厨房出单到门店管理，让每一天的运营更有条理。",
+    "Bring order to your day, from QR ordering and kitchen tickets to store management.",
+    "QR注文から厨房への伝票送信、店舗管理まで。日々の業務を整理します。",
+    "QR 주문부터 주방 전표, 매장 관리까지 일상 업무를 체계적으로 관리하세요.",
+    "จัดการงานประจำวัน ตั้งแต่สั่งอาหารผ่าน QR ใบรายการครัว ไปจนถึงบริหารร้าน",
+    "Sắp xếp công việc hằng ngày, từ gọi món QR và phiếu bếp đến quản lý cửa hàng."
+  ],
+  "探索點餐產品": [
+    "探索点餐产品",
+    "Explore ordering",
+    "注文システムを見る",
+    "주문 제품 알아보기",
+    "ดูระบบสั่งอาหาร",
+    "Khám phá hệ thống gọi món"
+  ],
+  "線上點餐": [
+    "在线点餐",
+    "Online ordering",
+    "オンライン注文",
+    "온라인 주문",
+    "สั่งอาหารออนไลน์",
+    "Gọi món trực tuyến"
+  ],
+  "廚房出單": [
+    "厨房出单",
+    "Kitchen tickets",
+    "厨房伝票",
+    "주방 전표",
+    "ใบรายการครัว",
+    "Phiếu bếp"
+  ],
+  "門市管理": [
+    "门店管理",
+    "Store management",
+    "店舗管理",
+    "매장 관리",
+    "จัดการร้าน",
+    "Quản lý cửa hàng"
+  ],
+  "合作夥伴平台": [
+    "合作伙伴平台",
+    "Partner platform",
+    "パートナープラットフォーム",
+    "파트너 플랫폼",
+    "แพลตฟอร์มพันธมิตร",
+    "Nền tảng đối tác"
+  ],
+  "連接客戶、專案與服務交付，用自己的品牌，建立持續協作的工作空間。": [
+    "连接客户、项目与服务交付，用自己的品牌，建立持续协作的工作空间。",
+    "Connect customers, projects and delivery in a workspace built around your brand.",
+    "お客様、プロジェクト、サービス提供をつなぎ、自社ブランドで協働する場へ。",
+    "자체 브랜드를 중심으로 고객, 프로젝트, 서비스 제공을 연결하는 협업 공간입니다.",
+    "เชื่อมลูกค้า โครงการ และการส่งมอบบริการในพื้นที่ทำงานภายใต้แบรนด์ของคุณ",
+    "Kết nối khách hàng, dự án và bàn giao dịch vụ trong không gian cộng tác mang thương hiệu của bạn."
+  ],
+  "認識 Partner 平台": [
+    "认识 Partner 平台",
+    "Explore the partner platform",
+    "パートナー基盤を見る",
+    "파트너 플랫폼 알아보기",
+    "รู้จักแพลตฟอร์มพันธมิตร",
+    "Tìm hiểu nền tảng đối tác"
+  ],
+  "客戶歸屬": [
+    "客户归属",
+    "Customer ownership",
+    "顧客の担当管理",
+    "고객 담당 관리",
+    "การดูแลลูกค้า",
+    "Phân công khách hàng"
+  ],
+  "專案協作": [
+    "项目协作",
+    "Project collaboration",
+    "プロジェクト連携",
+    "프로젝트 협업",
+    "ทำงานร่วมกันในโครงการ",
+    "Cộng tác dự án"
+  ],
+  "品牌入口": [
+    "品牌入口",
+    "Branded portal",
+    "ブランド別ポータル",
+    "브랜드 포털",
+    "พอร์ทัลแบรนด์",
+    "Cổng thương hiệu"
+  ],
+  "企業資安服務": [
+    "企业信息安全服务",
+    "Cybersecurity services",
+    "企業向けセキュリティサービス",
+    "기업 보안 서비스",
+    "บริการความปลอดภัยไซเบอร์",
+    "Dịch vụ an ninh mạng"
+  ],
+  "從風險檢測到報告、改善與教育訓練，讓專業判斷成為可以追蹤的行動。": [
+    "从风险检测到报告、改进与教育培训，让专业判断成为可以追踪的行动。",
+    "Turn expert insight into traceable action, from risk assessment to reporting, remediation and training.",
+    "リスク評価から報告、改善、教育まで。専門家の判断を追跡できる行動につなげます。",
+    "위험 평가부터 보고, 개선, 교육까지 전문가의 판단을 추적 가능한 조치로 연결합니다.",
+    "เปลี่ยนการประเมินของผู้เชี่ยวชาญเป็นงานที่ติดตามได้ ตั้งแต่ตรวจความเสี่ยงจนถึงรายงาน แก้ไข และอบรม",
+    "Biến đánh giá chuyên môn thành hành động có thể theo dõi, từ kiểm tra rủi ro đến báo cáo, khắc phục và đào tạo."
+  ],
+  "了解資安服務": [
+    "了解信息安全服务",
+    "Explore security services",
+    "セキュリティサービスを見る",
+    "보안 서비스 알아보기",
+    "ดูบริการความปลอดภัย",
+    "Tìm hiểu dịch vụ bảo mật"
+  ],
+  "檢測評估": [
+    "检测评估",
+    "Assessment",
+    "検査・評価",
+    "점검 및 평가",
+    "ตรวจสอบและประเมิน",
+    "Kiểm tra và đánh giá"
+  ],
+  "改善追蹤": [
+    "改进追踪",
+    "Remediation tracking",
+    "改善の追跡",
+    "개선 추적",
+    "ติดตามการแก้ไข",
+    "Theo dõi khắc phục"
+  ],
+  "教育訓練": [
+    "教育培训",
+    "Training",
+    "教育・研修",
+    "교육",
+    "การอบรม",
+    "Đào tạo"
+  ],
+  "商家與門市": [
+    "商家与门店",
+    "Merchants and stores",
+    "事業者・店舗",
+    "사업자와 매장",
+    "ผู้ค้าและร้านค้า",
+    "Nhà bán hàng và cửa hàng"
+  ],
+  "把接單、顧客服務與門市作業整理在一起，從每天最常使用的流程開始。": [
+    "把接单、客户服务与门店作业整理在一起，从每天最常使用的流程开始。",
+    "Bring orders, customer service and store operations together, starting with your everyday workflows.",
+    "受注、接客、店舗業務をまとめ、毎日よく使う流れから整えます。",
+    "주문, 고객 서비스, 매장 업무를 모아 매일 사용하는 절차부터 정리하세요.",
+    "รวมการรับออร์เดอร์ บริการลูกค้า และงานร้าน เริ่มจากขั้นตอนที่ใช้ทุกวัน",
+    "Kết hợp nhận đơn, chăm sóc khách hàng và vận hành cửa hàng, bắt đầu từ quy trình hằng ngày."
+  ],
+  "探索商家產品": [
+    "探索商家产品",
+    "Explore merchant products",
+    "店舗向け製品を見る",
+    "사업자 제품 알아보기",
+    "ดูผลิตภัณฑ์สำหรับร้านค้า",
+    "Khám phá sản phẩm cho cửa hàng"
+  ],
+  "企業與團隊": [
+    "企业与团队",
+    "Businesses and teams",
+    "企業・チーム",
+    "기업과 팀",
+    "องค์กรและทีม",
+    "Doanh nghiệp và đội ngũ"
+  ],
+  "掌握資訊風險、釐清改善順序，讓檢測、交付與團隊學習有跡可循。": [
+    "掌握信息风险、厘清改进顺序，让检测、交付与团队学习有迹可循。",
+    "Understand security risks and remediation priorities, with traceable assessments, delivery and team learning.",
+    "情報リスクと改善の優先順位を整理し、検査・納品・チーム学習の経緯を残します。",
+    "정보 위험과 개선 우선순위를 파악하고 점검, 결과 제공, 팀 학습을 추적하세요.",
+    "เข้าใจความเสี่ยงและลำดับการแก้ไข พร้อมติดตามการตรวจ ส่งมอบ และเรียนรู้ของทีม",
+    "Nắm rõ rủi ro và thứ tự ưu tiên khắc phục, theo dõi kiểm tra, bàn giao và học tập của đội ngũ."
+  ],
+  "了解企業服務": [
+    "了解企业服务",
+    "Explore business services",
+    "企業向けサービスを見る",
+    "기업 서비스 알아보기",
+    "ดูบริการสำหรับองค์กร",
+    "Tìm hiểu dịch vụ doanh nghiệp"
+  ],
+  "專業服務夥伴": [
+    "专业服务伙伴",
+    "Professional service partners",
+    "専門サービスのパートナー",
+    "전문 서비스 파트너",
+    "พันธมิตรผู้ให้บริการมืออาชีพ",
+    "Đối tác dịch vụ chuyên nghiệp"
+  ],
+  "保留自己的品牌與客戶關係，透過共同的平台管理專案、授權與服務。": [
+    "保留自己的品牌与客户关系，通过共同的平台管理项目、授权与服务。",
+    "Keep your brand and customer relationships while coordinating projects, access and services.",
+    "自社のブランドと顧客関係を保ちながら、プロジェクト・権限・サービスを連携します。",
+    "자체 브랜드와 고객 관계를 유지하면서 프로젝트, 권한, 서비스를 조율하세요.",
+    "รักษาแบรนด์และความสัมพันธ์กับลูกค้า พร้อมประสานโครงการ สิทธิ์ และบริการ",
+    "Giữ thương hiệu và quan hệ khách hàng, đồng thời phối hợp dự án, quyền truy cập và dịch vụ."
+  ],
+  "認識合作模式": [
+    "认识合作模式",
+    "Explore partnership options",
+    "協業の形を見る",
+    "협력 방식 알아보기",
+    "ดูรูปแบบความร่วมมือ",
+    "Tìm hiểu hình thức hợp tác"
+  ],
+  "產品與平台": [
+    "产品与平台",
+    "Products and platforms",
+    "製品・プラットフォーム",
+    "제품 및 플랫폼",
+    "ผลิตภัณฑ์และแพลตฟอร์ม",
+    "Sản phẩm và nền tảng"
+  ],
+  "解決方案": [
+    "解决方案",
+    "Solutions",
+    "ソリューション",
+    "솔루션",
+    "โซลูชัน",
+    "Giải pháp"
+  ],
+  "合作夥伴": [
+    "合作伙伴",
+    "Partners",
+    "パートナー",
+    "파트너",
+    "พันธมิตร",
+    "Đối tác"
+  ],
+  "關於我們": [
+    "关于我们",
+    "About us",
+    "私たちについて",
+    "회사 소개",
+    "เกี่ยวกับเรา",
+    "Về chúng tôi"
+  ],
+  "關閉主要選單": [
+    "关闭主菜单",
+    "Close main menu",
+    "メインメニューを閉じる",
+    "주 메뉴 닫기",
+    "ปิดเมนูหลัก",
+    "Đóng menu chính"
+  ],
+  "開啟主要選單": [
+    "打开主菜单",
+    "Open main menu",
+    "メインメニューを開く",
+    "주 메뉴 열기",
+    "เปิดเมนูหลัก",
+    "Mở menu chính"
+  ],
+  "主要導覽": [
+    "主导航",
+    "Main navigation",
+    "メインナビゲーション",
+    "주 탐색",
+    "การนำทางหลัก",
+    "Điều hướng chính"
+  ],
+  "平台登入": [
+    "平台登录",
+    "Platform sign-in",
+    "プラットフォームログイン",
+    "플랫폼 로그인",
+    "เข้าสู่แพลตฟอร์ม",
+    "Đăng nhập nền tảng"
+  ],
+  "聯絡我們": [
+    "联系我们",
+    "Contact us",
+    "お問い合わせ",
+    "문의하기",
+    "ติดต่อเรา",
+    "Liên hệ"
+  ],
+  "數位科技，走進每一天的營運。": [
+    "数字科技，走进每一天的运营。",
+    "Digital technology for everyday operations.",
+    "日々の業務に、デジタル技術を。",
+    "일상 업무를 위한 디지털 기술.",
+    "เทคโนโลยีดิจิทัลสำหรับงานประจำวัน",
+    "Công nghệ số cho vận hành hằng ngày."
+  ],
+  "從產品、資訊到人，連接工作的每一步。": [
+    "从产品、信息到人，连接工作的每一步。",
+    "Connecting products, information and people at every step.",
+    "製品、情報、人をつなぎ、仕事の一歩一歩を支えます。",
+    "제품, 정보, 사람을 업무의 모든 단계에서 연결합니다.",
+    "เชื่อมผลิตภัณฑ์ ข้อมูล และผู้คนในทุกขั้นตอน",
+    "Kết nối sản phẩm, thông tin và con người trong từng bước công việc."
+  ],
+  "產品與服務": [
+    "产品与服务",
+    "Products and services",
+    "製品・サービス",
+    "제품 및 서비스",
+    "ผลิตภัณฑ์และบริการ",
+    "Sản phẩm và dịch vụ"
+  ],
+  "商家點餐系統": [
+    "商家点餐系统",
+    "Restaurant ordering",
+    "飲食店向け注文システム",
+    "음식점 주문 시스템",
+    "ระบบสั่งอาหาร",
+    "Hệ thống gọi món"
+  ],
+  "查看所有產品": [
+    "查看所有产品",
+    "View all products",
+    "すべての製品を見る",
+    "모든 제품 보기",
+    "ดูผลิตภัณฑ์ทั้งหมด",
+    "Xem tất cả sản phẩm"
+  ],
+  "探索 KUANGUARD": [
+    "探索 KUANGUARD",
+    "Explore KUANGUARD",
+    "KUANGUARDを知る",
+    "KUANGUARD 알아보기",
+    "รู้จัก KUANGUARD",
+    "Khám phá KUANGUARD"
+  ],
+  "資料安全": [
+    "数据安全",
+    "Data security",
+    "データセキュリティ",
+    "데이터 보안",
+    "ความปลอดภัยของข้อมูล",
+    "Bảo mật dữ liệu"
+  ],
+  "服務入口": [
+    "服务入口",
+    "Service access",
+    "サービスへのアクセス",
+    "서비스 접속",
+    "ทางเข้าบริการ",
+    "Truy cập dịch vụ"
+  ],
+  "合作夥伴登入": [
+    "合作伙伴登录",
+    "Partner sign-in",
+    "パートナーログイン",
+    "파트너 로그인",
+    "เข้าสู่ระบบพันธมิตร",
+    "Đăng nhập đối tác"
+  ],
+  "商家產品申請": [
+    "商家产品申请",
+    "Merchant application",
+    "店舗向けお申し込み",
+    "사업자 제품 신청",
+    "สมัครใช้บริการร้านค้า",
+    "Đăng ký cho cửa hàng"
+  ],
+  "隱私權政策": [
+    "隐私政策",
+    "Privacy policy",
+    "プライバシーポリシー",
+    "개인정보 처리방침",
+    "นโยบายความเป็นส่วนตัว",
+    "Chính sách quyền riêng tư"
+  ],
+  "服務條款": [
+    "服务条款",
+    "Terms of service",
+    "利用規約",
+    "서비스 약관",
+    "ข้อกำหนดการใช้บริการ",
+    "Điều khoản dịch vụ"
+  ],
+  "產品位置": [
+    "产品位置",
+    "Product breadcrumb",
+    "製品のパンくずリスト",
+    "제품 경로",
+    "ตำแหน่งผลิตภัณฑ์",
+    "Đường dẫn sản phẩm"
+  ],
+  "KUANGUARD 數位科技": [
+    "KUANGUARD 数字科技",
+    "KUANGUARD Digital Technology",
+    "KUANGUARD デジタル技術",
+    "KUANGUARD 디지털 기술",
+    "KUANGUARD เทคโนโลยีดิจิทัล",
+    "KUANGUARD Công nghệ số"
+  ],
+  "旗下產品": [
+    "旗下产品",
+    "Our products",
+    "当社の製品",
+    "당사 제품",
+    "ผลิตภัณฑ์ของเรา",
+    "Sản phẩm của chúng tôi"
+  ],
+  "KUANGUARD 旗下產品與服務架構": [
+    "KUANGUARD 旗下产品与服务架构",
+    "KUANGUARD products and services",
+    "KUANGUARDの製品とサービス構成",
+    "KUANGUARD 제품 및 서비스 구성",
+    "ผลิตภัณฑ์และบริการของ KUANGUARD",
+    "Cấu trúc sản phẩm và dịch vụ KUANGUARD"
+  ],
+  "商家 SaaS": [
+    "商家 SaaS",
+    "Merchant SaaS",
+    "店舗向けSaaS",
+    "사업자 SaaS",
+    "SaaS สำหรับร้านค้า",
+    "SaaS cho cửa hàng"
+  ],
+  "夥伴協作": [
+    "伙伴协作",
+    "Partner collaboration",
+    "パートナー連携",
+    "파트너 협업",
+    "ความร่วมมือกับพันธมิตร",
+    "Cộng tác đối tác"
+  ],
+  "企業資安": [
+    "企业信息安全",
+    "Cybersecurity",
+    "企業セキュリティ",
+    "기업 보안",
+    "ความปลอดภัยไซเบอร์",
+    "An ninh mạng"
+  ],
+  "不同專業，共同連接。": [
+    "不同专业，共同连接。",
+    "Different expertise. Shared connections.",
+    "専門性をつなぎ、ともに進む。",
+    "다양한 전문성을 하나로 연결합니다.",
+    "เชื่อมความเชี่ยวชาญที่หลากหลาย",
+    "Kết nối những chuyên môn khác nhau."
+  ],
+  "商家工作空間": [
+    "商家工作空间",
+    "Merchant workspace",
+    "店舗ワークスペース",
+    "사업자 작업 공간",
+    "พื้นที่ทำงานร้านค้า",
+    "Không gian làm việc cửa hàng"
+  ],
+  "營運概覽": [
+    "运营概览",
+    "Operations overview",
+    "運営状況",
+    "운영 개요",
+    "ภาพรวมการดำเนินงาน",
+    "Tổng quan vận hành"
+  ],
+  "顧客": [
+    "顾客",
+    "Customer",
+    "お客様",
+    "고객",
+    "ลูกค้า",
+    "Khách hàng"
+  ],
+  "掃碼點餐": [
+    "扫码点餐",
+    "QR ordering",
+    "QR注文",
+    "QR 주문",
+    "สั่งผ่าน QR",
+    "Gọi món QR"
+  ],
+  "門市": [
+    "门店",
+    "Store",
+    "店舗",
+    "매장",
+    "ร้านค้า",
+    "Cửa hàng"
+  ],
+  "確認出單": [
+    "确认出单",
+    "Confirm ticket",
+    "伝票確認",
+    "전표 확인",
+    "ยืนยันรายการ",
+    "Xác nhận phiếu"
+  ],
+  "餐點、備註與製作資訊，一目了然。": [
+    "餐点、备注与制作信息，一目了然。",
+    "Items, notes and preparation details at a glance.",
+    "料理、備考、調理情報をひと目で確認。",
+    "메뉴, 요청 사항, 조리 정보를 한눈에 확인하세요.",
+    "ดูเมนู หมายเหตุ และข้อมูลการปรุงได้ในทันที",
+    "Xem nhanh món ăn, ghi chú và thông tin chế biến."
+  ],
+  "服務協作": [
+    "服务协作",
+    "Service collaboration",
+    "サービス連携",
+    "서비스 협업",
+    "ประสานงานบริการ",
+    "Cộng tác dịch vụ"
+  ],
+  "客戶與專案": [
+    "客户与项目",
+    "Customers and projects",
+    "顧客とプロジェクト",
+    "고객 및 프로젝트",
+    "ลูกค้าและโครงการ",
+    "Khách hàng và dự án"
+  ],
+  "團隊與授權": [
+    "团队与授权",
+    "Teams and access",
+    "チームと権限",
+    "팀 및 권한",
+    "ทีมและสิทธิ์",
+    "Đội ngũ và quyền truy cập"
+  ],
+  "品牌與交付": [
+    "品牌与交付",
+    "Brand and delivery",
+    "ブランドと納品",
+    "브랜드 및 결과 제공",
+    "แบรนด์และการส่งมอบ",
+    "Thương hiệu và bàn giao"
+  ],
+  "企業安全": [
+    "企业安全",
+    "Business security",
+    "企業の安全",
+    "기업 보안",
+    "ความปลอดภัยองค์กร",
+    "Bảo mật doanh nghiệp"
+  ],
+  "服務流程": [
+    "服务流程",
+    "Service workflow",
+    "サービスの流れ",
+    "서비스 절차",
+    "ขั้นตอนบริการ",
+    "Quy trình dịch vụ"
+  ],
+  "從風險，到改善。": [
+    "从风险，到改进。",
+    "From risk to remediation.",
+    "リスクから改善へ。",
+    "위험 파악에서 개선까지.",
+    "จากความเสี่ยงสู่การแก้ไข",
+    "Từ rủi ro đến khắc phục."
+  ],
+  "檢測　/　覆核　/　交付": [
+    "检测　/　复核　/　交付",
+    "Assess / Review / Deliver",
+    "検査 / 確認 / 納品",
+    "점검 / 검토 / 제공",
+    "ตรวจสอบ / ทบทวน / ส่งมอบ",
+    "Kiểm tra / Rà soát / Bàn giao"
+  ],
+  "保留證據，持續追蹤。": [
+    "保留证据，持续追踪。",
+    "Retain evidence. Track progress.",
+    "証拠を残し、継続して追跡。",
+    "근거를 보존하고 진행 상황을 추적합니다.",
+    "เก็บหลักฐานและติดตามความคืบหน้า",
+    "Lưu bằng chứng, theo dõi tiến độ."
+  ],
+  "功能流程示意": [
+    "功能流程示意",
+    "Illustrative workflow",
+    "機能フローのイメージ",
+    "기능 흐름 예시",
+    "ภาพตัวอย่างขั้นตอน",
+    "Minh họa quy trình"
+  ],
+  "商家登入": [
+    "商家登录",
+    "Merchant sign-in",
+    "店舗ログイン",
+    "사업자 로그인",
+    "เข้าสู่ระบบร้านค้า",
+    "Đăng nhập cửa hàng"
+  ],
+  "平台尚未開放": [
+    "平台尚未开放",
+    "Platform not yet available",
+    "プラットフォームは未公開",
+    "플랫폼 준비 중",
+    "แพลตฟอร์มยังไม่เปิดให้บริการ",
+    "Nền tảng chưa mở"
+  ],
+  "你的下一個數位計畫，": [
+    "你的下一个数字计划，",
+    "Your next digital project",
+    "次のデジタル計画は、",
+    "다음 디지털 프로젝트는",
+    "โครงการดิจิทัลถัดไปของคุณ",
+    "Dự án số tiếp theo của bạn"
+  ],
+  "從一次對話開始。": [
+    "从一次对话开始。",
+    "starts with a conversation.",
+    "対話から始まります。",
+    "대화에서 시작됩니다.",
+    "เริ่มต้นจากการพูดคุย",
+    "bắt đầu từ một cuộc trao đổi."
+  ],
+  "告訴我們你的使用情境，一起找到合適的產品與服務。": [
+    "告诉我们你的使用场景，一起找到合适的产品与服务。",
+    "Tell us how you work. We will help you find the right products and services.",
+    "利用シーンをお聞かせください。適した製品とサービスを一緒に考えます。",
+    "사용 환경을 알려주시면 적합한 제품과 서비스를 함께 찾아드립니다.",
+    "บอกลักษณะการใช้งาน เพื่อร่วมกันหาผลิตภัณฑ์และบริการที่เหมาะสม",
+    "Hãy chia sẻ nhu cầu sử dụng để cùng tìm sản phẩm và dịch vụ phù hợp."
+  ],
+  "與 KUANGUARD 聯繫": [
+    "与 KUANGUARD 联系",
+    "Contact KUANGUARD",
+    "KUANGUARDに相談する",
+    "KUANGUARD에 문의",
+    "ติดต่อ KUANGUARD",
+    "Liên hệ KUANGUARD"
+  ],
+  "數位科技，": [
+    "数字科技，",
+    "Digital technology,",
+    "デジタル技術を、",
+    "디지털 기술을,",
+    "เทคโนโลยีดิจิทัล",
+    "Công nghệ số,"
+  ],
+  "走進每一天的營運。": [
+    "走进每一天的运营。",
+    "part of your everyday work.",
+    "毎日の業務へ。",
+    "매일의 업무 속으로.",
+    "สู่การทำงานทุกวัน",
+    "đồng hành cùng vận hành hằng ngày."
+  ],
+  "從 SaaS 產品、企業資安到夥伴協作，": [
+    "从 SaaS 产品、企业信息安全到伙伴协作，",
+    "From SaaS and cybersecurity to partner collaboration,",
+    "SaaS、企業セキュリティ、パートナー連携まで、",
+    "SaaS, 기업 보안, 파트너 협업을 통해",
+    "ตั้งแต่ SaaS และความปลอดภัยไซเบอร์ถึงความร่วมมือกับพันธมิตร",
+    "Từ SaaS, an ninh mạng đến cộng tác đối tác,"
+  ],
+  "KUANGUARD 讓資訊更有條理，讓團隊的下一步更清楚。": [
+    "KUANGUARD 让信息更有条理，让团队的下一步更清楚。",
+    "KUANGUARD organizes information and helps teams see their next step.",
+    "KUANGUARDが情報を整理し、チームの次の一歩を明確にします。",
+    "KUANGUARD는 정보를 정리하고 팀의 다음 단계를 명확히 합니다.",
+    "KUANGUARD จัดระเบียบข้อมูลและช่วยให้ทีมเห็นขั้นตอนถัดไปชัดเจน",
+    "KUANGUARD sắp xếp thông tin và giúp đội ngũ thấy rõ bước tiếp theo."
+  ],
+  "探索產品與平台": [
+    "探索产品与平台",
+    "Explore products and platforms",
+    "製品・プラットフォームを見る",
+    "제품 및 플랫폼 알아보기",
+    "ดูผลิตภัณฑ์และแพลตฟอร์ม",
+    "Khám phá sản phẩm và nền tảng"
+  ],
+  "聊聊你的需求": [
+    "聊聊你的需求",
+    "Tell us your needs",
+    "ご要望を相談する",
+    "요구 사항 상담",
+    "พูดคุยเกี่ยวกับความต้องการ",
+    "Trao đổi nhu cầu"
+  ],
+  "科技的價值，來自每一次實際應用。": [
+    "科技的价值，来自每一次实际应用。",
+    "Technology earns its value through real use.",
+    "技術の価値は、実際の活用から生まれます。",
+    "기술의 가치는 실제 활용에서 나옵니다.",
+    "คุณค่าของเทคโนโลยีเกิดจากการใช้งานจริง",
+    "Giá trị công nghệ đến từ ứng dụng thực tế."
+  ],
+  "讓不同的專業，找到共同的連結。": [
+    "让不同的专业，找到共同的连接。",
+    "Helping different fields find common ground.",
+    "異なる専門分野に、共通のつながりを。",
+    "다양한 전문 분야의 연결점을 찾습니다.",
+    "เชื่อมโยงความเชี่ยวชาญต่างสาขา",
+    "Giúp các lĩnh vực chuyên môn tìm điểm kết nối."
+  ],
+  "數位產品": [
+    "数字产品",
+    "Digital products",
+    "デジタル製品",
+    "디지털 제품",
+    "ผลิตภัณฑ์ดิจิทัล",
+    "Sản phẩm số"
+  ],
+  "平台協作": [
+    "平台协作",
+    "Platform collaboration",
+    "プラットフォーム連携",
+    "플랫폼 협업",
+    "ความร่วมมือบนแพลตฟอร์ม",
+    "Cộng tác nền tảng"
+  ],
+  "資訊安全": [
+    "信息安全",
+    "Information security",
+    "情報セキュリティ",
+    "정보 보안",
+    "ความปลอดภัยสารสนเทศ",
+    "An toàn thông tin"
+  ],
+  "各有專長，": [
+    "各有专长，",
+    "Distinct expertise,",
+    "それぞれの強みを、",
+    "각자의 전문성을",
+    "ความเชี่ยวชาญที่แตกต่าง",
+    "Chuyên môn riêng,"
+  ],
+  "為實際的工作而生。": [
+    "为实际的工作而生。",
+    "built for real work.",
+    "実際の仕事へ。",
+    "실제 업무에 적용합니다.",
+    "เพื่อการทำงานจริง",
+    "phục vụ công việc thực tế."
+  ],
+  "從一項合適的工具開始，": [
+    "从一项合适的工具开始，",
+    "Start with the right tool",
+    "適したツールから始め、",
+    "적합한 도구로 시작해",
+    "เริ่มจากเครื่องมือที่เหมาะสม",
+    "Bắt đầu với công cụ phù hợp"
+  ],
+  "讓日常營運、專業服務與團隊協作逐步連接。": [
+    "让日常运营、专业服务与团队协作逐步连接。",
+    "and gradually connect operations, services and teamwork.",
+    "日常業務、専門サービス、チーム連携を少しずつつなぎます。",
+    "일상 운영, 전문 서비스, 팀 협업을 차근차근 연결하세요.",
+    "แล้วค่อยเชื่อมการดำเนินงาน บริการ และการทำงานเป็นทีม",
+    "và từng bước kết nối vận hành, dịch vụ chuyên môn và cộng tác."
+  ],
+  "產品功能與服務範圍，依各項目的介紹與開通條件提供。": [
+    "产品功能与服务范围，依各项目的介绍与开通条件提供。",
+    "Features and scope follow each product's description and activation conditions.",
+    "機能とサービス範囲は、各製品の説明と利用開始条件に従います。",
+    "기능과 서비스 범위는 각 제품의 안내 및 이용 조건에 따릅니다.",
+    "ฟังก์ชันและขอบเขตบริการเป็นไปตามรายละเอียดและเงื่อนไขเปิดใช้งานของแต่ละผลิตภัณฑ์",
+    "Tính năng và phạm vi theo mô tả và điều kiện kích hoạt của từng sản phẩm."
+  ],
+  "查看產品與平台": [
+    "查看产品与平台",
+    "View products and platforms",
+    "製品・プラットフォーム一覧",
+    "제품 및 플랫폼 보기",
+    "ดูผลิตภัณฑ์และแพลตฟอร์ม",
+    "Xem sản phẩm và nền tảng"
+  ],
+  "從你的使用情境出發。": [
+    "从你的使用场景出发。",
+    "Start with how you work.",
+    "利用シーンから考える。",
+    "사용 환경에서 시작하세요.",
+    "เริ่มจากการใช้งานของคุณ",
+    "Bắt đầu từ cách bạn làm việc."
+  ],
+  "無論經營一間店，或服務一群客戶，": [
+    "无论经营一家店，或服务一群客户，",
+    "Whether you run a store or serve a portfolio of customers,",
+    "店舗の運営から、多くのお客様へのサービスまで、",
+    "매장을 운영하든 여러 고객에게 서비스를 제공하든",
+    "ไม่ว่าจะดูแลร้านเดียวหรือให้บริการลูกค้าหลายราย",
+    "Dù điều hành cửa hàng hay phục vụ nhiều khách hàng,"
+  ],
+  "都能找到適合的數位起點。": [
+    "都能找到适合的数字起点。",
+    "find a digital starting point that fits.",
+    "適したデジタルの出発点を見つけられます。",
+    "적합한 디지털 출발점을 찾을 수 있습니다.",
+    "ก็หาจุดเริ่มต้นดิจิทัลที่เหมาะสมได้",
+    "bạn đều có thể tìm điểm khởi đầu số phù hợp."
+  ],
+  "讓資訊流動，": [
+    "让信息流动，",
+    "Keep information moving,",
+    "情報をつなぎ、",
+    "정보를 원활히 연결하고,",
+    "ให้ข้อมูลไหลเวียน",
+    "Để thông tin lưu chuyển,"
+  ],
+  "也讓每一步值得信任。": [
+    "也让每一步值得信任。",
+    "with confidence at every step.",
+    "一歩一歩に信頼を。",
+    "모든 단계에 신뢰를 더하세요.",
+    "พร้อมความมั่นใจในทุกขั้นตอน",
+    "với sự tin cậy ở từng bước."
+  ],
+  "清楚的權限、可追蹤的流程與有依據的交付，": [
+    "清楚的权限、可追踪的流程与有依据的交付，",
+    "Clear access, traceable workflows and evidence-based delivery",
+    "明確な権限、追跡できる流れ、根拠のある納品が、",
+    "명확한 권한, 추적 가능한 절차, 근거 있는 결과 제공은",
+    "สิทธิ์ที่ชัดเจน ขั้นตอนที่ติดตามได้ และการส่งมอบที่มีหลักฐาน",
+    "Quyền truy cập rõ ràng, quy trình có thể theo dõi và bàn giao có bằng chứng"
+  ],
+  "是數位工作可以持續運作的基礎。": [
+    "是数字工作可以持续运作的基础。",
+    "support dependable digital operations.",
+    "デジタル業務を継続する基盤です。",
+    "지속적인 디지털 운영의 기반입니다.",
+    "คือพื้นฐานของการทำงานดิจิทัลที่ต่อเนื่อง",
+    "là nền tảng cho vận hành số bền vững."
+  ],
+  "了解我們如何保護資料": [
+    "了解我们如何保护数据",
+    "Read about data protection",
+    "データ保護について",
+    "데이터 보호 알아보기",
+    "อ่านเรื่องการปกป้องข้อมูล",
+    "Tìm hiểu bảo vệ dữ liệu"
+  ],
+  "資料各有邊界": [
+    "数据各有边界",
+    "Clear data boundaries",
+    "データの境界を明確に",
+    "명확한 데이터 경계",
+    "ขอบเขตข้อมูลที่ชัดเจน",
+    "Ranh giới dữ liệu rõ ràng"
+  ],
+  "依企業、角色與專案授權，存取工作所需的資訊。": [
+    "依企业、角色与项目授权，访问工作所需的信息。",
+    "Access information according to organization, role and project permissions.",
+    "企業、役割、プロジェクトの権限に応じて必要な情報にアクセスします。",
+    "조직, 역할, 프로젝트 권한에 따라 필요한 정보에 접근합니다.",
+    "เข้าถึงข้อมูลตามสิทธิ์ขององค์กร บทบาท และโครงการ",
+    "Truy cập thông tin theo quyền của tổ chức, vai trò và dự án."
+  ],
+  "流程清楚可循": [
+    "流程清楚可循",
+    "Traceable workflows",
+    "流れを明確に",
+    "추적 가능한 절차",
+    "ขั้นตอนที่ติดตามได้",
+    "Quy trình dễ theo dõi"
+  ],
+  "讓客戶、團隊與服務夥伴掌握各自的下一步。": [
+    "让客户、团队与服务伙伴掌握各自的下一步。",
+    "Help customers, teams and partners understand what comes next.",
+    "お客様、チーム、パートナーが次の行動を把握できるようにします。",
+    "고객, 팀, 파트너가 다음 할 일을 파악할 수 있도록 합니다.",
+    "ช่วยให้ลูกค้า ทีม และพันธมิตรทราบขั้นตอนถัดไป",
+    "Giúp khách hàng, đội ngũ và đối tác nắm rõ bước tiếp theo."
+  ],
+  "交付保留依據": [
+    "交付保留依据",
+    "Evidence with delivery",
+    "根拠を残す納品",
+    "근거를 남기는 결과 제공",
+    "ส่งมอบพร้อมหลักฐาน",
+    "Bàn giao có bằng chứng"
+  ],
+  "從檢測證據、覆核到報告，保留版本與服務紀錄。": [
+    "从检测证据、复核到报告，保留版本与服务记录。",
+    "Keep versions and service records from assessment evidence through review and reporting.",
+    "検査証拠、確認、報告まで、バージョンとサービス記録を残します。",
+    "점검 근거부터 검토, 보고까지 버전과 서비스 기록을 보존합니다.",
+    "เก็บเวอร์ชันและบันทึกบริการ ตั้งแต่หลักฐานการตรวจจนถึงการทบทวนและรายงาน",
+    "Lưu phiên bản và hồ sơ dịch vụ từ bằng chứng kiểm tra đến rà soát và báo cáo."
+  ],
+  "讓數位工具，": [
+    "让数字工具，",
+    "Digital tools",
+    "デジタルツールを、",
+    "디지털 도구로",
+    "เครื่องมือดิจิทัล",
+    "Công cụ số"
+  ],
+  "成為工作的助力。": [
+    "成为工作的助力。",
+    "that help you work.",
+    "仕事の力に。",
+    "업무에 힘을 더하세요.",
+    "ที่ช่วยให้งานง่ายขึ้น",
+    "hỗ trợ công việc."
+  ],
+  "KUANGUARD 旗下產品與服務，從商家營運到企業安全與夥伴協作。": [
+    "KUANGUARD 旗下产品与服务，从商家运营到企业安全与伙伴协作。",
+    "KUANGUARD products and services cover store operations, security and partner collaboration.",
+    "店舗運営、企業セキュリティ、パートナー連携を支えるKUANGUARDの製品とサービス。",
+    "KUANGUARD는 매장 운영, 기업 보안, 파트너 협업을 위한 제품과 서비스를 제공합니다.",
+    "ผลิตภัณฑ์และบริการ KUANGUARD ครอบคลุมงานร้านค้า ความปลอดภัย และความร่วมมือกับพันธมิตร",
+    "Sản phẩm và dịch vụ KUANGUARD bao gồm vận hành cửa hàng, bảo mật và cộng tác đối tác."
+  ],
+  "選擇適合的起點，了解每一項產品的功能與導入方式。": [
+    "选择适合的起点，了解每项产品的功能与导入方式。",
+    "Find the right starting point and explore features and onboarding.",
+    "適した出発点を選び、機能と導入方法をご覧ください。",
+    "적합한 출발점을 선택하고 기능과 도입 방법을 확인하세요.",
+    "เลือกจุดเริ่มต้นที่เหมาะสม และดูฟังก์ชันกับวิธีเริ่มใช้งาน",
+    "Chọn điểm khởi đầu phù hợp, tìm hiểu tính năng và cách triển khai."
+  ],
+  "點餐系統為 KUANGUARD 旗下商家 SaaS 產品；收費與功能狀態請見產品專頁。": [
+    "点餐系统为 KUANGUARD 旗下商家 SaaS 产品；收费与功能状态请见产品专页。",
+    "Our ordering system is a KUANGUARD SaaS product. See its product page for pricing and availability.",
+    "注文システムはKUANGUARDのSaaS製品です。料金と機能の提供状況は製品ページをご確認ください。",
+    "주문 시스템은 KUANGUARD의 SaaS 제품입니다. 요금과 기능 상태는 제품 페이지에서 확인하세요.",
+    "ระบบสั่งอาหารเป็น SaaS ของ KUANGUARD ดูราคาและสถานะฟังก์ชันได้ที่หน้าผลิตภัณฑ์",
+    "Hệ thống gọi món là sản phẩm SaaS của KUANGUARD. Xem trang sản phẩm để biết phí và trạng thái tính năng."
+  ],
+  "企業資安由專業服務與核定交付流程提供，Partner 平台規劃合作夥伴管理與協作，尚未開放登入。": [
+    "企业信息安全由专业服务与核定交付流程提供，Partner 平台规划合作伙伴管理与协作，尚未开放登录。",
+    "Security services follow agreed delivery scopes. The planned partner platform is not yet open for sign-in.",
+    "セキュリティサービスは合意した範囲で提供します。パートナー基盤は計画中で、ログインは未公開です。",
+    "보안 서비스는 합의된 범위로 제공합니다. 파트너 플랫폼은 계획 중이며 로그인은 아직 제공되지 않습니다.",
+    "บริการความปลอดภัยมีขอบเขตส่งมอบที่ตกลงกัน แพลตฟอร์มพันธมิตรอยู่ระหว่างวางแผนและยังเข้าสู่ระบบไม่ได้",
+    "Dịch vụ bảo mật theo phạm vi đã thống nhất. Nền tảng đối tác đang được lên kế hoạch, chưa mở đăng nhập."
+  ],
+  "規劃中": [
+    "规划中",
+    "Planned",
+    "計画中",
+    "계획 중",
+    "อยู่ระหว่างวางแผน",
+    "Đang lên kế hoạch"
+  ],
+  "美業工作室系統": [
+    "美业工作室系统",
+    "Beauty studio system",
+    "美容サロン向けシステム",
+    "뷰티 스튜디오 시스템",
+    "ระบบสำหรับสตูดิโอความงาม",
+    "Hệ thống studio làm đẹp"
+  ],
+  "將以獨立產品規劃，目前尚未上線；攤點通專注餐飲點餐。": [
+    "将以独立产品规划，目前尚未上线；摊点通专注餐饮点餐。",
+    "Planned as a separate product and not yet launched. StallOrder focuses on restaurant ordering.",
+    "独立した製品として計画中で、まだ公開していません。StallOrderは飲食店の注文に特化しています。",
+    "별도 제품으로 계획 중이며 아직 출시되지 않았습니다. StallOrder는 음식점 주문에 집중합니다.",
+    "วางแผนเป็นผลิตภัณฑ์แยกและยังไม่เปิดตัว โดย StallOrder เน้นการสั่งอาหาร",
+    "Được lên kế hoạch thành sản phẩm riêng, chưa ra mắt. StallOrder tập trung vào gọi món ăn uống."
+  ],
+  "洽詢產品規劃": [
+    "咨询产品规划",
+    "Ask about product plans",
+    "製品計画について相談",
+    "제품 계획 문의",
+    "สอบถามแผนผลิตภัณฑ์",
+    "Hỏi về kế hoạch sản phẩm"
+  ],
+  "好的數位方案，": [
+    "好的数字方案，",
+    "Good digital solutions",
+    "よいデジタル提案は、",
+    "좋은 디지털 솔루션은",
+    "โซลูชันดิจิทัลที่ดี",
+    "Giải pháp số tốt"
+  ],
+  "從理解工作開始。": [
+    "从理解工作开始。",
+    "start with understanding the work.",
+    "仕事を理解することから。",
+    "업무를 이해하는 데서 시작됩니다.",
+    "เริ่มจากเข้าใจงาน",
+    "bắt đầu từ việc hiểu công việc."
+  ],
+  "先釐清你的使用情境，再選擇需要的產品、服務與協作方式。": [
+    "先厘清你的使用场景，再选择需要的产品、服务与协作方式。",
+    "Clarify your needs, then choose the products, services and collaboration that fit.",
+    "利用シーンを整理してから、必要な製品・サービス・連携方法を選びます。",
+    "사용 환경을 먼저 파악한 뒤 필요한 제품, 서비스, 협업 방식을 선택하세요.",
+    "เข้าใจการใช้งานก่อนเลือกผลิตภัณฑ์ บริการ และรูปแบบความร่วมมือ",
+    "Làm rõ nhu cầu trước khi chọn sản phẩm, dịch vụ và cách cộng tác."
+  ],
+  "一步一步，把需求帶進實際工作。": [
+    "一步一步，把需求带进实际工作。",
+    "Turn needs into real workflows, step by step.",
+    "ご要望を一歩ずつ、実際の仕事へ。",
+    "요구 사항을 단계별로 실제 업무에 적용하세요.",
+    "นำความต้องการสู่งานจริงทีละขั้น",
+    "Từng bước đưa nhu cầu vào công việc thực tế."
+  ],
+  "了解使用情境": [
+    "了解使用场景",
+    "Understand your workflow",
+    "利用シーンの確認",
+    "사용 환경 파악",
+    "เข้าใจการใช้งาน",
+    "Hiểu quy trình sử dụng"
+  ],
+  "確認產品與服務範圍": [
+    "确认产品与服务范围",
+    "Agree on product and service scope",
+    "製品・サービス範囲の確認",
+    "제품 및 서비스 범위 확인",
+    "ยืนยันขอบเขตผลิตภัณฑ์และบริการ",
+    "Thống nhất phạm vi sản phẩm và dịch vụ"
+  ],
+  "安排導入與驗收": [
+    "安排导入与验收",
+    "Arrange onboarding and acceptance",
+    "導入・検収の調整",
+    "도입 및 검수 준비",
+    "จัดการเริ่มใช้และตรวจรับ",
+    "Sắp xếp triển khai và nghiệm thu"
+  ],
+  "持續服務與協作": [
+    "持续服务与协作",
+    "Continue service and collaboration",
+    "継続的なサービスと連携",
+    "지속적인 서비스 및 협업",
+    "บริการและทำงานร่วมกันต่อเนื่อง",
+    "Duy trì dịch vụ và cộng tác"
+  ],
+  "KUANGUARD 首頁": [
+    "KUANGUARD 首页",
+    "KUANGUARD home",
+    "KUANGUARD ホーム",
+    "KUANGUARD 홈",
+    "หน้าแรก KUANGUARD",
+    "Trang chủ KUANGUARD"
+  ],
+  "數位科技 · 產品與服務": [
+    "数字科技 · 产品与服务",
+    "Digital technology · Products & services",
+    "デジタル技術・製品・サービス",
+    "디지털 기술 · 제품 및 서비스",
+    "เทคโนโลยีดิจิทัล · ผลิตภัณฑ์และบริการ",
+    "Công nghệ số · Sản phẩm và dịch vụ"
+  ],
+  "關閉選單": [
+    "关闭菜单",
+    "Close menu",
+    "メニューを閉じる",
+    "메뉴 닫기",
+    "ปิดเมนู",
+    "Đóng menu"
+  ],
+  "開啟選單": [
+    "打开菜单",
+    "Open menu",
+    "メニューを開く",
+    "메뉴 열기",
+    "เปิดเมนู",
+    "Mở menu"
+  ],
+  "適用產業": [
+    "适用行业",
+    "Who it is for",
+    "対象業種",
+    "대상 업종",
+    "เหมาะกับใคร",
+    "Ngành phù hợp"
+  ],
+  "從第一筆訂單，到每一天的營運。": [
+    "从第一笔订单，到每一天的运营。",
+    "From your first order to everyday operations.",
+    "最初の注文から、毎日の運営まで。",
+    "첫 주문부터 매일의 운영까지.",
+    "ตั้งแต่ออร์เดอร์แรกถึงการทำงานทุกวัน",
+    "Từ đơn hàng đầu tiên đến vận hành hằng ngày."
+  ],
+  "陪伴不同規模的商家，穩穩向前。": [
+    "陪伴不同规模的商家，稳步向前。",
+    "Helping stores of different sizes move forward.",
+    "さまざまな規模の店舗の前進を支えます。",
+    "다양한 규모의 매장이 나아갈 수 있도록 돕습니다.",
+    "ช่วยร้านค้าหลากหลายขนาดก้าวไปข้างหน้า",
+    "Đồng hành cùng cửa hàng ở nhiều quy mô."
+  ],
+  "商家服務": [
+    "商家服务",
+    "Merchant services",
+    "店舗向けサービス",
+    "사업자 서비스",
+    "บริการร้านค้า",
+    "Dịch vụ cửa hàng"
+  ],
+  "功能介紹": [
+    "功能介绍",
+    "Features",
+    "機能紹介",
+    "기능 소개",
+    "ฟังก์ชัน",
+    "Tính năng"
+  ],
+  "收費方式": [
+    "收费方式",
+    "Pricing",
+    "料金",
+    "요금",
+    "ราคา",
+    "Bảng giá"
+  ],
+  "申請開通": [
+    "申请开通",
+    "Apply",
+    "利用を申し込む",
+    "이용 신청",
+    "สมัครใช้งาน",
+    "Đăng ký"
+  ],
+  "攜手合作": [
+    "携手合作",
+    "Work with us",
+    "ともに協力する",
+    "함께 협력하기",
+    "ร่วมงานกับเรา",
+    "Hợp tác cùng chúng tôi"
+  ],
+  "合作夥伴計畫": [
+    "合作伙伴计划",
+    "Partner program",
+    "パートナープログラム",
+    "파트너 프로그램",
+    "โครงการพันธมิตร",
+    "Chương trình đối tác"
+  ],
+  "認識我們": [
+    "认识我们",
+    "About us",
+    "私たちについて",
+    "회사 소개",
+    "รู้จักเรา",
+    "Tìm hiểu chúng tôi"
+  ],
+  "關於 KUANGUARD": [
+    "关于 KUANGUARD",
+    "About KUANGUARD",
+    "KUANGUARDについて",
+    "KUANGUARD 소개",
+    "เกี่ยวกับ KUANGUARD",
+    "Về KUANGUARD"
+  ],
+  "功能與第三方服務依個別開通狀態提供": [
+    "功能与第三方服务依各自开通状态提供",
+    "Features and third-party services depend on activation status.",
+    "機能と外部サービスは個別の提供状況に従います。",
+    "기능과 외부 서비스는 개별 개통 상태에 따라 제공됩니다.",
+    "ฟังก์ชันและบริการภายนอกขึ้นอยู่กับสถานะเปิดใช้งาน",
+    "Tính năng và dịch vụ bên thứ ba tùy theo trạng thái kích hoạt."
+  ],
+  "申請商家開通": [
+    "申请商家开通",
+    "Apply for merchant access",
+    "店舗利用を申し込む",
+    "사업자 이용 신청",
+    "สมัครเปิดใช้สำหรับร้านค้า",
+    "Đăng ký mở cửa hàng"
+  ],
+  "/ 成功訂單": [
+    "/ 成功订单",
+    "/ successful order",
+    "/ 成立した注文",
+    "/ 성공 주문",
+    "/ ออร์เดอร์สำเร็จ",
+    "/ đơn thành công"
+  ],
+  "方案載入中": [
+    "方案加载中",
+    "Loading plan",
+    "プランを読み込み中",
+    "요금제 로딩 중",
+    "กำลังโหลดแพ็กเกจ",
+    "Đang tải gói"
+  ],
+  "每一筆生意，": [
+    "每一笔生意，",
+    "Every order",
+    "一つひとつの注文を、",
+    "모든 주문을",
+    "ทุกออร์เดอร์",
+    "Mỗi đơn hàng"
+  ],
+  "都值得好好經營。": [
+    "都值得好好经营。",
+    "deserves your full attention.",
+    "大切に。",
+    "소중히 관리하세요.",
+    "ควรได้รับการดูแลอย่างดี",
+    "đều đáng được chăm chút."
+  ],
+  "從掃碼點餐、廚房出單到門市管理，": [
+    "从扫码点餐、厨房出单到门店管理，",
+    "From QR ordering and kitchen tickets to store management,",
+    "QR注文、厨房伝票、店舗管理まで、",
+    "QR 주문부터 주방 전표, 매장 관리까지",
+    "ตั้งแต่สั่งผ่าน QR ใบรายการครัว จนถึงบริหารร้าน",
+    "Từ gọi món QR, phiếu bếp đến quản lý cửa hàng,"
+  ],
+  "把繁瑣的日常整理好，專心照顧眼前的顧客。": [
+    "把繁琐的日常整理好，专心照顾眼前的顾客。",
+    "organize the routine so you can focus on your customers.",
+    "日常業務を整理し、目の前のお客様に集中できます。",
+    "복잡한 일상을 정리하고 고객에게 집중하세요.",
+    "จัดระเบียบงานประจำเพื่อใส่ใจลูกค้าตรงหน้า",
+    "sắp xếp công việc để tập trung chăm sóc khách hàng."
+  ],
+  "了解攤點通": [
+    "了解摊点通",
+    "Explore StallOrder",
+    "StallOrderを見る",
+    "StallOrder 알아보기",
+    "รู้จัก StallOrder",
+    "Tìm hiểu StallOrder"
+  ],
+  "依成功訂單計費": [
+    "按成功订单计费",
+    "Pay per successful order",
+    "成立した注文ごとに課金",
+    "성공 주문 기준 과금",
+    "คิดตามออร์เดอร์สำเร็จ",
+    "Tính phí theo đơn thành công"
+  ],
+  "從小店開始": [
+    "从小店开始",
+    "Start with a small store",
+    "小さなお店から",
+    "작은 매장부터 시작",
+    "เริ่มจากร้านเล็ก",
+    "Bắt đầu từ cửa hàng nhỏ"
+  ],
+  "支援多門市": [
+    "支持多门店",
+    "Multi-store support",
+    "複数店舗に対応",
+    "여러 매장 지원",
+    "รองรับหลายสาขา",
+    "Hỗ trợ nhiều cửa hàng"
+  ],
+  "點餐與營運流程示意，非即時商家資料": [
+    "点餐与运营流程示意，非实时商家数据",
+    "Illustrative ordering workflow, not live merchant data",
+    "注文・運営フローのイメージ。実際の店舗データではありません",
+    "주문 및 운영 흐름 예시이며 실시간 매장 데이터가 아닙니다",
+    "ภาพตัวอย่างขั้นตอนสั่งอาหาร ไม่ใช่ข้อมูลร้านค้าแบบสด",
+    "Minh họa quy trình gọi món, không phải dữ liệu cửa hàng trực tiếp"
+  ],
+  "操作示意": [
+    "操作示意",
+    "Illustration",
+    "操作イメージ",
+    "조작 예시",
+    "ภาพตัวอย่าง",
+    "Minh họa"
+  ],
+  "今天，也好好經營。": [
+    "今天，也好好经营。",
+    "Make today run smoothly.",
+    "今日も、着実な運営を。",
+    "오늘도 원활하게 운영하세요.",
+    "ดูแลกิจการวันนี้ให้ราบรื่น",
+    "Vận hành tốt hơn mỗi ngày."
+  ],
+  "接單更清楚": [
+    "接单更清楚",
+    "Clearer orders",
+    "注文をわかりやすく",
+    "명확한 주문 접수",
+    "รับออร์เดอร์ชัดเจนขึ้น",
+    "Nhận đơn rõ ràng hơn"
+  ],
+  "訂單集中管理": [
+    "订单集中管理",
+    "Orders in one place",
+    "注文を一元管理",
+    "주문 통합 관리",
+    "รวมออร์เดอร์ในที่เดียว",
+    "Quản lý đơn tập trung"
+  ],
+  "服務有條理": [
+    "服务有条理",
+    "Organized service",
+    "サービスを整理",
+    "체계적인 서비스",
+    "บริการเป็นระบบ",
+    "Dịch vụ có tổ chức"
+  ],
+  "門市協作": [
+    "门店协作",
+    "Store coordination",
+    "店舗連携",
+    "매장 협업",
+    "ประสานงานร้านค้า",
+    "Phối hợp cửa hàng"
+  ],
+  "訂單流程": [
+    "订单流程",
+    "Order workflow",
+    "注文の流れ",
+    "주문 절차",
+    "ขั้นตอนออร์เดอร์",
+    "Quy trình đơn hàng"
+  ],
+  "掃碼 → 接單 → 出單": [
+    "扫码 → 接单 → 出单",
+    "Scan → Accept → Prepare",
+    "スキャン → 受注 → 伝票送信",
+    "스캔 → 접수 → 전표",
+    "สแกน → รับออร์เดอร์ → ส่งครัว",
+    "Quét → Nhận đơn → Xuất phiếu"
+  ],
+  "顧客選擇餐點與規格": [
+    "顾客选择餐点与规格",
+    "Customers select items and options",
+    "お客様が料理とオプションを選択",
+    "고객이 메뉴와 옵션 선택",
+    "ลูกค้าเลือกเมนูและตัวเลือก",
+    "Khách chọn món và tùy chọn"
+  ],
+  "門市確認品項與備註": [
+    "门店确认品项与备注",
+    "Store confirms items and notes",
+    "店舗が品目と備考を確認",
+    "매장이 메뉴와 요청 사항 확인",
+    "ร้านยืนยันเมนูและหมายเหตุ",
+    "Cửa hàng xác nhận món và ghi chú"
+  ],
+  "廚房收到製作資訊": [
+    "厨房收到制作信息",
+    "Kitchen receives preparation details",
+    "厨房が調理情報を受信",
+    "주방이 조리 정보 수신",
+    "ครัวรับข้อมูลการปรุง",
+    "Bếp nhận thông tin chế biến"
+  ],
+  "線上菜單": [
+    "在线菜单",
+    "Online menu",
+    "オンラインメニュー",
+    "온라인 메뉴",
+    "เมนูออนไลน์",
+    "Thực đơn trực tuyến"
+  ],
+  "訂單管理": [
+    "订单管理",
+    "Order management",
+    "注文管理",
+    "주문 관리",
+    "จัดการออร์เดอร์",
+    "Quản lý đơn hàng"
+  ],
+  "出單協作": [
+    "出单协作",
+    "Ticket coordination",
+    "伝票連携",
+    "전표 협업",
+    "ประสานงานใบรายการ",
+    "Phối hợp xuất phiếu"
+  ],
+  "掃一下，開始點餐。": [
+    "扫一扫，开始点餐。",
+    "Scan to start ordering.",
+    "スキャンして注文開始。",
+    "스캔하고 주문하세요.",
+    "สแกนเพื่อเริ่มสั่ง",
+    "Quét để bắt đầu gọi món."
+  ],
+  "QR Code 是示意圖": [
+    "QR Code 为示意图",
+    "Illustrative QR code",
+    "QRコードはイメージです",
+    "QR 코드는 예시입니다",
+    "QR เป็นภาพตัวอย่าง",
+    "Mã QR minh họa"
+  ],
+  "透明的成長方式": [
+    "透明的成长方式",
+    "Transparent pricing",
+    "わかりやすい料金",
+    "투명한 요금",
+    "ราคาที่โปร่งใส",
+    "Chi phí minh bạch"
+  ],
+  "不同的店，同樣認真的經營。": [
+    "不同的店，同样认真的经营。",
+    "Different stores. The same dedication.",
+    "お店は違っても、真剣な思いは同じ。",
+    "매장은 달라도 정성은 같습니다.",
+    "ต่างร้าน แต่ตั้งใจดูแลเหมือนกัน",
+    "Cửa hàng khác nhau, cùng sự tận tâm."
+  ],
+  "把日常串起來": [
+    "把日常串起来",
+    "Connect your daily workflow",
+    "毎日の業務をつなぐ",
+    "일상 업무 연결",
+    "เชื่อมงานประจำวัน",
+    "Kết nối công việc hằng ngày"
+  ],
+  "從接單開始，": [
+    "从接单开始，",
+    "Starting with orders,",
+    "受注から始めて、",
+    "주문 접수부터",
+    "เริ่มจากรับออร์เดอร์",
+    "Bắt đầu từ nhận đơn,"
+  ],
+  "讓每一步都更有條理。": [
+    "让每一步都更有条理。",
+    "bring clarity to every step.",
+    "一歩一歩をわかりやすく。",
+    "모든 단계를 체계적으로.",
+    "ให้ทุกขั้นตอนเป็นระบบ",
+    "sắp xếp rõ ràng từng bước."
+  ],
+  "不需要一次改變所有流程。": [
+    "不需要一次改变所有流程。",
+    "You do not need to change everything at once.",
+    "すべてを一度に変える必要はありません。",
+    "모든 절차를 한꺼번에 바꿀 필요는 없습니다.",
+    "ไม่จำเป็นต้องเปลี่ยนทุกขั้นตอนพร้อมกัน",
+    "Không cần thay đổi mọi quy trình cùng lúc."
+  ],
+  "先從店裡最需要的功能開始，逐步整理營運。": [
+    "先从店里最需要的功能开始，逐步整理运营。",
+    "Start with what your store needs most, then improve step by step.",
+    "お店に最も必要な機能から始め、少しずつ運営を整えます。",
+    "매장에 가장 필요한 기능부터 단계적으로 개선하세요.",
+    "เริ่มจากฟังก์ชันที่ร้านต้องการที่สุด แล้วค่อยปรับงาน",
+    "Bắt đầu từ tính năng cửa hàng cần nhất, rồi cải thiện từng bước."
+  ],
+  "查看完整功能與開通狀態": [
+    "查看完整功能与开通状态",
+    "View all features and availability",
+    "全機能と提供状況を見る",
+    "전체 기능 및 개통 상태 보기",
+    "ดูฟังก์ชันและสถานะทั้งหมด",
+    "Xem toàn bộ tính năng và trạng thái"
+  ],
+  "和你的生意，一起成長": [
+    "和你的生意，一起成长",
+    "Grow with your business",
+    "お店とともに成長する",
+    "사업과 함께 성장",
+    "เติบโตไปพร้อมธุรกิจ",
+    "Phát triển cùng cửa hàng"
+  ],
+  "費用清楚，": [
+    "费用清楚，",
+    "Clear costs,",
+    "わかりやすい費用で、",
+    "명확한 비용으로",
+    "ค่าใช้จ่ายชัดเจน",
+    "Chi phí rõ ràng,"
+  ],
+  "經營更有底。": [
+    "经营更有底。",
+    "confident operations.",
+    "安心できる運営へ。",
+    "안정적인 운영을.",
+    "บริหารได้มั่นใจขึ้น",
+    "vận hành tự tin hơn."
+  ],
+  "公開方案從每筆成功訂單計費。": [
+    "公开方案按每笔成功订单计费。",
+    "The public plan charges per successful order.",
+    "公開プランは成立した注文ごとに課金します。",
+    "공개 요금제는 성공 주문별로 과금합니다.",
+    "แพ็กเกจสาธารณะคิดค่าบริการตามออร์เดอร์สำเร็จ",
+    "Gói công khai tính phí theo mỗi đơn thành công."
+  ],
+  "設備、金流與第三方服務費用，導入前一起確認。": [
+    "设备、支付与第三方服务费用，导入前一起确认。",
+    "Confirm hardware, payment and third-party fees before onboarding.",
+    "機器、決済、外部サービスの費用は導入前に確認します。",
+    "장비, 결제, 외부 서비스 비용은 도입 전에 확인합니다.",
+    "ยืนยันค่าอุปกรณ์ การชำระเงิน และบริการภายนอกก่อนเริ่มใช้",
+    "Xác nhận phí thiết bị, thanh toán và bên thứ ba trước khi triển khai."
+  ],
+  "了解計費方式": [
+    "了解计费方式",
+    "Understand pricing",
+    "料金を見る",
+    "요금 방식 알아보기",
+    "ดูวิธีคิดค่าบริการ",
+    "Tìm hiểu cách tính phí"
+  ],
+  "你的專業，值得更好的服務平台。": [
+    "你的专业，值得更好的服务平台。",
+    "A service platform for your expertise.",
+    "専門性を支えるサービス基盤へ。",
+    "전문성을 지원하는 서비스 플랫폼.",
+    "แพลตฟอร์มบริการสำหรับความเชี่ยวชาญของคุณ",
+    "Nền tảng dịch vụ cho chuyên môn của bạn."
+  ],
+  "為 SI、MSP、資安服務商與通路夥伴提供客戶、專案和交付管理，": [
+    "为 SI、MSP、安全服务商与渠道伙伴提供客户、项目和交付管理，",
+    "Customer, project and delivery coordination for SI, MSP, security and channel partners.",
+    "SI、MSP、セキュリティ事業者、販売パートナーの顧客・プロジェクト・納品管理を支援。",
+    "SI, MSP, 보안 및 유통 파트너의 고객, 프로젝트, 결과 제공을 관리합니다.",
+    "ประสานลูกค้า โครงการ และการส่งมอบสำหรับ SI, MSP ผู้ให้บริการความปลอดภัย และพันธมิตรช่องทาง",
+    "Phối hợp khách hàng, dự án và bàn giao cho SI, MSP, nhà cung cấp bảo mật và đối tác phân phối."
+  ],
+  "合作平台尚未開放，歡迎洽詢合作規劃。": [
+    "合作平台尚未开放，欢迎咨询合作规划。",
+    "The partner platform is not open yet. Contact us to discuss plans.",
+    "協業基盤はまだ未公開です。計画についてご相談ください。",
+    "협력 플랫폼은 아직 공개되지 않았습니다. 협력 계획을 문의하세요.",
+    "แพลตฟอร์มยังไม่เปิดให้บริการ ติดต่อเพื่อหารือแผนความร่วมมือได้",
+    "Nền tảng đối tác chưa mở. Vui lòng liên hệ để trao đổi kế hoạch."
+  ],
+  "認識合作夥伴計畫": [
+    "认识合作伙伴计划",
+    "Explore the partner program",
+    "パートナー計画を見る",
+    "파트너 프로그램 알아보기",
+    "ดูโครงการพันธมิตร",
+    "Tìm hiểu chương trình đối tác"
+  ],
+  "讓好生意，從更好的日常開始。": [
+    "让好生意，从更好的日常开始。",
+    "Better business starts with a better day.",
+    "よりよい日常から、よりよい商売へ。",
+    "더 나은 일상에서 좋은 사업이 시작됩니다.",
+    "ธุรกิจที่ดีเริ่มจากการทำงานประจำวันที่ดีขึ้น",
+    "Kinh doanh tốt bắt đầu từ công việc hằng ngày tốt hơn."
+  ],
+  "告訴我們你的店與需求，一起找到合適的導入方式。": [
+    "告诉我们你的店与需求，一起找到合适的导入方式。",
+    "Tell us about your store and needs to find the right way to start.",
+    "お店とご要望をお聞かせください。適した導入方法を考えます。",
+    "매장과 요구 사항을 알려주시면 적합한 도입 방식을 찾습니다.",
+    "บอกข้อมูลร้านและความต้องการ เพื่อหาวิธีเริ่มใช้ที่เหมาะสม",
+    "Chia sẻ về cửa hàng và nhu cầu để tìm cách triển khai phù hợp."
+  ],
+  "商家公開方案": [
+    "商家公开方案",
+    "Public merchant plan",
+    "店舗向け公開プラン",
+    "사업자 공개 요금제",
+    "แพ็กเกจร้านค้าสาธารณะ",
+    "Gói công khai cho cửa hàng"
+  ],
+  "隨每一筆成功訂單成長": [
+    "随每笔成功订单成长",
+    "Grow with each successful order",
+    "成立した注文とともに成長",
+    "성공 주문과 함께 성장",
+    "เติบโตตามออร์เดอร์สำเร็จ",
+    "Phát triển cùng mỗi đơn thành công"
+  ],
+  "月租 NT$": [
+    "月租 NT$",
+    "Monthly subscription NT$",
+    "月額 NT$",
+    "월 이용료 NT$",
+    "ค่ารายเดือน NT$",
+    "Phí thuê tháng NT$"
+  ],
+  "買斷費 NT$": [
+    "买断费 NT$",
+    "Upfront license NT$",
+    "買い切り費用 NT$",
+    "일시 구매 비용 NT$",
+    "ค่าซื้อขาด NT$",
+    "Phí mua đứt NT$"
+  ],
+  "失敗、取消與退款訂單依合約排除或調整": [
+    "失败、取消与退款订单依合约排除或调整",
+    "Failed, cancelled and refunded orders are excluded or adjusted under the contract.",
+    "失敗・取消・返金注文は契約に従って除外または調整します。",
+    "실패, 취소, 환불 주문은 계약에 따라 제외 또는 조정됩니다.",
+    "ออร์เดอร์ล้มเหลว ยกเลิก หรือคืนเงินจะยกเว้นหรือปรับตามสัญญา",
+    "Đơn lỗi, hủy và hoàn tiền được loại trừ hoặc điều chỉnh theo hợp đồng."
+  ],
+  "目前無法取得價目，請稍後重新整理或聯絡服務團隊。": [
+    "目前无法获取价目，请稍后刷新或联系服务团队。",
+    "Pricing is unavailable. Refresh later or contact our team.",
+    "料金を取得できません。後で再読み込みするか、お問い合わせください。",
+    "요금 정보를 불러올 수 없습니다. 나중에 새로고침하거나 문의하세요.",
+    "ยังโหลดราคาไม่ได้ โปรดลองใหม่ภายหลังหรือติดต่อทีมบริการ",
+    "Chưa tải được giá. Hãy tải lại sau hoặc liên hệ đội ngũ dịch vụ."
+  ],
+  "實際計費條件於開通前確認。": [
+    "实际计费条件于开通前确认。",
+    "Confirm billing terms before activation.",
+    "課金条件は利用開始前に確認します。",
+    "실제 과금 조건은 개통 전에 확인합니다.",
+    "ยืนยันเงื่อนไขค่าบริการก่อนเปิดใช้",
+    "Xác nhận điều kiện tính phí trước khi kích hoạt."
+  ],
+  "每月訂單費用上限 NT$": [
+    "每月订单费用上限 NT$",
+    "Monthly order fee cap NT$",
+    "月間注文料金の上限 NT$",
+    "월 주문 요금 상한 NT$",
+    "เพดานค่าออร์เดอร์ต่อเดือน NT$",
+    "Trần phí đơn hàng mỗi tháng NT$"
+  ],
+  "為商家整理日常": [
+    "为商家整理日常",
+    "Organize your store's day",
+    "店舗の毎日を整える",
+    "매장의 일상 정리",
+    "จัดระเบียบงานร้านค้า",
+    "Sắp xếp công việc cửa hàng"
+  ],
+  "一套入口，連接每天的營運。": [
+    "一个入口，连接每天的运营。",
+    "One entry point for daily operations.",
+    "毎日の運営を、一つの入口で。",
+    "하나의 입구로 일상 운영 연결.",
+    "ทางเข้าเดียวเชื่อมงานประจำวัน",
+    "Một điểm truy cập cho vận hành hằng ngày."
+  ],
+  "既有商家功能持續提供；試用項目依門市驗證，規劃項目在核定後開放。": [
+    "现有商家功能持续提供；试用项目依门店验证，规划项目在核定后开放。",
+    "Existing features remain available. Beta features require store validation; planned items await approval.",
+    "既存機能は引き続き提供します。試用機能は店舗で検証し、計画中の項目は承認後に公開します。",
+    "기존 기능은 계속 제공됩니다. 시험 기능은 매장 검증을 거치며 계획 항목은 승인 후 공개됩니다.",
+    "ฟังก์ชันเดิมยังใช้ได้ ฟังก์ชันทดลองต้องตรวจสอบกับร้าน และรายการที่วางแผนจะเปิดหลังอนุมัติ",
+    "Tính năng hiện có tiếp tục được cung cấp. Bản thử cần xác nhận tại cửa hàng; mục dự kiến mở sau phê duyệt."
+  ],
+  "標示「可用」的項目由既有商家系統提供。商家申請與登入請前往攤點通；金流及外送串接仍待各供應商審核與驗收。": [
+    "标示“可用”的项目由现有商家系统提供。申请与登录请前往摊点通；支付及外送对接仍待供应商审核与验收。",
+    "Available features are provided by the merchant system. Apply or sign in at StallOrder. Payments and delivery integrations require provider approval and acceptance.",
+    "利用可能な機能は店舗システムで提供します。申し込み・ログインはStallOrderへ。決済・配達連携は各社の審査と検収が必要です。",
+    "사용 가능한 기능은 매장 시스템에서 제공됩니다. 신청과 로그인은 StallOrder에서 진행하세요. 결제 및 배달 연동은 공급자 심사와 검수가 필요합니다.",
+    "ฟังก์ชันที่พร้อมใช้ให้บริการผ่านระบบร้านค้า สมัครหรือเข้าสู่ StallOrder การชำระเงินและจัดส่งยังต้องผ่านการอนุมัติและตรวจรับ",
+    "Tính năng khả dụng do hệ thống cửa hàng cung cấp. Đăng ký hoặc đăng nhập tại StallOrder. Tích hợp thanh toán và giao hàng cần nhà cung cấp phê duyệt, nghiệm thu."
+  ],
+  "清楚計費，從容經營": [
+    "清楚计费，从容经营",
+    "Clear pricing, confident operations",
+    "明確な料金で、落ち着いた運営を",
+    "명확한 과금, 안정적인 운영",
+    "ราคาชัดเจน บริหารได้มั่นใจ",
+    "Phí rõ ràng, vận hành tự tin"
+  ],
+  "你的生意成長，費用才跟著成長。": [
+    "你的生意成长，费用才跟着成长。",
+    "Costs grow with your business.",
+    "お店の成長に合わせた料金。",
+    "사업 성장에 맞춘 비용.",
+    "ค่าใช้จ่ายเติบโตตามธุรกิจ",
+    "Chi phí tăng theo hoạt động kinh doanh."
+  ],
+  "先了解費用與適用條件，再決定最適合門市的導入方式。": [
+    "先了解费用与适用条件，再决定最适合门店的导入方式。",
+    "Review costs and conditions before choosing how to adopt.",
+    "費用と条件を確認してから、店舗に適した導入方法を選びます。",
+    "비용과 조건을 확인한 뒤 매장에 맞는 도입 방식을 선택하세요.",
+    "ดูค่าใช้จ่ายและเงื่อนไขก่อนเลือกวิธีเริ่มใช้ที่เหมาะกับร้าน",
+    "Tìm hiểu chi phí và điều kiện trước khi chọn cách triển khai phù hợp."
+  ],
+  "試算每月訂單費用": [
+    "估算每月订单费用",
+    "Estimate monthly order fees",
+    "月間注文料金の試算",
+    "월 주문 요금 예상",
+    "คำนวณค่าออร์เดอร์ต่อเดือน",
+    "Ước tính phí đơn hàng hằng tháng"
+  ],
+  "預估成功訂單數": [
+    "预计成功订单数",
+    "Estimated successful orders",
+    "成立注文数の見込み",
+    "예상 성공 주문 수",
+    "จำนวนออร์เดอร์สำเร็จโดยประมาณ",
+    "Số đơn thành công dự kiến"
+  ],
+  "待取得方案": [
+    "等待获取方案",
+    "Plan unavailable",
+    "プラン未取得",
+    "요금제 확인 중",
+    "ยังไม่มีข้อมูลแพ็กเกจ",
+    "Chưa có thông tin gói"
+  ],
+  "試算不包含買斷、設備、金流、簡訊及第三方費用。是否收費、稅務及退款調整，以開通時核定的商家合約為準。": [
+    "估算不包含买断、设备、支付、短信及第三方费用。收费、税务及退款调整，以开通时确认的商家合约为准。",
+    "Estimates exclude licenses, hardware, payment, SMS and third-party fees. Charges, taxes and refund adjustments follow the agreed merchant contract.",
+    "試算には買い切り、機器、決済、SMS、外部サービス費用を含みません。課金、税、返金調整は合意した店舗契約に従います。",
+    "예상액에는 구매, 장비, 결제, SMS 및 외부 서비스 비용이 포함되지 않습니다. 과금, 세금, 환불 조정은 합의된 계약에 따릅니다.",
+    "ยอดประมาณไม่รวมค่าซื้อขาด อุปกรณ์ การชำระเงิน SMS และบริการภายนอก ค่าบริการ ภาษี และการคืนเงินเป็นไปตามสัญญาร้านค้า",
+    "Ước tính không gồm phí mua đứt, thiết bị, thanh toán, SMS và bên thứ ba. Phí, thuế và điều chỉnh hoàn tiền theo hợp đồng đã thống nhất."
+  ],
+  "什麼是成功訂單？": [
+    "什么是成功订单？",
+    "What counts as a successful order?",
+    "成立した注文とは？",
+    "성공 주문이란 무엇인가요?",
+    "ออร์เดอร์สำเร็จคืออะไร",
+    "Thế nào là đơn thành công?"
+  ],
+  "依商家核定的服務合約與訂單狀態認定；失敗、取消及退款訂單不應重複計費。實際帳單由原商家系統產生。": [
+    "依商家确认的服务合约与订单状态认定；失败、取消及退款订单不应重复计费。实际账单由商家系统生成。",
+    "The agreed contract and order status determine eligibility. Failed, cancelled or refunded orders should not be charged twice. The merchant system generates the actual bill.",
+    "契約と注文状態により判定します。失敗・取消・返金注文は重複課金しません。実際の請求は店舗システムで作成されます。",
+    "계약과 주문 상태를 기준으로 판단합니다. 실패, 취소, 환불 주문은 중복 과금하지 않습니다. 실제 청구서는 매장 시스템에서 생성됩니다.",
+    "พิจารณาตามสัญญาและสถานะออร์เดอร์ ไม่คิดซ้ำสำหรับรายการล้มเหลว ยกเลิก หรือคืนเงิน ระบบร้านค้าเป็นผู้ออกบิลจริง",
+    "Xác định theo hợp đồng và trạng thái đơn. Đơn lỗi, hủy hoặc hoàn tiền không được tính trùng phí. Hệ thống cửa hàng lập hóa đơn thực tế."
+  ],
+  "金流和外送已經啟用了嗎？": [
+    "支付和外送已经启用了吗？",
+    "Are payments and delivery integrations active?",
+    "決済・配達連携は利用できますか？",
+    "결제와 배달 연동이 활성화됐나요?",
+    "การชำระเงินและจัดส่งเปิดใช้แล้วหรือยัง",
+    "Đã mở tích hợp thanh toán và giao hàng chưa?"
+  ],
+  "這兩項目前列為規劃中，需要完成供應商申請、合約、設定與驗收後才能使用。": [
+    "这两项目前列为规划中，需要完成供应商申请、合约、设置与验收后才能使用。",
+    "Both are planned and require provider applications, contracts, setup and acceptance before use.",
+    "どちらも計画中です。利用には各社への申請、契約、設定、検収が必要です。",
+    "두 기능 모두 계획 중이며 공급자 신청, 계약, 설정 및 검수 후 사용할 수 있습니다.",
+    "ทั้งสองรายการอยู่ระหว่างวางแผน ต้องสมัคร ทำสัญญา ตั้งค่า และตรวจรับกับผู้ให้บริการก่อนใช้",
+    "Cả hai đang được lên kế hoạch; cần đăng ký, ký hợp đồng, cấu hình và nghiệm thu với nhà cung cấp trước khi dùng."
+  ],
+  "可以沿用既有設備嗎？": [
+    "可以沿用现有设备吗？",
+    "Can I use my existing hardware?",
+    "既存の機器を使えますか？",
+    "기존 장비를 사용할 수 있나요?",
+    "ใช้อุปกรณ์เดิมได้ไหม",
+    "Có thể dùng thiết bị hiện có không?"
+  ],
+  "請提供出單機、作業系統與目前流程，導入前會確認支援範圍。": [
+    "请提供打印机、操作系统与当前流程，导入前会确认支持范围。",
+    "Share your printer, operating system and workflow so we can confirm compatibility before onboarding.",
+    "プリンター、OS、現在の流れをお知らせください。導入前に対応範囲を確認します。",
+    "프린터, 운영체제, 현재 절차를 알려주시면 도입 전에 지원 범위를 확인합니다.",
+    "แจ้งเครื่องพิมพ์ ระบบปฏิบัติการ และขั้นตอนปัจจุบันเพื่อตรวจสอบก่อนเริ่มใช้",
+    "Cung cấp máy in, hệ điều hành và quy trình hiện tại để xác nhận khả năng hỗ trợ trước triển khai."
+  ],
+  "有多間店也能使用嗎？": [
+    "有多家店也能使用吗？",
+    "Can I use it across multiple stores?",
+    "複数店舗でも使えますか？",
+    "여러 매장에서도 사용할 수 있나요?",
+    "ใช้กับหลายสาขาได้ไหม",
+    "Có thể dùng cho nhiều cửa hàng không?"
+  ],
+  "可評估組織、門市與角色配置，依實際帳號授權管理。": [
+    "可评估组织、门店与角色配置，依实际账号授权管理。",
+    "Organization, store and role settings can be evaluated against your account permissions.",
+    "組織、店舗、役割の構成を確認し、実際のアカウント権限で管理します。",
+    "조직, 매장, 역할 구성을 검토하고 실제 계정 권한에 따라 관리할 수 있습니다.",
+    "ประเมินการตั้งค่าองค์กร สาขา และบทบาทตามสิทธิ์บัญชีได้",
+    "Có thể đánh giá cấu hình tổ chức, cửa hàng và vai trò theo quyền tài khoản thực tế."
+  ],
+  "先確認門市與顧客的使用情境。": [
+    "先确认门店与顾客的使用场景。",
+    "Start by understanding store and customer needs.",
+    "まず店舗とお客様の利用シーンを確認します。",
+    "매장과 고객의 사용 환경을 먼저 확인합니다.",
+    "เริ่มจากเข้าใจการใช้งานของร้านและลูกค้า",
+    "Trước tiên xác nhận nhu cầu của cửa hàng và khách hàng."
+  ],
+  "把重要的資訊帶進實際作業。": [
+    "把重要的信息带进实际作业。",
+    "Bring key information into daily operations.",
+    "重要な情報を実際の業務に反映します。",
+    "중요한 정보를 실제 업무에 반영합니다.",
+    "นำข้อมูลสำคัญเข้าสู่งานจริง",
+    "Đưa thông tin quan trọng vào công việc thực tế."
+  ],
+  "透過試用與導入確認適配程度。": [
+    "通过试用与导入确认适配程度。",
+    "Validate fit through trial and onboarding.",
+    "試用と導入で適合性を確認します。",
+    "시험 사용과 도입으로 적합성을 확인합니다.",
+    "ยืนยันความเหมาะสมผ่านการทดลองและเริ่มใช้งาน",
+    "Xác nhận độ phù hợp qua dùng thử và triển khai."
+  ],
+  "確認功能狀態": [
+    "确认功能状态",
+    "Check feature availability",
+    "機能の提供状況を見る",
+    "기능 상태 확인",
+    "ตรวจสอบสถานะฟังก์ชัน",
+    "Kiểm tra trạng thái tính năng"
+  ],
+  "用你的專業，建立長久的客戶關係。": [
+    "用你的专业，建立长久的客户关系。",
+    "Build lasting customer relationships with your expertise.",
+    "専門性で、長く続く顧客関係を。",
+    "전문성으로 지속적인 고객 관계를 구축하세요.",
+    "สร้างความสัมพันธ์ระยะยาวกับลูกค้าด้วยความเชี่ยวชาญ",
+    "Xây dựng quan hệ khách hàng lâu dài bằng chuyên môn của bạn."
+  ],
+  "合作平台規劃連接品牌、客戶與交付工作，目前尚未開放登入。": [
+    "合作平台规划连接品牌、客户与交付工作，目前尚未开放登录。",
+    "The planned partner platform will connect brands, customers and delivery. Sign-in is not yet open.",
+    "ブランド、顧客、納品業務をつなぐ基盤を計画中です。ログインはまだ未公開です。",
+    "브랜드, 고객, 결과 제공을 연결하는 플랫폼을 계획 중이며 로그인은 아직 제공되지 않습니다.",
+    "แพลตฟอร์มพันธมิตรวางแผนเชื่อมแบรนด์ ลูกค้า และการส่งมอบ ยังไม่เปิดเข้าสู่ระบบ",
+    "Nền tảng đối tác dự kiến kết nối thương hiệu, khách hàng và bàn giao. Chưa mở đăng nhập."
+  ],
+  "自己的品牌入口": [
+    "自己的品牌入口",
+    "Your branded portal",
+    "自社ブランドの入口",
+    "자체 브랜드 포털",
+    "พอร์ทัลแบรนด์ของคุณ",
+    "Cổng mang thương hiệu riêng"
+  ],
+  "公司名稱、識別色、支援資訊與核定網域，由同一套平台管理。": [
+    "公司名称、标识色、支持信息与核定域名，由同一平台管理。",
+    "Manage your company name, brand colors, support details and approved domains together.",
+    "社名、ブランド色、サポート情報、承認済みドメインをまとめて管理。",
+    "회사명, 브랜드 색상, 지원 정보, 승인된 도메인을 함께 관리합니다.",
+    "จัดการชื่อบริษัท สีแบรนด์ ข้อมูลช่วยเหลือ และโดเมนที่อนุมัติในที่เดียว",
+    "Quản lý tên công ty, màu thương hiệu, thông tin hỗ trợ và tên miền đã duyệt cùng nhau."
+  ],
+  "清楚的客戶歸屬": [
+    "清楚的客户归属",
+    "Clear customer ownership",
+    "顧客の担当を明確に",
+    "명확한 고객 담당",
+    "ผู้ดูแลลูกค้าชัดเจน",
+    "Phân công khách hàng rõ ràng"
+  ],
+  "追蹤來源、服務窗口與合約主體，依個人授權進入客戶專案。": [
+    "追踪来源、服务窗口与合约主体，依个人授权进入客户项目。",
+    "Track referrals, service contacts and contracting parties, with individually authorized project access.",
+    "紹介元、窓口、契約主体を記録し、個人の権限で顧客プロジェクトにアクセス。",
+    "유입 경로, 서비스 담당자, 계약 주체를 추적하고 개인 권한으로 고객 프로젝트에 접근합니다.",
+    "ติดตามแหล่งที่มา ผู้ติดต่อบริการ และคู่สัญญา โดยเข้าถึงโครงการตามสิทธิ์รายบุคคล",
+    "Theo dõi nguồn, đầu mối dịch vụ và bên ký hợp đồng; truy cập dự án theo quyền cá nhân."
+  ],
+  "延續專業交付": [
+    "延续专业交付",
+    "Consistent professional delivery",
+    "専門的な納品を継続",
+    "지속적인 전문 서비스 제공",
+    "ส่งมอบงานอย่างมืออาชีพต่อเนื่อง",
+    "Duy trì bàn giao chuyên nghiệp"
+  ],
+  "弱點掃描、網站檢測、滲透測試、組態健檢與原始碼檢測，保留核定和發布流程。": [
+    "漏洞扫描、网站检测、渗透测试、配置检查与源代码检测，保留核定和发布流程。",
+    "Retain approval and release workflows for vulnerability, web, penetration, configuration and source-code assessments.",
+    "脆弱性、Web、侵入テスト、設定、ソースコード評価の承認・公開手順を維持。",
+    "취약점, 웹, 침투, 구성, 소스 코드 평가의 승인 및 공개 절차를 유지합니다.",
+    "รักษาขั้นตอนอนุมัติและเผยแพร่สำหรับการตรวจช่องโหว่ เว็บ เจาะระบบ การตั้งค่า และซอร์สโค้ด",
+    "Giữ quy trình phê duyệt và công bố cho đánh giá lỗ hổng, web, kiểm thử xâm nhập, cấu hình và mã nguồn."
+  ],
+  "持續改善與學習": [
+    "持续改进与学习",
+    "Continuous improvement and learning",
+    "継続的な改善と学習",
+    "지속적인 개선과 학습",
+    "ปรับปรุงและเรียนรู้ต่อเนื่อง",
+    "Liên tục cải thiện và học tập"
+  ],
+  "串接演練、訓練、改善追蹤與點數分配，依功能開通狀態提供。": [
+    "连接演练、培训、改进追踪与点数分配，依功能开通状态提供。",
+    "Connect simulations, training, remediation and credit allocation as features become available.",
+    "演習、研修、改善追跡、クレジット配分を機能の提供状況に応じて連携。",
+    "기능 개통 상태에 따라 모의훈련, 교육, 개선 추적, 크레딧 배분을 연결합니다.",
+    "เชื่อมการฝึกจำลอง อบรม ติดตามแก้ไข และจัดสรรเครดิตตามสถานะฟังก์ชัน",
+    "Kết nối diễn tập, đào tạo, theo dõi khắc phục và phân bổ tín dụng theo trạng thái tính năng."
+  ],
+  "申請成為合作夥伴": [
+    "申请成为合作伙伴",
+    "Discuss a partnership",
+    "パートナーシップの相談",
+    "파트너십 문의",
+    "สอบถามการเป็นพันธมิตร",
+    "Trao đổi hợp tác"
+  ],
+  "適合 SI、MSP、MSSP、代理商與推薦夥伴。分潤及自動結算需另行核定，尚未啟用。": [
+    "适合 SI、MSP、MSSP、代理商与推荐伙伴。分成及自动结算需另行核定，尚未启用。",
+    "For SI, MSP, MSSP, resellers and referral partners. Revenue sharing and automatic settlement require separate approval and are not active.",
+    "SI、MSP、MSSP、代理店、紹介パートナー向けです。収益分配・自動精算は別途承認が必要で、未提供です。",
+    "SI, MSP, MSSP, 대리점, 추천 파트너 대상입니다. 수익 배분과 자동 정산은 별도 승인이 필요하며 아직 제공되지 않습니다.",
+    "สำหรับ SI, MSP, MSSP ตัวแทนและพันธมิตรแนะนำลูกค้า การแบ่งรายได้และชำระบัญชีอัตโนมัติต้องอนุมัติแยกและยังไม่เปิดใช้",
+    "Dành cho SI, MSP, MSSP, đại lý và đối tác giới thiệu. Chia doanh thu, quyết toán tự động cần phê duyệt riêng và chưa hoạt động."
+  ],
+  "全部服務": [
+    "全部服务",
+    "All services",
+    "すべてのサービス",
+    "모든 서비스",
+    "บริการทั้งหมด",
+    "Tất cả dịch vụ"
+  ],
+  "線上自助": [
+    "在线自助",
+    "Online self-service",
+    "オンラインセルフサービス",
+    "온라인 셀프서비스",
+    "บริการตนเองออนไลน์",
+    "Tự phục vụ trực tuyến"
+  ],
+  "了解服務": [
+    "了解服务",
+    "View service",
+    "サービスを見る",
+    "서비스 알아보기",
+    "ดูบริการ",
+    "Tìm hiểu dịch vụ"
+  ],
+  "從一份清楚的資安計畫開始。": [
+    "从一份清晰的安全计划开始。",
+    "Start with a clear security plan.",
+    "明確なセキュリティ計画から。",
+    "명확한 보안 계획으로 시작하세요.",
+    "เริ่มจากแผนความปลอดภัยที่ชัดเจน",
+    "Bắt đầu với kế hoạch bảo mật rõ ràng."
+  ],
+  "告訴我們您的範圍與目標，一起確認下一步。": [
+    "告诉我们您的范围与目标，一起确认下一步。",
+    "Share your scope and goals to agree on the next step.",
+    "範囲と目標をお聞かせください。次の一歩を確認します。",
+    "범위와 목표를 알려주시면 다음 단계를 함께 확인합니다.",
+    "แจ้งขอบเขตและเป้าหมายเพื่อร่วมกันกำหนดขั้นตอนถัดไป",
+    "Chia sẻ phạm vi và mục tiêu để cùng xác định bước tiếp theo."
+  ],
+  "開始規劃服務": [
+    "开始规划服务",
+    "Plan your service",
+    "サービスを相談する",
+    "서비스 계획 상담",
+    "เริ่มวางแผนบริการ",
+    "Lên kế hoạch dịch vụ"
+  ],
+  "企業資安，需要完整的視角。": [
+    "企业安全，需要完整的视角。",
+    "A complete view of business security.",
+    "企業セキュリティに、全体の視点を。",
+    "기업 보안에는 전체적인 시각이 필요합니다.",
+    "มองความปลอดภัยองค์กรให้ครบด้าน",
+    "Góc nhìn toàn diện về bảo mật doanh nghiệp."
+  ],
+  "七項核心服務，串接檢測、改善與日常訓練。選擇符合您需求的交付方式。": [
+    "七项核心服务，连接检测、改进与日常培训。选择符合您需求的交付方式。",
+    "Seven core services connect assessment, remediation and everyday learning. Choose a delivery approach that fits.",
+    "7つの主要サービスで検査、改善、日常の学習をつなぎます。ご要望に合う提供方法をお選びください。",
+    "7개 핵심 서비스가 점검, 개선, 일상 교육을 연결합니다. 요구에 맞는 제공 방식을 선택하세요.",
+    "7 บริการหลักเชื่อมการตรวจ แก้ไข และเรียนรู้ประจำวัน เลือกรูปแบบที่เหมาะกับคุณ",
+    "Bảy dịch vụ cốt lõi kết nối kiểm tra, khắc phục và đào tạo hằng ngày. Chọn cách cung cấp phù hợp."
+  ],
+  "服務交付方式": [
+    "服务交付方式",
+    "Delivery approach",
+    "サービス提供方法",
+    "서비스 제공 방식",
+    "รูปแบบส่งมอบบริการ",
+    "Cách cung cấp dịch vụ"
+  ],
+  "工程師交付": [
+    "工程师交付",
+    "Engineer-led service",
+    "エンジニアによる提供",
+    "엔지니어 제공",
+    "ให้บริการโดยวิศวกร",
+    "Do kỹ sư thực hiện"
+  ],
+  "找不到服務": [
+    "找不到服务",
+    "Service not found",
+    "サービスが見つかりません",
+    "서비스를 찾을 수 없습니다",
+    "ไม่พบบริการ",
+    "Không tìm thấy dịch vụ"
+  ],
+  "從明確範圍，走向可追蹤的改善。": [
+    "从明确范围，走向可追踪的改进。",
+    "From clear scope to traceable remediation.",
+    "明確な範囲から、追跡できる改善へ。",
+    "명확한 범위에서 추적 가능한 개선으로.",
+    "จากขอบเขตชัดเจนสู่การแก้ไขที่ติดตามได้",
+    "Từ phạm vi rõ ràng đến khắc phục có thể theo dõi."
+  ],
+  "執行前需要準備": [
+    "执行前需要准备",
+    "Before we begin",
+    "実施前の準備",
+    "실행 전 준비 사항",
+    "สิ่งที่ต้องเตรียมก่อนเริ่ม",
+    "Chuẩn bị trước khi thực hiện"
+  ],
+  "確認需求、授權範圍與交付條件": [
+    "确认需求、授权范围与交付条件",
+    "Agree on needs, authorization and delivery",
+    "要望、権限範囲、納品条件の確認",
+    "요구, 권한 범위, 제공 조건 확인",
+    "ยืนยันความต้องการ ขอบเขตสิทธิ์ และเงื่อนไขส่งมอบ",
+    "Thống nhất nhu cầu, phạm vi ủy quyền và điều kiện bàn giao"
+  ],
+  "工程師執行與內部匯入結果": [
+    "工程师执行与内部导入结果",
+    "Engineer execution and internal result intake",
+    "エンジニアによる実施と結果の内部取込",
+    "엔지니어 실행 및 내부 결과 반입",
+    "วิศวกรดำเนินการและนำเข้าผลภายใน",
+    "Kỹ sư thực hiện và nhập kết quả nội bộ"
+  ],
+  "技術覆核及版本化正式報告": [
+    "技术复核及版本化正式报告",
+    "Technical review and versioned reports",
+    "技術確認と版管理された正式報告",
+    "기술 검토 및 버전 관리 보고서",
+    "ทบทวนทางเทคนิคและรายงานที่ควบคุมเวอร์ชัน",
+    "Rà soát kỹ thuật và báo cáo có phiên bản"
+  ],
+  "客戶修補回覆與範圍內複測": [
+    "客户修复反馈与范围内复测",
+    "Customer remediation feedback and scoped retesting",
+    "お客様の修正回答と範囲内の再検査",
+    "고객 수정 회신 및 범위 내 재검사",
+    "ลูกค้าตอบการแก้ไขและทดสอบซ้ำในขอบเขต",
+    "Phản hồi khắc phục và kiểm tra lại trong phạm vi"
+  ],
+  "建立並驗證企業管理權": [
+    "建立并验证企业管理权",
+    "Establish and verify organizational authority",
+    "企業管理権限の確認",
+    "기업 관리 권한 설정 및 검증",
+    "สร้างและตรวจสอบสิทธิ์จัดการองค์กร",
+    "Thiết lập và xác minh quyền quản lý doanh nghiệp"
+  ],
+  "確認點數及已啟用服務": [
+    "确认点数及已启用服务",
+    "Confirm credits and activated services",
+    "クレジットと有効なサービスの確認",
+    "크레딧 및 활성화 서비스 확인",
+    "ยืนยันเครดิตและบริการที่เปิดใช้",
+    "Xác nhận tín dụng và dịch vụ đã kích hoạt"
+  ],
+  "管理者建立活動或學習計畫": [
+    "管理员建立活动或学习计划",
+    "Administrators create campaigns or learning plans",
+    "管理者が活動・学習計画を作成",
+    "관리자가 활동 또는 학습 계획 생성",
+    "ผู้ดูแลสร้างกิจกรรมหรือแผนการเรียน",
+    "Quản trị viên tạo chiến dịch hoặc kế hoạch học"
+  ],
+  "追蹤事件、學習及補救成效": [
+    "追踪事件、学习及补救效果",
+    "Track events, learning and remediation outcomes",
+    "イベント、学習、補習効果の追跡",
+    "이벤트, 학습, 보완 효과 추적",
+    "ติดตามเหตุการณ์ การเรียน และผลการแก้ไข",
+    "Theo dõi sự kiện, học tập và hiệu quả khắc phục"
+  ],
+  "資料處理與服務邊界": [
+    "数据处理与服务边界",
+    "Data handling and service scope",
+    "データ処理とサービスの範囲",
+    "데이터 처리 및 서비스 범위",
+    "การจัดการข้อมูลและขอบเขตบริการ",
+    "Xử lý dữ liệu và phạm vi dịch vụ"
+  ],
+  "程式碼交付管道尚待核定。預設不開放客戶原始碼上傳或任意 Git URL 抓取。工具支援依實際配置與語言確認，匯入能力不代表已啟用掃描工具。": [
+    "代码交付渠道尚待核定。默认不开放客户源码上传或任意 Git URL 抓取。工具支持依实际配置与语言确认，导入能力不代表已启用扫描工具。",
+    "Code delivery channels require approval. Customer source uploads and arbitrary Git URL retrieval are not open by default. Tool support depends on configuration and language; result import does not imply active scanning.",
+    "コードの受渡方法は要承認です。顧客のソースアップロードや任意のGit URL取得は既定で未公開です。ツール対応は設定と言語によります。結果取込はスキャンの有効化を意味しません。",
+    "코드 전달 경로는 승인이 필요합니다. 고객 소스 업로드나 임의 Git URL 수집은 기본 제공되지 않습니다. 도구 지원은 구성과 언어에 따르며 결과 반입이 스캔 활성화를 의미하지는 않습니다.",
+    "ช่องทางส่งโค้ดต้องได้รับอนุมัติ โดยปกติยังไม่เปิดอัปโหลดซอร์สหรือดึง Git URL ใดๆ การรองรับเครื่องมือขึ้นกับการตั้งค่าและภาษา การนำเข้าผลไม่ได้หมายความว่าเปิดสแกนแล้ว",
+    "Kênh giao mã cần phê duyệt. Mặc định chưa mở tải mã nguồn hay lấy Git URL tùy ý. Công cụ tùy cấu hình và ngôn ngữ; nhập kết quả không có nghĩa đã bật quét."
+  ],
+  "檢測原始資料由授權工程師在內部後台處理，客戶查詢已發布結果。複測次數、範圍及期限依合約，不將證據不足判定為安全。": [
+    "检测原始数据由授权工程师在内部后台处理，客户查看已发布结果。复测次数、范围及期限依合约，不将证据不足判定为安全。",
+    "Authorized engineers handle raw assessment data internally; customers access published results. Retest count, scope and deadlines follow the contract. Insufficient evidence is not a safe result.",
+    "検査の原データは権限を持つエンジニアが内部で扱い、お客様は公開済み結果を確認します。再検査の回数・範囲・期限は契約に従い、証拠不足を安全とは判定しません。",
+    "원시 점검 데이터는 승인된 엔지니어가 내부 처리하며 고객은 공개된 결과를 조회합니다. 재검사 횟수, 범위, 기한은 계약에 따릅니다. 근거 부족을 안전으로 판단하지 않습니다.",
+    "วิศวกรที่ได้รับสิทธิ์จัดการข้อมูลตรวจดิบภายใน ลูกค้าดูผลที่เผยแพร่แล้ว จำนวน ขอบเขต และกำหนดทดสอบซ้ำตามสัญญา หลักฐานไม่พอไม่ถือว่าปลอดภัย",
+    "Kỹ sư được ủy quyền xử lý dữ liệu gốc nội bộ; khách xem kết quả đã công bố. Số lần, phạm vi, thời hạn kiểm tra lại theo hợp đồng. Thiếu bằng chứng không đồng nghĩa an toàn."
+  ],
+  "企業點數按用途與費率版本記帳。外部寄送、支付或影音管道須經正式啟用驗證；開發模式不代表正式可用。": [
+    "企业点数按用途与费率版本记账。外部发送、支付或影音渠道须经正式启用验证；开发模式不代表正式可用。",
+    "Credits are recorded by purpose and rate version. External delivery, payment and media services require verified activation; development mode does not mean production availability.",
+    "クレジットは用途と料金版別に記録します。外部送信、決済、動画は正式な有効化確認が必要です。開発モードは正式提供を意味しません。",
+    "크레딧은 용도와 요율 버전별로 기록합니다. 외부 발송, 결제, 미디어 서비스는 정식 활성화 검증이 필요하며 개발 모드는 정식 이용 가능 상태가 아닙니다.",
+    "บันทึกเครดิตตามวัตถุประสงค์และเวอร์ชันอัตรา บริการส่งข้อความ ชำระเงิน หรือสื่อต้องยืนยันเปิดใช้จริง โหมดพัฒนาไม่ใช่บริการจริง",
+    "Tín dụng được ghi theo mục đích và phiên bản giá. Gửi bên ngoài, thanh toán, nội dung nghe nhìn cần xác nhận kích hoạt; chế độ phát triển không đồng nghĩa đã cung cấp chính thức."
+  ],
+  "系統健診是檢核與改善服務，不等同取得合規認證。": [
+    "系统检查是核查与改进服务，不等同获得合规认证。",
+    "A health check is an assessment and improvement service, not compliance certification.",
+    "システム健診は確認・改善サービスであり、適合認証ではありません。",
+    "시스템 점검은 확인 및 개선 서비스이며 규정 준수 인증이 아닙니다.",
+    "การตรวจสุขภาพระบบเป็นบริการตรวจและปรับปรุง ไม่ใช่การรับรองการปฏิบัติตามมาตรฐาน",
+    "Kiểm tra hệ thống là dịch vụ đánh giá và cải thiện, không phải chứng nhận tuân thủ."
+  ],
+  "活動不收集密碼。開信、點擊候選與確認人類互動使用不同指標。": [
+    "活动不收集密码。开信、候选点击与确认真人互动使用不同指标。",
+    "Campaigns do not collect passwords. Opens, candidate clicks and confirmed human interactions are separate metrics.",
+    "活動ではパスワードを収集しません。開封、クリック候補、人による確認済み操作は別の指標です。",
+    "활동은 비밀번호를 수집하지 않습니다. 열람, 후보 클릭, 확인된 사람의 상호작용은 별도 지표입니다.",
+    "กิจกรรมไม่เก็บรหัสผ่าน การเปิด การคลิกเบื้องต้น และการโต้ตอบที่ยืนยันว่าเป็นคนใช้ตัวชี้วัดแยกกัน",
+    "Chiến dịch không thu mật khẩu. Mở thư, lượt nhấp nghi nhận và tương tác người thật đã xác nhận là các chỉ số riêng."
+  ],
+  "預期交付": [
+    "预期交付",
+    "Expected deliverables",
+    "予定する成果物",
+    "예상 산출물",
+    "สิ่งส่งมอบที่คาดหวัง",
+    "Kết quả bàn giao dự kiến"
+  ],
+  "依服務範圍詢價": [
+    "按服务范围询价",
+    "Request a scoped quote",
+    "範囲に応じてお見積り",
+    "서비스 범위별 견적 문의",
+    "ขอราคาตามขอบเขต",
+    "Yêu cầu báo giá theo phạm vi"
+  ],
+  "確認資產、頻率、額度與交付條件後提供報價。": [
+    "确认资产、频率、额度与交付条件后提供报价。",
+    "Quotes follow confirmation of assets, frequency, allowances and delivery terms.",
+    "資産、頻度、枠、納品条件を確認後にお見積りします。",
+    "자산, 빈도, 한도, 제공 조건 확인 후 견적을 제공합니다.",
+    "เสนอราคาหลังยืนยันสินทรัพย์ ความถี่ โควตา และเงื่อนไขส่งมอบ",
+    "Báo giá sau khi xác nhận tài sản, tần suất, hạn mức và điều kiện bàn giao."
+  ],
+  "洽詢這項服務": [
+    "咨询这项服务",
+    "Ask about this service",
+    "このサービスを相談する",
+    "이 서비스 문의",
+    "สอบถามบริการนี้",
+    "Hỏi về dịch vụ này"
+  ],
+  "七項服務，全年度有計畫地前進。": [
+    "七项服务，全年有计划地推进。",
+    "Seven services. A year of planned progress.",
+    "7つのサービスで、年間を計画的に。",
+    "7개 서비스로 연간 계획을 추진하세요.",
+    "7 บริการ เดินหน้าตามแผนตลอดปี",
+    "Bảy dịch vụ, tiến triển theo kế hoạch cả năm."
+  ],
+  "以企業範圍與年度目標訂定執行頻率、服務額度和交付日期。每個工作包獨立追蹤。": [
+    "按企业范围与年度目标确定执行频率、服务额度和交付日期。每个工作包独立追踪。",
+    "Set frequency, allowances and delivery dates around your scope and annual goals. Track each work package separately.",
+    "企業の範囲と年間目標に合わせて頻度、枠、納品日を決め、作業単位ごとに追跡します。",
+    "기업 범위와 연간 목표에 맞춰 빈도, 한도, 제공 일정을 정하고 작업 패키지별로 추적합니다.",
+    "กำหนดความถี่ โควตา และวันส่งมอบตามขอบเขตกับเป้าหมายปี ติดตามแต่ละชุดงานแยกกัน",
+    "Đặt tần suất, hạn mức và ngày bàn giao theo phạm vi, mục tiêu năm. Theo dõi từng gói công việc riêng."
+  ],
+  "正式價格及服務額度由雙方核定。本頁為方案說明，不代表無限量服務或已生效合約。": [
+    "正式价格及服务额度由双方确认。本页为方案说明，不代表无限量服务或已生效合约。",
+    "Pricing and allowances require mutual agreement. This description does not provide unlimited service or create an effective contract.",
+    "料金とサービス枠は双方で合意します。この説明は無制限サービスや有効な契約を意味しません。",
+    "정식 가격과 서비스 한도는 상호 합의합니다. 이 안내는 무제한 서비스나 유효 계약을 의미하지 않습니다.",
+    "ราคาและโควตาต้องตกลงร่วมกัน หน้านี้เป็นคำอธิบาย ไม่ใช่บริการไม่จำกัดหรือสัญญาที่มีผลแล้ว",
+    "Giá và hạn mức cần hai bên thống nhất. Mô tả này không tạo dịch vụ vô hạn hay hợp đồng có hiệu lực."
+  ],
+  "服務": [
+    "服务",
+    "Service",
+    "サービス",
+    "서비스",
+    "บริการ",
+    "Dịch vụ"
+  ],
+  "額度計算範圍": [
+    "额度计算范围",
+    "Allowance basis",
+    "枠の計算範囲",
+    "한도 계산 범위",
+    "เกณฑ์โควตา",
+    "Cơ sở tính hạn mức"
+  ],
+  "年度頻率": [
+    "年度频率",
+    "Annual frequency",
+    "年間頻度",
+    "연간 빈도",
+    "ความถี่ต่อปี",
+    "Tần suất hằng năm"
+  ],
+  "交付與複測": [
+    "交付与复测",
+    "Delivery and retesting",
+    "納品と再検査",
+    "제공 및 재검사",
+    "ส่งมอบและทดสอบซ้ำ",
+    "Bàn giao và kiểm tra lại"
+  ],
+  "資產／站點／設備／程式範圍": [
+    "资产／站点／设备／程序范围",
+    "Assets / sites / devices / code scope",
+    "資産・サイト・機器・コード範囲",
+    "자산 / 사이트 / 장비 / 코드 범위",
+    "สินทรัพย์ / เว็บไซต์ / อุปกรณ์ / โค้ด",
+    "Tài sản / website / thiết bị / phạm vi mã"
+  ],
+  "訊息數／課程授權人次": [
+    "消息数／课程授权人次",
+    "Messages / course licenses",
+    "メッセージ数・受講ライセンス数",
+    "메시지 수 / 과정 라이선스 수",
+    "จำนวนข้อความ / สิทธิ์หลักสูตร",
+    "Số tin nhắn / giấy phép khóa học"
+  ],
+  "依需求核定": [
+    "按需求确认",
+    "As agreed",
+    "要望に応じて合意",
+    "요구에 따라 확정",
+    "ตามที่ตกลง",
+    "Theo thỏa thuận"
+  ],
+  "依報價與範圍版本": [
+    "按报价与范围版本",
+    "Per quote and scope version",
+    "見積り・範囲の版に準拠",
+    "견적 및 범위 버전에 따름",
+    "ตามใบเสนอราคาและเวอร์ชันขอบเขต",
+    "Theo báo giá và phiên bản phạm vi"
+  ],
+  "追加與變更": [
+    "追加与变更",
+    "Additions and changes",
+    "追加・変更",
+    "추가 및 변경",
+    "เพิ่มเติมและเปลี่ยนแปลง",
+    "Bổ sung và thay đổi"
+  ],
+  "新增標的、角色、課程或寄送數量，先確認費用與時程影響，再建立新範圍版本。原合約快照持續保留。": [
+    "新增目标、角色、课程或发送数量，先确认费用与时间影响，再建立新范围版本。原合约快照持续保留。",
+    "Agree on cost and schedule impacts before adding targets, roles, courses or message volumes. Create a new scope version while preserving the original contract.",
+    "対象、役割、講座、送信数の追加前に費用と日程への影響を確認します。元の契約を保持し、新しい範囲版を作成します。",
+    "대상, 역할, 과정, 발송량 추가 전에 비용과 일정 영향을 확인합니다. 원 계약을 보존하고 새 범위 버전을 만듭니다.",
+    "ก่อนเพิ่มเป้าหมาย บทบาท หลักสูตร หรือจำนวนส่ง ให้ยืนยันผลต่อราคาและเวลา สร้างขอบเขตเวอร์ชันใหม่โดยเก็บสัญญาเดิม",
+    "Xác nhận ảnh hưởng chi phí, lịch trước khi thêm mục tiêu, vai trò, khóa học hoặc số thư. Tạo phiên bản phạm vi mới và giữ hợp đồng gốc."
+  ],
+  "分批交付與驗收": [
+    "分批交付与验收",
+    "Phased delivery and acceptance",
+    "段階的な納品と検収",
+    "단계별 제공 및 검수",
+    "ส่งมอบและตรวจรับเป็นงวด",
+    "Bàn giao và nghiệm thu theo đợt"
+  ],
+  "每項服務有自己的工作包、執行批次、報告與驗收。完成單項服務，不會自動結束整份年度方案。": [
+    "每项服务有自己的工作包、执行批次、报告与验收。完成单项服务，不会自动结束整份年度方案。",
+    "Each service has its own work package, execution batches, reports and acceptance. Completing one service does not close the entire annual program.",
+    "各サービスに作業単位、実施バッチ、報告、検収があります。1項目の完了で年間計画全体が終了するわけではありません。",
+    "각 서비스에 작업 패키지, 실행 배치, 보고서, 검수가 있습니다. 단일 서비스 완료가 전체 연간 계획 종료를 뜻하지 않습니다.",
+    "แต่ละบริการมีชุดงาน รอบทำงาน รายงาน และการตรวจรับของตน การจบบริการหนึ่งไม่ทำให้แผนทั้งปีสิ้นสุด",
+    "Mỗi dịch vụ có gói công việc, đợt thực hiện, báo cáo và nghiệm thu riêng. Hoàn thành một dịch vụ không tự kết thúc cả chương trình năm."
+  ],
+  "聯絡 KUANGUARD": [
+    "联系 KUANGUARD",
+    "Contact KUANGUARD",
+    "KUANGUARDにお問い合わせ",
+    "KUANGUARD에 문의",
+    "ติดต่อ KUANGUARD",
+    "Liên hệ KUANGUARD"
+  ],
+  "告訴我們你的使用情境，一起確認適合的產品與服務。": [
+    "告诉我们你的使用场景，一起确认适合的产品与服务。",
+    "Share your needs so we can identify suitable products and services.",
+    "利用シーンをお聞かせください。適した製品とサービスを確認します。",
+    "사용 환경을 알려주시면 적합한 제품과 서비스를 확인합니다.",
+    "แจ้งการใช้งานเพื่อร่วมกันเลือกผลิตภัณฑ์และบริการที่เหมาะสม",
+    "Chia sẻ nhu cầu để cùng xác định sản phẩm và dịch vụ phù hợp."
+  ],
+  "聯絡信箱：": [
+    "联系邮箱：",
+    "Email:",
+    "連絡先メール：",
+    "문의 이메일:",
+    "อีเมลติดต่อ:",
+    "Email liên hệ:"
+  ],
+  "公司／組織名稱": [
+    "公司／组织名称",
+    "Company / organization",
+    "会社・組織名",
+    "회사 / 조직명",
+    "ชื่อบริษัท / องค์กร",
+    "Tên công ty / tổ chức"
+  ],
+  "聯絡人": [
+    "联系人",
+    "Contact name",
+    "ご担当者名",
+    "담당자",
+    "ชื่อผู้ติดต่อ",
+    "Người liên hệ"
+  ],
+  "聯絡 Email": [
+    "联系 Email",
+    "Contact email",
+    "連絡先メール",
+    "연락 이메일",
+    "อีเมลติดต่อ",
+    "Email liên hệ"
+  ],
+  "需求說明": [
+    "需求说明",
+    "Your needs",
+    "ご要望",
+    "요구 사항",
+    "รายละเอียดความต้องการ",
+    "Mô tả nhu cầu"
+  ],
+  "按下按鈕後，請在你的郵件程式確認內容並寄出。本站不會儲存表單內容；請勿填入密碼或敏感資料。": [
+    "点击按钮后，请在邮件程序确认内容并发送。本站不会保存表单内容；请勿填写密码或敏感数据。",
+    "Review and send the message in your email app after clicking. This site does not store form contents. Do not include passwords or sensitive data.",
+    "ボタンを押した後、メールアプリで内容を確認して送信してください。サイトは入力内容を保存しません。パスワードや機密情報は入力しないでください。",
+    "버튼을 누른 후 메일 앱에서 내용을 확인하고 보내세요. 사이트는 입력 내용을 저장하지 않습니다. 비밀번호나 민감한 정보는 입력하지 마세요.",
+    "หลังคลิกให้ตรวจและส่งในแอปอีเมล เว็บไซต์ไม่เก็บข้อมูลแบบฟอร์ม กรุณาไม่กรอกรหัสผ่านหรือข้อมูลอ่อนไหว",
+    "Sau khi nhấn, hãy kiểm tra và gửi trong ứng dụng email. Trang web không lưu nội dung biểu mẫu. Không nhập mật khẩu hoặc dữ liệu nhạy cảm."
+  ],
+  "開啟郵件程式": [
+    "打开邮件程序",
+    "Open email app",
+    "メールアプリを開く",
+    "메일 앱 열기",
+    "เปิดแอปอีเมล",
+    "Mở ứng dụng email"
+  ],
+  "請在郵件程式完成寄送；若沒有開啟，請直接寄信至": [
+    "请在邮件程序完成发送；若未打开，请直接发送至",
+    "Complete sending in your email app. If it did not open, email",
+    "メールアプリで送信してください。開かない場合の連絡先：",
+    "메일 앱에서 전송을 완료하세요. 앱이 열리지 않으면 다음 주소로 보내세요:",
+    "กรุณาส่งในแอปอีเมล หากไม่เปิด ให้ส่งไปที่",
+    "Hoàn tất gửi trong ứng dụng email. Nếu không mở, hãy gửi tới"
+  ],
+  "。此頁尚未替你寄出郵件。": [
+    "。此页尚未替你发送邮件。",
+    ". This page has not sent an email for you.",
+    "。このページからメールは送信されていません。",
+    ". 이 페이지는 아직 메일을 보내지 않았습니다.",
+    " หน้านี้ยังไม่ได้ส่งอีเมลให้คุณ",
+    ". Trang này chưa gửi email thay bạn."
+  ],
+  "數位科技、產品與平台服務": [
+    "数字科技、产品与平台服务",
+    "Digital technology, products and platforms",
+    "デジタル技術・製品・プラットフォーム",
+    "디지털 기술, 제품 및 플랫폼",
+    "เทคโนโลยีดิจิทัล ผลิตภัณฑ์ และแพลตฟอร์ม",
+    "Công nghệ số, sản phẩm và nền tảng"
+  ],
+  "數位解決方案": [
+    "数字解决方案",
+    "Digital solutions",
+    "デジタルソリューション",
+    "디지털 솔루션",
+    "โซลูชันดิจิทัล",
+    "Giải pháp số"
+  ],
+  "點餐產品功能": [
+    "点餐产品功能",
+    "Ordering features",
+    "注文システムの機能",
+    "주문 제품 기능",
+    "ฟังก์ชันระบบสั่งอาหาร",
+    "Tính năng hệ thống gọi món"
+  ],
+  "點餐產品收費方式": [
+    "点餐产品收费方式",
+    "Ordering pricing",
+    "注文システムの料金",
+    "주문 제품 요금",
+    "ราคาของระบบสั่งอาหาร",
+    "Giá hệ thống gọi món"
+  ],
+  "商家服務條款": [
+    "商家服务条款",
+    "Merchant terms",
+    "店舗向け利用規約",
+    "사업자 서비스 약관",
+    "ข้อกำหนดบริการร้านค้า",
+    "Điều khoản cửa hàng"
+  ],
+  "合作夥伴服務條款": [
+    "合作伙伴服务条款",
+    "Partner terms",
+    "パートナー利用規約",
+    "파트너 서비스 약관",
+    "ข้อกำหนดพันธมิตร",
+    "Điều khoản đối tác"
+  ],
+  "資料安全與信任": [
+    "数据安全与信任",
+    "Data security and trust",
+    "データの安全と信頼",
+    "데이터 보안 및 신뢰",
+    "ความปลอดภัยและความเชื่อมั่นในข้อมูล",
+    "Bảo mật dữ liệu và tin cậy"
+  ],
+  "餐飲門市": [
+    "餐饮门店",
+    "Restaurants",
+    "飲食店",
+    "음식점",
+    "ร้านอาหาร",
+    "Nhà hàng"
+  ],
+  "餐": [
+    "餐",
+    "R",
+    "食",
+    "식",
+    "ร",
+    "Ăn"
+  ],
+  "尖峰時段，也能從容接單。": [
+    "高峰时段，也能从容接单。",
+    "Keep orders flowing at peak times.",
+    "ピーク時も落ち着いて受注。",
+    "바쁜 시간에도 원활한 주문 접수.",
+    "รับออร์เดอร์ได้ราบรื่นแม้ช่วงเร่งด่วน",
+    "Nhận đơn thuận lợi cả giờ cao điểm."
+  ],
+  "讓顧客掃碼點餐，前場確認訂單、後場依品項出單，減少來回抄單。": [
+    "让顾客扫码点餐，前台确认订单、后厨按品项出单，减少反复抄单。",
+    "Customers scan to order, staff confirm and the kitchen receives itemized tickets, reducing repeated transcription.",
+    "お客様がQR注文し、ホールで確認、厨房へ品目別の伝票を送信。転記の手間を減らします。",
+    "고객이 QR로 주문하고 직원이 확인하면 주방에 품목별 전표가 전달되어 반복 기록을 줄입니다.",
+    "ลูกค้าสแกนสั่ง พนักงานยืนยัน และครัวรับใบรายการ ลดการจดซ้ำ",
+    "Khách quét để gọi món, nhân viên xác nhận và bếp nhận phiếu theo món, giảm chép đơn lặp lại."
+  ],
+  "桌邊掃碼點餐": [
+    "桌边扫码点餐",
+    "Table-side QR ordering",
+    "テーブルでQR注文",
+    "테이블 QR 주문",
+    "สแกนสั่งที่โต๊ะ",
+    "Gọi món QR tại bàn"
+  ],
+  "確認餐點與備註": [
+    "确认餐点与备注",
+    "Confirm items and notes",
+    "料理と備考を確認",
+    "메뉴 및 요청 사항 확인",
+    "ยืนยันเมนูและหมายเหตุ",
+    "Xác nhận món và ghi chú"
+  ],
+  "出單與廚房協作": [
+    "出单与厨房协作",
+    "Tickets and kitchen coordination",
+    "伝票と厨房連携",
+    "전표 및 주방 협업",
+    "ใบรายการและประสานงานครัว",
+    "Xuất phiếu và phối hợp bếp"
+  ],
+  "飲料店": [
+    "饮品店",
+    "Beverage shops",
+    "ドリンク店",
+    "음료 매장",
+    "ร้านเครื่องดื่ม",
+    "Quán đồ uống"
+  ],
+  "飲": [
+    "饮",
+    "B",
+    "飲",
+    "음",
+    "ด",
+    "Uống"
+  ],
+  "甜度、冰塊與加料，一單看清楚。": [
+    "甜度、冰量与加料，一单看清楚。",
+    "Sweetness, ice and extras, all in one order.",
+    "甘さ、氷、トッピングを一枚で確認。",
+    "당도, 얼음, 토핑을 한 주문에서 확인.",
+    "ความหวาน น้ำแข็ง และท็อปปิ้งครบในออร์เดอร์เดียว",
+    "Độ ngọt, đá và topping rõ trong một đơn."
+  ],
+  "以品項規格與選項整理訂單，協助門市在忙碌時維持一致的製作資訊。": [
+    "按品项规格与选项整理订单，帮助门店忙碌时保持一致的制作信息。",
+    "Organize item variants and options so preparation details remain consistent during busy periods.",
+    "商品仕様と選択肢で注文を整理し、忙しい時間も調理情報を統一します。",
+    "품목 규격과 옵션으로 주문을 정리해 바쁜 시간에도 일관된 제조 정보를 유지합니다.",
+    "จัดออร์เดอร์ตามขนาดและตัวเลือก เพื่อข้อมูลการทำที่ตรงกันแม้ช่วงยุ่ง",
+    "Sắp xếp đơn theo quy cách và tùy chọn để thông tin pha chế nhất quán khi đông khách."
+  ],
+  "選擇品項規格": [
+    "选择品项规格",
+    "Choose item variants",
+    "商品仕様を選択",
+    "품목 규격 선택",
+    "เลือกขนาดสินค้า",
+    "Chọn quy cách món"
+  ],
+  "確認客製選項": [
+    "确认定制选项",
+    "Confirm custom options",
+    "カスタム内容を確認",
+    "맞춤 옵션 확인",
+    "ยืนยันตัวเลือกพิเศษ",
+    "Xác nhận tùy chọn riêng"
+  ],
+  "依訂單完成製作": [
+    "按订单完成制作",
+    "Prepare according to the order",
+    "注文どおりに調理",
+    "주문에 따라 제조",
+    "จัดทำตามออร์เดอร์",
+    "Chế biến theo đơn"
+  ],
+  "攤商小店": [
+    "摊位小店",
+    "Stalls and small shops",
+    "屋台・小規模店舗",
+    "노점 및 소규모 매장",
+    "แผงลอยและร้านเล็ก",
+    "Quầy hàng và cửa hàng nhỏ"
+  ],
+  "攤": [
+    "摊",
+    "S",
+    "屋",
+    "점",
+    "ผ",
+    "Quầy"
+  ],
+  "從一個 QR Code，開始數位接單。": [
+    "从一个 QR Code，开始数字接单。",
+    "Start digital ordering with one QR code.",
+    "一つのQRコードからデジタル受注。",
+    "하나의 QR 코드로 디지털 주문을 시작하세요.",
+    "เริ่มรับออร์เดอร์ดิจิทัลด้วย QR เดียว",
+    "Bắt đầu nhận đơn số bằng một mã QR."
+  ],
+  "用簡單的線上菜單與點餐入口，逐步建立適合攤位節奏的營運方式。": [
+    "用简单的在线菜单与点餐入口，逐步建立适合摊位节奏的运营方式。",
+    "A simple online menu and ordering link help you build a workflow at your stall's pace.",
+    "シンプルなオンラインメニューと注文入口で、屋台のペースに合う運営を整えます。",
+    "간단한 온라인 메뉴와 주문 링크로 매장 속도에 맞는 운영 방식을 만드세요.",
+    "เมนูออนไลน์และลิงก์สั่งง่ายๆ ช่วยสร้างวิธีทำงานที่เหมาะกับจังหวะแผงค้า",
+    "Thực đơn và đường dẫn gọi món đơn giản giúp xây dựng vận hành phù hợp nhịp quầy hàng."
+  ],
+  "建立線上菜單": [
+    "建立在线菜单",
+    "Create an online menu",
+    "オンラインメニューを作成",
+    "온라인 메뉴 생성",
+    "สร้างเมนูออนไลน์",
+    "Tạo thực đơn trực tuyến"
+  ],
+  "分享點餐入口": [
+    "分享点餐入口",
+    "Share the ordering link",
+    "注文リンクを共有",
+    "주문 링크 공유",
+    "แชร์ลิงก์สั่งอาหาร",
+    "Chia sẻ đường dẫn gọi món"
+  ],
+  "集中整理訂單": [
+    "集中整理订单",
+    "Organize orders together",
+    "注文をまとめて整理",
+    "주문 모아 정리",
+    "จัดออร์เดอร์รวมกัน",
+    "Sắp xếp đơn tập trung"
+  ],
+  "零售商家": [
+    "零售商家",
+    "Retail stores",
+    "小売店",
+    "소매 매장",
+    "ร้านค้าปลีก",
+    "Cửa hàng bán lẻ"
+  ],
+  "店": [
+    "店",
+    "R",
+    "店",
+    "점",
+    "ร",
+    "Tiệm"
+  ],
+  "商品、顧客與門市，放在同一個視野。": [
+    "商品、顾客与门店，放在同一个视野。",
+    "Products, customers and stores in one view.",
+    "商品、顧客、店舗を一つの視点で。",
+    "상품, 고객, 매장을 한눈에.",
+    "สินค้า ลูกค้า และร้านค้าในมุมมองเดียว",
+    "Sản phẩm, khách hàng và cửa hàng trong cùng góc nhìn."
+  ],
+  "商品展示與門市管理可先評估導入；庫存、退換貨和零售周邊需求依實際適配確認。": [
+    "商品展示与门店管理可先评估导入；库存、退换货和零售配套需求需确认实际适配情况。",
+    "Product display and store management can be assessed first. Inventory, returns and retail-specific requirements need a fit assessment.",
+    "商品表示と店舗管理は導入を評価できます。在庫、返品・交換、小売固有の要件は適合性の確認が必要です。",
+    "상품 표시와 매장 관리부터 도입을 검토할 수 있습니다. 재고, 반품, 교환, 소매 요구는 적합성 확인이 필요합니다.",
+    "ประเมินการแสดงสินค้าและจัดการร้านก่อนได้ ส่วนสต็อก คืนสินค้า และงานค้าปลีกต้องตรวจความเหมาะสม",
+    "Có thể đánh giá hiển thị sản phẩm và quản lý cửa hàng trước. Tồn kho, đổi trả và nhu cầu bán lẻ cần xác nhận mức phù hợp."
+  ],
+  "盤點商品需求": [
+    "梳理商品需求",
+    "Review product needs",
+    "商品要件を整理",
+    "상품 요구 사항 파악",
+    "ทบทวนความต้องการสินค้า",
+    "Rà soát nhu cầu hàng hóa"
+  ],
+  "評估門市流程": [
+    "评估门店流程",
+    "Assess store workflows",
+    "店舗の流れを評価",
+    "매장 절차 평가",
+    "ประเมินขั้นตอนร้านค้า",
+    "Đánh giá quy trình cửa hàng"
+  ],
+  "分階段導入": [
+    "分阶段导入",
+    "Adopt in stages",
+    "段階的に導入",
+    "단계별 도입",
+    "เริ่มใช้เป็นขั้น",
+    "Triển khai theo giai đoạn"
+  ],
+  "菜單、品項與訂單集中管理，讓每一筆需求清楚抵達門市。": [
+    "菜单、品项与订单集中管理，让每笔需求清楚传达门店。",
+    "Manage menus, items and orders together so each request reaches the store clearly.",
+    "メニュー、品目、注文を一元管理し、一件ずつ店舗へ明確に届けます。",
+    "메뉴, 품목, 주문을 통합 관리해 모든 요청을 매장에 명확히 전달합니다.",
+    "รวมเมนู รายการ และออร์เดอร์ เพื่อส่งทุกความต้องการถึงร้านอย่างชัดเจน",
+    "Quản lý thực đơn, món và đơn cùng nhau để mọi yêu cầu đến cửa hàng rõ ràng."
+  ],
+  "QR Code 掃碼": [
+    "QR Code 扫码",
+    "QR code scanning",
+    "QRコード読み取り",
+    "QR 코드 스캔",
+    "สแกน QR",
+    "Quét mã QR"
+  ],
+  "連接桌邊、櫃檯與外帶入口，減少重複傳達。": [
+    "连接桌边、柜台与外带入口，减少重复传达。",
+    "Connect table, counter and takeaway ordering to reduce repeated communication.",
+    "テーブル、カウンター、持ち帰りの入口をつなぎ、伝達の重複を減らします。",
+    "테이블, 카운터, 포장 주문을 연결해 반복 전달을 줄입니다.",
+    "เชื่อมโต๊ะ เคาน์เตอร์ และสั่งกลับบ้าน ลดการสื่อสารซ้ำ",
+    "Kết nối đặt tại bàn, quầy và mang đi để giảm truyền đạt lặp lại."
+  ],
+  "預先點餐": [
+    "提前点餐",
+    "Advance ordering",
+    "事前注文",
+    "사전 주문",
+    "สั่งล่วงหน้า",
+    "Đặt món trước"
+  ],
+  "提前安排餐點需求，讓門市掌握備餐節奏。": [
+    "提前安排餐点需求，让门店掌握备餐节奏。",
+    "Plan food orders ahead so stores can pace preparation.",
+    "料理の注文を事前に把握し、準備のペースを整えます。",
+    "음식 주문을 미리 파악해 매장의 준비 속도를 조절합니다.",
+    "วางแผนออร์เดอร์ล่วงหน้าให้ร้านเตรียมอาหารได้เหมาะสม",
+    "Lên kế hoạch món trước để cửa hàng chủ động chuẩn bị."
+  ],
+  "沿用既有出單與廚房流程，設備相容性於導入時確認。": [
+    "沿用现有出单与厨房流程，设备兼容性于导入时确认。",
+    "Use existing ticket and kitchen workflows, with hardware compatibility checked during onboarding.",
+    "既存の伝票・厨房フローを活用し、機器の互換性は導入時に確認します。",
+    "기존 전표와 주방 절차를 활용하며 장비 호환성은 도입 시 확인합니다.",
+    "ใช้ขั้นตอนใบรายการและครัวเดิม โดยตรวจความเข้ากันได้ของอุปกรณ์ตอนเริ่มใช้",
+    "Dùng quy trình phiếu và bếp hiện có; xác nhận tương thích thiết bị khi triển khai."
+  ],
+  "POS 整合": [
+    "POS 集成",
+    "POS integration",
+    "POS連携",
+    "POS 연동",
+    "เชื่อมต่อ POS",
+    "Tích hợp POS"
+  ],
+  "整合門市日常作業；依使用場景與設備進行試用驗證。": [
+    "整合门店日常作业；依使用场景与设备进行试用验证。",
+    "Connect store operations and validate with your devices and use cases.",
+    "日常の店舗業務をつなぎ、利用シーンと機器で試用検証します。",
+    "매장 일상 업무를 연결하고 사용 환경과 장비로 시험 검증합니다.",
+    "เชื่อมงานร้านประจำวันและทดลองกับอุปกรณ์และการใช้งานจริง",
+    "Kết nối vận hành cửa hàng và xác nhận qua dùng thử với thiết bị, tình huống sử dụng."
+  ],
+  "線上金流": [
+    "在线支付",
+    "Online payments",
+    "オンライン決済",
+    "온라인 결제",
+    "ชำระเงินออนไลน์",
+    "Thanh toán trực tuyến"
+  ],
+  "串接申請、合約與驗收完成後啟用，費率另依金流服務商。": [
+    "集成申请、合约与验收完成后启用，费率另按支付服务商规定。",
+    "Activation follows application, contract and acceptance. Payment-provider fees apply separately.",
+    "申請、契約、検収後に有効化します。手数料は決済事業者に従います。",
+    "신청, 계약, 검수 후 활성화하며 수수료는 결제 공급자 기준입니다.",
+    "เปิดใช้หลังสมัคร ทำสัญญา และตรวจรับ ค่าธรรมเนียมตามผู้ให้บริการชำระเงิน",
+    "Kích hoạt sau đăng ký, hợp đồng và nghiệm thu; phí theo nhà cung cấp thanh toán."
+  ],
+  "外送串接": [
+    "外送集成",
+    "Delivery integration",
+    "配達連携",
+    "배달 연동",
+    "เชื่อมบริการจัดส่ง",
+    "Tích hợp giao hàng"
+  ],
+  "保留外送平台整合入口，待合作核定與串接驗收。": [
+    "预留外送平台集成入口，待合作确认与集成验收。",
+    "Delivery integration is planned, pending partnership approval and acceptance.",
+    "配達サービス連携は計画中で、提携承認と接続検収が必要です。",
+    "배달 연동은 계획 중이며 협력 승인과 연동 검수가 필요합니다.",
+    "วางแผนเชื่อมแพลตฟอร์มจัดส่ง รออนุมัติความร่วมมือและตรวจรับ",
+    "Tích hợp giao hàng đang được lên kế hoạch, chờ phê duyệt hợp tác và nghiệm thu."
+  ],
+  "顧客經營": [
+    "客户经营",
+    "Customer relationships",
+    "顧客との関係づくり",
+    "고객 관계 관리",
+    "ดูแลความสัมพันธ์ลูกค้า",
+    "Chăm sóc khách hàng"
+  ],
+  "從顧客紀錄與回訪需求開始，逐步建立店家的服務關係。": [
+    "从客户记录与回访需求开始，逐步建立门店的服务关系。",
+    "Build service relationships from customer records and return-visit needs.",
+    "顧客記録と再来店のニーズから、お店の関係づくりを進めます。",
+    "고객 기록과 재방문 요구를 바탕으로 매장의 서비스 관계를 만듭니다.",
+    "สร้างความสัมพันธ์บริการจากประวัติลูกค้าและความต้องการกลับมาใช้",
+    "Xây dựng quan hệ dịch vụ từ hồ sơ khách hàng và nhu cầu quay lại."
+  ],
+  "多門市管理": [
+    "多门店管理",
+    "Multi-store management",
+    "複数店舗管理",
+    "여러 매장 관리",
+    "จัดการหลายสาขา",
+    "Quản lý nhiều cửa hàng"
+  ],
+  "以組織和門市分工，依實際角色查看營運資料。": [
+    "按组织和门店分工，依实际角色查看运营数据。",
+    "Organize by company and store, with operational data available by role.",
+    "組織と店舗で業務を分担し、役割に応じて運営データを表示します。",
+    "조직과 매장별로 업무를 나누고 역할에 따라 운영 데이터를 확인합니다.",
+    "แบ่งงานตามองค์กรและสาขา ดูข้อมูลการดำเนินงานตามบทบาท",
+    "Phân công theo tổ chức, cửa hàng và xem dữ liệu theo vai trò."
+  ],
+  "以既有訂單資料整理營運結果，協助掌握日常變化。": [
+    "用现有订单数据整理运营结果，帮助掌握日常变化。",
+    "Use order data to summarize performance and understand daily changes.",
+    "注文データで運営結果を整理し、日々の変化を把握します。",
+    "기존 주문 데이터로 운영 결과를 정리해 일상 변화를 파악합니다.",
+    "ใช้ข้อมูลออร์เดอร์สรุปผลและติดตามการเปลี่ยนแปลงรายวัน",
+    "Dùng dữ liệu đơn hàng tổng hợp kết quả, nắm thay đổi hằng ngày."
+  ],
+  "登入": [
+    "登录",
+    "Sign in",
+    "ログイン",
+    "로그인",
+    "เข้าสู่ระบบ",
+    "Đăng nhập"
+  ],
+  "可用 · 既有商家系統": [
+    "可用 · 现有商家系统",
+    "Available in merchant system",
+    "店舗システムで利用可能",
+    "매장 시스템에서 사용 가능",
+    "ใช้ได้ในระบบร้านค้า",
+    "Có sẵn trong hệ thống cửa hàng"
+  ],
+  "試用中": [
+    "试用中",
+    "Beta",
+    "試用中",
+    "시험 운영 중",
+    "อยู่ระหว่างทดลอง",
+    "Đang thử nghiệm"
+  ],
+  "KUANGUARD 數位科技，以商家 SaaS、合作夥伴平台與企業資安服務，連接產品、資訊與人。": [
+    "KUANGUARD 数字科技，通过商家 SaaS、合作伙伴平台与企业安全服务，连接产品、信息与人。",
+    "KUANGUARD connects products, information and people through merchant SaaS, partner platforms and cybersecurity services.",
+    "KUANGUARDは店舗向けSaaS、パートナー基盤、企業セキュリティを通じて製品・情報・人をつなぎます。",
+    "KUANGUARD는 사업자 SaaS, 파트너 플랫폼, 기업 보안 서비스로 제품, 정보, 사람을 연결합니다.",
+    "KUANGUARD เชื่อมผลิตภัณฑ์ ข้อมูล และผู้คนผ่าน SaaS ร้านค้า แพลตฟอร์มพันธมิตร และบริการความปลอดภัย",
+    "KUANGUARD kết nối sản phẩm, thông tin và con người qua SaaS cửa hàng, nền tảng đối tác và dịch vụ an ninh mạng."
+  ],
+  "探索 KUANGUARD 旗下商家點餐系統、合作夥伴平台與企業資安服務，了解適合你的產品與導入方式。": [
+    "探索 KUANGUARD 旗下点餐系统、合作伙伴平台与企业安全服务，了解适合你的产品与导入方式。",
+    "Explore KUANGUARD ordering, partner platforms and cybersecurity to find suitable products and onboarding options.",
+    "KUANGUARDの注文システム、パートナー基盤、セキュリティから、適した製品と導入方法を探せます。",
+    "KUANGUARD 주문 시스템, 파트너 플랫폼, 기업 보안에서 적합한 제품과 도입 방법을 알아보세요.",
+    "สำรวจระบบสั่งอาหาร แพลตฟอร์มพันธมิตร และความปลอดภัย KUANGUARD เพื่อเลือกผลิตภัณฑ์และวิธีเริ่มใช้",
+    "Khám phá gọi món, nền tảng đối tác và an ninh mạng KUANGUARD để tìm sản phẩm, cách triển khai phù hợp."
+  ],
+  "攤點通提供 QR 點餐、POS、廚房出單與多門市管理，連結餐飲門市與攤商的日常營運。": [
+    "摊点通提供 QR 点餐、POS、厨房出单与多门店管理，连接餐饮门店与摊位的日常运营。",
+    "StallOrder brings QR ordering, POS, kitchen tickets and multi-store management to restaurants and food stalls.",
+    "StallOrderはQR注文、POS、厨房伝票、複数店舗管理で飲食店と屋台の日常運営をつなぎます。",
+    "StallOrder는 QR 주문, POS, 주방 전표, 다중 매장 관리로 음식점과 노점의 운영을 연결합니다.",
+    "StallOrder เชื่อมการทำงานของร้านอาหารและแผงค้าด้วย QR สั่งอาหาร POS ใบรายการครัว และจัดการหลายสาขา",
+    "StallOrder cung cấp gọi món QR, POS, phiếu bếp và quản lý nhiều cửa hàng cho nhà hàng, quầy ăn."
+  ],
+  "了解 KUANGUARD 商家點餐產品的功能、適用情境與開通狀態。": [
+    "了解 KUANGUARD 点餐产品的功能、适用场景与开通状态。",
+    "Explore ordering features, use cases and activation status.",
+    "注文製品の機能、利用シーン、提供状況をご確認ください。",
+    "주문 제품의 기능, 사용 환경, 개통 상태를 확인하세요.",
+    "ดูฟังก์ชัน การใช้งาน และสถานะเปิดใช้ระบบสั่งอาหาร",
+    "Tìm hiểu tính năng, tình huống sử dụng và trạng thái hệ thống gọi món."
+  ],
+  "查看 KUANGUARD 商家點餐產品的公開方案、成功訂單計費與費用試算。": [
+    "查看 KUANGUARD 点餐产品的公开方案、成功订单计费与费用估算。",
+    "View public ordering plans, successful-order pricing and fee estimates.",
+    "注文製品の公開プラン、成立注文の課金、料金試算をご覧ください。",
+    "주문 제품의 공개 요금제, 성공 주문 과금, 예상 비용을 확인하세요.",
+    "ดูแพ็กเกจสั่งอาหาร ค่าบริการตามออร์เดอร์สำเร็จ และคำนวณค่าใช้จ่าย",
+    "Xem gói công khai, phí theo đơn thành công và ước tính chi phí gọi món."
+  ],
+  "從商家與門市、企業與團隊、專業服務夥伴的情境出發，選擇合適的數位產品與服務。": [
+    "从商家门店、企业团队、专业服务伙伴的场景出发，选择合适的数字产品与服务。",
+    "Choose digital products and services for stores, business teams and professional partners.",
+    "店舗、企業チーム、専門パートナーの利用シーンに合う製品・サービスを選べます。",
+    "매장, 기업 팀, 전문 파트너의 환경에 적합한 디지털 제품과 서비스를 선택하세요.",
+    "เลือกผลิตภัณฑ์และบริการดิจิทัลสำหรับร้านค้า ทีมองค์กร และพันธมิตรมืออาชีพ",
+    "Chọn sản phẩm và dịch vụ số phù hợp cửa hàng, đội ngũ doanh nghiệp và đối tác chuyên môn."
+  ],
+  "認識 KUANGUARD 數位科技：從實際工作需求出發，以產品、平台與專業服務連接不同領域。": [
+    "认识 KUANGUARD 数字科技：从实际工作需求出发，以产品、平台与专业服务连接不同领域。",
+    "Meet KUANGUARD: connecting fields through products, platforms and professional services built around real work.",
+    "KUANGUARDは実際の仕事のニーズから、製品・基盤・専門サービスで分野をつなぎます。",
+    "KUANGUARD는 실제 업무 요구에서 출발해 제품, 플랫폼, 전문 서비스로 다양한 분야를 연결합니다.",
+    "รู้จัก KUANGUARD ที่เชื่อมต่างสาขาผ่านผลิตภัณฑ์ แพลตฟอร์ม และบริการที่ตอบโจทย์งานจริง",
+    "Tìm hiểu KUANGUARD: kết nối các lĩnh vực bằng sản phẩm, nền tảng và dịch vụ dựa trên nhu cầu thực tế."
+  ],
+  "聯絡 KUANGUARD，討論數位產品導入、企業資安或合作平台需求。": [
+    "联系 KUANGUARD，讨论数字产品导入、企业安全或合作平台需求。",
+    "Contact KUANGUARD about digital products, cybersecurity or partner platforms.",
+    "デジタル製品、企業セキュリティ、協業基盤についてKUANGUARDにご相談ください。",
+    "디지털 제품 도입, 기업 보안, 협력 플랫폼 요구를 KUANGUARD에 문의하세요.",
+    "ติดต่อ KUANGUARD เพื่อหารือผลิตภัณฑ์ดิจิทัล ความปลอดภัย หรือแพลตฟอร์มพันธมิตร",
+    "Liên hệ KUANGUARD để trao đổi triển khai sản phẩm số, bảo mật hay nền tảng đối tác."
+  ],
+  "主機弱點檢測": [
+    "主机漏洞检测",
+    "Host vulnerability assessment",
+    "ホスト脆弱性評価",
+    "호스트 취약점 평가",
+    "ประเมินช่องโหว่โฮสต์",
+    "Đánh giá lỗ hổng máy chủ"
+  ],
+  "盤點主機與服務的弱點，讓每一項修補都有可追溯的起點。": [
+    "梳理主机与服务漏洞，让每项修复都有可追溯的起点。",
+    "Identify host and service vulnerabilities with a traceable basis for each fix.",
+    "ホストとサービスの脆弱性を整理し、修正の起点を追跡可能にします。",
+    "호스트와 서비스의 취약점을 파악하고 각 수정의 근거를 추적합니다.",
+    "สำรวจช่องโหว่โฮสต์และบริการ ให้ทุกการแก้ไขมีที่มาที่ติดตามได้",
+    "Xác định lỗ hổng máy chủ và dịch vụ với cơ sở có thể truy vết cho từng bản sửa."
+  ],
+  "主機、作業系統、網路服務與已核定 IP 範圍": [
+    "主机、操作系统、网络服务与已核定 IP 范围",
+    "Hosts, operating systems, network services and approved IP ranges",
+    "ホスト、OS、ネットワークサービス、承認済みIP範囲",
+    "호스트, 운영체제, 네트워크 서비스, 승인된 IP 범위",
+    "โฮสต์ ระบบปฏิบัติการ บริการเครือข่าย และช่วง IP ที่อนุมัติ",
+    "Máy chủ, hệ điều hành, dịch vụ mạng và dải IP đã duyệt"
+  ],
+  "確認資產清冊、到場時段、檢測授權及必要帳號。": [
+    "确认资产清单、到场时段、检测授权及必要账号。",
+    "Confirm assets, on-site times, testing authorization and required accounts.",
+    "資産一覧、訪問時間、検査権限、必要なアカウントを確認。",
+    "자산 목록, 방문 시간, 점검 권한, 필요 계정을 확인합니다.",
+    "ยืนยันรายการสินทรัพย์ ช่วงเข้าพื้นที่ สิทธิ์ทดสอบ และบัญชีที่จำเป็น",
+    "Xác nhận danh sách tài sản, giờ tại chỗ, ủy quyền kiểm tra và tài khoản cần thiết."
+  ],
+  "資產覆蓋與檢測結果": [
+    "资产覆盖与检测结果",
+    "Asset coverage and results",
+    "資産の網羅範囲と検査結果",
+    "자산 점검 범위 및 결과",
+    "ความครอบคลุมสินทรัพย์และผลตรวจ",
+    "Phạm vi tài sản và kết quả"
+  ],
+  "分級弱點與改善建議": [
+    "分级漏洞与改进建议",
+    "Ranked vulnerabilities and recommendations",
+    "脆弱性の分類と改善提案",
+    "등급별 취약점 및 개선 권고",
+    "ช่องโหว่จัดระดับและคำแนะนำ",
+    "Lỗ hổng phân cấp và khuyến nghị"
+  ],
+  "正式報告與複測追蹤": [
+    "正式报告与复测追踪",
+    "Formal reports and retest tracking",
+    "正式報告と再検査追跡",
+    "정식 보고서 및 재검사 추적",
+    "รายงานทางการและติดตามทดสอบซ้ำ",
+    "Báo cáo chính thức và theo dõi kiểm tra lại"
+  ],
+  "網站弱點檢測": [
+    "网站漏洞检测",
+    "Web vulnerability assessment",
+    "Web脆弱性評価",
+    "웹 취약점 평가",
+    "ประเมินช่องโหว่เว็บไซต์",
+    "Đánh giá lỗ hổng website"
+  ],
+  "從網站功能、路徑與角色，整理可理解、可執行的改善清單。": [
+    "从网站功能、路径与角色，整理可理解、可执行的改进清单。",
+    "Turn website features, paths and roles into a clear, actionable remediation list.",
+    "Web機能、パス、役割から、理解しやすく実行可能な改善一覧を作成します。",
+    "웹 기능, 경로, 역할을 바탕으로 이해하고 실행할 수 있는 개선 목록을 정리합니다.",
+    "จัดรายการแก้ไขที่เข้าใจและทำได้จากฟังก์ชัน เส้นทาง และบทบาทของเว็บ",
+    "Lập danh sách khắc phục rõ ràng, thực hiện được từ chức năng, đường dẫn và vai trò website."
+  ],
+  "網站、API 路徑及合約指定使用者角色": [
+    "网站、API 路径及合约指定用户角色",
+    "Websites, API paths and contracted user roles",
+    "Webサイト、APIパス、契約で指定した役割",
+    "웹사이트, API 경로, 계약상 사용자 역할",
+    "เว็บไซต์ เส้นทาง API และบทบาทผู้ใช้ตามสัญญา",
+    "Website, đường dẫn API và vai trò người dùng theo hợp đồng"
+  ],
+  "提供測試環境、核定 URL 範圍、角色帳號與排除時段。": [
+    "提供测试环境、核定 URL 范围、角色账号与排除时段。",
+    "Provide a test environment, approved URLs, role accounts and excluded time windows.",
+    "テスト環境、承認URL範囲、役割別アカウント、除外時間をご用意ください。",
+    "테스트 환경, 승인된 URL 범위, 역할 계정, 제외 시간을 제공합니다.",
+    "เตรียมสภาพแวดล้อมทดสอบ URL ที่อนุมัติ บัญชีตามบทบาท และช่วงเวลาที่ห้าม",
+    "Cung cấp môi trường thử, URL đã duyệt, tài khoản theo vai trò và giờ loại trừ."
+  ],
+  "網站範圍與路徑覆蓋": [
+    "网站范围与路径覆盖",
+    "Website scope and path coverage",
+    "Web範囲とパス網羅性",
+    "웹 범위 및 경로 점검 범위",
+    "ขอบเขตเว็บและเส้นทางที่ครอบคลุม",
+    "Phạm vi website và đường dẫn"
+  ],
+  "AppScan 匯入與人工覆核": [
+    "AppScan 导入与人工复核",
+    "AppScan import and manual review",
+    "AppScan取込と手動確認",
+    "AppScan 반입 및 수동 검토",
+    "นำเข้า AppScan และทบทวนโดยคน",
+    "Nhập AppScan và rà soát thủ công"
+  ],
+  "初測及複測比較": [
+    "初测及复测比较",
+    "Initial and repeat test comparison",
+    "初回と再検査の比較",
+    "초기 및 재검사 비교",
+    "เปรียบเทียบครั้งแรกและทดสอบซ้ำ",
+    "So sánh kiểm tra đầu và kiểm tra lại"
+  ],
+  "系統安全健診": [
+    "系统安全检查",
+    "Security health check",
+    "システムセキュリティ健診",
+    "시스템 보안 점검",
+    "ตรวจสุขภาพความปลอดภัยระบบ",
+    "Kiểm tra sức khỏe bảo mật"
+  ],
+  "以設定、權限與證據檢視環境，找出日常維運可改善的細節。": [
+    "通过设置、权限与证据检查环境，找出日常运维可改进的细节。",
+    "Review configuration, access and evidence to find practical operational improvements.",
+    "設定、権限、証拠で環境を確認し、日常運用の改善点を見つけます。",
+    "설정, 권한, 근거로 환경을 검토해 일상 운영의 개선점을 찾습니다.",
+    "ตรวจการตั้งค่า สิทธิ์ และหลักฐานเพื่อหาจุดปรับปรุงงานดูแลระบบ",
+    "Xem cấu hình, quyền và bằng chứng để tìm điểm cải thiện vận hành."
+  ],
+  "伺服器、帳號權限、備份及已核定雲端檢核項目": [
+    "服务器、账号权限、备份及已核定云端检查项目",
+    "Servers, account permissions, backups and approved cloud checks",
+    "サーバー、アカウント権限、バックアップ、承認済みクラウド項目",
+    "서버, 계정 권한, 백업, 승인된 클라우드 점검",
+    "เซิร์ฟเวอร์ สิทธิ์บัญชี สำรองข้อมูล และรายการคลาวด์ที่อนุมัติ",
+    "Máy chủ, quyền tài khoản, sao lưu và mục kiểm tra đám mây đã duyệt"
+  ],
+  "確認設備與基準版本，準備唯讀檢視權限及現場窗口。": [
+    "确认设备与基准版本，准备只读权限及现场联系人。",
+    "Confirm devices and baseline versions; arrange read-only access and an on-site contact.",
+    "機器と基準版を確認し、読取専用権限と現場窓口を準備します。",
+    "장비와 기준 버전을 확인하고 읽기 전용 권한과 현장 담당자를 준비합니다.",
+    "ยืนยันอุปกรณ์และเวอร์ชันเกณฑ์ เตรียมสิทธิ์อ่านอย่างเดียวและผู้ประสานงาน",
+    "Xác nhận thiết bị, phiên bản chuẩn; chuẩn bị quyền chỉ đọc và đầu mối tại chỗ."
+  ],
+  "檢核基準與證據狀態": [
+    "检查基准与证据状态",
+    "Baselines and evidence status",
+    "確認基準と証拠状態",
+    "점검 기준 및 근거 상태",
+    "เกณฑ์ตรวจและสถานะหลักฐาน",
+    "Chuẩn kiểm tra và trạng thái bằng chứng"
+  ],
+  "符合、不符合及證據不足": [
+    "符合、不符合及证据不足",
+    "Pass, fail and insufficient evidence",
+    "適合・不適合・証拠不足",
+    "적합, 부적합, 근거 부족",
+    "ผ่าน ไม่ผ่าน และหลักฐานไม่พอ",
+    "Đạt, không đạt và thiếu bằng chứng"
+  ],
+  "改善優先順序與追蹤": [
+    "改进优先级与追踪",
+    "Remediation priorities and tracking",
+    "改善の優先順位と追跡",
+    "개선 우선순위 및 추적",
+    "ลำดับการแก้ไขและติดตาม",
+    "Ưu tiên khắc phục và theo dõi"
+  ],
+  "滲透測試": [
+    "渗透测试",
+    "Penetration testing",
+    "ペネトレーションテスト",
+    "침투 테스트",
+    "ทดสอบเจาะระบบ",
+    "Kiểm thử xâm nhập"
+  ],
+  "在明確授權範圍內，由工程師驗證攻擊路徑與實際影響。": [
+    "在明确授权范围内，由工程师验证攻击路径与实际影响。",
+    "Engineers validate attack paths and actual impact within explicit authorization.",
+    "明確な許可範囲で、エンジニアが攻撃経路と実際の影響を検証します。",
+    "명확히 승인된 범위에서 엔지니어가 공격 경로와 실제 영향을 검증합니다.",
+    "วิศวกรยืนยันเส้นทางโจมตีและผลกระทบจริงในขอบเขตที่อนุญาต",
+    "Kỹ sư xác minh đường tấn công và tác động thực tế trong phạm vi ủy quyền rõ ràng."
+  ],
+  "已授權標的、API 安全與人工驗證情境": [
+    "已授权目标、API 安全与人工验证场景",
+    "Authorized targets, API security and manual validation scenarios",
+    "許可済み対象、API安全性、手動検証シナリオ",
+    "승인된 대상, API 보안, 수동 검증 시나리오",
+    "เป้าหมายที่อนุญาต ความปลอดภัย API และกรณีตรวจด้วยคน",
+    "Mục tiêu được phép, bảo mật API và tình huống xác minh thủ công"
+  ],
+  "簽認測試規則、停止條件、緊急聯絡方式與測試窗口。": [
+    "签认测试规则、停止条件、紧急联系方式与测试时段。",
+    "Agree on rules of engagement, stop conditions, emergency contacts and test windows.",
+    "テスト規則、停止条件、緊急連絡先、実施時間を合意します。",
+    "테스트 규칙, 중단 조건, 긴급 연락처, 테스트 시간을 합의합니다.",
+    "ตกลงกฎทดสอบ เงื่อนไขหยุด ผู้ติดต่อฉุกเฉิน และช่วงทดสอบ",
+    "Thống nhất quy tắc kiểm thử, điều kiện dừng, liên hệ khẩn cấp và thời gian."
+  ],
+  "人工驗證與攻擊路徑": [
+    "人工验证与攻击路径",
+    "Manual validation and attack paths",
+    "手動検証と攻撃経路",
+    "수동 검증 및 공격 경로",
+    "ตรวจด้วยคนและเส้นทางโจมตี",
+    "Xác minh thủ công và đường tấn công"
+  ],
+  "遮罩證據與影響說明": [
+    "脱敏证据与影响说明",
+    "Redacted evidence and impact",
+    "マスキング済み証拠と影響説明",
+    "마스킹된 근거 및 영향 설명",
+    "หลักฐานปกปิดข้อมูลและผลกระทบ",
+    "Bằng chứng che dữ liệu và mô tả tác động"
+  ],
+  "技術覆核、報告與複測": [
+    "技术复核、报告与复测",
+    "Technical review, reports and retesting",
+    "技術確認、報告、再検査",
+    "기술 검토, 보고, 재검사",
+    "ทบทวนเทคนิค รายงาน และทดสอบซ้ำ",
+    "Rà soát kỹ thuật, báo cáo và kiểm tra lại"
+  ],
+  "源碼安全檢測": [
+    "源代码安全检测",
+    "Source-code security assessment",
+    "ソースコード安全性評価",
+    "소스 코드 보안 평가",
+    "ประเมินความปลอดภัยซอร์สโค้ด",
+    "Đánh giá bảo mật mã nguồn"
+  ],
+  "將程式碼檢測結果轉為開發團隊可以處理的修補與覆核流程。": [
+    "将代码检测结果转为开发团队可执行的修复与复核流程。",
+    "Turn code findings into remediation and review workflows for development teams.",
+    "コードの検査結果を、開発チームが対応できる修正・確認フローに変えます。",
+    "코드 점검 결과를 개발팀이 처리할 수 있는 수정 및 검토 절차로 전환합니다.",
+    "แปลงผลตรวจโค้ดเป็นขั้นตอนแก้ไขและทบทวนที่ทีมพัฒนาทำได้",
+    "Chuyển kết quả kiểm tra mã thành quy trình sửa và rà soát cho đội phát triển."
+  ],
+  "SAST 結果；SCA、SBOM、Secrets、容器與 IaC 依核定能力選配": [
+    "SAST 结果；SCA、SBOM、Secrets、容器与 IaC 按核定能力选配",
+    "SAST results; SCA, SBOM, secrets, containers and IaC subject to approved capabilities",
+    "SAST結果。SCA、SBOM、Secrets、コンテナ、IaCは承認された能力に応じて選択",
+    "SAST 결과. SCA, SBOM, Secrets, 컨테이너, IaC는 승인된 기능에 따라 선택",
+    "ผล SAST; SCA, SBOM, Secrets คอนเทนเนอร์ และ IaC ตามความสามารถที่อนุมัติ",
+    "Kết quả SAST; SCA, SBOM, Secrets, container và IaC tùy năng lực đã duyệt"
+  ],
+  "先確認程式語言、工具版本、來源交付方式及保存期限。": [
+    "先确认编程语言、工具版本、源码交付方式及保存期限。",
+    "Confirm languages, tool versions, source delivery and retention first.",
+    "言語、ツール版、ソースの受渡方法、保存期間を先に確認します。",
+    "언어, 도구 버전, 소스 전달 방식, 보관 기간을 먼저 확인합니다.",
+    "ยืนยันภาษา เวอร์ชันเครื่องมือ วิธีส่งซอร์ส และระยะเก็บก่อน",
+    "Xác nhận ngôn ngữ, phiên bản công cụ, cách giao mã và thời hạn lưu trước."
+  ],
+  "SARIF 結果匯入": [
+    "SARIF 结果导入",
+    "SARIF result import",
+    "SARIF結果の取込",
+    "SARIF 결과 반입",
+    "นำเข้าผล SARIF",
+    "Nhập kết quả SARIF"
+  ],
+  "規則、路徑與誤判覆核": [
+    "规则、路径与误报复核",
+    "Rules, paths and false-positive review",
+    "ルール・パス・誤検知の確認",
+    "규칙, 경로, 오탐 검토",
+    "ทบทวนกฎ เส้นทาง และผลผิดพลาด",
+    "Rà soát quy tắc, đường dẫn và dương tính giả"
+  ],
+  "版本化報告與複測": [
+    "版本化报告与复测",
+    "Versioned reports and retesting",
+    "版管理された報告と再検査",
+    "버전 관리 보고서 및 재검사",
+    "รายงานควบคุมเวอร์ชันและทดสอบซ้ำ",
+    "Báo cáo có phiên bản và kiểm tra lại"
+  ],
+  "社交工程演練": [
+    "社会工程演练",
+    "Social engineering simulation",
+    "ソーシャルエンジニアリング演習",
+    "사회공학 모의훈련",
+    "ฝึกจำลองวิศวกรรมสังคม",
+    "Diễn tập kỹ nghệ xã hội"
+  ],
+  "用受控活動與教育頁，觀察風險指標並銜接補救訓練。": [
+    "用受控活动与教育页面，观察风险指标并连接补救培训。",
+    "Use controlled campaigns and educational pages to observe risk indicators and connect remedial training.",
+    "管理された活動と学習ページでリスク指標を確認し、補習につなげます。",
+    "통제된 활동과 교육 페이지로 위험 지표를 관찰하고 보완 교육에 연결합니다.",
+    "ใช้กิจกรรมควบคุมและหน้าความรู้เพื่อดูตัวชี้วัดความเสี่ยงและเชื่อมการอบรมเสริม",
+    "Dùng chiến dịch có kiểm soát và trang giáo dục để theo dõi rủi ro, kết nối đào tạo bổ sung."
+  ],
+  "已授權受測群組、核准模板、教育頁及寄送窗口": [
+    "已授权受测群组、批准模板、教育页面及发送时段",
+    "Authorized groups, approved templates, education pages and send windows",
+    "許可された対象群、承認テンプレート、学習ページ、送信時間",
+    "승인된 대상 그룹, 템플릿, 교육 페이지, 발송 시간",
+    "กลุ่มที่อนุญาต เทมเพลตที่อนุมัติ หน้าความรู้ และช่วงส่ง",
+    "Nhóm được phép, mẫu đã duyệt, trang giáo dục và khung giờ gửi"
+  ],
+  "確認企業管理权、受測範圍、點數與已啟用寄送管道。": [
+    "确认企业管理权、受测范围、点数与已启用发送渠道。",
+    "Confirm organizational authority, test scope, credits and activated delivery channels.",
+    "企業管理権限、対象範囲、クレジット、有効な送信経路を確認。",
+    "기업 관리 권한, 테스트 범위, 크레딧, 활성화된 발송 경로를 확인합니다.",
+    "ยืนยันสิทธิ์องค์กร ขอบเขตทดสอบ เครดิต และช่องทางส่งที่เปิดใช้",
+    "Xác nhận quyền quản lý, phạm vi kiểm tra, tín dụng và kênh gửi đã kích hoạt."
+  ],
+  "活動、群組與排程管理": [
+    "活动、群组与排程管理",
+    "Campaign, group and schedule management",
+    "活動・グループ・日程管理",
+    "활동, 그룹, 일정 관리",
+    "จัดการกิจกรรม กลุ่ม และกำหนดการ",
+    "Quản lý chiến dịch, nhóm và lịch"
+  ],
+  "事件來源及指標口徑": [
+    "事件来源及指标定义",
+    "Event provenance and metric definitions",
+    "イベントの出所と指標定義",
+    "이벤트 출처 및 지표 정의",
+    "ที่มาเหตุการณ์และนิยามตัวชี้วัด",
+    "Nguồn sự kiện và định nghĩa chỉ số"
+  ],
+  "回報率與補救訓練": [
+    "报告率与补救培训",
+    "Reporting rates and remedial training",
+    "報告率と補習",
+    "신고율 및 보완 교육",
+    "อัตรารายงานและอบรมเสริม",
+    "Tỷ lệ báo cáo và đào tạo bổ sung"
+  ],
+  "線上教育訓練": [
+    "在线教育培训",
+    "Online security training",
+    "オンライン教育・研修",
+    "온라인 보안 교육",
+    "อบรมออนไลน์",
+    "Đào tạo trực tuyến"
+  ],
+  "從企業派課到員工完課，把資安觀念帶回每天的工作。": [
+    "从企业分配课程到员工完成课程，把安全观念带回每天的工作。",
+    "Bring security awareness into daily work, from course assignment to completion.",
+    "企業の講座割当から受講完了まで、セキュリティ意識を毎日の仕事へ。",
+    "기업 과정 배정부터 직원 이수까지 보안 인식을 일상 업무에 적용합니다.",
+    "นำความตระหนักด้านความปลอดภัยสู่งานประจำ ตั้งแต่มอบหมายจนเรียนจบ",
+    "Đưa nhận thức bảo mật vào công việc hằng ngày, từ giao khóa học đến hoàn thành."
+  ],
+  "核定課程、企業學習計畫、個人與部門派課": [
+    "核定课程、企业学习计划、个人与部门分配课程",
+    "Approved courses, organizational learning plans and individual or department assignments",
+    "承認済み講座、企業学習計画、個人・部門別割当",
+    "승인된 과정, 기업 학습 계획, 개인 및 부서 배정",
+    "หลักสูตรที่อนุมัติ แผนองค์กร และการมอบหมายรายบุคคลหรือแผนก",
+    "Khóa học đã duyệt, kế hoạch học doanh nghiệp, phân công cá nhân và phòng ban"
+  ],
+  "確認學員、課程授權期限、適用點數與年度梯次。": [
+    "确认学员、课程授权期限、适用点数与年度批次。",
+    "Confirm learners, license periods, applicable credits and annual cohorts.",
+    "受講者、ライセンス期限、適用クレジット、年間の実施組を確認。",
+    "학습자, 라이선스 기간, 적용 크레딧, 연간 기수를 확인합니다.",
+    "ยืนยันผู้เรียน ระยะสิทธิ์หลักสูตร เครดิต และรุ่นประจำปี",
+    "Xác nhận học viên, thời hạn giấy phép, tín dụng và đợt học trong năm."
+  ],
+  "章節學習與教材": [
+    "章节学习与教材",
+    "Lessons and materials",
+    "章別学習と教材",
+    "단원 학습 및 교재",
+    "บทเรียนและสื่อ",
+    "Bài học và tài liệu"
+  ],
+  "伺服器驗證測驗": [
+    "服务器验证测验",
+    "Server-validated assessments",
+    "サーバーで検証するテスト",
+    "서버 검증 시험",
+    "แบบทดสอบตรวจสอบโดยเซิร์ฟเวอร์",
+    "Bài kiểm tra xác minh trên máy chủ"
+  ],
+  "完課紀錄與證明": [
+    "完课记录与证明",
+    "Completion records and certificates",
+    "修了記録と証明",
+    "이수 기록 및 증명",
+    "บันทึกและหลักฐานเรียนจบ",
+    "Hồ sơ và chứng nhận hoàn thành"
+  ],
+  "未指定": [
+    "未指定",
+    "Not specified",
+    "未指定",
+    "미지정",
+    "ไม่ระบุ",
+    "Chưa chỉ định"
+  ],
+  "掃碼點餐、POS、廚房出單與多門市管理。": [
+    "扫码点餐、POS、厨房出单与多门店管理。",
+    "QR ordering, POS, kitchen tickets and multi-store management.",
+    "QR注文、POS、厨房伝票、複数店舗管理。",
+    "QR 주문, POS, 주방 전표, 다중 매장 관리.",
+    "สั่งผ่าน QR, POS ใบรายการครัว และจัดการหลายสาขา",
+    "Gọi món QR, POS, phiếu bếp và quản lý nhiều cửa hàng."
+  ],
+  "平台尚未開放，合作需求可先與我們聯繫。": [
+    "平台尚未开放，合作需求可先联系我们。",
+    "The platform is not open yet. Contact us about partnership needs.",
+    "基盤は未公開です。協業のご要望はお問い合わせください。",
+    "플랫폼 준비 중입니다. 협력 요구는 먼저 문의해 주세요.",
+    "แพลตฟอร์มยังไม่เปิด ติดต่อหารือความร่วมมือก่อนได้",
+    "Nền tảng chưa mở. Có thể liên hệ trước về nhu cầu hợp tác."
+  ],
+  "企業資安平台": [
+    "企业安全平台",
+    "Enterprise security platform",
+    "企業セキュリティ基盤",
+    "기업 보안 플랫폼",
+    "แพลตฟอร์มความปลอดภัยองค์กร",
+    "Nền tảng bảo mật doanh nghiệp"
+  ],
+  "平台尚未開放，資安服務可先洽詢。": [
+    "平台尚未开放，可先咨询安全服务。",
+    "The platform is not open yet. Security service inquiries are welcome.",
+    "基盤は未公開です。セキュリティサービスはご相談いただけます。",
+    "플랫폼 준비 중입니다. 보안 서비스는 먼저 상담할 수 있습니다.",
+    "แพลตฟอร์มยังไม่เปิด สอบถามบริการความปลอดภัยก่อนได้",
+    "Nền tảng chưa mở. Có thể hỏi trước về dịch vụ bảo mật."
+  ],
+  "用數位科技，連接產品、資訊與人。": [
+    "用数字科技，连接产品、信息与人。",
+    "Connecting products, information and people through digital technology.",
+    "デジタル技術で製品、情報、人をつなぐ。",
+    "디지털 기술로 제품, 정보, 사람을 연결합니다.",
+    "เชื่อมผลิตภัณฑ์ ข้อมูล และผู้คนด้วยเทคโนโลยีดิจิทัล",
+    "Kết nối sản phẩm, thông tin và con người bằng công nghệ số."
+  ],
+  "KUANGUARD 從實際工作需求出發，透過 SaaS 產品、企業資安與合作規劃，讓日常營運更有條理。": [
+    "KUANGUARD 从实际工作需求出发，通过 SaaS 产品、企业安全与合作规划，让日常运营更有条理。",
+    "KUANGUARD starts with real work needs, bringing structure to daily operations through SaaS, cybersecurity and partnership planning.",
+    "KUANGUARDは実際の仕事のニーズから、SaaS、企業セキュリティ、協業計画で日常運営を整えます。",
+    "KUANGUARD는 실제 업무 요구에서 출발해 SaaS, 기업 보안, 협력 계획으로 일상 운영을 체계화합니다.",
+    "KUANGUARD เริ่มจากความต้องการงานจริง จัดระบบงานผ่าน SaaS ความปลอดภัย และแผนความร่วมมือ",
+    "KUANGUARD bắt đầu từ nhu cầu công việc thực tế, tổ chức vận hành qua SaaS, an ninh mạng và kế hoạch hợp tác."
+  ],
+  "攤點通是旗下餐飲點餐產品。企業資安服務依需求與授權範圍洽詢；合作夥伴平台及美業系統尚未上線。": [
+    "摊点通是旗下餐饮点餐产品。企业安全服务按需求和授权范围咨询；合作伙伴平台及美业系统尚未上线。",
+    "StallOrder is our restaurant ordering product. Security services are scoped by need and authorization. The partner platform and beauty system have not launched.",
+    "StallOrderは飲食店向け注文製品です。セキュリティは要望と許可範囲に応じて相談できます。パートナー基盤と美容システムは未公開です。",
+    "StallOrder는 음식점 주문 제품입니다. 보안 서비스는 요구와 권한 범위에 따라 상담합니다. 파트너 플랫폼과 뷰티 시스템은 아직 출시되지 않았습니다.",
+    "StallOrder คือผลิตภัณฑ์สั่งอาหารของเรา บริการความปลอดภัยพิจารณาตามความต้องการและสิทธิ์ แพลตฟอร์มพันธมิตรและระบบความงามยังไม่เปิดตัว",
+    "StallOrder là sản phẩm gọi món của chúng tôi. Dịch vụ bảo mật theo nhu cầu và ủy quyền. Nền tảng đối tác và hệ thống làm đẹp chưa ra mắt."
+  ],
+  "了解這個官網如何處理資料。": [
+    "了解本官网如何处理数据。",
+    "How this website handles information.",
+    "このサイトの情報の取扱いについて。",
+    "이 웹사이트의 데이터 처리 방식.",
+    "เว็บไซต์นี้จัดการข้อมูลอย่างไร",
+    "Cách trang web này xử lý thông tin."
+  ],
+  "本說明適用於 kuanguard.com。本站提供產品資訊與外部服務入口，不在官網收取系統密碼或付款資料。": [
+    "本说明适用于 kuanguard.com。本站提供产品信息与外部服务入口，不在官网收取系统密码或付款数据。",
+    "This notice applies to kuanguard.com. The site provides product information and external service links. It does not collect system passwords or payment details.",
+    "本説明はkuanguard.comに適用されます。製品情報と外部サービスの入口を提供し、システムのパスワードや支払情報は収集しません。",
+    "이 안내는 kuanguard.com에 적용됩니다. 사이트는 제품 정보와 외부 서비스 링크를 제공하며 시스템 비밀번호나 결제 정보를 수집하지 않습니다.",
+    "ประกาศนี้ใช้กับ kuanguard.com เว็บไซต์ให้ข้อมูลผลิตภัณฑ์และลิงก์บริการภายนอก ไม่เก็บรหัสผ่านระบบหรือข้อมูลชำระเงิน",
+    "Thông báo áp dụng cho kuanguard.com. Trang cung cấp thông tin sản phẩm, liên kết dịch vụ ngoài; không thu mật khẩu hệ thống hay dữ liệu thanh toán."
+  ],
+  "聯絡表單只在你的裝置組成郵件，本站不儲存或自動寄送內容。你確認寄出後，聯絡資訊與需求會用於回覆及服務評估。請勿傳送密碼、支付資料或客戶機密。": [
+    "联系表单仅在你的设备生成邮件，本站不保存或自动发送内容。确认发送后，联系信息与需求用于回复和服务评估。请勿发送密码、支付数据或客户机密。",
+    "The contact form prepares an email on your device; this site neither stores nor automatically sends it. Once you send it, your contact details and needs are used to reply and assess services. Do not send passwords, payment data or customer secrets.",
+    "フォームは端末上でメールを作成し、サイトは保存・自動送信しません。送信後の連絡先と要望は返信とサービス評価に使います。パスワード、決済情報、顧客機密は送らないでください。",
+    "문의 양식은 기기에서 메일을 작성하며 사이트가 저장하거나 자동 전송하지 않습니다. 직접 전송한 연락처와 요구는 회신 및 서비스 검토에 사용됩니다. 비밀번호, 결제 정보, 고객 기밀은 보내지 마세요.",
+    "แบบฟอร์มสร้างอีเมลบนอุปกรณ์ เว็บไซต์ไม่เก็บหรือส่งอัตโนมัติ เมื่อคุณส่ง ข้อมูลติดต่อและความต้องการจะใช้ตอบกลับและประเมินบริการ อย่าส่งรหัสผ่าน ข้อมูลชำระเงิน หรือความลับลูกค้า",
+    "Biểu mẫu soạn email trên thiết bị; trang không lưu hay tự gửi. Sau khi bạn gửi, thông tin liên hệ và nhu cầu dùng để phản hồi, đánh giá dịch vụ. Không gửi mật khẩu, dữ liệu thanh toán hoặc bí mật khách hàng."
+  ],
+  "手動選擇語言時，本站使用一個必要的語言偏好 Cookie，最長保存一年；可透過瀏覽器清除。本站目前未載入廣告或行銷追蹤工具。": [
+    "手动选择语言时，本站使用一个必要的语言偏好 Cookie，最长保存一年，可通过浏览器清除。本站目前未加载广告或营销追踪工具。",
+    "When you choose a language, one necessary preference cookie is stored for up to a year. You can clear it in your browser. This site currently loads no advertising or marketing trackers.",
+    "言語を選ぶと必要な設定Cookieを最長1年間保存します。ブラウザで削除できます。現在、広告・マーケティング追跡ツールは読み込みません。",
+    "언어를 직접 선택하면 필수 언어 설정 쿠키 하나를 최대 1년간 저장하며 브라우저에서 삭제할 수 있습니다. 현재 광고나 마케팅 추적 도구는 로드하지 않습니다.",
+    "เมื่อเลือกภาษา เว็บไซต์เก็บคุกกี้ตั้งค่าที่จำเป็นหนึ่งรายการไม่เกินหนึ่งปี ล้างได้ในเบราว์เซอร์ ปัจจุบันไม่โหลดเครื่องมือติดตามโฆษณาหรือการตลาด",
+    "Khi chọn ngôn ngữ, một cookie tùy chọn cần thiết được lưu tối đa một năm; có thể xóa trong trình duyệt. Hiện trang không tải công cụ quảng cáo hay theo dõi tiếp thị."
+  ],
+  "Vercel 與 Cloudflare 提供網站託管、網域及連線服務，可能為傳遞網頁與維護安全處理 IP 位址、瀏覽器及連線紀錄。": [
+    "Vercel 与 Cloudflare 提供网站托管、域名和连接服务，可能为传送网页及维护安全处理 IP 地址、浏览器和连接记录。",
+    "Vercel and Cloudflare provide hosting, domain and connectivity services. They may process IP addresses, browser information and connection logs to deliver pages and maintain security.",
+    "VercelとCloudflareがホスティング、ドメイン、接続サービスを提供します。ページ配信と安全維持のため、IP、ブラウザ情報、接続記録を処理する場合があります。",
+    "Vercel과 Cloudflare가 호스팅, 도메인, 연결 서비스를 제공하며 페이지 전송과 보안을 위해 IP 주소, 브라우저 정보, 연결 로그를 처리할 수 있습니다.",
+    "Vercel และ Cloudflare ให้บริการโฮสติ้ง โดเมน และการเชื่อมต่อ อาจประมวลผล IP ข้อมูลเบราว์เซอร์ และบันทึกเชื่อมต่อเพื่อส่งหน้าเว็บและรักษาความปลอดภัย",
+    "Vercel và Cloudflare cung cấp lưu trữ, tên miền, kết nối; có thể xử lý IP, thông tin trình duyệt và nhật ký kết nối để phân phối trang, duy trì an toàn."
+  ],
+  "商家申請前往 Google 表單；登入前往攤點通。提交前請閱讀該服務的說明與隱私政策。外部服務的資料處理由各服務負責。": [
+    "商家申请前往 Google 表单，登录前往摊点通。提交前请阅读该服务的说明与隐私政策。外部服务各自负责数据处理。",
+    "Merchant applications go to Google Forms; sign-in goes to StallOrder. Read each service's notices and privacy policy before submitting. Each external service handles its own data processing.",
+    "店舗申請はGoogleフォーム、ログインはStallOrderへ進みます。送信前に各サービスの説明とプライバシーポリシーをご確認ください。外部のデータ処理は各サービスが担当します。",
+    "사업자 신청은 Google 설문지로, 로그인은 StallOrder로 이동합니다. 제출 전 해당 서비스의 안내와 개인정보 방침을 확인하세요. 외부 데이터 처리는 각 서비스가 담당합니다.",
+    "สมัครร้านค้าผ่าน Google Forms และเข้าสู่ StallOrder โปรดอ่านคำชี้แจงและนโยบายก่อนส่งข้อมูล แต่ละบริการภายนอกรับผิดชอบการจัดการข้อมูลของตน",
+    "Đăng ký cửa hàng qua Google Forms; đăng nhập vào StallOrder. Đọc thông báo, chính sách trước khi gửi. Mỗi dịch vụ ngoài chịu trách nhiệm xử lý dữ liệu của mình."
+  ],
+  "如需查詢、更正或刪除你提供的聯絡資料，請來信 ada76145@gmail.com。我們會核對需求並說明可處理範圍；服務資料的保存與刪除依實際用途、適用規定及有效合約辦理。": [
+    "如需查询、更正或删除所提供的联系信息，请发送邮件至 ada76145@gmail.com。我们会核对需求并说明处理范围；服务数据的保存和删除按实际用途、适用规定和有效合约办理。",
+    "To request access, correction or deletion of contact details you provided, email ada76145@gmail.com. We will verify the request and explain what can be handled. Service-data retention and deletion follow its purpose, applicable rules and valid agreements.",
+    "提供した連絡情報の確認・訂正・削除はada76145@gmail.comへご連絡ください。ご要望を確認し、対応範囲を説明します。サービスデータの保存・削除は目的、適用規定、有効な契約に従います。",
+    "제공한 연락처의 조회, 수정, 삭제는 ada76145@gmail.com으로 요청하세요. 요청을 확인하고 처리 범위를 안내합니다. 서비스 데이터의 보관과 삭제는 목적, 적용 규정, 유효 계약에 따릅니다.",
+    "หากต้องการดู แก้ไข หรือลบข้อมูลติดต่อที่ให้ไว้ โปรดส่งถึง ada76145@gmail.com เราจะตรวจคำขอและชี้แจงขอบเขต การเก็บและลบข้อมูลบริการขึ้นกับวัตถุประสงค์ กฎที่ใช้ และสัญญา",
+    "Để yêu cầu xem, sửa hoặc xóa thông tin liên hệ đã cung cấp, gửi tới ada76145@gmail.com. Chúng tôi xác minh yêu cầu và giải thích phạm vi xử lý. Lưu, xóa dữ liệu theo mục đích, quy định và hợp đồng hiệu lực."
+  ],
+  "網站使用條款": [
+    "网站使用条款",
+    "Website terms",
+    "サイト利用条件",
+    "웹사이트 이용 약관",
+    "เงื่อนไขเว็บไซต์",
+    "Điều khoản website"
+  ],
+  "了解官網資訊與各項服務的適用範圍。": [
+    "了解官网信息和各项服务的适用范围。",
+    "Understand the scope of website information and services.",
+    "サイト情報と各サービスの適用範囲をご確認ください。",
+    "웹사이트 정보와 서비스의 적용 범위를 확인하세요.",
+    "เข้าใจขอบเขตข้อมูลเว็บไซต์และบริการ",
+    "Hiểu phạm vi thông tin website và dịch vụ."
+  ],
+  "本網站提供產品與服務介紹。實際功能、開通條件、費用與服務範圍，以對應產品官網及雙方確認的有效文件為準。": [
+    "本网站提供产品和服务介绍。实际功能、开通条件、费用和服务范围，以对应产品官网及双方确认的有效文件为准。",
+    "This site introduces products and services. Actual features, activation, fees and scope follow the product website and valid documents agreed by both parties.",
+    "本サイトは製品・サービスを紹介します。実際の機能、利用条件、費用、範囲は各製品の公式サイトと双方が合意した有効な文書に従います。",
+    "이 사이트는 제품과 서비스를 소개합니다. 실제 기능, 개통 조건, 요금, 범위는 제품 공식 사이트와 양측이 확인한 유효 문서에 따릅니다.",
+    "เว็บไซต์แนะนำผลิตภัณฑ์และบริการ ฟังก์ชัน เงื่อนไขเปิดใช้ ราคา และขอบเขตจริงตามเว็บผลิตภัณฑ์และเอกสารที่ทั้งสองฝ่ายตกลง",
+    "Trang giới thiệu sản phẩm, dịch vụ. Tính năng, điều kiện kích hoạt, phí và phạm vi thực tế theo website sản phẩm và văn bản hiệu lực hai bên thống nhất."
+  ],
+  "申請或洽詢不代表帳號已開通、合約已成立或付款已完成。標示規劃中或尚未開放的項目，目前無法登入使用。": [
+    "申请或咨询不代表账号已开通、合约已成立或付款已完成。标为规划中或未开放的项目，目前无法登录使用。",
+    "An application or inquiry does not activate an account, create a contract or complete payment. Planned or unreleased items cannot currently be accessed.",
+    "申請や相談だけではアカウント開通、契約成立、支払完了となりません。計画中・未公開の項目は現在ログインして使えません。",
+    "신청이나 문의가 계정 개통, 계약 성립, 결제 완료를 의미하지 않습니다. 계획 중이거나 미공개인 항목은 현재 로그인할 수 없습니다.",
+    "การสมัครหรือสอบถามไม่หมายถึงเปิดบัญชี ทำสัญญา หรือชำระแล้ว รายการที่วางแผนหรือยังไม่เปิดยังใช้งานไม่ได้",
+    "Đăng ký hay hỏi không đồng nghĩa tài khoản đã mở, hợp đồng đã lập hoặc thanh toán xong. Mục dự kiến hoặc chưa mở hiện chưa thể đăng nhập dùng."
+  ],
+  "請以合法方式使用網站，尊重內容及品牌權利，不得冒用身分、干擾服務或提交未經授權的資料。": [
+    "请合法使用网站，尊重内容和品牌权利，不得冒用身份、干扰服务或提交未经授权的数据。",
+    "Use the site lawfully and respect content and brand rights. Do not impersonate others, disrupt services or submit unauthorized data.",
+    "法令に従い、コンテンツとブランドの権利を尊重してください。なりすまし、妨害、無許可データの提出は禁止します。",
+    "사이트를 적법하게 이용하고 콘텐츠와 브랜드 권리를 존중하세요. 사칭, 서비스 방해, 무단 데이터 제출을 금지합니다.",
+    "ใช้เว็บไซต์อย่างถูกกฎหมาย เคารพสิทธิ์เนื้อหาและแบรนด์ ห้ามแอบอ้าง รบกวนบริการ หรือส่งข้อมูลที่ไม่ได้รับอนุญาต",
+    "Dùng trang hợp pháp, tôn trọng quyền nội dung và thương hiệu. Không mạo danh, gián đoạn dịch vụ hay gửi dữ liệu chưa được phép."
+  ],
+  "本站提供外部連結以方便使用。攤點通、Google 表單與其他外部網站使用各自的條款與資料處理規則。": [
+    "本站提供外部链接方便使用。摊点通、Google 表单和其他外部网站适用各自的条款和数据处理规则。",
+    "External links are provided for convenience. StallOrder, Google Forms and other sites use their own terms and data-handling rules.",
+    "利便性のため外部リンクを提供します。StallOrder、Googleフォームなどは独自の利用条件とデータ取扱規則を適用します。",
+    "편의를 위해 외부 링크를 제공합니다. StallOrder, Google 설문지 등은 각자의 약관과 데이터 처리 규칙을 적용합니다.",
+    "ลิงก์ภายนอกมีไว้เพื่อความสะดวก StallOrder, Google Forms และเว็บอื่นใช้เงื่อนไขและกฎข้อมูลของตน",
+    "Liên kết ngoài giúp sử dụng thuận tiện. StallOrder, Google Forms và trang khác áp dụng điều khoản, quy tắc dữ liệu riêng."
+  ],
+  "商家服務說明": [
+    "商家服务说明",
+    "Merchant service information",
+    "店舗向けサービス案内",
+    "사업자 서비스 안내",
+    "ข้อมูลบริการร้านค้า",
+    "Thông tin dịch vụ cửa hàng"
+  ],
+  "申請前，確認餐飲門市的需求與費用。": [
+    "申请前，确认餐饮门店的需求和费用。",
+    "Confirm your restaurant's needs and costs before applying.",
+    "申し込み前に飲食店の要望と費用をご確認ください。",
+    "신청 전에 음식점의 요구와 비용을 확인하세요.",
+    "ยืนยันความต้องการร้านอาหารและค่าใช้จ่ายก่อนสมัคร",
+    "Xác nhận nhu cầu, chi phí của cửa hàng trước khi đăng ký."
+  ],
+  "攤點通提供餐飲點餐服務。商家申請使用攤點通的 Google 表單，既有商家請使用 app.qidaigo.com 登入。": [
+    "摊点通提供餐饮点餐服务。商家通过摊点通 Google 表单申请，现有商家请使用 app.qidaigo.com 登录。",
+    "StallOrder provides restaurant ordering. Apply through its Google Form; existing merchants sign in at app.qidaigo.com.",
+    "StallOrderは飲食店の注文サービスです。Googleフォームで申請し、既存店舗はapp.qidaigo.comからログインします。",
+    "StallOrder는 음식점 주문 서비스를 제공합니다. Google 설문지로 신청하고 기존 사업자는 app.qidaigo.com에서 로그인하세요.",
+    "StallOrder ให้บริการสั่งอาหาร สมัครผ่าน Google Form ของบริการ ร้านค้าเดิมเข้าสู่ app.qidaigo.com",
+    "StallOrder cung cấp gọi món nhà hàng. Đăng ký qua Google Form; cửa hàng hiện có đăng nhập tại app.qidaigo.com."
+  ],
+  "公開訂單費用為每筆成功訂單 NT$1，月租 NT$0，每月訂單費用上限 NT$1,499。設備、金流與其他第三方費用另計；實際訂單認定及帳單以攤點通方案與商家合約為準。": [
+    "公开费用为每笔成功订单 NT$1，月租 NT$0，每月订单费上限 NT$1,499。设备、支付和其他第三方费用另计；订单认定和账单以摊点通方案及商家合约为准。",
+    "The public plan is NT$1 per successful order, NT$0 monthly subscription, capped at NT$1,499 in monthly order fees. Hardware, payment and third-party fees are separate. Order eligibility and billing follow StallOrder's plan and merchant contract.",
+    "公開プランは成立注文1件NT$1、月額基本料NT$0、月間注文料金上限NT$1,499です。機器、決済、外部費用は別途。注文判定と請求はStallOrderのプランと店舗契約に従います。",
+    "공개 요금은 성공 주문당 NT$1, 월 이용료 NT$0, 월 주문 요금 상한 NT$1,499입니다. 장비, 결제, 외부 비용은 별도이며 주문 인정과 청구는 StallOrder 요금제와 계약에 따릅니다.",
+    "ราคาออร์เดอร์สำเร็จละ NT$1 ค่ารายเดือน NT$0 เพดานค่าออร์เดอร์เดือนละ NT$1,499 อุปกรณ์ ชำระเงิน และค่าภายนอกแยกต่างหาก การนับและบิลตามแผนกับสัญญา StallOrder",
+    "Gói công khai NT$1/đơn thành công, thuê tháng NT$0, trần phí đơn NT$1,499/tháng. Thiết bị, thanh toán, bên thứ ba tính riêng. Đơn đủ điều kiện và hóa đơn theo gói, hợp đồng StallOrder."
+  ],
+  "出單設備、金流及外送串接需依個別相容性、供應商審核與開通狀態確認。申請不會直接啟用扣款。": [
+    "出单设备、支付和外送集成按兼容性、供应商审核和开通状态确认。申请不会直接启用扣款。",
+    "Printers, payments and delivery integrations depend on compatibility, provider approval and activation. Applying does not enable charges.",
+    "伝票機器、決済、配達連携は互換性、各社の審査、提供状況によります。申請だけでは課金を開始しません。",
+    "출력 장비, 결제, 배달 연동은 호환성, 공급자 심사, 개통 상태에 따릅니다. 신청만으로 과금되지 않습니다.",
+    "เครื่องพิมพ์ การชำระเงิน และจัดส่งขึ้นกับความเข้ากันได้ การอนุมัติ และสถานะเปิดใช้ การสมัครไม่เปิดหักเงินทันที",
+    "Thiết bị in, thanh toán, giao hàng tùy tương thích, xét duyệt và kích hoạt. Đăng ký không tự bật thu phí."
+  ],
+  "合作夥伴服務說明": [
+    "合作伙伴服务说明",
+    "Partner service information",
+    "パートナーサービス案内",
+    "파트너 서비스 안내",
+    "ข้อมูลบริการพันธมิตร",
+    "Thông tin dịch vụ đối tác"
+  ],
+  "先確認合作範圍，再安排平台使用。": [
+    "先确认合作范围，再安排平台使用。",
+    "Agree on partnership scope before arranging platform access.",
+    "協業範囲を確認してから、基盤の利用を調整します。",
+    "협력 범위를 확인한 후 플랫폼 이용을 준비합니다.",
+    "ตกลงขอบเขตความร่วมมือก่อนจัดการใช้แพลตฟอร์ม",
+    "Thống nhất phạm vi hợp tác trước khi bố trí sử dụng nền tảng."
+  ],
+  "合作夥伴平台尚未開放登入。合作模式、品牌授權、客戶服務範圍與費用需另行確認。": [
+    "合作伙伴平台尚未开放登录。合作模式、品牌授权、客户服务范围和费用需另行确认。",
+    "Partner sign-in is not open. Partnership models, branding rights, customer service scope and fees require separate agreement.",
+    "パートナーログインは未公開です。協業方式、ブランド権限、顧客サービス範囲、料金は別途確認します。",
+    "파트너 로그인은 아직 제공되지 않습니다. 협력 방식, 브랜드 권한, 고객 서비스 범위, 비용은 별도 확인이 필요합니다.",
+    "ยังไม่เปิดเข้าสู่แพลตฟอร์มพันธมิตร รูปแบบร่วมมือ สิทธิ์แบรนด์ ขอบเขตลูกค้า และราคาต้องตกลงแยก",
+    "Chưa mở đăng nhập đối tác. Mô hình hợp tác, quyền thương hiệu, phạm vi phục vụ khách và phí cần xác nhận riêng."
+  ],
+  "不得提交未經授權的客戶資料，或執行未經同意的檢測與寄送。分潤與自動結算目前未開放。": [
+    "不得提交未经授权的客户数据，或执行未经同意的检测和发送。分成与自动结算目前未开放。",
+    "Do not submit unauthorized customer data or perform unapproved tests or messaging. Revenue sharing and automatic settlement are not available.",
+    "無許可の顧客データ提出、検査、送信は禁止します。収益分配と自動精算は未提供です。",
+    "무단 고객 데이터 제출, 미승인 점검 및 발송을 금지합니다. 수익 배분과 자동 정산은 아직 제공되지 않습니다.",
+    "ห้ามส่งข้อมูลลูกค้าที่ไม่มีสิทธิ์ หรือทดสอบและส่งข้อความโดยไม่ได้รับอนุญาต การแบ่งรายได้และชำระบัญชีอัตโนมัติยังไม่เปิด",
+    "Không gửi dữ liệu khách trái phép hoặc kiểm tra, nhắn tin chưa được chấp thuận. Chia doanh thu và quyết toán tự động chưa mở."
+  ],
+  "產品入口清楚，服務範圍透明。": [
+    "产品入口清楚，服务范围透明。",
+    "Clear product access and transparent service scope.",
+    "製品の入口を明確に、サービス範囲を透明に。",
+    "명확한 제품 입구와 투명한 서비스 범위.",
+    "ทางเข้าผลิตภัณฑ์ชัดเจน ขอบเขตบริการโปร่งใส",
+    "Truy cập sản phẩm rõ ràng, phạm vi dịch vụ minh bạch."
+  ],
+  "官網使用 HTTPS，系統登入直接前往對應產品的正式入口。請核對網址後再輸入帳號資料。": [
+    "官网使用 HTTPS，系统登录直接前往对应产品的正式入口。请核对网址后再输入账号信息。",
+    "The website uses HTTPS and sends sign-ins directly to each product's official portal. Check the address before entering account details.",
+    "サイトはHTTPSを使用し、ログインは各製品の正式入口へ移動します。アカウント情報の入力前にURLをご確認ください。",
+    "사이트는 HTTPS를 사용하며 각 제품 공식 입구로 로그인 연결합니다. 계정 정보를 입력하기 전에 주소를 확인하세요.",
+    "เว็บไซต์ใช้ HTTPS และส่งไปยังทางเข้าทางการของผลิตภัณฑ์ ตรวจ URL ก่อนกรอกข้อมูลบัญชี",
+    "Website dùng HTTPS, chuyển đăng nhập đến cổng chính thức của từng sản phẩm. Kiểm tra địa chỉ trước khi nhập thông tin tài khoản."
+  ],
+  "官網不公開客戶檢測原始檔、未發布報告或平台工作台。資安服務僅處理取得授權的資產與範圍。": [
+    "官网不公开客户检测原始文件、未发布报告或平台工作台。安全服务仅处理获得授权的资产和范围。",
+    "The public site does not expose raw customer assessment files, unpublished reports or platform workspaces. Security services cover authorized assets and scope only.",
+    "顧客検査の原ファイル、未公開報告、ワークスペースは公式サイトで公開しません。セキュリティサービスは許可された資産と範囲のみを対象にします。",
+    "공식 사이트는 고객 원시 점검 파일, 미공개 보고서, 플랫폼 작업 공간을 공개하지 않습니다. 보안 서비스는 승인된 자산과 범위만 다룹니다.",
+    "เว็บไม่เผยแพร่ไฟล์ตรวจดิบลูกค้า รายงานที่ยังไม่เผยแพร่ หรือพื้นที่ระบบ บริการความปลอดภัยครอบคลุมเฉพาะสินทรัพย์และขอบเขตที่อนุญาต",
+    "Trang công khai không lộ tệp kiểm tra gốc, báo cáo chưa công bố hay không gian nền tảng. Bảo mật chỉ xử lý tài sản, phạm vi được phép."
+  ],
+  "檢測、資料保存、服務提供者及交付方式，應於服務開始前確認。公開說明不代表已取得資安認證。": [
+    "检测、数据保存、服务提供者及交付方式，应于服务开始前确认。公开说明不代表已获得安全认证。",
+    "Agree on testing, retention, providers and delivery before service starts. Public descriptions do not imply security certification.",
+    "サービス開始前に検査、保存、提供者、納品方法を確認します。公開説明は認証取得を意味しません。",
+    "서비스 시작 전에 점검, 데이터 보관, 제공자, 제공 방식을 확인합니다. 공개 안내가 보안 인증 취득을 의미하지는 않습니다.",
+    "ยืนยันการตรวจ การเก็บข้อมูล ผู้ให้บริการ และวิธีส่งมอบก่อนเริ่ม คำอธิบายสาธารณะไม่ได้หมายถึงได้รับการรับรอง",
+    "Xác nhận kiểm tra, lưu dữ liệu, nhà cung cấp và bàn giao trước khi bắt đầu. Mô tả công khai không có nghĩa đã được chứng nhận bảo mật."
+  ],
+  "若發現網站問題或需要資料處理說明，請聯絡 ada76145@gmail.com，避免在郵件中提供敏感原始證據。": [
+    "若发现网站问题或需要数据处理说明，请联系 ada76145@gmail.com，避免在邮件提供敏感原始证据。",
+    "For website issues or data-handling information, email ada76145@gmail.com. Avoid sending sensitive raw evidence.",
+    "サイトの問題やデータ取扱いの説明はada76145@gmail.comへご連絡ください。機密の原証拠は送らないでください。",
+    "사이트 문제나 데이터 처리 안내는 ada76145@gmail.com으로 문의하세요. 민감한 원시 근거는 메일로 보내지 마세요.",
+    "หากพบปัญหาเว็บหรือต้องการคำอธิบายข้อมูล ติดต่อ ada76145@gmail.com หลีกเลี่ยงส่งหลักฐานดิบที่อ่อนไหว",
+    "Về lỗi website hoặc xử lý dữ liệu, gửi tới ada76145@gmail.com. Tránh gửi bằng chứng gốc nhạy cảm."
+  ],
+  "資源中心": [
+    "资源中心",
+    "Resources",
+    "リソース",
+    "자료실",
+    "แหล่งข้อมูล",
+    "Tài nguyên"
+  ],
+  "快速找到產品功能、費用與服務資訊。": [
+    "快速找到产品功能、费用和服务信息。",
+    "Find product features, pricing and service information.",
+    "機能、料金、サービス情報をすぐに確認。",
+    "제품 기능, 요금, 서비스 정보를 빠르게 찾으세요.",
+    "ค้นหาฟังก์ชัน ราคา และข้อมูลบริการได้รวดเร็ว",
+    "Tìm nhanh tính năng, giá và thông tin dịch vụ."
+  ],
+  "產品功能與計費可在攤點通官網確認；企業資安服務內容與年度規劃可由下方入口查看。": [
+    "产品功能和计费可在摊点通官网确认；企业安全服务内容和年度规划可通过下方入口查看。",
+    "Check StallOrder's website for features and pricing. Explore security services and annual planning through the links below.",
+    "機能と料金はStallOrder公式サイトへ。企業セキュリティと年間計画は下記リンクをご覧ください。",
+    "기능과 요금은 StallOrder 공식 사이트에서 확인하세요. 보안 서비스와 연간 계획은 아래 링크로 확인할 수 있습니다.",
+    "ดูฟังก์ชันและราคาที่เว็บ StallOrder บริการความปลอดภัยและแผนรายปีดูจากลิงก์ด้านล่าง",
+    "Xem tính năng, giá tại website StallOrder. Dịch vụ bảo mật và kế hoạch năm có ở liên kết dưới."
+  ],
+  "點數與課程方案": [
+    "点数和课程方案",
+    "Credits and course plans",
+    "クレジット・講座プラン",
+    "크레딧 및 교육 요금제",
+    "เครดิตและแพ็กเกจหลักสูตร",
+    "Gói tín dụng và khóa học"
+  ],
+  "平台準備中，目前未開放線上購買。": [
+    "平台准备中，目前未开放在线购买。",
+    "The platform is in preparation. Online purchasing is not open.",
+    "基盤は準備中です。オンライン購入は未公開です。",
+    "플랫폼 준비 중이며 온라인 구매는 아직 제공되지 않습니다.",
+    "แพลตฟอร์มอยู่ระหว่างเตรียม ยังซื้อออนไลน์ไม่ได้",
+    "Nền tảng đang chuẩn bị, chưa mở mua trực tuyến."
+  ],
+  "社交工程與教育訓練的費率、授權期限及使用條件，將於正式服務開放前確認。目前可先洽詢企業需求。": [
+    "社会工程和教育培训的费率、授权期限及使用条件，将在正式开放前确认。当前可先咨询企业需求。",
+    "Simulation and training rates, license periods and usage terms will be confirmed before launch. Contact us about your business needs.",
+    "演習と研修の料金、権限期間、利用条件は正式公開前に確認します。企業のご要望はご相談いただけます。",
+    "모의훈련과 교육의 요율, 라이선스 기간, 이용 조건은 정식 개방 전에 확인합니다. 기업 요구는 먼저 문의할 수 있습니다.",
+    "ราคา ระยะสิทธิ์ และเงื่อนไขการฝึกจำลองกับอบรมจะยืนยันก่อนเปิดจริง สอบถามความต้องการองค์กรก่อนได้",
+    "Giá diễn tập, đào tạo, thời hạn quyền và điều kiện dùng sẽ xác nhận trước khi mở. Có thể hỏi trước nhu cầu doanh nghiệp."
+  ],
+  "點數與課程政策": [
+    "点数和课程政策",
+    "Credits and course policy",
+    "クレジット・講座ポリシー",
+    "크레딧 및 과정 정책",
+    "นโยบายเครดิตและหลักสูตร",
+    "Chính sách tín dụng và khóa học"
+  ],
+  "正式單價、效期、退款與課程授權政策，會在服務開放時提供，並於使用前確認。": [
+    "正式单价、有效期、退款和课程授权政策，会在服务开放时提供，并于使用前确认。",
+    "Official pricing, validity, refund and course-license policies will be provided at launch and confirmed before use.",
+    "正式価格、有効期間、返金、講座権限の方針は公開時に提供し、利用前に確認します。",
+    "정식 단가, 유효 기간, 환불, 과정 라이선스 정책은 서비스 개방 시 제공하고 이용 전에 확인합니다.",
+    "ราคา อายุสิทธิ์ การคืนเงิน และนโยบายหลักสูตรจะมีเมื่อเปิดบริการ และยืนยันก่อนใช้",
+    "Giá chính thức, hiệu lực, hoàn tiền và giấy phép khóa học được cung cấp khi mở, xác nhận trước sử dụng."
+  ],
+  "可接受使用政策": [
+    "可接受使用政策",
+    "Acceptable use policy",
+    "適正利用ポリシー",
+    "허용 사용 정책",
+    "นโยบายการใช้งานที่ยอมรับได้",
+    "Chính sách sử dụng chấp nhận được"
+  ],
+  "只在明確授權的範圍內提供服務。": [
+    "仅在明确授权的范围提供服务。",
+    "Services are limited to explicitly authorized scope.",
+    "明確に許可された範囲でのみ提供します。",
+    "명확하게 승인된 범위에서만 제공합니다.",
+    "ให้บริการเฉพาะขอบเขตที่อนุญาตชัดเจน",
+    "Chỉ cung cấp trong phạm vi được ủy quyền rõ ràng."
+  ],
+  "資安檢測與演練需取得資產或企業管理者授權，事先確認範圍、時段與停止條件。未經許可不得測試、寄送訊息或匯入資料。": [
+    "安全检测和演练需取得资产或企业管理者授权，事先确认范围、时段和停止条件。未经许可不得测试、发送消息或导入数据。",
+    "Assessments and simulations require authorization from the asset or organization administrator, with scope, timing and stop conditions agreed in advance. No testing, messaging or data intake without permission.",
+    "検査と演習は資産・企業管理者の許可が必要です。範囲、時間、停止条件を事前に確認し、無許可のテスト、送信、取込は行いません。",
+    "보안 점검과 모의훈련은 자산 또는 기업 관리자의 승인이 필요하며 범위, 시간, 중단 조건을 미리 확인합니다. 허가 없이 테스트, 발송, 데이터 반입을 하지 않습니다.",
+    "การตรวจและฝึกจำลองต้องมีสิทธิ์จากผู้ดูแลสินทรัพย์หรือองค์กร ตกลงขอบเขต เวลา และเงื่อนไขหยุดก่อน ห้ามทดสอบ ส่งข้อความ หรือนำเข้าข้อมูลโดยไม่ได้รับอนุญาต",
+    "Đánh giá và diễn tập cần quản trị tài sản hoặc tổ chức ủy quyền, thống nhất phạm vi, giờ và điều kiện dừng trước. Không kiểm tra, gửi tin hay nhập dữ liệu khi chưa được phép."
+  ],
+  "演練不收集真實密碼，教材與範例不代表真實客戶結果。": [
+    "演练不收集真实密码，教材和示例不代表真实客户结果。",
+    "Simulations do not collect real passwords. Materials and examples do not represent actual customer results.",
+    "演習は実際のパスワードを収集しません。教材と例は実顧客の結果ではありません。",
+    "모의훈련은 실제 비밀번호를 수집하지 않습니다. 교재와 예시는 실제 고객 결과가 아닙니다.",
+    "การฝึกไม่เก็บรหัสผ่านจริง สื่อและตัวอย่างไม่ใช่ผลลูกค้าจริง",
+    "Diễn tập không thu mật khẩu thật. Tài liệu và ví dụ không đại diện kết quả khách hàng thực tế."
+  ],
+  "資料處理說明": [
+    "数据处理说明",
+    "Data-handling information",
+    "データ取扱いの説明",
+    "데이터 처리 안내",
+    "คำชี้แจงการจัดการข้อมูล",
+    "Thông tin xử lý dữ liệu"
+  ],
+  "啟用服務前，確認資料用途與處理方式。": [
+    "启用服务前，确认数据用途与处理方式。",
+    "Agree on data purpose and handling before activation.",
+    "利用開始前にデータの目的と処理方法を確認します。",
+    "서비스 활성화 전에 데이터 용도와 처리 방식을 확인하세요.",
+    "ยืนยันวัตถุประสงค์และวิธีจัดการข้อมูลก่อนเปิดใช้",
+    "Xác nhận mục đích và cách xử lý dữ liệu trước kích hoạt."
+  ],
+  "服務資料的類別、用途、存取人員、保存期限、刪除方式及外部提供者，依服務範圍與有效合約確認。": [
+    "服务数据的类别、用途、访问人员、保存期限、删除方式和外部提供者，依服务范围和有效合约确认。",
+    "Data categories, purposes, authorized personnel, retention, deletion and external providers are agreed within service scope and valid contracts.",
+    "データ種別、目的、アクセス担当、保存期間、削除方法、外部提供者はサービス範囲と有効な契約で確認します。",
+    "데이터 종류, 용도, 접근 담당자, 보관 기간, 삭제 방식, 외부 제공자는 서비스 범위와 유효 계약에 따라 확인합니다.",
+    "ชนิดข้อมูล วัตถุประสงค์ ผู้เข้าถึง ระยะเก็บ วิธีลบ และผู้ให้บริการภายนอกตกลงตามขอบเขตและสัญญา",
+    "Loại dữ liệu, mục đích, người truy cập, thời hạn lưu, cách xóa và nhà cung cấp ngoài được xác nhận theo phạm vi, hợp đồng."
+  ],
+  "如有指定資料地域或特殊保密需求，請在提供資料前與服務團隊確認。官網聯絡表單不適合傳送原始檢測檔或敏感附件。": [
+    "如有指定数据地域或特殊保密需求，请在提供数据前与服务团队确认。官网联系表单不适合传送原始检测文件或敏感附件。",
+    "If you need specific data residency or confidentiality, agree with our team before sharing data. The website contact form is not suitable for raw assessment files or sensitive attachments.",
+    "データ所在や特別な機密条件がある場合、共有前にご相談ください。公式サイトフォームは検査原ファイルや機密添付の送信には適しません。",
+    "특정 데이터 지역이나 특별 기밀 요구가 있으면 제공 전에 팀과 확인하세요. 공식 사이트 문의 양식은 원시 점검 파일이나 민감한 첨부 전송에 적합하지 않습니다.",
+    "หากต้องกำหนดภูมิภาคข้อมูลหรือมีเงื่อนไขลับพิเศษ โปรดยืนยันกับทีมก่อนส่ง แบบฟอร์มเว็บไม่เหมาะส่งไฟล์ตรวจดิบหรือเอกสารอ่อนไหว",
+    "Nếu cần nơi lưu dữ liệu cụ thể hay bảo mật đặc biệt, xác nhận trước khi chia sẻ. Biểu mẫu liên hệ không phù hợp gửi tệp kiểm tra gốc hoặc đính kèm nhạy cảm."
+  ],
+  "網站使用與無障礙": [
+    "网站使用与无障碍",
+    "Using this site and accessibility",
+    "サイト利用とアクセシビリティ",
+    "웹사이트 사용 및 접근성",
+    "การใช้เว็บไซต์และการเข้าถึง",
+    "Sử dụng website và khả năng tiếp cận"
+  ],
+  "讓不同裝置與使用方式，都能找到所需資訊。": [
+    "让不同设备和使用方式都能找到所需信息。",
+    "Find what you need across devices and ways of browsing.",
+    "さまざまな端末や操作方法で必要な情報へ。",
+    "다양한 기기와 사용 방식으로 필요한 정보를 찾으세요.",
+    "ค้นหาข้อมูลที่ต้องการด้วยอุปกรณ์และวิธีใช้ต่างๆ",
+    "Tìm thông tin cần thiết trên nhiều thiết bị và cách duyệt."
+  ],
+  "網站支援鍵盤導覽、跳至主要內容、手機選單與手動語言切換。首次造訪依瀏覽器語言選擇，已選定的語言網址可直接分享。": [
+    "网站支持键盘导航、跳至主要内容、手机菜单和手动语言切换。首次访问按浏览器语言选择，选定语言的网址可直接分享。",
+    "The site supports keyboard navigation, skip-to-content, mobile menus and manual language selection. Your first visit follows browser language; localized URLs can be shared directly.",
+    "キーボード操作、本文へのスキップ、モバイルメニュー、手動言語選択に対応します。初回はブラウザ言語で選び、言語別URLを共有できます。",
+    "키보드 탐색, 본문 건너뛰기, 모바일 메뉴, 수동 언어 선택을 지원합니다. 첫 방문은 브라우저 언어를 따르며 언어별 URL을 공유할 수 있습니다.",
+    "รองรับคีย์บอร์ด ข้ามไปเนื้อหา เมนูมือถือ และเลือกภาษา ครั้งแรกเลือกตามเบราว์เซอร์ และแชร์ URL ภาษาที่เลือกได้",
+    "Hỗ trợ bàn phím, bỏ qua tới nội dung, menu di động và chọn ngôn ngữ. Lần đầu theo ngôn ngữ trình duyệt; chia sẻ trực tiếp URL đã chọn."
+  ],
+  "支援繁體中文、簡體中文、英文、日文、韓文、泰文與越南文。裝置要求減少動態效果時，網站會減少介面轉場。": [
+    "支持繁体中文、简体中文、英文、日文、韩文、泰文和越南文。设备要求减少动态效果时，网站会减少界面过渡。",
+    "Available in Traditional Chinese, Simplified Chinese, English, Japanese, Korean, Thai and Vietnamese. Interface transitions are reduced when your device requests reduced motion.",
+    "繁体字、簡体字、英語、日本語、韓国語、タイ語、ベトナム語に対応します。端末で動きを減らす設定の場合、画面の動きを抑えます。",
+    "번체·간체 중국어, 영어, 일본어, 한국어, 태국어, 베트남어를 지원합니다. 기기의 동작 줄이기 설정에 따라 전환 효과를 줄입니다.",
+    "รองรับจีนตัวเต็ม จีนตัวย่อ อังกฤษ ญี่ปุ่น เกาหลี ไทย และเวียดนาม ลดการเปลี่ยนภาพเมื่ออุปกรณ์ตั้งค่าให้ลดการเคลื่อนไหว",
+    "Hỗ trợ Hoa phồn thể, Hoa giản thể, Anh, Nhật, Hàn, Thái, Việt. Giảm hiệu ứng chuyển khi thiết bị yêu cầu giảm chuyển động."
+  ],
+  "如遇到操作障礙、翻譯問題或版面錯誤，請提供頁面網址與使用裝置，聯絡 ada76145@gmail.com 協助改善。": [
+    "如遇操作障碍、翻译问题或布局错误，请提供页面网址和使用设备，联系 ada76145@gmail.com 协助改进。",
+    "For navigation, translation or layout issues, email ada76145@gmail.com with the page URL and device so we can improve it.",
+    "操作、翻訳、表示の問題は、URLと端末情報を添えてada76145@gmail.comへお知らせください。",
+    "조작, 번역, 레이아웃 문제가 있으면 페이지 URL과 기기 정보를 ada76145@gmail.com으로 알려주세요.",
+    "หากมีปัญหาการใช้ แปลภาษา หรือหน้าจอ โปรดแจ้ง URL และอุปกรณ์ถึง ada76145@gmail.com เพื่อปรับปรุง",
+    "Nếu gặp khó khăn thao tác, lỗi dịch hay bố cục, gửi URL và thiết bị tới ada76145@gmail.com để cải thiện."
+  ],
+  "專為餐飲門市與攤商打造": [
+    "专为餐饮门店与摊位打造",
+    "Built for restaurants and food stalls",
+    "飲食店と屋台のために",
+    "음식점과 노점을 위해",
+    "สร้างเพื่อร้านอาหารและแผงค้า",
+    "Dành cho nhà hàng và quầy ăn"
+  ],
+  "認識攤點通，": [
+    "认识摊点通，",
+    "Meet StallOrder,",
+    "StallOrderを知って、",
+    "StallOrder에서",
+    "รู้จัก StallOrder",
+    "Tìm hiểu StallOrder,"
+  ],
+  "找到適合店裡的點餐方式。": [
+    "找到适合店里的点餐方式。",
+    "find ordering that fits your store.",
+    "お店に合う注文方法を。",
+    "매장에 맞는 주문 방식을 찾으세요.",
+    "หาวิธีสั่งอาหารที่เหมาะกับร้าน",
+    "tìm cách gọi món phù hợp cửa hàng."
+  ],
+  "從線上菜單、QR 點餐到 POS 與廚房出單，前往攤點通官網了解完整功能、費用及導入流程。": [
+    "从在线菜单、QR 点餐到 POS 与厨房出单，前往摊点通官网了解完整功能、费用和导入流程。",
+    "From online menus and QR ordering to POS and kitchen tickets, visit StallOrder for full features, pricing and onboarding.",
+    "オンラインメニュー、QR注文、POS、厨房伝票まで。機能、料金、導入の詳細はStallOrder公式サイトをご覧ください。",
+    "온라인 메뉴, QR 주문, POS, 주방 전표까지 전체 기능, 요금, 도입 절차를 StallOrder 공식 사이트에서 확인하세요.",
+    "ตั้งแต่เมนูออนไลน์ QR สั่งอาหาร ถึง POS และใบรายการครัว ดูฟังก์ชัน ราคา และขั้นตอนเริ่มใช้ครบที่เว็บ StallOrder",
+    "Từ thực đơn trực tuyến, QR đến POS và phiếu bếp, xem đầy đủ tính năng, phí, quy trình tại website StallOrder."
+  ],
+  "qidaigo.com · 攤點通官方網站": [
+    "qidaigo.com · 摊点通官方网站",
+    "qidaigo.com · Official StallOrder website",
+    "qidaigo.com · StallOrder公式サイト",
+    "qidaigo.com · StallOrder 공식 사이트",
+    "qidaigo.com · เว็บไซต์ทางการ StallOrder",
+    "qidaigo.com · Website chính thức StallOrder"
+  ],
+  "前往 Google 表單，留下門市需求。": [
+    "前往 Google 表单，填写门店需求。",
+    "Share your store's needs in Google Forms.",
+    "Googleフォームで店舗のご要望を送信。",
+    "Google 설문지에서 매장 요구를 작성하세요.",
+    "แจ้งความต้องการร้านผ่าน Google Forms",
+    "Điền nhu cầu cửa hàng qua Google Forms."
+  ],
+  "已有帳號，直接進入攤點通。": [
+    "已有账号，直接进入摊点通。",
+    "Already have an account? Go to StallOrder.",
+    "アカウントをお持ちの方はStallOrderへ。",
+    "계정이 있다면 StallOrder로 바로 이동하세요.",
+    "มีบัญชีแล้ว เข้า StallOrder ได้เลย",
+    "Đã có tài khoản? Vào thẳng StallOrder."
+  ],
+  "這些入口會前往攤點通或 Google 表單；申請與登入由對應服務處理。": [
+    "这些入口前往摊点通或 Google 表单；申请和登录由对应服务处理。",
+    "These links open StallOrder or Google Forms. Applications and sign-in are handled by those services.",
+    "各リンクはStallOrderまたはGoogleフォームへ進み、申請・ログインは各サービスが処理します。",
+    "이 링크는 StallOrder 또는 Google 설문지로 이동하며 신청과 로그인은 해당 서비스에서 처리합니다.",
+    "ลิงก์เหล่านี้ไป StallOrder หรือ Google Forms การสมัครและเข้าสู่ระบบดำเนินการโดยบริการนั้น",
+    "Các liên kết mở StallOrder hoặc Google Forms; đăng ký và đăng nhập do dịch vụ tương ứng xử lý."
+  ],
+  "攤點通官方網站": [
+    "摊点通官方网站",
+    "StallOrder official website",
+    "StallOrder公式サイト",
+    "StallOrder 공식 사이트",
+    "เว็บไซต์ทางการ StallOrder",
+    "Website chính thức StallOrder"
+  ],
+  "年度整合方案": [
+    "年度整合方案",
+    "Annual security program",
+    "年間統合プラン",
+    "연간 통합 프로그램",
+    "แผนความปลอดภัยรายปี",
+    "Chương trình bảo mật hằng năm"
+  ],
+  "此頁面暫時無法載入": [
+    "此页面暂时无法加载",
+    "This page could not be loaded",
+    "ページを読み込めませんでした",
+    "페이지를 불러올 수 없습니다",
+    "ไม่สามารถโหลดหน้านี้ได้",
+    "Chưa thể tải trang này"
+  ],
+  "請稍後重試，或透過聯絡信箱告訴我們。": [
+    "请稍后重试，或通过联系邮箱告知我们。",
+    "Try again later or email us for help.",
+    "後でもう一度お試しいただくか、メールでお知らせください。",
+    "나중에 다시 시도하거나 이메일로 알려주세요.",
+    "ลองใหม่ภายหลังหรือติดต่อทางอีเมล",
+    "Hãy thử lại sau hoặc gửi email cho chúng tôi."
+  ],
+  "重新載入": [
+    "重新加载",
+    "Reload",
+    "再読み込み",
+    "다시 로드",
+    "โหลดใหม่",
+    "Tải lại"
+  ],
+  "找不到此頁面": [
+    "找不到此页面",
+    "Page not found",
+    "ページが見つかりません",
+    "페이지를 찾을 수 없습니다",
+    "ไม่พบหน้านี้",
+    "Không tìm thấy trang"
+  ],
+  "網址可能已變更，或此部署不提供這個入口。": [
+    "网址可能已变更，或此站点不提供此入口。",
+    "The address may have changed, or this site does not provide that page.",
+    "URLが変更されたか、このサイトでは提供していないページです。",
+    "주소가 변경되었거나 이 사이트에서 제공하지 않는 페이지입니다.",
+    "ที่อยู่อาจเปลี่ยนหรือเว็บไซต์นี้ไม่มีหน้านั้น",
+    "Địa chỉ có thể đã đổi hoặc trang này không cung cấp lối truy cập đó."
+  ],
+  "返回首頁": [
+    "返回首页",
+    "Back to home",
+    "ホームへ戻る",
+    "홈으로 돌아가기",
+    "กลับหน้าแรก",
+    "Về trang chủ"
+  ],
+  "正在載入頁面…": [
+    "正在加载页面…",
+    "Loading page…",
+    "ページを読み込み中…",
+    "페이지 로딩 중…",
+    "กำลังโหลดหน้า…",
+    "Đang tải trang…"
+  ],
+  "網站語言": [
+    "网站语言",
+    "Website language",
+    "サイトの言語",
+    "웹사이트 언어",
+    "ภาษาเว็บไซต์",
+    "Ngôn ngữ website"
+  ],
+  "跳至主要內容": [
+    "跳至主要内容",
+    "Skip to main content",
+    "本文へスキップ",
+    "본문으로 건너뛰기",
+    "ข้ามไปเนื้อหาหลัก",
+    "Chuyển tới nội dung chính"
+  ],
+  "課程目錄準備中": [
+    "课程目录准备中",
+    "Course catalog in preparation",
+    "講座一覧を準備中",
+    "과정 목록 준비 중",
+    "กำลังเตรียมรายการหลักสูตร",
+    "Danh mục khóa học đang chuẩn bị"
+  ],
+  "選擇你的系統": [
+    "选择你的系统",
+    "Choose your system",
+    "ご利用のシステムを選択",
+    "사용할 시스템 선택",
+    "เลือกระบบของคุณ",
+    "Chọn hệ thống của bạn"
+  ],
+  "課程將於教材與授權確認後開放。": [
+    "课程将在教材和授权确认后开放。",
+    "Courses will open after materials and licensing are approved.",
+    "教材とライセンスの確認後に講座を公開します。",
+    "교재와 라이선스 확인 후 과정을 공개합니다.",
+    "หลักสูตรจะเปิดหลังยืนยันสื่อและสิทธิ์",
+    "Khóa học mở sau khi xác nhận tài liệu và giấy phép."
+  ],
+  "各系統使用各自的帳號與登入頁面，請選擇你正在使用的產品。": [
+    "各系统使用各自账号和登录页面，请选择正在使用的产品。",
+    "Each system has its own accounts and sign-in page. Select the product you use.",
+    "各システムには個別のアカウントとログインページがあります。ご利用の製品を選んでください。",
+    "각 시스템은 자체 계정과 로그인 페이지를 사용합니다. 사용 중인 제품을 선택하세요.",
+    "แต่ละระบบมีบัญชีและหน้าเข้าสู่ระบบของตน โปรดเลือกผลิตภัณฑ์ที่ใช้",
+    "Mỗi hệ thống có tài khoản và trang đăng nhập riêng. Chọn sản phẩm bạn đang dùng."
+  ],
+  "了解產品與服務": [
+    "了解产品和服务",
+    "Explore products and services",
+    "製品・サービスを見る",
+    "제품 및 서비스 알아보기",
+    "ดูผลิตภัณฑ์และบริการ",
+    "Tìm hiểu sản phẩm và dịch vụ"
+  ],
+  "洽詢企業資安服務": [
+    "咨询企业安全服务",
+    "Discuss cybersecurity services",
+    "企業セキュリティの相談",
+    "기업 보안 서비스 상담",
+    "สอบถามบริการความปลอดภัยองค์กร",
+    "Tư vấn dịch vụ bảo mật doanh nghiệp"
+  ],
+  "洽詢合作夥伴方案": [
+    "咨询合作伙伴方案",
+    "Discuss partnership options",
+    "パートナープランの相談",
+    "파트너 요금제 상담",
+    "สอบถามแผนพันธมิตร",
+    "Tư vấn phương án hợp tác"
+  ],
+  "探索 KUANGUARD 的產品、服務與平台入口。": [
+    "探索 KUANGUARD 的产品、服务和平台入口。",
+    "Explore KUANGUARD products, services and platform access.",
+    "KUANGUARDの製品、サービス、プラットフォーム入口をご覧ください。",
+    "KUANGUARD 제품, 서비스, 플랫폼 입구를 알아보세요.",
+    "ดูผลิตภัณฑ์ บริการ และทางเข้าแพลตฟอร์ม KUANGUARD",
+    "Khám phá sản phẩm, dịch vụ và cổng nền tảng KUANGUARD."
+  ],
+  "公開方案；實際啟用與成功訂單認定依商家合約。金流、設備及第三方費用另計。": [
+    "公开方案；实际启用和成功订单认定按商家合约。支付、设备和第三方费用另计。",
+    "Public plan. Activation and successful-order eligibility follow the merchant contract. Payment, hardware and third-party fees are separate.",
+    "公開プランです。利用開始と成立注文の判定は店舗契約に従います。決済・機器・外部費用は別途です。",
+    "공개 요금제입니다. 활성화와 성공 주문 판단은 사업자 계약에 따릅니다. 결제, 장비, 외부 비용은 별도입니다.",
+    "แพ็กเกจสาธารณะ การเปิดใช้และนับออร์เดอร์สำเร็จตามสัญญาร้านค้า ค่าชำระเงิน อุปกรณ์ และภายนอกแยกต่างหาก",
+    "Gói công khai. Kích hoạt và xác định đơn thành công theo hợp đồng. Thanh toán, thiết bị, bên thứ ba tính riêng."
+  ]
+}

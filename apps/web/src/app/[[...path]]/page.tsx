@@ -13,6 +13,10 @@ import { CorporateFooter, CorporateHeader, CorporateHome, CorporateProducts, Cor
 import { isWebsitePath, websiteContactEmail, websiteEntryPaths, websiteOnly } from "@/lib/website";
 import { WebsiteContact, WebsiteEntry } from "@/components/website-contact";
 import websiteCommerce from "@/lib/website-commerce.json";
+import { splitLocale, languageAlternates, localePath, openGraphLocales } from "@/lib/locales";
+import { translate } from "@/lib/translate";
+import { websiteInfo } from "@/lib/website-info";
+import { WebsiteInfo } from "@/components/website-info";
 
 type Props = { params: Promise<{ path?: string[] }>; searchParams: Promise<Record<string, string | string[] | undefined>> };
 export const dynamic = "force-dynamic";
@@ -23,11 +27,20 @@ async function publicData(path: string) {
   catch { return null; }
 }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const path = (await params).path?.join("/") || "";
+  const requested = (await params).path?.join("/") || "";
+  const { path, locale = "zh-TW" } = websiteOnly() ? splitLocale(requested) : { path: requested };
   const host = ((await headers()).get("host") || "").split(":")[0];
   const isPublic = (commercePaths.includes(path) || publicPaths.includes(path) || path.startsWith("courses/")) && ["kuanguard.com", "www.kuanguard.com", "127.0.0.1", "localhost"].includes(host);
   const service = services.find(s => path === `services/${s.slug}`);
   const solution = solutions.find(s => path === `solutions/${s.slug}`);
+  if (websiteOnly()) {
+    const label = commerceTitles[path] || websiteInfo[path]?.title || solution?.name || service?.name || ({ services: "企業資安服務", "plans/annual-security": "年度整合方案", "request-quote": "洽詢企業資安服務", courses: "課程目錄準備中" } as Record<string, string>)[path] || "選擇你的系統";
+    const title = translate(label, locale);
+    const description = translate(commerceDescriptions[path] || websiteInfo[path]?.description || solution?.description || service?.description || "探索 KUANGUARD 的產品、服務與平台入口。", locale);
+    const url = `https://kuanguard.com${localePath(`/${path}`, locale)}`;
+    const index = isWebsitePath(path) && !websiteEntryPaths.includes(path) && path !== "courses" && ["kuanguard.com", "www.kuanguard.com", "127.0.0.1", "localhost"].includes(host);
+    return { title, description, alternates: { canonical: url, languages: languageAlternates(path) }, openGraph: { title, description, url, siteName: "KUANGUARD", locale: openGraphLocales[locale], alternateLocale: Object.values(openGraphLocales).filter(value => value !== openGraphLocales[locale]), type: "website" }, twitter: { card: "summary", title, description }, robots: { index, follow: index } };
+  }
   const title = commerceTitles[path] || solution?.name || service?.name || (path.startsWith("partner") ? "合作夥伴工作空間" : "企業工作空間");
   const brand = path.startsWith("partner") ? (await publicData("/public/portal"))?.partner : null;
   return { title: brand?.branding?.company_name || title, description: commerceDescriptions[path], alternates: isPublic ? { canonical: `https://kuanguard.com/${path}` } : undefined,
@@ -36,14 +49,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     robots: isPublic ? { index: true, follow: true } : { index: false, follow: false } };
 }
 export default async function Page({ params, searchParams }: Props) {
-  const path = (await params).path?.join("/") || "";
+  const requested = (await params).path?.join("/") || "";
+  const { path, locale = "zh-TW" } = websiteOnly() ? splitLocale(requested) : { path: requested };
   const query = await searchParams;
   if (websiteOnly()) {
     if (!isWebsitePath(path)) notFound();
     const contactTitle = path === "merchant/apply" ? "申請商家產品諮詢" : path === "request-quote" ? "洽詢企業資安服務" : query.kind === "partner" ? "洽詢合作夥伴方案" : "聯絡 KUANGUARD";
     const standalone = ["contact", "merchant/apply", "request-quote"].includes(path)
       ? <WebsiteContact email={websiteContactEmail} title={contactTitle} />
-      : websiteEntryPaths.includes(path) || path === "courses" ? <WebsiteEntry email={websiteContactEmail} courses={path === "courses"} /> : null;
+      : websiteEntryPaths.includes(path) || path === "courses" ? <WebsiteEntry email={websiteContactEmail} courses={path === "courses"} product={["login/partner", "partner/login"].includes(path) ? "partner" : path === "login/customer" ? "security" : undefined} /> : websiteInfo[path] ? <WebsiteInfo path={path} /> : null;
     if (standalone) return <><CorporateHeader /><main id="main-content" className="kg-corporate-surface">{standalone}</main><CorporateFooter /></>;
   }
   if (path.startsWith("admin") && deploymentSurface() === "public") notFound();
@@ -82,6 +96,6 @@ export default async function Page({ params, searchParams }: Props) {
   else if (path === "request-quote") content = <QuotePage />;
   else if (path.startsWith("courses")) content = <CoursesPage slug={path.split("/")[1]} />;
   else content = <InfoPage path={path} />;
-  const schema = { "@context": "https://schema.org", "@type": "Organization", name: "KUANGUARD", url: "https://kuanguard.com", description: "數位科技公司，旗下提供商家 SaaS、合作夥伴平台與企業資安服務。" };
+  const schema = { "@context": "https://schema.org", "@type": "Organization", name: "KUANGUARD", url: "https://kuanguard.com", email: websiteContactEmail, description: translate("數位科技、產品與平台服務", locale) };
   return <>{merchantPage ? <CommerceHeader /> : <CorporateHeader />}{merchantPage && <OrderingBreadcrumb path={path} />}<main id="main-content" className={merchantPage ? undefined : "kg-corporate-surface"}>{content}</main>{merchantPage ? <CommerceFooter /> : <CorporateFooter />}{!path && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />}</>;
 }
