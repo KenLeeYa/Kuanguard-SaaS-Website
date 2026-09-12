@@ -1,0 +1,1314 @@
+{
+  "state": "passed",
+  "observed_at": "2026-09-12T16:10:51.082Z",
+  "base_url": "https://kuanguard.com",
+  "localized_routes": 238,
+  "checks": [
+    {
+      "check": "browser language",
+      "header": "zh-HK",
+      "target": "zh-TW",
+      "status": 307
+    },
+    {
+      "check": "browser language",
+      "header": "zh-CN",
+      "target": "zh-CN",
+      "status": 307
+    },
+    {
+      "check": "browser language",
+      "header": "en-US",
+      "target": "en",
+      "status": 307
+    },
+    {
+      "check": "browser language",
+      "header": "ja-JP",
+      "target": "ja",
+      "status": 307
+    },
+    {
+      "check": "browser language",
+      "header": "ko-KR",
+      "target": "ko",
+      "status": 307
+    },
+    {
+      "check": "browser language",
+      "header": "th-TH",
+      "target": "th",
+      "status": 307
+    },
+    {
+      "check": "browser language",
+      "header": "vi-VN",
+      "target": "vi",
+      "status": 307
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/products",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/products",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/products",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/products",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/products",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/products",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/products",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/products/ordering",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/products/ordering",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/products/ordering",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/products/ordering",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/products/ordering",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/products/ordering",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/solutions",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/products/ordering",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/solutions",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/solutions",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/solutions",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/solutions",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/solutions",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/solutions",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/features",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/features",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/features",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/features",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/features",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/features",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/features",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/pricing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/pricing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/pricing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/pricing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/pricing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/pricing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/pricing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/about",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/about",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/about",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/about",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/about",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/about",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/about",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/contact",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/contact",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/contact",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/contact",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/contact",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/contact",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/contact",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/privacy",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/privacy",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/privacy",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/privacy",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/privacy",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/privacy",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/terms",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/privacy",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/terms",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/terms",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/terms",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/terms",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/terms",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/terms/merchants",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/terms/merchants",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/terms/merchants",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/terms",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/terms/merchants",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/terms/merchants",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/terms/merchants",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/terms/merchants",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/terms/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/terms/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/terms/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/terms/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/terms/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/terms/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/terms/partners",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/solutions/restaurant",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/solutions/restaurant",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/solutions/restaurant",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/solutions/restaurant",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/solutions/restaurant",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/solutions/restaurant",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/solutions/beverage",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/solutions/beverage",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/solutions/restaurant",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/solutions/beverage",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/solutions/beverage",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/solutions/beverage",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/solutions/beverage",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/solutions/beverage",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/solutions/food-stall",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/solutions/food-stall",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/solutions/food-stall",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/solutions/food-stall",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/solutions/food-stall",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/solutions/retail",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/solutions/food-stall",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/solutions/food-stall",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/solutions/retail",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/solutions/retail",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/solutions/retail",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/solutions/retail",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/solutions/retail",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/solutions/retail",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/services",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/services",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/services",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/services",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/services",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/services",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/services/va",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/services",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/services/va",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/services/va",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/services/va",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/services/va",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/services/va",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/services/va",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/services/wva",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/services/wva",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/services/wva",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/services/wva",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/services/wva",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/services/wva",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/services/shc",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/services/wva",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/services/shc",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/services/shc",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/services/shc",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/services/shc",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/services/pt",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/services/shc",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/services/shc",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/services/pt",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/services/pt",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/services/pt",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/services/pt",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/services/pt",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/services/source-code",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/services/pt",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/services/source-code",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/services/source-code",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/services/source-code",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/services/source-code",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/services/source-code",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/services/source-code",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/services/phishing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/services/phishing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/services/phishing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/services/phishing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/services/phishing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/services/phishing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/services/phishing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/services/training",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/services/training",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/services/training",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/services/training",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/services/training",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/plans/annual-security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/services/training",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/plans/annual-security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/services/training",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/plans/annual-security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/plans/annual-security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/plans/annual-security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/plans/annual-security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/pricing/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/pricing/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/plans/annual-security",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/pricing/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/pricing/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/pricing/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/pricing/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/pricing/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/request-quote",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/request-quote",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/request-quote",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/request-quote",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/request-quote",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/request-quote",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/request-quote",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/resources",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/resources",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/resources",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/resources",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/resources",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/resources",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/legal/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/resources",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/legal/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/legal/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/legal/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/legal/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/legal/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/legal/acceptable-use",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/legal/credits",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/legal/acceptable-use",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/legal/acceptable-use",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/legal/acceptable-use",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/legal/acceptable-use",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/legal/acceptable-use",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/legal/acceptable-use",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/legal/data-processing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/legal/data-processing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/legal/data-processing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/legal/data-processing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/legal/data-processing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/legal/data-processing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/accessibility",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/legal/data-processing",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/accessibility",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/accessibility",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/accessibility",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/accessibility",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/accessibility",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/accessibility",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/login",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-TW/partner/login",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/login",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/zh-CN/partner/login",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/login",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/en/partner/login",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/login",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ja/partner/login",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/login",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/ko/partner/login",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/login",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/th/partner/login",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/login",
+      "status": 200
+    },
+    {
+      "check": "page",
+      "path": "/vi/partner/login",
+      "status": 200
+    }
+  ],
+  "browser_qa": "not_performed_admin_policy_verification_unavailable",
+  "mail_sent": false,
+  "form_submissions": 0,
+  "database_mutations": 0
+}

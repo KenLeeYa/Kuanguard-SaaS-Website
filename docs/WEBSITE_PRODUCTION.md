@@ -43,3 +43,18 @@ Cloudflare DoH 已回覆新 apex A／NS；Google DoH 的 www CNAME 已更新，a
 本工作區的官網程式碼與已部署 `apps/web` tree 相同，DNS 設定與接入工具已推送至 `origin/main`。Vercel 專案目前使用 CLI 部署；GitHub push 只觸發 CI，未設定自動 Production 部署。
 
 機器可讀證據：[發布收據](evidence/website-production-20260910.json)、[網域切換與 HTTP 收據](evidence/website-domain-cutover-20260910.json)、[DNS 記錄清單](website-dns-records-20260910.json)。官方參考：[Cloudflare full setup](https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/)、[Vercel custom domain](https://vercel.com/docs/domains/working-with-domains/add-a-domain)、[GoDaddy NS 更新 API](https://developer.godaddy.com/openapi/domains-v1.json)。
+
+## 2026-09-13 七語與產品入口發布
+
+正式官網已更新：[攤點通介紹頁](https://kuanguard.com/zh-TW/products/ordering)、[產品與平台](https://kuanguard.com/zh-TW/products)。支援繁中、簡中、英文、日文、韓文、泰文及越文，自動語言選擇與手動切換並存。
+
+- 發布來源 `e09ab3c3e49532e4c222948585c7d3b3f1541308`；`apps/web` tree `f60753eb649fa2b7816483827d3828b8ecbed244`。
+- Preview `dpl_36Cuq3Qzw5Amsvnyd5DRiyrWQ3VM` 通過 16 項遠端檢查。Vercel promote 依相同來源建立 Production `dpl_C9sMv2DSjgSC3EKZTAdXhyG98CQU`，狀態 READY；apex、www 及 Vercel 備用網域均指向新版本。
+- [發布分支 CI](https://github.com/KenLeeYa/Kuanguard-SaaS-Website/actions/runs/34703954138) 與 [main CI](https://github.com/KenLeeYa/Kuanguard-SaaS-Website/actions/runs/34704288879) 的 api/web jobs 全部成功。21 項單元測試、TypeScript、正式 build 與本機 standalone 驗證通過。
+- 使用本機正常 DNS 解析與有效 TLS 驗證，正式網域 238 個語系公開頁面、14 個登入／指定平台頁面、語言選擇、產品轉址、政策轉址及 API／後台封鎖均通過。www 308 保留語言路徑與查詢參數。
+- Cloudflare 名稱伺服器仍為 `liv.ns.cloudflare.com` 與 `sri.ns.cloudflare.com`，本次沒有修改 DNS、資料庫、外部產品帳號或提交申請。Vercel 保護設定保留。
+- 官網更新已合併回本工作區並推送 main。既有 36 個未提交檔案中，35 個逐檔 hash 不變；同檔的 report upload test 經保留與重新套用，剩餘使用者 diff 的正規化 SHA256 完全相同，備份仍保留。
+- 瀏覽器工具三次因管理員安全政策驗證無法取得而拒絕存取本機頁面。因此未執行手機視覺、瀏覽器互動或完整無障礙稽核；HTTP 檢查不代替這些實測。
+
+機器可讀紀錄：[發布收據](evidence/website-seven-locales-release-20260913.json)、[Preview](evidence/website-seven-locales-preview-20260913.json)、[正式網域](evidence/website-seven-locales-production-20260913.json)、[本機修改保留](evidence/website-local-work-preserved-20260913.json)。完整產品入口及語言維護方式見 [WEBSITE_LOCALIZATION.md](WEBSITE_LOCALIZATION.md)。
+合併回本工作區後，包含既有 report upload test 的 22 項前端測試亦通過。新 Production deployment 在發布後查詢的最近 10 分鐘範圍內，Vercel runtime error records 為 0；此為當時快照，不代表持續監控。

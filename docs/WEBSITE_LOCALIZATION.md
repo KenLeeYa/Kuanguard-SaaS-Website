@@ -34,6 +34,6 @@
 - Next.js 16.3.4 正式建置、standalone 啟動通過。
 - `node apps/web/tests/website-language-smoke.mjs <base-url> <evidence-path>` 檢查 238 個 sitemap 頁面、語言優先順序、頁面標記、翻譯遺漏、入口、政策轉址及 API／後台封鎖。
 - 本機正式建置的 238 個語言頁面及 14 個登入／指定平台頁面檢查通過，未發現英文、韓文、泰文、越文頁面混入未翻譯中文字。
-- 瀏覽器工具兩次因管理員安全政策無法驗證而拒絕存取本機網址，未繞過限制。因此本輪未完成瀏覽器視覺、手機操作、螢幕閱讀器或完整 WCAG 稽核，不宣稱取得無障礙或法律合規認證。
+- 瀏覽器工具三次因管理員安全政策無法驗證而拒絕存取本機網址，未繞過限制。因此本輪未完成瀏覽器視覺、手機操作、螢幕閱讀器或完整 WCAG 稽核，不宣稱取得無障礙或法律合規認證。
 
 參考：[攤點通正式官網](https://qidaigo.com/zh-TW)、[Google 多語系網站指南](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites)、[W3C WCAG 2.2 檢查項目](https://www.w3.org/WAI/WCAG22/quickref/)。Google 指南先由 AnySearch 擷取；W3C 擷取失敗後改查官方頁面。

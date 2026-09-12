@@ -1,0 +1,11 @@
+{
+  "state": "preserved",
+  "observed_at": "2026-09-12T16:07:39.8550015Z",
+  "before_head": "b9f3dd40b7cae8a0e580ad5220db219fcece1dfb",
+  "after_head": "e09ab3c3e49532e4c222948585c7d3b3f1541308",
+  "original_patch_sha256": "DCC93CCF2AE7A3CD7F13042DF1C0E9F111F1EE1D577ACBA18EA02C9F4685107D",
+  "original_files": 36,
+  "unchanged_other_files": 35,
+  "portal_test_change_restored": true,
+  "backup_retained": true
+}

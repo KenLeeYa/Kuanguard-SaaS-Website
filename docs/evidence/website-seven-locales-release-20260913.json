@@ -1,0 +1,62 @@
+{
+  "state": "production_verified",
+  "observed_at": "2026-09-12T16:14:17.7535041Z",
+  "public_url": "https://kuanguard.com",
+  "ordering_url": "https://kuanguard.com/zh-TW/products/ordering",
+  "project_id": "prj_uZG3hm4ALsnqj2wL3Qa9e85F7tvy",
+  "team_id": "team_MMfsiG94K9Zy3e6w7Ccc9xY4",
+  "root_directory": "apps/web",
+  "source_commit": "e09ab3c3e49532e4c222948585c7d3b3f1541308",
+  "source_web_tree": "f60753eb649fa2b7816483827d3828b8ecbed244",
+  "preview_deployment": "dpl_36Cuq3Qzw5Amsvnyd5DRiyrWQ3VM",
+  "production_deployment": "dpl_C9sMv2DSjgSC3EKZTAdXhyG98CQU",
+  "previous_production": "dpl_5VMeeqa674LKMcM1W1PP8A4rw6iz",
+  "deployment_state": "READY",
+  "promotion_behavior": "Vercel promote created a Production deployment with the same verified source commit",
+  "bound_aliases": [
+    "kuanguard.com",
+    "www.kuanguard.com",
+    "kuanguard-website.vercel.app"
+  ],
+  "branch_ci": {
+    "conclusion": "success",
+    "id": 34703954138
+  },
+  "main_ci": {
+    "conclusion": "success",
+    "id": 34704288879
+  },
+  "unit_tests": 21,
+  "locales": [
+    "zh-TW",
+    "zh-CN",
+    "en",
+    "ja",
+    "ko",
+    "th",
+    "vi"
+  ],
+  "localized_public_urls": 238,
+  "preview_checks": 16,
+  "production_page_checks": 252,
+  "www_redirect": {
+    "status": 308,
+    "path_query_preserved": true
+  },
+  "website_only_confirmed_by_runtime": true,
+  "project_protection": "all_except_custom_domains",
+  "cloudflare_nameservers": [
+    "liv.ns.cloudflare.com",
+    "sri.ns.cloudflare.com"
+  ],
+  "dns_mutations": 0,
+  "database_mutations": 0,
+  "form_submissions": 0,
+  "mail_sent": false,
+  "browser_visual_qa": "not_performed_admin_policy_verification_unavailable",
+  "manual_browser_attempts": 3,
+  "local_report_changes_preserved": true,
+  "runtime_error_records": 0,
+  "runtime_log_window": "last 10 minutes after promotion",
+  "integrated_primary_web_tests": 22
+}

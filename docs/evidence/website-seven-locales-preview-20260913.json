@@ -1,0 +1,111 @@
+{
+  "state": "passed",
+  "observed_at": "2026-09-12T16:06:16.2971135Z",
+  "deployment_id": "dpl_36Cuq3Qzw5Amsvnyd5DRiyrWQ3VM",
+  "project_id": "prj_uZG3hm4ALsnqj2wL3Qa9e85F7tvy",
+  "team_id": "team_MMfsiG94K9Zy3e6w7Ccc9xY4",
+  "source_commit": "e09ab3c3e49532e4c222948585c7d3b3f1541308",
+  "web_tree": "f60753eb649fa2b7816483827d3828b8ecbed244",
+  "sitemap_urls": 238,
+  "checks": [
+    {
+      "path": "/zh-TW/products/ordering",
+      "method": "GET",
+      "status": 200,
+      "locale": "zh-TW"
+    },
+    {
+      "path": "/zh-CN/products/ordering",
+      "method": "GET",
+      "status": 200,
+      "locale": "zh-CN"
+    },
+    {
+      "path": "/en/products/ordering",
+      "method": "GET",
+      "status": 200,
+      "locale": "en"
+    },
+    {
+      "path": "/ja/products/ordering",
+      "method": "GET",
+      "status": 200,
+      "locale": "ja"
+    },
+    {
+      "path": "/ko/products/ordering",
+      "method": "GET",
+      "status": 200,
+      "locale": "ko"
+    },
+    {
+      "path": "/th/products/ordering",
+      "method": "GET",
+      "status": 200,
+      "locale": "th"
+    },
+    {
+      "path": "/vi/products/ordering",
+      "method": "GET",
+      "status": 200,
+      "locale": "vi"
+    },
+    {
+      "path": "/en/contact",
+      "method": "GET",
+      "status": 200,
+      "locale": "en"
+    },
+    {
+      "path": "/ja/partner/login",
+      "method": "GET",
+      "status": 200,
+      "locale": "ja"
+    },
+    {
+      "path": "/en/pricing",
+      "method": "GET",
+      "status": 200,
+      "locale": "en"
+    },
+    {
+      "path": "/sitemap.xml",
+      "method": "GET",
+      "status": 200,
+      "locale": ""
+    },
+    {
+      "path": "/vi/merchant/apply",
+      "method": "GET",
+      "status": 307,
+      "locale": ""
+    },
+    {
+      "path": "/th/login/merchant",
+      "method": "GET",
+      "status": 307,
+      "locale": ""
+    },
+    {
+      "path": "/en/api/public/leads",
+      "method": "POST",
+      "status": 404,
+      "locale": ""
+    },
+    {
+      "path": "/ko/admin",
+      "method": "GET",
+      "status": 404,
+      "locale": ""
+    },
+    {
+      "path": "/ja/dashboard",
+      "method": "GET",
+      "status": 404,
+      "locale": ""
+    }
+  ],
+  "browser_qa": "not_performed_admin_policy_verification_unavailable",
+  "form_submissions": 0,
+  "mail_sent": false
+}
