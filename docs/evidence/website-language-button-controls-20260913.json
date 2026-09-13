@@ -1,0 +1,51 @@
+[
+  {
+    "locale": "zh-TW",
+    "options": 7,
+    "selected": "繁體中文",
+    "outsideMenu": true,
+    "ariaLabel": "網站語言"
+  },
+  {
+    "locale": "zh-CN",
+    "options": 7,
+    "selected": "简体中文",
+    "outsideMenu": true,
+    "ariaLabel": "网站语言"
+  },
+  {
+    "locale": "en",
+    "options": 7,
+    "selected": "English",
+    "outsideMenu": true,
+    "ariaLabel": "Website language"
+  },
+  {
+    "locale": "ja",
+    "options": 7,
+    "selected": "日本語",
+    "outsideMenu": true,
+    "ariaLabel": "サイトの言語"
+  },
+  {
+    "locale": "ko",
+    "options": 7,
+    "selected": "한국어",
+    "outsideMenu": true,
+    "ariaLabel": "웹사이트 언어"
+  },
+  {
+    "locale": "th",
+    "options": 7,
+    "selected": "ไทย",
+    "outsideMenu": true,
+    "ariaLabel": "ภาษาเว็บไซต์"
+  },
+  {
+    "locale": "vi",
+    "options": 7,
+    "selected": "Tiếng Việt",
+    "outsideMenu": true,
+    "ariaLabel": "Ngôn ngữ website"
+  }
+]

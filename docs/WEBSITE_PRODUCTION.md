@@ -1,6 +1,6 @@
 # KuanGuard 官網部署
 
-最新正式版本：2026-09-13 官網介紹與合作更新，來源 `f4eb11f5583809da55fc3ecb4e387bd8cf19b5a8`，Production `dpl_46CLAFepgW8sQEizCGEkVNPeUjWN` READY。18 項 Preview、正式網域 238 個語系公開頁面與 14 個平台入口通過；DNS／產品後台設定未改。詳 [本次修改與驗證](WEBSITE_INTRODUCTION.md) 及 [發布收據](evidence/website-introduction-release-20260913.json)。
+最新正式版本：2026-09-13 語系控制項與手機頁首調整，來源 `e6762422f70e416e87782c8b6f7d9f4bf83ced4a`，Production `dpl_4aH3mBhKTqywXDAAv2hrtNg9xDZy` READY。18 項 Preview、正式網域 238 個語系公開頁面與 14 個平台入口通過；DNS／產品後台設定未改。詳 [本次修改與驗證](WEBSITE_LANGUAGE_CONTROL.md) 及 [發布收據](evidence/website-language-button-release-20260913.json)。前次介紹與合作內容見 [官網介紹紀錄](WEBSITE_INTRODUCTION.md)。
 
 本次發布範圍為公開公司官網。Vercel 專案 `kuanguard-website`（`prj_uZG3hm4ALsnqj2wL3Qa9e85F7tvy`）位於既有 Team `team_MMfsiG94K9Zy3e6w7Ccc9xY4`，Root Directory 固定為 `apps/web`、Node.js 24。
 

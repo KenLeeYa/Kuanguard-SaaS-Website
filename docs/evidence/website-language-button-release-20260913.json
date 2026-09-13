@@ -1,0 +1,50 @@
+{
+  "state": "released",
+  "observed_at": "2026-09-13T07:53:40.3328260Z",
+  "source_commit": "e6762422f70e416e87782c8b6f7d9f4bf83ced4a",
+  "web_tree": "e87d709feb15696eb697d05e22ee6e176948b7da",
+  "project_id": "prj_uZG3hm4ALsnqj2wL3Qa9e85F7tvy",
+  "team_id": "team_MMfsiG94K9Zy3e6w7Ccc9xY4",
+  "production_deployment": "dpl_4aH3mBhKTqywXDAAv2hrtNg9xDZy",
+  "production_state": "READY",
+  "aliases": [
+    "kuanguard.com",
+    "kuanguard-website.vercel.app",
+    "www.kuanguard.com",
+    "kuanguard-website-ada76145-8663s-projects.vercel.app"
+  ],
+  "preview_deployment": "dpl_Dx5MMeamxSgPEKtaJz7FchLnQYCj",
+  "rollback_deployment": "dpl_46CLAFepgW8sQEizCGEkVNPeUjWN",
+  "ci": {
+    "source": {
+      "conclusion": "success",
+      "headSha": "e6762422f70e416e87782c8b6f7d9f4bf83ced4a",
+      "url": "https://github.com/KenLeeYa/Kuanguard-SaaS-Website/actions/runs/34746078605"
+    },
+    "main": {
+      "conclusion": "success",
+      "headSha": "e6762422f70e416e87782c8b6f7d9f4bf83ced4a",
+      "url": "https://github.com/KenLeeYa/Kuanguard-SaaS-Website/actions/runs/34746212625"
+    }
+  },
+  "checks": {
+    "preview_requests": 18,
+    "preview_http": "passed",
+    "localized_routes": 238,
+    "live_control_and_css": "passed",
+    "page_language_checks": 259,
+    "unit_tests": 21,
+    "production_http": "passed",
+    "build": "passed",
+    "local_http": "passed",
+    "typecheck": "passed"
+  },
+  "preservation": {
+    "files": 36,
+    "sha256_all_identical": true
+  },
+  "browser_qa": "unavailable_app_server_start_failed",
+  "dns_changed": false,
+  "database_changed": false,
+  "form_submissions": 0
+}

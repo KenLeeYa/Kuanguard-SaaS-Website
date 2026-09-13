@@ -1,0 +1,56 @@
+{
+  "deployment": "dpl_Dx5MMeamxSgPEKtaJz7FchLnQYCj",
+  "source": "e6762422f70e416e87782c8b6f7d9f4bf83ced4a",
+  "state": "passed",
+  "checks": [
+    {
+      "locale": "zh-TW",
+      "selected": "繁體中文",
+      "options": 7,
+      "headerControlCount": 1,
+      "outsideMenu": true
+    },
+    {
+      "locale": "zh-CN",
+      "selected": "简体中文",
+      "options": 7,
+      "headerControlCount": 1,
+      "outsideMenu": true
+    },
+    {
+      "locale": "en",
+      "selected": "English",
+      "options": 7,
+      "headerControlCount": 1,
+      "outsideMenu": true
+    },
+    {
+      "locale": "ja",
+      "selected": "日本語",
+      "options": 7,
+      "headerControlCount": 1,
+      "outsideMenu": true
+    },
+    {
+      "locale": "ko",
+      "selected": "한국어",
+      "options": 7,
+      "headerControlCount": 1,
+      "outsideMenu": true
+    },
+    {
+      "locale": "th",
+      "selected": "ไทย",
+      "options": 7,
+      "headerControlCount": 1,
+      "outsideMenu": true
+    },
+    {
+      "locale": "vi",
+      "selected": "Tiếng Việt",
+      "options": 7,
+      "headerControlCount": 1,
+      "outsideMenu": true
+    }
+  ]
+}
