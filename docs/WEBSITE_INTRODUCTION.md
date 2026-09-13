@@ -50,6 +50,18 @@
 
 [本機正式建置 HTTP 紀錄](evidence/website-introduction-local-20260913.json)。正式發布結果另記於本次發布收據。
 
+## 正式發布結果
+
+- [官網首頁](https://kuanguard.com/zh-TW)、[產品總覽](https://kuanguard.com/zh-TW/products)、[合作領域](https://kuanguard.com/zh-TW/solutions)、[廠商合作](https://kuanguard.com/zh-TW/partners) 已發布。
+- 發布來源 `f4eb11f5583809da55fc3ecb4e387bd8cf19b5a8`，`apps/web` tree `d3b4b29b4d0a912e551ea6b293ebfdeab097cbfd`。
+- Preview `dpl_Nh9mAbqKg2YkskN5TVC2TtxZxFFo` READY，18 項受保護預覽 HTTP 檢查通過。
+- Production `dpl_46CLAFepgW8sQEizCGEkVNPeUjWN` READY，已確認為同一專案與同一來源。Vercel promote 依該來源建立正式 deployment。
+- apex、www、Vercel 備用網址均指向本次正式 deployment；www 308 保留路徑與 query。使用正常 DNS 與有效 TLS，238 個語系公開頁面及 14 個平台入口、共 259 項頁面／語言檢查通過。
+- 發布後查詢此 deployment 最近 10 分鐘的 runtime error 紀錄為 0（上限 100 筆，僅為當時快照）。
+- 原工作區 36 個未提交檔案全部 hash 不變，沒有重疊或使用 stash；合併後包含既有報告工具測試的 22 項前端測試通過。
+
+證據：[Preview](evidence/website-introduction-preview-20260913.json)、[Production](evidence/website-introduction-production-20260913.json)、[原檔保留](evidence/website-introduction-preservation-20260913.json)、[Runtime](evidence/website-introduction-runtime-20260913.json)、[發布收據](evidence/website-introduction-release-20260913.json)。瀏覽器工具啟動失敗的視覺驗證限制仍適用。
+
 ## 範圍確認
 
 沒有新增或修改後端、資料庫、migration、API、webhook、會員、訂閱、付款、分潤、商家搜尋或管理平台。價格與公開功能快照保持不變。沒有修改 qidaigo.com／getstudymesh.com、三傑整合、DNS、憑證、使用者權限或追蹤 SDK。

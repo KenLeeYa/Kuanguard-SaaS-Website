@@ -1,0 +1,83 @@
+{
+  "deployment": "dpl_Nh9mAbqKg2YkskN5TVC2TtxZxFFo",
+  "form_submissions": 0,
+  "checks": [
+    {
+      "path": "/zh-TW",
+      "status": 200
+    },
+    {
+      "path": "/zh-CN",
+      "status": 200
+    },
+    {
+      "path": "/en",
+      "status": 200
+    },
+    {
+      "path": "/ja",
+      "status": 200
+    },
+    {
+      "path": "/ko",
+      "status": 200
+    },
+    {
+      "path": "/th",
+      "status": 200
+    },
+    {
+      "path": "/vi",
+      "status": 200
+    },
+    {
+      "path": "/en/products",
+      "status": 200
+    },
+    {
+      "path": "/en/solutions",
+      "status": 200
+    },
+    {
+      "path": "/en/partners",
+      "status": 200
+    },
+    {
+      "path": "/en/about",
+      "status": 200
+    },
+    {
+      "path": "/en/contact?kind=partner",
+      "status": 200
+    },
+    {
+      "path": "/zh-TW/products/ordering",
+      "status": 200
+    },
+    {
+      "path": "/en/partner/login",
+      "status": 200
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200
+    },
+    {
+      "path": "/en/merchant/apply",
+      "status": 307
+    },
+    {
+      "path": "/en/api/public/leads",
+      "status": 404
+    },
+    {
+      "path": "/en/admin/platform",
+      "status": 404
+    }
+  ],
+  "state": "passed",
+  "browser_qa": "unavailable_app_server_start_failed",
+  "mail_sent": false,
+  "observed_at": "2026-09-13T07:21:11.6085282Z",
+  "source_commit": "f4eb11f5583809da55fc3ecb4e387bd8cf19b5a8"
+}

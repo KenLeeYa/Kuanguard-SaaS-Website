@@ -1,0 +1,10 @@
+{
+  "overlapping_files": 0,
+  "base": "e0231ae749cd65455dbd8692a149e170e6ee82dd",
+  "stash_used": false,
+  "original_files": 36,
+  "unchanged_files": 36,
+  "observed_at": "2026-09-13T07:21:47.2172177Z",
+  "state": "passed",
+  "source_commit": "f4eb11f5583809da55fc3ecb4e387bd8cf19b5a8"
+}
