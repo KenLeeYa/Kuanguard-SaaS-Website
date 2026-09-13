@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { ArrowRight, ArrowUpRight, BookOpen, CarFront, ChevronRight, Handshake, HeartPulse, House, Menu, Network, Scissors, ShieldCheck, Shirt, Sparkles, Store, X } from "lucide-react";
 import Link from "./guarded-link";
@@ -19,16 +19,18 @@ function Action({ href, children, secondary = false }: { href: string; children:
 export function CorporateHeader() {
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
+  const navigationRef = useRef<HTMLElement>(null);
+  useEffect(() => { if (open) navigationRef.current?.querySelector<HTMLAnchorElement>("a")?.focus(); }, [open]);
   const path = "/" + splitLocale(usePathname()).path;
   const navigation = [["/products", "我們的系統"], ["/solutions", "合作領域"], ["/partners", "廠商合作"], ["/services", "企業資安"]];
   return <Localized><header className="kg-header" onKeyDown={event => { if (event.key === "Escape" && open) { setOpen(false); menuButton.current?.focus(); } }}>
     <div className="kg-container kg-header-inner">
       <CommerceBrand />
-      <button ref={menuButton} className="kg-menu-button" aria-label={open ? "關閉主要選單" : "開啟主要選單"} aria-expanded={open} aria-controls="corporate-navigation" onClick={() => setOpen(!open)}>{open ? <X size={21} /> : <Menu size={21} />}</button>
-      <nav id="corporate-navigation" className={open ? "is-open" : ""} aria-label="主要導覽" onClick={event => { if (event.target instanceof Element && event.target.closest("a")) setOpen(false); }}>
+      <nav ref={navigationRef} id="corporate-navigation" className={open ? "is-open" : ""} aria-label="主要導覽" onClick={event => { if (event.target instanceof Element && event.target.closest("a")) setOpen(false); }}>
         {navigation.map(([href, label]) => <Link key={href} href={href} aria-current={path === href ? "page" : undefined}>{label}</Link>)}
-        <LanguageSwitcher /><span className="kg-nav-actions"><Link href="/partner/login">合作夥伴登入<ArrowUpRight size={13} aria-hidden="true" /></Link><Action href="/contact">聯絡我們</Action></span>
+        <span className="kg-nav-actions"><Link href="/partner/login">合作夥伴登入<ArrowUpRight size={13} aria-hidden="true" /></Link><Action href="/contact">聯絡我們</Action></span>
       </nav>
+      <div className="kg-header-tools"><LanguageSwitcher /><button ref={menuButton} className="kg-menu-button" aria-label={open ? "關閉主要選單" : "開啟主要選單"} aria-expanded={open} aria-controls="corporate-navigation" onClick={() => setOpen(!open)}>{open ? <X size={21} /> : <Menu size={21} />}</button></div>
     </div>
   </header></Localized>;
 }
