@@ -13,7 +13,11 @@
 
 驗證：21 項既有測試、TypeScript 與 Production build 通過；[本機 HTTP 檢查](evidence/website-language-button-local-20260913.json)涵蓋 238 個七語公開頁面，總計 259 個頁面／語言檢查。[頁首控制項讀回](evidence/website-language-button-controls-20260913.json)確認七語名稱、輔助標籤及控制項位於可收合導覽之外。
 
-瀏覽器工具因 Codex app-server 啟動路徑錯誤而無法使用，沒有完成自動化桌面／手機視覺與互動實測。HTTP 與程式檢查不等同實機畫面或無障礙認證。
+2026-09-13 已補齊 Chrome 手機模擬視覺與互動驗證，使用獨立瀏覽器環境並啟用 mobile／touch 模式。檢查 320、360、390、430、520、526、768px 直向、520px 品牌斷點前後及 844×390 橫向；七語均在 320px 畫面逐一目視確認。語系控制項、地球圖示與箭頭沒有重疊或截字，頁面沒有橫向溢出，手機語系文字 16px，語系與選單按鈕均至少 44px 高。
+
+實際點擊原生語系選擇器並以鍵盤確認選項，七語切換、頁首／頁尾同步、Cookie 記憶及 path／query／fragment 保留均通過。公司與商家頁的選單開關、第一個連結焦點、Escape 返回、橫向畫面最後一個聯絡按鈕及頁尾靠左排列也通過。另以全新瀏覽器環境確認日文偏好自動選語，手動選擇英文後則優先使用記憶設定；產品列表的實際連結可進入攤點通介紹頁。
+
+本次沒有發現需要修改官網程式的問題，也未重新部署。Chrome 截圖已於本任務內逐一檢視，受測導覽流程的 console 未見 error／warning。這是 Chrome 手機模擬驗證，未涵蓋實體 iOS／Android 裝置。[完整量測與操作紀錄](evidence/website-mobile-qa-20260913.json)。
 
 正式發布：[kuanguard.com](https://kuanguard.com/zh-TW/products)，Vercel Production `dpl_4aH3mBhKTqywXDAAv2hrtNg9xDZy` 為 READY，apex、www 與備用 Vercel 網域均指向此版本。Preview `dpl_Dx5MMeamxSgPEKtaJz7FchLnQYCj` 的 18 項檢查通過，七語頁首另確認只有一個語系控制項。
 

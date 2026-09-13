@@ -1,0 +1,1059 @@
+{
+  "state": "passed",
+  "observed_at": "2026-09-13T09:02:56.412Z",
+  "test_environment": "Chrome DevTools mobile and touch emulation on the production website",
+  "production_deployment": "dpl_4aH3mBhKTqywXDAAv2hrtNg9xDZy",
+  "source_commit": "e6762422f70e416e87782c8b6f7d9f4bf83ced4a",
+  "web_tree": "e87d709feb15696eb697d05e22ee6e176948b7da",
+  "app_changes": 0,
+  "production_deployments": 0,
+  "physical_device_test": false,
+  "visual_screenshots": "Inspected inline Chrome screenshots in this Codex task",
+  "language_selection": "Clicked native select; Arrow/Home/End keys and Enter committed choices and triggered real navigations",
+  "locale_controls": [
+    {
+      "url": "https://kuanguard.com/zh-CN/products?qa=mobile#ordering",
+      "locale": "zh-CN",
+      "viewport": [
+        320,
+        667
+      ],
+      "scrollWidth": 320,
+      "headerValue": "zh-CN",
+      "footerValue": "zh-CN",
+      "preference": "kuanguard-language=zh-CN",
+      "control": {
+        "x": 88,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 248,
+        "bottom": 59.40000247955322
+      },
+      "menu": {
+        "x": 256,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 300,
+        "bottom": 58.60000038146973
+      },
+      "globe": {
+        "x": 100,
+        "y": 27.600000381469727,
+        "width": 18,
+        "height": 18,
+        "right": 118,
+        "bottom": 45.60000038146973
+      },
+      "arrow": {
+        "x": 222,
+        "y": 28.600000381469727,
+        "width": 16,
+        "height": 16,
+        "right": 238,
+        "bottom": 44.60000038146973
+      },
+      "selectedText": "简体中文",
+      "textWidth": 64,
+      "textAvailable": 88,
+      "options": 7
+    },
+    {
+      "url": "https://kuanguard.com/en/products?qa=mobile#ordering",
+      "locale": "en",
+      "viewport": [
+        320,
+        667
+      ],
+      "scrollWidth": 320,
+      "headerValue": "en",
+      "footerValue": "en",
+      "preference": "kuanguard-language=en",
+      "control": {
+        "x": 88,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 248,
+        "bottom": 59.40000247955322
+      },
+      "menu": {
+        "x": 256,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 300,
+        "bottom": 58.60000038146973
+      },
+      "globe": {
+        "x": 100,
+        "y": 27.600000381469727,
+        "width": 18,
+        "height": 18,
+        "right": 118,
+        "bottom": 45.60000038146973
+      },
+      "arrow": {
+        "x": 222,
+        "y": 28.600000381469727,
+        "width": 16,
+        "height": 16,
+        "right": 238,
+        "bottom": 44.60000038146973
+      },
+      "selectedText": "English",
+      "textWidth": 54.35194396972656,
+      "textAvailable": 88,
+      "options": 7
+    },
+    {
+      "url": "https://kuanguard.com/ja/products?qa=mobile#ordering",
+      "locale": "ja",
+      "viewport": [
+        320,
+        667
+      ],
+      "scrollWidth": 320,
+      "headerValue": "ja",
+      "footerValue": "ja",
+      "preference": "kuanguard-language=ja",
+      "control": {
+        "x": 88,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 248,
+        "bottom": 59.40000247955322
+      },
+      "menu": {
+        "x": 256,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 300,
+        "bottom": 58.60000038146973
+      },
+      "globe": {
+        "x": 100,
+        "y": 27.600000381469727,
+        "width": 18,
+        "height": 18,
+        "right": 118,
+        "bottom": 45.60000038146973
+      },
+      "arrow": {
+        "x": 222,
+        "y": 28.600000381469727,
+        "width": 16,
+        "height": 16,
+        "right": 238,
+        "bottom": 44.60000038146973
+      },
+      "selectedText": "日本語",
+      "textWidth": 48,
+      "textAvailable": 88,
+      "options": 7
+    },
+    {
+      "url": "https://kuanguard.com/ko/products?qa=mobile#ordering",
+      "locale": "ko",
+      "viewport": [
+        320,
+        667
+      ],
+      "scrollWidth": 320,
+      "headerValue": "ko",
+      "footerValue": "ko",
+      "preference": "kuanguard-language=ko",
+      "control": {
+        "x": 88,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 248,
+        "bottom": 59.40000247955322
+      },
+      "menu": {
+        "x": 256,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 300,
+        "bottom": 58.60000038146973
+      },
+      "globe": {
+        "x": 100,
+        "y": 27.600000381469727,
+        "width": 18,
+        "height": 18,
+        "right": 118,
+        "bottom": 45.60000038146973
+      },
+      "arrow": {
+        "x": 222,
+        "y": 28.600000381469727,
+        "width": 16,
+        "height": 16,
+        "right": 238,
+        "bottom": 44.60000038146973
+      },
+      "selectedText": "한국어",
+      "textWidth": 48,
+      "textAvailable": 88,
+      "options": 7
+    },
+    {
+      "url": "https://kuanguard.com/th/products?qa=mobile#ordering",
+      "locale": "th",
+      "viewport": [
+        320,
+        667
+      ],
+      "scrollWidth": 320,
+      "headerValue": "th",
+      "footerValue": "th",
+      "preference": "kuanguard-language=th",
+      "control": {
+        "x": 88,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 248,
+        "bottom": 59.40000247955322
+      },
+      "menu": {
+        "x": 256,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 300,
+        "bottom": 58.60000038146973
+      },
+      "globe": {
+        "x": 100,
+        "y": 27.600000381469727,
+        "width": 18,
+        "height": 18,
+        "right": 118,
+        "bottom": 45.60000038146973
+      },
+      "arrow": {
+        "x": 222,
+        "y": 28.600000381469727,
+        "width": 16,
+        "height": 16,
+        "right": 238,
+        "bottom": 44.60000038146973
+      },
+      "selectedText": "ไทย",
+      "textWidth": 28.8984375,
+      "textAvailable": 88,
+      "options": 7
+    },
+    {
+      "url": "https://kuanguard.com/vi/products?qa=mobile#ordering",
+      "locale": "vi",
+      "viewport": [
+        320,
+        667
+      ],
+      "scrollWidth": 320,
+      "headerValue": "vi",
+      "footerValue": "vi",
+      "preference": "kuanguard-language=vi",
+      "control": {
+        "x": 88,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 248,
+        "bottom": 59.40000247955322
+      },
+      "menu": {
+        "x": 256,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 300,
+        "bottom": 58.60000038146973
+      },
+      "globe": {
+        "x": 100,
+        "y": 27.600000381469727,
+        "width": 18,
+        "height": 18,
+        "right": 118,
+        "bottom": 45.60000038146973
+      },
+      "arrow": {
+        "x": 222,
+        "y": 28.600000381469727,
+        "width": 16,
+        "height": 16,
+        "right": 238,
+        "bottom": 44.60000038146973
+      },
+      "selectedText": "Tiếng Việt",
+      "textWidth": 73.48603820800781,
+      "textAvailable": 88,
+      "options": 7
+    },
+    {
+      "url": "https://kuanguard.com/zh-TW/products?qa=mobile#ordering",
+      "locale": "zh-TW",
+      "viewport": [
+        320,
+        667
+      ],
+      "scrollWidth": 320,
+      "headerValue": "zh-TW",
+      "footerValue": "zh-TW",
+      "preference": "kuanguard-language=zh-TW",
+      "control": {
+        "x": 88,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 248,
+        "bottom": 59.40000247955322
+      },
+      "menu": {
+        "x": 256,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 300,
+        "bottom": 58.60000038146973
+      },
+      "globe": {
+        "x": 100,
+        "y": 27.600000381469727,
+        "width": 18,
+        "height": 18,
+        "right": 118,
+        "bottom": 45.60000038146973
+      },
+      "arrow": {
+        "x": 222,
+        "y": 28.600000381469727,
+        "width": 16,
+        "height": 16,
+        "right": 238,
+        "bottom": 44.60000038146973
+      },
+      "selectedText": "繁體中文",
+      "textWidth": 64,
+      "textAvailable": 88,
+      "options": 7
+    }
+  ],
+  "responsive_header_checks": [
+    {
+      "locale": "zh-TW",
+      "viewport": [
+        360,
+        800
+      ],
+      "scrollWidth": 360,
+      "brand": {
+        "x": 20,
+        "y": 16.100000381469727,
+        "width": 37,
+        "height": 41,
+        "right": 57,
+        "bottom": 57.10000038146973
+      },
+      "control": {
+        "x": 128,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 288,
+        "bottom": 59.40000247955322
+      },
+      "button": {
+        "x": 296,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 340,
+        "bottom": 58.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "none"
+    },
+    {
+      "locale": "zh-TW",
+      "viewport": [
+        430,
+        932
+      ],
+      "scrollWidth": 430,
+      "brand": {
+        "x": 20,
+        "y": 16.100000381469727,
+        "width": 37,
+        "height": 41,
+        "right": 57,
+        "bottom": 57.10000038146973
+      },
+      "control": {
+        "x": 198.40000915527344,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 358.40000915527344,
+        "bottom": 59.40000247955322
+      },
+      "button": {
+        "x": 366.3999938964844,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 410.3999938964844,
+        "bottom": 58.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "none"
+    },
+    {
+      "locale": "zh-TW",
+      "viewport": [
+        520,
+        800
+      ],
+      "scrollWidth": 520,
+      "brand": {
+        "x": 20,
+        "y": 16.100000381469727,
+        "width": 37,
+        "height": 41,
+        "right": 57,
+        "bottom": 57.10000038146973
+      },
+      "control": {
+        "x": 288,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 448,
+        "bottom": 59.40000247955322
+      },
+      "button": {
+        "x": 456,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 500,
+        "bottom": 58.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "none"
+    },
+    {
+      "locale": "zh-TW",
+      "viewport": [
+        522,
+        800
+      ],
+      "scrollWidth": 522,
+      "brand": {
+        "x": 20,
+        "y": 16.100000381469727,
+        "width": 176.47500610351562,
+        "height": 41,
+        "right": 196.47500610351562,
+        "bottom": 57.10000038146973
+      },
+      "control": {
+        "x": 289.6000061035156,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 449.6000061035156,
+        "bottom": 59.40000247955322
+      },
+      "button": {
+        "x": 457.6000061035156,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 501.6000061035156,
+        "bottom": 58.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "block"
+    },
+    {
+      "locale": "zh-TW",
+      "viewport": [
+        526,
+        800
+      ],
+      "scrollWidth": 526,
+      "brand": {
+        "x": 20,
+        "y": 16.100000381469727,
+        "width": 176.47500610351562,
+        "height": 41,
+        "right": 196.47500610351562,
+        "bottom": 57.10000038146973
+      },
+      "control": {
+        "x": 294.3999938964844,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 454.3999938964844,
+        "bottom": 59.40000247955322
+      },
+      "button": {
+        "x": 462.3999938964844,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 506.3999938964844,
+        "bottom": 58.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "block"
+    },
+    {
+      "locale": "zh-TW",
+      "viewport": [
+        768,
+        1024
+      ],
+      "scrollWidth": 768,
+      "brand": {
+        "x": 32,
+        "y": 18.100000381469727,
+        "width": 177.47500610351562,
+        "height": 41,
+        "right": 209.47500610351562,
+        "bottom": 59.10000038146973
+      },
+      "control": {
+        "x": 524,
+        "y": 15.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 684,
+        "bottom": 61.40000247955322
+      },
+      "button": {
+        "x": 692,
+        "y": 16.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 736,
+        "bottom": 60.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "block"
+    },
+    {
+      "locale": "zh-TW",
+      "viewport": [
+        844,
+        390
+      ],
+      "scrollWidth": 844,
+      "brand": {
+        "x": 32,
+        "y": 18.100000381469727,
+        "width": 177.47500610351562,
+        "height": 41,
+        "right": 209.47500610351562,
+        "bottom": 59.10000038146973
+      },
+      "control": {
+        "x": 600,
+        "y": 15.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 760,
+        "bottom": 61.40000247955322
+      },
+      "button": {
+        "x": 768,
+        "y": 16.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 812,
+        "bottom": 60.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "block"
+    },
+    {
+      "locale": "vi",
+      "viewport": [
+        360,
+        800
+      ],
+      "scrollWidth": 360,
+      "brand": {
+        "x": 20,
+        "y": 16.100000381469727,
+        "width": 37,
+        "height": 41,
+        "right": 57,
+        "bottom": 57.10000038146973
+      },
+      "control": {
+        "x": 128,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 288,
+        "bottom": 59.40000247955322
+      },
+      "button": {
+        "x": 296,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 340,
+        "bottom": 58.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "none"
+    },
+    {
+      "locale": "vi",
+      "viewport": [
+        430,
+        932
+      ],
+      "scrollWidth": 430,
+      "brand": {
+        "x": 20,
+        "y": 16.100000381469727,
+        "width": 37,
+        "height": 41,
+        "right": 57,
+        "bottom": 57.10000038146973
+      },
+      "control": {
+        "x": 198.40000915527344,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 358.40000915527344,
+        "bottom": 59.40000247955322
+      },
+      "button": {
+        "x": 366.3999938964844,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 410.3999938964844,
+        "bottom": 58.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "none"
+    },
+    {
+      "locale": "vi",
+      "viewport": [
+        520,
+        800
+      ],
+      "scrollWidth": 520,
+      "brand": {
+        "x": 20,
+        "y": 16.100000381469727,
+        "width": 37,
+        "height": 41,
+        "right": 57,
+        "bottom": 57.10000038146973
+      },
+      "control": {
+        "x": 288,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 448,
+        "bottom": 59.40000247955322
+      },
+      "button": {
+        "x": 456,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 500,
+        "bottom": 58.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "none"
+    },
+    {
+      "locale": "vi",
+      "viewport": [
+        522,
+        800
+      ],
+      "scrollWidth": 522,
+      "brand": {
+        "x": 20,
+        "y": 16.100000381469727,
+        "width": 242.5124969482422,
+        "height": 41,
+        "right": 262.5124969482422,
+        "bottom": 57.10000038146973
+      },
+      "control": {
+        "x": 289.6000061035156,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 449.6000061035156,
+        "bottom": 59.40000247955322
+      },
+      "button": {
+        "x": 457.6000061035156,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 501.6000061035156,
+        "bottom": 58.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "block"
+    },
+    {
+      "locale": "vi",
+      "viewport": [
+        526,
+        800
+      ],
+      "scrollWidth": 526,
+      "brand": {
+        "x": 20,
+        "y": 16.100000381469727,
+        "width": 242.5124969482422,
+        "height": 41,
+        "right": 262.5124969482422,
+        "bottom": 57.10000038146973
+      },
+      "control": {
+        "x": 294.3999938964844,
+        "y": 13.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 454.3999938964844,
+        "bottom": 59.40000247955322
+      },
+      "button": {
+        "x": 462.3999938964844,
+        "y": 14.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 506.3999938964844,
+        "bottom": 58.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "block"
+    },
+    {
+      "locale": "vi",
+      "viewport": [
+        768,
+        1024
+      ],
+      "scrollWidth": 768,
+      "brand": {
+        "x": 32,
+        "y": 18.100000381469727,
+        "width": 261.1499938964844,
+        "height": 41,
+        "right": 293.1499938964844,
+        "bottom": 59.10000038146973
+      },
+      "control": {
+        "x": 524,
+        "y": 15.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 684,
+        "bottom": 61.40000247955322
+      },
+      "button": {
+        "x": 692,
+        "y": 16.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 736,
+        "bottom": 60.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "block"
+    },
+    {
+      "locale": "vi",
+      "viewport": [
+        844,
+        390
+      ],
+      "scrollWidth": 844,
+      "brand": {
+        "x": 32,
+        "y": 18.100000381469727,
+        "width": 261.1499938964844,
+        "height": 41,
+        "right": 293.1499938964844,
+        "bottom": 59.10000038146973
+      },
+      "control": {
+        "x": 600,
+        "y": 15.800000190734863,
+        "width": 160,
+        "height": 45.60000228881836,
+        "right": 760,
+        "bottom": 61.40000247955322
+      },
+      "button": {
+        "x": 768,
+        "y": 16.600000381469727,
+        "width": 44,
+        "height": 44,
+        "right": 812,
+        "bottom": 60.60000038146973
+      },
+      "buttonVisible": true,
+      "navVisible": false,
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "brandAndControlOverlap": false,
+      "toolsWithinViewport": true,
+      "brandWordmark": "block"
+    }
+  ],
+  "interaction_checks": [
+    {
+      "check": "corporate menu opens, focuses first link, Escape closes and returns focus",
+      "result": "passed",
+      "width": 390
+    },
+    {
+      "check": "Vietnamese menu and footer at 320px",
+      "result": "passed",
+      "footer_language_x": 20,
+      "footer_container_x": 20
+    },
+    {
+      "check": "seven native language choices preserve path, query and fragment",
+      "result": "passed",
+      "query": "?qa=mobile",
+      "fragment": "#ordering"
+    },
+    {
+      "check": "footer selection updates both language controls and preference",
+      "result": "passed"
+    },
+    {
+      "check": "landscape menu allows keyboard access to final contact action",
+      "result": "passed",
+      "viewport": [
+        844,
+        390
+      ],
+      "contact_bottom": 377.2,
+      "nav_bottom": 383.6
+    },
+    {
+      "check": "fresh browser preference selects Japanese",
+      "result": "passed",
+      "request": "/products?qa=auto",
+      "accept_language": "ja-JP,ja;q=0.9,en;q=0.8",
+      "landed": "/ja/products?qa=auto"
+    },
+    {
+      "check": "saved English overrides Japanese browser preference",
+      "result": "passed",
+      "request": "/products?qa=saved",
+      "landed": "/en/products?qa=saved"
+    },
+    {
+      "check": "real click from products to ordering introduction",
+      "result": "passed",
+      "viewport": [
+        430,
+        932
+      ],
+      "landed": "/zh-TW/products/ordering"
+    },
+    {
+      "check": "ordering menu opens and closes and footer language is left aligned",
+      "result": "passed",
+      "viewport": [
+        320,
+        667
+      ],
+      "footer_language_x": 18,
+      "footer_container_x": 18
+    },
+    {
+      "check": "Vietnamese ordering page and control at 320px",
+      "result": "passed",
+      "scroll_width": 320
+    },
+    {
+      "check": "Chrome console after tested product and locale flows",
+      "result": "no errors or warnings in inspected navigation windows"
+    }
+  ],
+  "external_forms_submitted": 0,
+  "existing_user_browser_context_modified": false
+}
