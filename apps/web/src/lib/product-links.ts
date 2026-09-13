@@ -4,9 +4,13 @@ export const stallOrder = {
   apply: "https://docs.google.com/forms/d/e/1FAIpQLSf859kVKh77cjNjpS26HWNqFdN851UdOQ6htlJUc9pgBlBBLw/viewform",
 } as const;
 
+// Public website verified; its sign-in page says activation is still in progress.
+export const studyMesh = { website: "https://getstudymesh.com" } as const;
+
 // Only verified public destinations belong here. Unreleased platforms have no login URL.
 export const platformEntries = [
   { id: "ordering", name: "攤點通｜餐飲點餐系統", description: "掃碼點餐、POS、廚房出單與多門市管理。", details: "/products/ordering", login: stallOrder.login },
+  { id: "studymesh", name: "StudyMesh", description: "產品官網已公開，登入啟用仍在準備中。", details: "/products#studymesh", login: null },
   { id: "partner", name: "合作夥伴平台", description: "平台尚未開放，合作需求可先與我們聯繫。", details: "/partners", login: null },
   { id: "security", name: "企業資安平台", description: "平台尚未開放，資安服務可先洽詢。", details: "/services", login: null },
 ] as const;

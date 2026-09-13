@@ -6,10 +6,10 @@ import { commerceDescriptions, commercePaths, commerceTitles, solutions } from "
 import { deploymentSurface } from "@/lib/surface";
 import { apiOrigin, portalHeaders } from "@/lib/server-api";
 import { AnnualPage, CoursesPage, InfoPage, QuotePage, ServicePage, ServicesPage } from "@/components/public-site";
-import { CommerceFooter, CommerceHeader, CommerceHome, CommerceInfo, FeaturesPage, LeadPage, PartnersPage, PricingPage, SolutionPage } from "@/components/commerce-site";
+import { CommerceFooter, CommerceHeader, CommerceHome, CommerceInfo, FeaturesPage, LeadPage, PricingPage, SolutionPage } from "@/components/commerce-site";
 import { WorkspacePage } from "@/components/workspace";
 import { LoginRouter, MerchantEntry, PartnerPortal, PlatformAdmin } from "@/components/partner-portal";
-import { CorporateFooter, CorporateHeader, CorporateHome, CorporateProducts, CorporateSolutions, OrderingBreadcrumb } from "@/components/corporate-site";
+import { CorporateFooter, CorporateHeader, CorporateHome, CorporatePartners, CorporateProducts, CorporateSolutions, OrderingBreadcrumb } from "@/components/corporate-site";
 import { isWebsitePath, websiteContactEmail, websiteEntryPaths, websiteOnly } from "@/lib/website";
 import { WebsiteContact, WebsiteEntry } from "@/components/website-contact";
 import websiteCommerce from "@/lib/website-commerce.json";
@@ -54,7 +54,7 @@ export default async function Page({ params, searchParams }: Props) {
   const query = await searchParams;
   if (websiteOnly()) {
     if (!isWebsitePath(path)) notFound();
-    const contactTitle = path === "merchant/apply" ? "申請商家產品諮詢" : path === "request-quote" ? "洽詢企業資安服務" : query.kind === "partner" ? "洽詢合作夥伴方案" : "聯絡 KUANGUARD";
+    const contactTitle = path === "merchant/apply" ? "申請商家產品諮詢" : path === "request-quote" ? "洽詢企業資安服務" : query.kind === "partner" ? "系統合作諮詢" : "聯絡 KUANGUARD";
     const standalone = ["contact", "merchant/apply", "request-quote"].includes(path)
       ? <WebsiteContact email={websiteContactEmail} title={contactTitle} />
       : websiteEntryPaths.includes(path) || path === "courses" ? <WebsiteEntry email={websiteContactEmail} courses={path === "courses"} product={["login/partner", "partner/login"].includes(path) ? "partner" : path === "login/customer" ? "security" : undefined} /> : websiteInfo[path] ? <WebsiteInfo path={path} /> : null;
@@ -83,7 +83,7 @@ export default async function Page({ params, searchParams }: Props) {
   else if (path === "solutions") content = <CorporateSolutions />;
   else if (path === "features") content = <FeaturesPage product={product} />;
   else if (path === "pricing") content = <PricingPage product={product} />;
-  else if (path === "partners") content = <PartnersPage />;
+  else if (path === "partners") content = <CorporatePartners />;
   else if (path.startsWith("solutions/") && solutions.some(s => s.slug === path.split("/")[1])) content = <SolutionPage slug={path.split("/")[1]} />;
   else if (path === "merchant/apply") content = <LeadPage />;
   else if (path === "contact") content = <LeadPage kind={query.kind === "partner" ? "partner" : "enterprise"} />;
@@ -96,6 +96,6 @@ export default async function Page({ params, searchParams }: Props) {
   else if (path === "request-quote") content = <QuotePage />;
   else if (path.startsWith("courses")) content = <CoursesPage slug={path.split("/")[1]} />;
   else content = <InfoPage path={path} />;
-  const schema = { "@context": "https://schema.org", "@type": "Organization", name: "KUANGUARD", url: "https://kuanguard.com", email: websiteContactEmail, description: translate("數位科技、產品與平台服務", locale) };
+  const schema = { "@context": "https://schema.org", "@type": "Organization", name: "KUANGUARD", url: "https://kuanguard.com", email: websiteContactEmail, description: translate("數位產品與系統合作", locale) };
   return <>{merchantPage ? <CommerceHeader /> : <CorporateHeader />}{merchantPage && <OrderingBreadcrumb path={path} />}<main id="main-content" className={merchantPage ? undefined : "kg-corporate-surface"}>{content}</main>{merchantPage ? <CommerceFooter /> : <CorporateFooter />}{!path && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />}</>;
 }

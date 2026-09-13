@@ -9,7 +9,7 @@ export function WebsiteContact({ email, title = "聯絡 KUANGUARD" }: { email: s
   const [opened, setOpened] = useState(false);
   const text = useWebsiteText();
   return <Localized><div className="commerce-site"><section className="commerce-container commerce-section">
-    <h1>{title}</h1><p>告訴我們你的使用情境，一起確認適合的產品與服務。</p>
+    <h1>{title}</h1><p>告訴我們你的使用情境，一起確認適合的產品與服務。</p><p id="cooperation-message-hint">合作諮詢可於需求說明提供公司或系統名稱、服務領域、官網與合作想法。請勿提供 API 金鑰、客戶名單或其他敏感資料。</p>
     <p>聯絡信箱：<a href={`mailto:${email}`}>{email}</a></p>
     <form className="commerce-form" onSubmit={event => {
       event.preventDefault();
@@ -23,7 +23,7 @@ export function WebsiteContact({ email, title = "聯絡 KUANGUARD" }: { email: s
         <label>聯絡人<input name="name" autoComplete="name" maxLength={120} required /></label>
         <label>聯絡 Email<input name="email" type="email" autoComplete="email" maxLength={254} required /></label>
       </div>
-      <label>需求說明<textarea name="message" rows={5} maxLength={1500} required /></label>
+      <label>需求說明<textarea name="message" aria-describedby="cooperation-message-hint" rows={5} maxLength={1500} required /></label>
       <p>按下按鈕後，請在你的郵件程式確認內容並寄出。本站不會儲存表單內容；請勿填入密碼或敏感資料。<Link href="/privacy">隱私權政策</Link></p>
       <button className="commerce-button" type="submit">開啟郵件程式</button>
       {opened && <p role="status">請在郵件程式完成寄送；若沒有開啟，請直接寄信至 {email}。此頁尚未替你寄出郵件。</p>}

@@ -12,8 +12,8 @@ import "./website.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kuanguard.com"),
-  title: { default: "KUANGUARD｜數位科技、產品與平台服務", template: "%s｜KUANGUARD" },
-  description: "KUANGUARD 以數位科技連接產品、資訊與人，提供商家 SaaS、合作夥伴平台與企業資安服務。從實際工作出發，找到合適的數位工具與協作方式。",
+  title: { default: "KUANGUARD｜數位產品與系統合作介紹", template: "%s｜KUANGUARD" },
+  description: "探索 KUANGUARD 的餐飲、美業與學習服務方向，了解跨領域系統合作、商家曝光與服務介接的合作規劃。",
   openGraph: { siteName: "KUANGUARD", type: "website", locale: "zh_TW" },
 };
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -57,7 +57,37 @@ async function page(path) {
     const untranslated = visible(html).match(/[\u3400-\u9fff][^<>]{0,100}/g) || [];
     assert.equal(untranslated.length, 0, `untranslated content ${path}: ${untranslated.slice(0, 3).join("; ")}`);
   }
-  for (const [, href] of html.matchAll(/<a\b[^>]*href="([^\"]+)"/g)) if (href.startsWith("/") && !href.startsWith("//")) assert.ok(href === `/${locale}` || href.startsWith(`/${locale}/`), `locale-preserving link ${path}: ${href}`);
+  for (const [, href] of html.matchAll(/<a\b[^>]*href="([^\"]+)"/g)) if (href.startsWith("/") && !href.startsWith("//")) {
+    const pathname = new URL(href, base).pathname;
+    assert.ok(pathname === `/${locale}` || pathname.startsWith(`/${locale}/`), `locale-preserving link ${path}: ${href}`);
+  }
+  const route = path.split("/").slice(2).join("/");
+  if (["", "products"].includes(route)) {
+    assert.equal([...html.matchAll(/class="kg-product-card"/g)].length, 3, `three own products ${path}`);
+    for (const id of ["ordering", "beauty", "studymesh"]) assert.ok(html.includes(`id="${id}"`), `product anchor ${path}`);
+    assert.ok(html.includes('href="https://getstudymesh.com"'), path);
+    assert.ok(!html.includes('href="https://getstudymesh.com/login"'), "StudyMesh sign-in is not active");
+  }
+  if (["", "solutions"].includes(route)) {
+    const domains = html.match(/<div class="kg-domain-grid">([\s\S]*?)<\/div>/)?.[1] || "";
+    assert.equal([...domains.matchAll(/<article\b/g)].length, 8, `eight cooperation areas ${path}`);
+  }
+  if (["", "partners"].includes(route)) {
+    assert.equal([...html.matchAll(/<details>/g)].length, 6, `six cooperation FAQ items ${path}`);
+    assert.ok(html.includes(`href="/${locale}/contact?kind=partner"`), path);
+    const vision = html.match(/<section[^>]*id="vision"[\s\S]*?<\/section>/)?.[0] || "";
+    assert.ok(vision.includes("kg-platform-status"), `planning status ${path}`);
+    assert.doesNotMatch(vision, /<(input|form|button|select)\b/, `static vision ${path}`);
+    assert.doesNotMatch(html, /href="#"|<input\b|<form\b/, `no pretend portal ${path}`);
+  }
+  if (route === "partners") assert.ok(html.includes(`href="/${locale}/partner/login"`), "preserve partner login destination");
+  if (["", "products", "solutions", "partners", "about", "contact"].includes(route)) {
+    assert.ok(html.includes(`href="/${locale}/services"`), "preserve enterprise security");
+    for (const [, href] of html.matchAll(/<a\b[^>]*href="([^\"]*#[^\"]+)"/g)) {
+      const target = new URL(href.replaceAll("&amp;", "&"), base);
+      if (target.origin === new URL(base).origin && target.pathname.replace(/\/$/, "") === path) assert.ok(html.includes(`id="${target.hash.slice(1)}"`), `working anchor ${path}: ${href}`);
+    }
+  }
   if (path.endsWith("/products/ordering")) {
     assert.ok(html.includes('href="https://qidaigo.com"'), path);
     assert.ok(html.includes('href="https://app.qidaigo.com/login"'), path);
@@ -92,6 +122,6 @@ for (const locale of locales) {
 }
 for (const path of ["/api/public/leads", "/en/api/public/leads", "/ja/api/auth/dev-login"]) assert.equal((await get(path, {}, "POST")).status, 404);
 for (const path of ["/icon.svg", "/robots.txt"]) assert.equal((await get(path)).status, 200, path);
-const result = { state: "passed", observed_at: new Date().toISOString(), base_url: base, localized_routes: routes.length, checks, browser_qa: "not_performed_admin_policy_verification_unavailable", mail_sent: false, form_submissions: 0, database_mutations: 0 };
+const result = { state: "passed", observed_at: new Date().toISOString(), base_url: base, localized_routes: routes.length, checks, browser_qa: "not_performed_by_http_smoke", mail_sent: false, form_submissions: 0, database_mutations: 0 };
 if (evidencePath) await writeFile(evidencePath, JSON.stringify(result, null, 2) + "\n");
 console.log(JSON.stringify({ state: result.state, localized_routes: routes.length, page_checks: checks.length }));

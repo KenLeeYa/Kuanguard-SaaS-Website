@@ -1,5 +1,5 @@
 export const commercePaths = ["", "products", "products/ordering", "solutions", "features", "pricing", "partners", "about", "contact", "merchant/apply", "privacy", "terms", "terms/merchants", "terms/partners", "security", "solutions/restaurant", "solutions/beverage", "solutions/food-stall", "solutions/retail"];
-export const commerceTitles: Record<string, string> = { "": "數位科技、產品與平台服務", products: "產品與平台", "products/ordering": "攤點通｜餐飲點餐系統", solutions: "數位解決方案", features: "點餐產品功能", pricing: "點餐產品收費方式", partners: "合作夥伴計畫", about: "關於 KUANGUARD", contact: "聯絡我們", "merchant/apply": "申請商家開通", privacy: "隱私權政策", terms: "服務條款", "terms/merchants": "商家服務條款", "terms/partners": "合作夥伴服務條款", security: "資料安全與信任" };
+export const commerceTitles: Record<string, string> = { "": "數位產品與系統合作介紹", products: "我們的數位產品", "products/ordering": "攤點通｜餐飲點餐系統", solutions: "各領域合作方向", features: "點餐產品功能", pricing: "點餐產品收費方式", partners: "廠商合作與夥伴平台", about: "關於 KUANGUARD", contact: "聯絡我們", "merchant/apply": "申請商家開通", privacy: "隱私權政策", terms: "服務條款", "terms/merchants": "商家服務條款", "terms/partners": "合作夥伴服務條款", security: "資料安全與信任" };
 export const solutions = [
   { slug: "restaurant", name: "餐飲門市", icon: "餐", title: "尖峰時段，也能從容接單。", description: "讓顧客掃碼點餐，前場確認訂單、後場依品項出單，減少來回抄單。", flow: ["桌邊掃碼點餐", "確認餐點與備註", "出單與廚房協作"] },
   { slug: "beverage", name: "飲料店", icon: "飲", title: "甜度、冰塊與加料，一單看清楚。", description: "以品項規格與選項整理訂單，協助門市在忙碌時維持一致的製作資訊。", flow: ["選擇品項規格", "確認客製選項", "依訂單完成製作"] },
@@ -26,12 +26,13 @@ export const messages = {
 export const t = messages["zh-TW"];
 
 export const commerceDescriptions: Record<string, string> = {
-  "": "KUANGUARD 數位科技，以商家 SaaS、合作夥伴平台與企業資安服務，連接產品、資訊與人。",
-  products: "探索 KUANGUARD 旗下商家點餐系統、合作夥伴平台與企業資安服務，了解適合你的產品與導入方式。",
+  "": "探索 KUANGUARD 的餐飲、美業與學習服務方向，了解跨領域系統合作、商家曝光與服務介接的合作規劃。",
+  products: "認識攤點通、美業預約服務與 StudyMesh，查看各項產品的開放狀態、官方介紹與聯絡入口。",
   "products/ordering": "攤點通提供 QR 點餐、POS、廚房出單與多門市管理，連結餐飲門市與攤商的日常營運。",
   features: "了解 KUANGUARD 商家點餐產品的功能、適用情境與開通狀態。",
   pricing: "查看 KUANGUARD 商家點餐產品的公開方案、成功訂單計費與費用試算。",
-  solutions: "從商家與門市、企業與團隊、專業服務夥伴的情境出發，選擇合適的數位產品與服務。",
-  about: "認識 KUANGUARD 數位科技：從實際工作需求出發，以產品、平台與專業服務連接不同領域。",
-  contact: "聯絡 KUANGUARD，討論數位產品導入、企業資安或合作平台需求。",
+  solutions: "探索食、美、衣、住、行、育樂、醫療與學術領域的系統合作方向；實際合作與介接依雙方確認。",
+  about: "認識 KUANGUARD：從餐飲、美業及學習需求出發，發展數位產品與跨領域合作。",
+  contact: "聯絡 KUANGUARD，討論數位產品導入、企業資安或系統合作需求。",
+  partners: "歡迎系統廠商洽談產品介紹、商家曝光與介接評估，了解合作流程及既有夥伴平台。",
 };

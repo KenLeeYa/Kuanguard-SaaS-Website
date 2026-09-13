@@ -3902,5 +3902,885 @@
     "공개 요금제입니다. 활성화와 성공 주문 판단은 사업자 계약에 따릅니다. 결제, 장비, 외부 비용은 별도입니다.",
     "แพ็กเกจสาธารณะ การเปิดใช้และนับออร์เดอร์สำเร็จตามสัญญาร้านค้า ค่าชำระเงิน อุปกรณ์ และภายนอกแยกต่างหาก",
     "Gói công khai. Kích hoạt và xác định đơn thành công theo hợp đồng. Thanh toán, thiết bị, bên thứ ba tính riêng."
+  ],
+  "串起生活服務，": [
+    "串起生活服务，",
+    "Connect everyday services.",
+    "暮らしのサービスをつなぎ、",
+    "생활 서비스를 연결하고,",
+    "เชื่อมโยงบริการในชีวิตประจำวัน",
+    "Kết nối dịch vụ đời sống,"
+  ],
+  "開啟數位合作。": [
+    "开启数字合作。",
+    "Build digital partnerships.",
+    "デジタルの協業を広げる。",
+    "디지털 협력을 시작합니다.",
+    "เปิดโอกาสความร่วมมือด้านดิจิทัล",
+    "mở ra hợp tác số."
+  ],
+  "從餐飲、美業到學習服務，我們持續開發貼近使用需求的數位產品，並邀請各領域系統廠商，共同探索服務介接與商家曝光的合作可能。": [
+    "从餐饮、美业到学习服务，我们持续开发贴近使用需求的数字产品，并邀请各领域系统厂商，共同探索服务对接与商家曝光的合作可能。",
+    "From dining and beauty to learning, we develop digital products around real needs and invite system providers to explore service connections and business visibility together.",
+    "飲食、美容、学習のニーズに寄り添うデジタル製品を開発し、各分野のシステム事業者とサービス連携や店舗紹介の可能性を探ります。",
+    "외식·뷰티·학습 분야의 실제 필요에 맞는 디지털 제품을 개발하며, 다양한 시스템 제공업체와 서비스 연동 및 사업체 홍보 협력을 모색합니다.",
+    "เราพัฒนาผลิตภัณฑ์ดิจิทัลที่ตอบโจทย์การใช้งาน ตั้งแต่ร้านอาหาร ความงาม ไปจนถึงการเรียนรู้ และเชิญผู้ให้บริการระบบมาร่วมสำรวจความร่วมมือด้านการเชื่อมต่อบริการและการประชาสัมพันธ์ร้านค้า",
+    "Từ ẩm thực, làm đẹp đến học tập, chúng tôi phát triển sản phẩm số theo nhu cầu thực tế và mời các nhà cung cấp hệ thống cùng tìm hiểu cơ hội kết nối dịch vụ, giới thiệu cơ sở kinh doanh."
+  ],
+  "從實際需求出發，打造合適的數位工具": [
+    "从实际需求出发，打造合适的数字工具",
+    "Digital tools shaped by real needs",
+    "実際のニーズから、使いやすいデジタルツールへ",
+    "실제 필요에서 출발하는 디지털 도구",
+    "สร้างเครื่องมือดิจิทัลจากความต้องการจริง",
+    "Xây dựng công cụ số từ nhu cầu thực tế"
+  ],
+  "我們以餐飲、美業與學習場景為起點，逐步發展產品與服務。各項功能及開放使用狀態，請以對應產品頁面為準。": [
+    "我们以餐饮、美业与学习场景为起点，逐步发展产品与服务。各项功能及开放使用状态，请以对应产品页面为准。",
+    "We are developing products for dining, beauty and learning. Check each product page for its features and current availability.",
+    "飲食、美容、学習の場面を起点に、製品とサービスを段階的に開発しています。機能や利用開始状況は各製品ページでご確認ください。",
+    "외식·뷰티·학습 현장을 바탕으로 제품과 서비스를 단계적으로 개발합니다. 기능과 이용 가능 상태는 각 제품 페이지에서 확인해 주세요.",
+    "เราเริ่มพัฒนาผลิตภัณฑ์และบริการจากการใช้งานในร้านอาหาร ธุรกิจความงาม และการเรียนรู้ โปรดตรวจสอบฟีเจอร์และสถานะการเปิดใช้งานที่หน้าผลิตภัณฑ์แต่ละรายการ",
+    "Chúng tôi từng bước phát triển sản phẩm cho ẩm thực, làm đẹp và học tập. Vui lòng xem tính năng và tình trạng cung cấp tại trang của từng sản phẩm."
+  ],
+  "讓不同領域的服務，有更多連結的可能": [
+    "让不同领域的服务，有更多连接的可能",
+    "More ways for services to connect",
+    "分野を越えて、サービスをつなぐ可能性を",
+    "다양한 분야의 서비스를 연결하는 기회",
+    "เพิ่มโอกาสเชื่อมโยงบริการต่างสาขา",
+    "Thêm cơ hội kết nối dịch vụ giữa các lĩnh vực"
+  ],
+  "我們歡迎已開發相關系統的廠商，共同討論服務介紹、商家曝光與平台介接。以下為合作方向，實際合作內容依雙方確認為準。": [
+    "我们欢迎已开发相关系统的厂商，共同讨论服务介绍、商家曝光与平台对接。以下为合作方向，实际合作内容依双方确认为准。",
+    "We welcome providers with existing systems to discuss service introductions, business visibility and platform connections. These are potential areas of cooperation; each project requires agreement by both parties.",
+    "既存システムをお持ちの事業者と、サービス紹介、店舗の露出、プラットフォーム連携について話し合いたいと考えています。以下は協業の方向性であり、実施内容は双方の合意に基づきます。",
+    "기존 시스템을 운영하는 업체와 서비스 소개, 사업체 홍보, 플랫폼 연동을 논의하고자 합니다. 아래 내용은 협력 방향이며, 실제 범위는 양측의 합의로 정합니다.",
+    "เรายินดีหารือกับผู้ให้บริการที่มีระบบอยู่แล้ว เกี่ยวกับการแนะนำบริการ การประชาสัมพันธ์ร้านค้า และการเชื่อมต่อแพลตฟอร์ม รายการต่อไปนี้เป็นแนวทางความร่วมมือ โดยรายละเอียดจริงต้องได้รับการยืนยันจากทั้งสองฝ่าย",
+    "Chúng tôi chào đón đơn vị đã có hệ thống để trao đổi về giới thiệu dịch vụ, quảng bá cơ sở kinh doanh và kết nối nền tảng. Đây là định hướng hợp tác; nội dung thực hiện cần được hai bên thống nhất."
+  ],
+  "您專注系統服務，我們一起探索更多曝光機會": [
+    "您专注系统服务，我们一起探索更多曝光机会",
+    "You build the service. Let’s explore ways to help it be found.",
+    "システムの専門性を、より多くの出会いへ",
+    "전문 시스템이 더 많은 이용자를 만날 수 있도록",
+    "คุณดูแลระบบ เราร่วมกันมองหาโอกาสให้บริการเป็นที่รู้จัก",
+    "Bạn phát triển dịch vụ, chúng ta cùng mở rộng cơ hội được biết đến"
+  ],
+  "若您已開發餐飲、美業、居家、交通、教育或醫療等領域的系統，歡迎與 KUANGUARD 洽談合作。我們希望保留各廠商原有的系統與服務關係，從產品介紹與服務導流開始，依需求逐步評估資料與功能介接。": [
+    "若您已开发餐饮、美业、居家、交通、教育或医疗等领域的系统，欢迎与 KUANGUARD 洽谈合作。我们希望保留各厂商原有的系统与服务关系，从产品介绍与服务导流开始，依需求逐步评估数据与功能对接。",
+    "If you provide systems for dining, beauty, home services, transport, education or healthcare, we would like to hear from you. We aim to preserve your systems and service relationships, starting with product introductions and referral links, then assessing data and feature connections as needed.",
+    "飲食、美容、住まい、交通、教育、医療などのシステム事業者の皆様から、協業のご相談をお待ちしています。既存のシステムとサービス関係を尊重し、製品紹介や送客リンクから始め、必要に応じてデータや機能の連携を検討します。",
+    "외식·뷰티·주거·교통·교육·의료 등의 시스템을 개발했다면 KUANGUARD에 협력을 문의해 주세요. 기존 시스템과 서비스 관계를 유지하면서 제품 소개와 서비스 연결부터 시작하고, 필요에 따라 데이터와 기능 연동을 검토합니다.",
+    "หากคุณมีระบบด้านร้านอาหาร ความงาม บริการบ้าน การเดินทาง การศึกษา หรือการแพทย์ เรายินดีหารือความร่วมมือกับ KUANGUARD โดยคงระบบและความสัมพันธ์ด้านบริการเดิม เริ่มจากการแนะนำผลิตภัณฑ์และลิงก์ส่งต่อ แล้วประเมินการเชื่อมต่อข้อมูลและฟีเจอร์ตามความจำเป็น",
+    "Nếu đã phát triển hệ thống cho ẩm thực, làm đẹp, nhà ở, giao thông, giáo dục hoặc y tế, hãy trao đổi với KUANGUARD. Chúng tôi tôn trọng hệ thống và quan hệ dịch vụ hiện có, bắt đầu bằng giới thiệu sản phẩm, liên kết chuyển tiếp rồi đánh giá kết nối dữ liệu và tính năng theo nhu cầu."
+  ],
+  "共同打造更容易被找到的生活服務入口": [
+    "共同打造更容易被找到的生活服务入口",
+    "A shared entry point for discovering everyday services",
+    "暮らしのサービスを見つけやすい共通の入口へ",
+    "생활 서비스를 더 쉽게 찾는 공동 진입점",
+    "ร่วมสร้างช่องทางค้นพบบริการในชีวิตประจำวัน",
+    "Cùng xây dựng nơi khám phá dịch vụ đời sống"
+  ],
+  "我們規劃與不同系統廠商合作，讓符合合作條件並完成公開授權的商家，有機會在共同入口展示服務，供使用者探索並前往原系統使用。實際搜尋、刊登與介接功能，將依合作進度逐步評估。": [
+    "我们规划与不同系统厂商合作，让符合合作条件并完成公开授权的商家，有机会在共同入口展示服务，供用户探索并前往原系统使用。实际搜索、刊登与对接功能，将依合作进度逐步评估。",
+    "We plan to work with system providers so eligible businesses that authorize publication may present their services through a shared entry point, directing visitors to the original systems. Search, listing and integration features will be assessed as cooperation progresses.",
+    "各システム事業者と協力し、条件を満たして公開を許可した店舗が共通の入口でサービスを紹介し、利用者が元のシステムへ進める仕組みを計画しています。検索、掲載、連携機能は協業の進捗に応じて検討します。",
+    "여러 시스템 제공업체와 협력하여 조건을 충족하고 공개에 동의한 사업체가 공동 진입점에서 서비스를 소개하고, 이용자가 원래 시스템으로 이동할 수 있도록 계획하고 있습니다. 검색·게시·연동 기능은 협력 진행에 따라 단계적으로 검토합니다.",
+    "เราวางแผนร่วมมือกับผู้ให้บริการระบบ เพื่อให้ร้านค้าที่เข้าเงื่อนไขและอนุญาตให้เผยแพร่ข้อมูลสามารถนำเสนอบริการผ่านช่องทางร่วม ผู้ใช้จะค้นพบและไปใช้บริการที่ระบบเดิม ส่วนฟีเจอร์ค้นหา ลงรายการ และเชื่อมต่อจะประเมินตามความคืบหน้าของความร่วมมือ",
+    "Chúng tôi dự kiến hợp tác với các nhà cung cấp hệ thống để cơ sở đủ điều kiện và đã cho phép công khai có thể giới thiệu dịch vụ tại một điểm truy cập chung, dẫn người dùng về hệ thống gốc. Tính năng tìm kiếm, đăng thông tin và kết nối sẽ được đánh giá theo tiến độ hợp tác."
+  ],
+  "訂閱資格與公開同意分開確認；不因商家訂閱系統就自動公開資料。": [
+    "订阅资格与公开同意分开确认；不因商家订阅系统就自动公开数据。",
+    "Subscription eligibility and permission to publish are separate. A subscription does not automatically make business information public.",
+    "契約資格と公開への同意は別々に確認します。契約だけで店舗情報が自動公開されることはありません。",
+    "구독 자격과 공개 동의는 별도로 확인합니다. 구독만으로 사업체 정보가 자동 공개되지는 않습니다.",
+    "สิทธิ์การสมัครใช้บริการและความยินยอมให้เผยแพร่ต้องยืนยันแยกกัน การสมัครใช้ระบบไม่ทำให้ข้อมูลร้านค้าเผยแพร่อัตโนมัติ",
+    "Điều kiện đăng ký và sự đồng ý công khai được xác nhận riêng. Đăng ký hệ thống không đồng nghĩa với tự động công khai thông tin cơ sở."
+  ],
+  "以獲授權的商家公開資訊與服務連結為合作基礎，不共享顧客名單、病歷或私人學習資料。": [
+    "以获授权的商家公开信息与服务链接为合作基础，不共享顾客名单、病历或私人学习资料。",
+    "Cooperation is based on authorized public business information and service links, without sharing customer lists, medical records or private learning materials.",
+    "許可を得た店舗の公開情報とサービスリンクを基本とし、顧客名簿、診療記録、非公開の学習資料は共有しません。",
+    "허가받은 사업체 공개 정보와 서비스 링크를 바탕으로 협력하며, 고객 명단·의료 기록·개인 학습 자료는 공유하지 않습니다.",
+    "ความร่วมมือใช้ข้อมูลสาธารณะของร้านค้าที่ได้รับอนุญาตและลิงก์บริการ โดยไม่แบ่งปันรายชื่อลูกค้า เวชระเบียน หรือข้อมูลการเรียนรู้ส่วนตัว",
+    "Hợp tác dựa trên thông tin công khai đã được cơ sở cho phép và liên kết dịch vụ; không chia sẻ danh sách khách hàng, hồ sơ bệnh án hay tài liệu học tập riêng tư."
+  ],
+  "各廠商保留原有系統與服務流程，後續合作範圍由雙方確認。": [
+    "各厂商保留原有系统与服务流程，后续合作范围由双方确认。",
+    "Providers retain their existing systems and service workflows. Further cooperation requires agreement by both parties.",
+    "各事業者は既存のシステムとサービス手順を維持し、今後の協業範囲は双方で確認します。",
+    "각 업체는 기존 시스템과 서비스 절차를 유지하며, 이후 협력 범위는 양측이 합의합니다.",
+    "ผู้ให้บริการแต่ละรายคงระบบและขั้นตอนบริการเดิมไว้ ขอบเขตความร่วมมือต่อไปต้องได้รับการยืนยันจากทั้งสองฝ่าย",
+    "Mỗi đơn vị giữ nguyên hệ thống và quy trình dịch vụ. Phạm vi hợp tác tiếp theo do hai bên thống nhất."
+  ],
+  "餐飲數位服務": [
+    "餐饮数字服务",
+    "Dining services",
+    "飲食向けデジタルサービス",
+    "외식 디지털 서비스",
+    "บริการดิจิทัลสำหรับร้านอาหาร",
+    "Dịch vụ số cho ẩm thực"
+  ],
+  "開放申請評估": [
+    "开放申请评估",
+    "Applications open for review",
+    "導入相談を受付中",
+    "도입 검토 신청 접수 중",
+    "เปิดรับคำขอเพื่อประเมิน",
+    "Nhận đăng ký đánh giá"
+  ],
+  "以掃碼點餐、POS 接單、廚房出單與多據點管理，協助餐飲業者整理日常營運流程。": [
+    "以扫码点餐、POS 接单、厨房出单与多网点管理，协助餐饮业者整理日常运营流程。",
+    "QR ordering, POS order handling, kitchen workflows and multi-location management help food businesses organize daily operations.",
+    "QR注文、POS受注、厨房への伝達、複数拠点管理を通じて、飲食店の日々の業務を整理します。",
+    "QR 주문, POS 접수, 주방 주문 처리, 다지점 관리로 외식업체의 일상 운영을 돕습니다.",
+    "ช่วยร้านอาหารจัดระเบียบงานประจำวันด้วยการสั่งอาหารผ่าน QR การรับออเดอร์ด้วย POS งานครัว และการจัดการหลายสาขา",
+    "Hỗ trợ vận hành hằng ngày với đặt món qua QR, tiếp nhận đơn tại POS, xử lý đơn ở bếp và quản lý nhiều địa điểm."
+  ],
+  "申請資格、功能及啟用時間依產品團隊確認。": [
+    "申请资格、功能及启用时间依产品团队确认。",
+    "Eligibility, features and activation timing are confirmed by the product team.",
+    "対象条件、機能、利用開始時期は製品チームが確認します。",
+    "신청 자격, 기능, 이용 시작 시점은 제품팀이 확인합니다.",
+    "ทีมผลิตภัณฑ์จะยืนยันคุณสมบัติ ฟีเจอร์ และเวลาเปิดใช้งาน",
+    "Đội ngũ sản phẩm sẽ xác nhận điều kiện, tính năng và thời điểm kích hoạt."
+  ],
+  "美業預約服務": [
+    "美业预约服务",
+    "Beauty appointment services",
+    "美容向け予約サービス",
+    "뷰티 예약 서비스",
+    "บริการนัดหมายธุรกิจความงาม",
+    "Dịch vụ đặt lịch làm đẹp"
+  ],
+  "以美髮、美甲、美睫等服務情境為出發點，規劃預約安排與顧客服務的數位工具。": [
+    "以美发、美甲、美睫等服务情境为出发点，规划预约安排与顾客服务的数字工具。",
+    "We are planning digital tools for appointments and customer service in hair, nail and lash studios.",
+    "ヘア、ネイル、まつげサロンなどに向け、予約管理や接客を支えるデジタルツールを計画しています。",
+    "헤어·네일·속눈썹 시술 현장을 바탕으로 예약 관리와 고객 서비스용 디지털 도구를 기획하고 있습니다.",
+    "วางแผนเครื่องมือดิจิทัลสำหรับจัดการนัดหมายและบริการลูกค้า โดยเริ่มจากร้านทำผม ทำเล็บ และต่อขนตา",
+    "Chúng tôi đang lên kế hoạch cho công cụ số quản lý lịch hẹn và dịch vụ khách hàng tại tiệm tóc, nail và nối mi."
+  ],
+  "獨立產品規劃，尚未上線；攤點通專注餐飲點餐。": [
+    "独立产品规划，尚未上线；攤點通专注餐饮点餐。",
+    "A separate planned product, not yet launched. StallOrder focuses on food ordering.",
+    "独立した製品として計画中で、まだ公開していません。StallOrderは飲食の注文に特化しています。",
+    "별도 제품으로 기획 중이며 아직 출시되지 않았습니다. StallOrder는 음식 주문에 집중합니다.",
+    "เป็นผลิตภัณฑ์แยกที่อยู่ระหว่างวางแผนและยังไม่เปิดใช้ ส่วน StallOrder มุ่งเน้นการสั่งอาหาร",
+    "Đây là sản phẩm riêng đang được lên kế hoạch, chưa ra mắt. StallOrder tập trung vào đặt món."
+  ],
+  "學習／學術服務": [
+    "学习／学术服务",
+    "Learning and academic services",
+    "学習・学術サービス",
+    "학습·학술 서비스",
+    "บริการการเรียนรู้และวิชาการ",
+    "Dịch vụ học tập và học thuật"
+  ],
+  "開發中": [
+    "开发中",
+    "In development",
+    "開発中",
+    "개발 중",
+    "กำลังพัฒนา",
+    "Đang phát triển"
+  ],
+  "以學習資料整理、筆記與知識管理為方向，協助建立有條理的學習流程。": [
+    "以学习资料整理、笔记与知识管理为方向，协助建立有条理的学习流程。",
+    "Designed around learning materials, notes and knowledge organization to support a more structured learning process.",
+    "学習資料、ノート、知識の整理を軸に、体系的な学習の流れづくりを目指します。",
+    "학습 자료, 노트, 지식 정리를 중심으로 체계적인 학습 과정을 돕는 것을 목표로 합니다.",
+    "มุ่งเน้นการจัดระเบียบสื่อการเรียนรู้ บันทึก และความรู้ เพื่อช่วยสร้างกระบวนการเรียนรู้ที่เป็นระบบ",
+    "Hướng đến sắp xếp tài liệu, ghi chú và quản lý kiến thức để hỗ trợ quy trình học tập có tổ chức."
+  ],
+  "產品官網已公開，登入啟用仍在準備中。": [
+    "产品官网已公开，登录启用仍在准备中。",
+    "The product website is public; sign-in activation is still being prepared.",
+    "製品サイトは公開済みですが、ログインの有効化は準備中です。",
+    "제품 웹사이트는 공개되었으며 로그인 활성화는 준비 중입니다.",
+    "เว็บไซต์ผลิตภัณฑ์เผยแพร่แล้ว แต่ยังอยู่ระหว่างเตรียมเปิดใช้งานการเข้าสู่ระบบ",
+    "Website sản phẩm đã công khai; chức năng đăng nhập vẫn đang được chuẩn bị kích hoạt."
+  ],
+  "了解 StudyMesh": [
+    "了解 StudyMesh",
+    "Explore StudyMesh",
+    "StudyMeshを見る",
+    "StudyMesh 알아보기",
+    "รู้จัก StudyMesh",
+    "Tìm hiểu StudyMesh"
+  ],
+  "食・餐飲": [
+    "食・餐饮",
+    "Food & dining",
+    "食・飲食",
+    "식・외식",
+    "อาหาร・ร้านอาหาร",
+    "Ẩm thực"
+  ],
+  "點餐、訂位與餐飲營運系統，探索服務入口與商家曝光合作。": [
+    "点餐、订位与餐饮运营系统，探索服务入口与商家曝光合作。",
+    "Ordering, reservation and restaurant systems: explore service entry points and business visibility.",
+    "注文、予約、飲食店運営システムと、サービスの入口や店舗紹介の協業を探ります。",
+    "주문·예약·외식 운영 시스템과 서비스 연결 및 사업체 홍보 협력을 모색합니다.",
+    "ระบบสั่งอาหาร จองโต๊ะ และบริหารร้านอาหาร ร่วมสำรวจช่องทางเข้าถึงบริการและการประชาสัมพันธ์ร้านค้า",
+    "Hệ thống đặt món, đặt bàn và vận hành nhà hàng: tìm hiểu hợp tác kết nối dịch vụ và giới thiệu cơ sở."
+  ],
+  "美・美業": [
+    "美・美业",
+    "Beauty",
+    "美・美容",
+    "미・뷰티",
+    "ความงาม",
+    "Làm đẹp"
+  ],
+  "美髮、美甲、美睫等預約系統，討論服務介紹與預約導流合作。": [
+    "美发、美甲、美睫等预约系统，讨论服务介绍与预约导流合作。",
+    "Hair, nail and lash appointment systems: discuss service introductions and booking referrals.",
+    "ヘア、ネイル、まつげサロンなどの予約システムと、サービス紹介や予約への送客を検討します。",
+    "헤어·네일·속눈썹 예약 시스템과 서비스 소개 및 예약 연결 협력을 논의합니다.",
+    "ระบบนัดหมายร้านทำผม ทำเล็บ และต่อขนตา หารือการแนะนำบริการและการส่งต่อไปจอง",
+    "Hệ thống đặt lịch tóc, nail và nối mi: trao đổi về giới thiệu dịch vụ và dẫn khách đến đặt lịch."
+  ],
+  "衣・服飾與生活服務": [
+    "衣・服饰与生活服务",
+    "Clothing & everyday services",
+    "衣・衣類と生活サービス",
+    "의・의류 및 생활 서비스",
+    "เสื้อผ้าและบริการในชีวิตประจำวัน",
+    "Trang phục và dịch vụ đời sống"
+  ],
+  "洗衣、改衣、租借與零售系統，探索多元生活服務的連結。": [
+    "洗衣、改衣、租借与零售系统，探索多元生活服务的连接。",
+    "Laundry, alterations, rental and retail systems: explore connections between everyday services.",
+    "クリーニング、衣類のお直し、レンタル、小売システムと、生活サービスのつながりを探ります。",
+    "세탁·수선·대여·소매 시스템과 다양한 생활 서비스의 연결을 모색합니다.",
+    "ระบบซักรีด แก้เสื้อผ้า เช่า และค้าปลีก สำรวจการเชื่อมโยงบริการในชีวิตประจำวัน",
+    "Hệ thống giặt ủi, sửa quần áo, cho thuê và bán lẻ: khám phá kết nối giữa các dịch vụ đời sống."
+  ],
+  "住・居家服務": [
+    "住・居家服务",
+    "Home services",
+    "住・住まいのサービス",
+    "주・주거 서비스",
+    "บริการบ้าน",
+    "Dịch vụ nhà ở"
+  ],
+  "清潔、維修與居家服務平台，討論區域服務介紹與需求導流。": [
+    "清洁、维修与居家服务平台，讨论区域服务介绍与需求导流。",
+    "Cleaning, repair and home service platforms: discuss local service introductions and referrals.",
+    "清掃、修理、住まいのサービス事業者と、地域のサービス紹介や送客を検討します。",
+    "청소·수리·주거 서비스 플랫폼과 지역 서비스 소개 및 수요 연결을 논의합니다.",
+    "แพลตฟอร์มทำความสะอาด ซ่อมแซม และบริการบ้าน หารือการแนะนำบริการในพื้นที่และการส่งต่อผู้สนใจ",
+    "Nền tảng vệ sinh, sửa chữa và dịch vụ nhà ở: trao đổi về giới thiệu dịch vụ địa phương và chuyển tiếp nhu cầu."
+  ],
+  "行・交通服務": [
+    "行・交通服务",
+    "Transport",
+    "行・交通サービス",
+    "행・교통 서비스",
+    "การเดินทาง",
+    "Giao thông"
+  ],
+  "停車、租車與接送相關平台，探索交通資訊與服務入口合作。": [
+    "停车、租车与接送相关平台，探索交通信息与服务入口合作。",
+    "Parking, vehicle rental and transfer platforms: explore transport information and service links.",
+    "駐車場、レンタカー、送迎プラットフォームと、交通情報やサービス入口の協業を探ります。",
+    "주차·렌터카·이동 서비스 플랫폼과 교통 정보 및 서비스 연결 협력을 모색합니다.",
+    "แพลตฟอร์มที่จอดรถ รถเช่า และรับส่ง สำรวจความร่วมมือด้านข้อมูลการเดินทางและช่องทางเข้าถึงบริการ",
+    "Nền tảng đỗ xe, thuê xe và đưa đón: khám phá hợp tác về thông tin giao thông và liên kết dịch vụ."
+  ],
+  "育樂・課程與活動": [
+    "育乐・课程与活动",
+    "Courses & activities",
+    "育楽・講座とイベント",
+    "여가・강좌 및 활동",
+    "หลักสูตรและกิจกรรม",
+    "Khóa học và hoạt động"
+  ],
+  "課程、活動、場館及體驗服務，討論報名與預約入口合作。": [
+    "课程、活动、场馆及体验服务，讨论报名与预约入口合作。",
+    "Courses, events, venues and experiences: discuss registration and reservation entry points.",
+    "講座、イベント、施設、体験サービスと、申込や予約の入口に関する協業を検討します。",
+    "강좌·행사·시설·체험 서비스와 신청 및 예약 연결 협력을 논의합니다.",
+    "หลักสูตร กิจกรรม สถานที่ และบริการประสบการณ์ หารือช่องทางสมัครและจอง",
+    "Khóa học, sự kiện, địa điểm và trải nghiệm: trao đổi hợp tác về liên kết đăng ký và đặt chỗ."
+  ],
+  "醫療・院所服務": [
+    "医疗・院所服务",
+    "Healthcare information & access",
+    "医療・医療機関サービス",
+    "의료・의료기관 서비스",
+    "บริการสถานพยาบาล",
+    "Dịch vụ cơ sở y tế"
+  ],
+  "歡迎院所資訊與掛號系統廠商洽談公開資訊及官方服務入口合作。": [
+    "欢迎院所信息与挂号系统厂商洽谈公开信息及官方服务入口合作。",
+    "We welcome clinic information and appointment system providers to discuss public information and official service links.",
+    "医療機関の情報・予約システム事業者と、公開情報や公式サービスへのリンクについて協業を検討します。",
+    "의료기관 정보·진료 예약 시스템 업체와 공개 정보 및 공식 서비스 연결 협력을 논의하고자 합니다.",
+    "ยินดีหารือกับผู้ให้บริการระบบข้อมูลสถานพยาบาลและนัดหมาย เกี่ยวกับข้อมูลสาธารณะและลิงก์บริการทางการ",
+    "Chào đón nhà cung cấp hệ thống thông tin cơ sở y tế và đặt khám để trao đổi về thông tin công khai, liên kết dịch vụ chính thức."
+  ],
+  "學術・學習與知識": [
+    "学术・学习与知识",
+    "Learning & knowledge",
+    "学術・学習と知識",
+    "학술・학습과 지식",
+    "การเรียนรู้และความรู้",
+    "Học thuật, học tập và kiến thức"
+  ],
+  "學習工具、教育平台與知識管理服務，探索產品介紹與服務合作。": [
+    "学习工具、教育平台与知识管理服务，探索产品介绍与服务合作。",
+    "Learning tools, education platforms and knowledge services: explore product introductions and service cooperation.",
+    "学習ツール、教育プラットフォーム、知識管理サービスと、製品紹介やサービス協業を探ります。",
+    "학습 도구·교육 플랫폼·지식 관리 서비스와 제품 소개 및 서비스 협력을 모색합니다.",
+    "เครื่องมือการเรียนรู้ แพลตฟอร์มการศึกษา และบริการจัดการความรู้ สำรวจการแนะนำผลิตภัณฑ์และความร่วมมือด้านบริการ",
+    "Công cụ học tập, nền tảng giáo dục và quản lý kiến thức: tìm hiểu hợp tác giới thiệu sản phẩm và dịch vụ."
+  ],
+  "系統介紹合作": [
+    "系统介绍合作",
+    "Product introductions",
+    "システム紹介の協業",
+    "시스템 소개 협력",
+    "ความร่วมมือแนะนำระบบ",
+    "Hợp tác giới thiệu hệ thống"
+  ],
+  "經雙方確認後，呈現產品介紹與官方服務連結。": [
+    "经双方确认后，呈现产品介绍与官方服务链接。",
+    "Present product information and official service links after both parties agree.",
+    "双方の確認後、製品情報と公式サービスへのリンクを掲載します。",
+    "양측이 확인한 뒤 제품 소개와 공식 서비스 링크를 게시합니다.",
+    "นำเสนอข้อมูลผลิตภัณฑ์และลิงก์บริการทางการหลังได้รับการยืนยันจากทั้งสองฝ่าย",
+    "Giới thiệu sản phẩm và liên kết dịch vụ chính thức sau khi hai bên thống nhất."
+  ],
+  "商家曝光合作": [
+    "商家曝光合作",
+    "Business visibility",
+    "店舗紹介の協業",
+    "사업체 홍보 협력",
+    "ความร่วมมือประชาสัมพันธ์ร้านค้า",
+    "Hợp tác quảng bá cơ sở kinh doanh"
+  ],
+  "規劃讓符合合作條件、且已授權公開的商家，於未來整合入口被搜尋與發現。": [
+    "规划让符合合作条件、且已授权公开的商家，于未来整合入口被搜索与发现。",
+    "We plan to help eligible businesses that authorize publication be discovered through a future shared entry point.",
+    "条件を満たし、公開を許可した店舗を、将来の共通入口で検索・発見できるようにする計画です。",
+    "협력 조건을 충족하고 공개를 허가한 사업체를 향후 공동 진입점에서 검색하고 찾을 수 있도록 계획합니다.",
+    "วางแผนให้ร้านค้าที่เข้าเงื่อนไขความร่วมมือและอนุญาตให้เผยแพร่สามารถถูกค้นพบผ่านช่องทางร่วมในอนาคต",
+    "Dự kiến giúp cơ sở đủ điều kiện và đã cho phép công khai được tìm thấy qua điểm truy cập chung trong tương lai."
+  ],
+  "技術介接評估": [
+    "技术对接评估",
+    "Integration assessment",
+    "技術連携の評価",
+    "기술 연동 검토",
+    "ประเมินการเชื่อมต่อทางเทคนิค",
+    "Đánh giá kết nối kỹ thuật"
+  ],
+  "依廠商提供的正式介接能力與授權範圍，討論公開資料同步或服務導流。": [
+    "依厂商提供的正式对接能力与授权范围，讨论公开数据同步或服务导流。",
+    "Discuss public information synchronization or referrals based on the provider’s official integration capabilities and permissions.",
+    "事業者が正式に提供する連携機能と許可範囲に基づき、公開データの同期やサービスへの送客を検討します。",
+    "업체의 공식 연동 기능과 허가 범위를 바탕으로 공개 데이터 동기화 또는 서비스 연결을 논의합니다.",
+    "หารือการซิงค์ข้อมูลสาธารณะหรือส่งต่อไปยังบริการ โดยอิงความสามารถเชื่อมต่ออย่างเป็นทางการและขอบเขตที่ผู้ให้บริการอนุญาต",
+    "Trao đổi đồng bộ thông tin công khai hoặc chuyển tiếp dịch vụ dựa trên khả năng kết nối chính thức và phạm vi cho phép của nhà cung cấp."
+  ],
+  "專案合作": [
+    "项目合作",
+    "Project cooperation",
+    "プロジェクト協業",
+    "프로젝트 협력",
+    "ความร่วมมือรายโครงการ",
+    "Hợp tác dự án"
+  ],
+  "依產業需求討論合作內容、分工、時程與維運方式。": [
+    "依产业需求讨论合作内容、分工、时程与运维方式。",
+    "Define scope, responsibilities, timelines and ongoing support around industry needs.",
+    "業界のニーズに合わせ、協業内容、役割分担、日程、保守運用を話し合います。",
+    "산업별 필요에 맞춰 협력 내용, 역할, 일정, 운영·유지보수 방식을 논의합니다.",
+    "หารือเนื้อหาความร่วมมือ การแบ่งงาน กำหนดเวลา และการดูแลระบบตามความต้องการของอุตสาหกรรม",
+    "Trao đổi phạm vi hợp tác, phân công, tiến độ và vận hành bảo trì theo nhu cầu ngành."
+  ],
+  "聯絡交流": [
+    "联系交流",
+    "Start a conversation",
+    "ご相談",
+    "연락 및 의견 교환",
+    "ติดต่อพูดคุย",
+    "Trao đổi ban đầu"
+  ],
+  "了解產品、服務領域與合作需求。": [
+    "了解产品、服务领域与合作需求。",
+    "Understand the product, service area and cooperation needs.",
+    "製品、サービス分野、協業のご要望を伺います。",
+    "제품, 서비스 분야, 협력 요구를 파악합니다.",
+    "ทำความเข้าใจผลิตภัณฑ์ สาขาบริการ และความต้องการร่วมมือ",
+    "Tìm hiểu sản phẩm, lĩnh vực dịch vụ và nhu cầu hợp tác."
+  ],
+  "可行性評估": [
+    "可行性评估",
+    "Assess feasibility",
+    "実現可能性の検討",
+    "실현 가능성 검토",
+    "ประเมินความเป็นไปได้",
+    "Đánh giá tính khả thi"
+  ],
+  "確認資料授權、服務連結與可提供的介接方式。": [
+    "确认数据授权、服务链接与可提供的对接方式。",
+    "Review data permissions, service links and available integration methods.",
+    "データの許可範囲、サービスリンク、提供可能な連携方法を確認します。",
+    "데이터 권한, 서비스 링크, 제공 가능한 연동 방식을 확인합니다.",
+    "ตรวจสอบสิทธิ์ข้อมูล ลิงก์บริการ และวิธีเชื่อมต่อที่รองรับ",
+    "Xác nhận quyền sử dụng dữ liệu, liên kết dịch vụ và phương thức kết nối khả dụng."
+  ],
+  "確認合作": [
+    "确认合作",
+    "Agree on cooperation",
+    "協業内容の合意",
+    "협력 합의",
+    "ยืนยันความร่วมมือ",
+    "Thống nhất hợp tác"
+  ],
+  "討論分工、費用、時程與維運安排。": [
+    "讨论分工、费用、时程与运维安排。",
+    "Discuss responsibilities, costs, timelines and ongoing support.",
+    "役割分担、費用、日程、保守運用について話し合います。",
+    "역할 분담, 비용, 일정, 운영·유지보수를 논의합니다.",
+    "หารือการแบ่งงาน ค่าใช้จ่าย กำหนดเวลา และการดูแลระบบ",
+    "Trao đổi phân công, chi phí, tiến độ và vận hành bảo trì."
+  ],
+  "依約推進": [
+    "依约推进",
+    "Proceed as agreed",
+    "合意に沿って実施",
+    "합의에 따라 진행",
+    "ดำเนินการตามข้อตกลง",
+    "Triển khai theo thỏa thuận"
+  ],
+  "按確認的範圍安排後續介紹或介接專案。": [
+    "按确认的范围安排后续介绍或对接项目。",
+    "Arrange introductions or integration projects within the agreed scope.",
+    "合意した範囲に沿って、紹介や連携プロジェクトを進めます。",
+    "확인된 범위에 따라 소개 또는 연동 프로젝트를 진행합니다.",
+    "จัดเตรียมการแนะนำหรือโครงการเชื่อมต่อภายในขอบเขตที่ยืนยันแล้ว",
+    "Sắp xếp giới thiệu hoặc dự án kết nối tiếp theo trong phạm vi đã thống nhất."
+  ],
+  "一定要更換原有系統才能合作嗎？": [
+    "一定要更换原有系统才能合作吗？",
+    "Do we need to replace our existing system?",
+    "既存のシステムを変更する必要がありますか？",
+    "협력하려면 기존 시스템을 교체해야 하나요?",
+    "ต้องเปลี่ยนระบบเดิมเพื่อร่วมมือหรือไม่?",
+    "Có cần thay thế hệ thống hiện tại để hợp tác không?"
+  ],
+  "合作方向以保留原系統為出發點，可先討論產品介紹與服務連結，是否需要技術調整依實際需求評估。": [
+    "合作方向以保留原系统为出发点，可先讨论产品介绍与服务链接，是否需要技术调整依实际需求评估。",
+    "Our starting point is to keep your existing system. We can begin with product introductions and service links, then assess any technical changes based on actual needs.",
+    "既存システムの維持を基本とし、製品紹介やサービスリンクから相談できます。技術的な変更の要否は、実際のニーズに応じて検討します。",
+    "기존 시스템을 유지하는 방향으로 시작합니다. 제품 소개와 서비스 링크부터 논의하고, 기술 변경 필요성은 실제 요구에 따라 검토합니다.",
+    "เริ่มจากการคงระบบเดิมไว้ สามารถหารือการแนะนำผลิตภัณฑ์และลิงก์บริการก่อน แล้วจึงประเมินว่าต้องปรับด้านเทคนิคหรือไม่ตามความต้องการจริง",
+    "Chúng tôi ưu tiên giữ hệ thống hiện tại. Có thể bắt đầu bằng giới thiệu sản phẩm và liên kết dịch vụ, rồi đánh giá nhu cầu điều chỉnh kỹ thuật theo thực tế."
+  ],
+  "訂閱商家會自動出現在共同入口嗎？": [
+    "订阅商家会自动出现在共同入口吗？",
+    "Will subscribing businesses be listed automatically?",
+    "契約した店舗は共通入口に自動掲載されますか？",
+    "구독한 사업체가 공동 진입점에 자동으로 표시되나요?",
+    "ร้านค้าที่สมัครใช้บริการจะปรากฏในช่องทางร่วมอัตโนมัติหรือไม่?",
+    "Cơ sở đăng ký sử dụng có tự động xuất hiện ở điểm truy cập chung không?"
+  ],
+  "不會。規劃中的商家曝光合作，需確認刊登條件與公開授權；訂閱本身不代表同意公開。": [
+    "不会。规划中的商家曝光合作，需确认刊登条件与公开授权；订阅本身不代表同意公开。",
+    "No. Planned business listings require confirmed eligibility and permission to publish. A subscription does not constitute consent to publication.",
+    "いいえ。計画中の店舗紹介には、掲載条件と公開許可の確認が必要です。契約だけでは公開への同意になりません。",
+    "아닙니다. 계획 중인 사업체 홍보에는 게시 조건과 공개 허가 확인이 필요합니다. 구독 자체가 공개 동의를 의미하지는 않습니다.",
+    "ไม่ การประชาสัมพันธ์ร้านค้าที่อยู่ในแผนต้องยืนยันเงื่อนไขการลงรายการและการอนุญาตให้เผยแพร่ การสมัครใช้บริการไม่ถือเป็นความยินยอมให้เปิดเผย",
+    "Không. Kế hoạch giới thiệu cơ sở yêu cầu xác nhận điều kiện đăng thông tin và quyền công khai. Đăng ký sử dụng không đồng nghĩa với đồng ý công khai."
+  ],
+  "目前已經能在這個網站搜尋所有合作商家嗎？": [
+    "目前已经能在这个网站搜索所有合作商家吗？",
+    "Can I search for all participating businesses on this website now?",
+    "このサイトで協業店舗を検索できますか？",
+    "지금 이 웹사이트에서 모든 협력 사업체를 검색할 수 있나요?",
+    "ตอนนี้ค้นหาร้านค้าที่ร่วมมือทั้งหมดบนเว็บไซต์นี้ได้แล้วหรือไม่?",
+    "Hiện có thể tìm mọi cơ sở hợp tác trên website này chưa?"
+  ],
+  "本網站目前以產品介紹與合作諮詢為主。共同入口與商家搜尋屬後續合作規劃，尚未提供的功能不會作為已上線服務呈現。": [
+    "本网站目前以产品介绍与合作咨询为主。共同入口与商家搜索属后续合作规划，尚未提供的功能不会作为已上线服务呈现。",
+    "This website currently provides product information and cooperation inquiries. A shared entry point and business search are future plans; features that are not available are not presented as live services.",
+    "現在、このサイトは製品紹介と協業相談を中心に提供しています。共通入口や店舗検索は今後の計画であり、未提供の機能を公開済みサービスとして案内することはありません。",
+    "현재 이 웹사이트는 제품 소개와 협력 문의를 중심으로 제공합니다. 공동 진입점과 사업체 검색은 향후 계획이며, 제공되지 않는 기능을 출시된 서비스로 안내하지 않습니다.",
+    "ขณะนี้เว็บไซต์เน้นการแนะนำผลิตภัณฑ์และการสอบถามความร่วมมือ ช่องทางร่วมและการค้นหาร้านค้าเป็นแผนในอนาคต ฟีเจอร์ที่ยังไม่พร้อมจะไม่ถูกนำเสนอว่าเปิดใช้แล้ว",
+    "Website hiện tập trung vào giới thiệu sản phẩm và tư vấn hợp tác. Điểm truy cập chung và tìm kiếm cơ sở là kế hoạch sau này; tính năng chưa có sẽ không được giới thiệu như dịch vụ đã ra mắt."
+  ],
+  "沒有 API 的廠商可以洽談嗎？": [
+    "没有 API 的厂商可以洽谈吗？",
+    "Can providers without an API participate?",
+    "APIがない事業者も相談できますか？",
+    "API가 없는 업체도 문의할 수 있나요?",
+    "ผู้ให้บริการที่ไม่มี API สามารถหารือได้หรือไม่?",
+    "Nhà cung cấp không có API có thể trao đổi hợp tác không?"
+  ],
+  "可以先討論產品介紹或官方服務連結合作，其他介接方式另行評估。": [
+    "可以先讨论产品介绍或官方服务链接合作，其他对接方式另行评估。",
+    "Yes. We can start with product introductions or official service links and assess other integration options separately.",
+    "はい。製品紹介や公式サービスへのリンクから相談でき、その他の連携方法は別途検討します。",
+    "네. 제품 소개나 공식 서비스 링크 협력부터 논의하고, 다른 연동 방식은 별도로 검토할 수 있습니다.",
+    "ได้ สามารถเริ่มจากการแนะนำผลิตภัณฑ์หรือลิงก์บริการทางการ ส่วนวิธีเชื่อมต่ออื่นจะประเมินแยกต่างหาก",
+    "Có. Có thể bắt đầu bằng giới thiệu sản phẩm hoặc liên kết dịch vụ chính thức; các phương thức kết nối khác sẽ được đánh giá riêng."
+  ],
+  "合作是否需要共享顧客資料？": [
+    "合作是否需要共享顾客数据？",
+    "Does cooperation require sharing customer data?",
+    "協業には顧客データの共有が必要ですか？",
+    "협력 시 고객 데이터를 공유해야 하나요?",
+    "ความร่วมมือต้องแบ่งปันข้อมูลลูกค้าหรือไม่?",
+    "Hợp tác có yêu cầu chia sẻ dữ liệu khách hàng không?"
+  ],
+  "目前提出的曝光與導流方向，以經授權的商家公開資訊及服務連結為主，不要求提供顧客名單。": [
+    "目前提出的曝光与导流方向，以经授权的商家公开信息及服务链接为主，不要求提供顾客名单。",
+    "Our proposed visibility and referral approach uses authorized public business information and service links. Customer lists are not required.",
+    "現在提案している紹介・送客は、許可を得た店舗の公開情報とサービスリンクが中心で、顧客名簿の提供は求めません。",
+    "현재 제안하는 홍보와 서비스 연결은 허가받은 사업체 공개 정보 및 서비스 링크를 중심으로 하며, 고객 명단을 요구하지 않습니다.",
+    "แนวทางประชาสัมพันธ์และส่งต่อที่เสนอใช้ข้อมูลสาธารณะของร้านค้าที่ได้รับอนุญาตและลิงก์บริการเป็นหลัก ไม่ต้องให้รายชื่อลูกค้า",
+    "Định hướng quảng bá và chuyển tiếp hiện dùng thông tin công khai đã được cơ sở cho phép cùng liên kết dịch vụ, không yêu cầu cung cấp danh sách khách hàng."
+  ],
+  "合作如何收費？": [
+    "合作如何收费？",
+    "How is cooperation priced?",
+    "協業の費用はどのように決まりますか？",
+    "협력 비용은 어떻게 정하나요?",
+    "ความร่วมมือคิดค่าใช้จ่ายอย่างไร?",
+    "Chi phí hợp tác được tính thế nào?"
+  ],
+  "依合作範圍、介接需求與維運安排個別討論，歡迎聯絡洽詢。": [
+    "依合作范围、对接需求与运维安排个别讨论，欢迎联系咨询。",
+    "Costs are discussed individually based on scope, integration needs and ongoing support. Contact us to discuss your project.",
+    "協業範囲、連携要件、保守運用に応じて個別に相談します。お気軽にお問い合わせください。",
+    "협력 범위, 연동 요구, 운영·유지보수에 따라 개별적으로 논의합니다. 문의해 주세요.",
+    "หารือเป็นรายกรณีตามขอบเขตความร่วมมือ ความต้องการเชื่อมต่อ และการดูแลระบบ ยินดีรับการติดต่อสอบถาม",
+    "Chi phí được trao đổi riêng theo phạm vi, nhu cầu kết nối và vận hành bảo trì. Vui lòng liên hệ để tư vấn."
+  ],
+  "數位產品與系統合作介紹": [
+    "数字产品与系统合作介绍",
+    "Digital products and system partnerships",
+    "デジタル製品とシステム協業のご案内",
+    "디지털 제품 및 시스템 협력 소개",
+    "ผลิตภัณฑ์ดิจิทัลและความร่วมมือด้านระบบ",
+    "Giới thiệu sản phẩm số và hợp tác hệ thống"
+  ],
+  "我們的數位產品": [
+    "我们的数字产品",
+    "Our digital products",
+    "私たちのデジタル製品",
+    "우리의 디지털 제품",
+    "ผลิตภัณฑ์ดิจิทัลของเรา",
+    "Sản phẩm số của chúng tôi"
+  ],
+  "各領域合作方向": [
+    "各领域合作方向",
+    "Areas of cooperation",
+    "各分野の協業の方向性",
+    "분야별 협력 방향",
+    "แนวทางความร่วมมือในแต่ละสาขา",
+    "Định hướng hợp tác theo lĩnh vực"
+  ],
+  "廠商合作與夥伴平台": [
+    "厂商合作与伙伴平台",
+    "Provider cooperation and partner platform",
+    "事業者との協業とパートナープラットフォーム",
+    "제공업체 협력 및 파트너 플랫폼",
+    "ความร่วมมือกับผู้ให้บริการและแพลตฟอร์มพันธมิตร",
+    "Hợp tác nhà cung cấp và nền tảng đối tác"
+  ],
+  "探索 KUANGUARD 的餐飲、美業與學習服務方向，了解跨領域系統合作、商家曝光與服務介接的合作規劃。": [
+    "探索 KUANGUARD 的餐饮、美业与学习服务方向，了解跨领域系统合作、商家曝光与服务对接的合作规划。",
+    "Explore KUANGUARD’s dining, beauty and learning products, plus plans for system cooperation, business visibility and service connections.",
+    "KUANGUARDの飲食、美容、学習サービスと、分野を越えたシステム協業、店舗紹介、サービス連携の計画をご案内します。",
+    "KUANGUARD의 외식·뷰티·학습 서비스 방향과 분야 간 시스템 협력, 사업체 홍보, 서비스 연동 계획을 알아보세요.",
+    "สำรวจผลิตภัณฑ์ด้านร้านอาหาร ความงาม และการเรียนรู้ของ KUANGUARD พร้อมแผนความร่วมมือข้ามสาขา การประชาสัมพันธ์ร้านค้า และการเชื่อมต่อบริการ",
+    "Khám phá định hướng ẩm thực, làm đẹp và học tập của KUANGUARD cùng kế hoạch hợp tác hệ thống liên ngành, quảng bá cơ sở và kết nối dịch vụ."
+  ],
+  "認識攤點通、美業預約服務與 StudyMesh，查看各項產品的開放狀態、官方介紹與聯絡入口。": [
+    "认识攤點通、美业预约服务与 StudyMesh，查看各项产品的开放状态、官方介绍与联系入口。",
+    "Meet StallOrder, our planned beauty booking service and StudyMesh. Check availability, official information and contact options for each product.",
+    "StallOrder、美容予約サービス、StudyMeshの公開状況、公式情報、お問い合わせ先をご確認ください。",
+    "StallOrder, 뷰티 예약 서비스, StudyMesh의 이용 가능 상태, 공식 소개, 문의 경로를 확인하세요.",
+    "รู้จัก StallOrder บริการนัดหมายความงาม และ StudyMesh พร้อมสถานะการเปิดใช้ ข้อมูลทางการ และช่องทางติดต่อ",
+    "Tìm hiểu StallOrder, dịch vụ đặt lịch làm đẹp và StudyMesh; xem tình trạng cung cấp, giới thiệu chính thức và cách liên hệ."
+  ],
+  "探索食、美、衣、住、行、育樂、醫療與學術領域的系統合作方向；實際合作與介接依雙方確認。": [
+    "探索食、美、衣、住、行、育乐、医疗与学术领域的系统合作方向；实际合作与对接依双方确认。",
+    "Explore system cooperation in dining, beauty, clothing, home services, transport, leisure, healthcare and learning. Each collaboration and integration requires mutual agreement.",
+    "飲食、美容、衣類、住まい、交通、育楽、医療、学術の協業を探ります。実際の協業と連携は双方の合意に基づきます。",
+    "외식·뷰티·의류·주거·교통·여가·의료·학술 분야의 시스템 협력 방향을 알아보세요. 실제 협력과 연동은 양측의 확인이 필요합니다.",
+    "สำรวจแนวทางร่วมมือด้านระบบในอาหาร ความงาม เสื้อผ้า บ้าน การเดินทาง กิจกรรม การแพทย์ และวิชาการ โดยความร่วมมือและการเชื่อมต่อจริงต้องยืนยันร่วมกัน",
+    "Khám phá hợp tác hệ thống trong ẩm thực, làm đẹp, trang phục, nhà ở, giao thông, giải trí, y tế và học thuật; thực hiện theo thống nhất của hai bên."
+  ],
+  "認識 KUANGUARD：從餐飲、美業及學習需求出發，發展數位產品與跨領域合作。": [
+    "认识 KUANGUARD：从餐饮、美业及学习需求出发，发展数字产品与跨领域合作。",
+    "Meet KUANGUARD: digital products and cross-sector cooperation shaped by dining, beauty and learning needs.",
+    "飲食、美容、学習のニーズを起点に、デジタル製品と分野を越えた協業を育てるKUANGUARDをご紹介します。",
+    "외식·뷰티·학습의 필요에서 출발해 디지털 제품과 분야 간 협력을 발전시키는 KUANGUARD를 소개합니다.",
+    "รู้จัก KUANGUARD ซึ่งพัฒนาผลิตภัณฑ์ดิจิทัลและความร่วมมือข้ามสาขาจากความต้องการด้านอาหาร ความงาม และการเรียนรู้",
+    "Tìm hiểu KUANGUARD: phát triển sản phẩm số và hợp tác liên ngành từ nhu cầu ẩm thực, làm đẹp và học tập."
+  ],
+  "聯絡 KUANGUARD，討論數位產品導入、企業資安或系統合作需求。": [
+    "联系 KUANGUARD，讨论数字产品导入、企业资安或系统合作需求。",
+    "Contact KUANGUARD about digital products, enterprise cybersecurity or system cooperation.",
+    "デジタル製品の導入、企業のセキュリティ、システム協業についてKUANGUARDにご相談ください。",
+    "디지털 제품 도입, 기업 보안, 시스템 협력에 대해 KUANGUARD에 문의하세요.",
+    "ติดต่อ KUANGUARD เพื่อหารือผลิตภัณฑ์ดิจิทัล ความมั่นคงปลอดภัยขององค์กร หรือความร่วมมือด้านระบบ",
+    "Liên hệ KUANGUARD để trao đổi triển khai sản phẩm số, an ninh mạng doanh nghiệp hoặc hợp tác hệ thống."
+  ],
+  "歡迎系統廠商洽談產品介紹、商家曝光與介接評估，了解合作流程及既有夥伴平台。": [
+    "欢迎系统厂商洽谈产品介绍、商家曝光与对接评估，了解合作流程及既有伙伴平台。",
+    "System providers are welcome to discuss product introductions, business visibility and integration assessment. Learn about cooperation and the existing partner platform.",
+    "システム事業者の皆様と、製品紹介、店舗の露出、連携評価を話し合います。協業の流れと既存のパートナープラットフォームをご覧ください。",
+    "시스템 업체와 제품 소개, 사업체 홍보, 연동 검토를 논의합니다. 협력 절차와 기존 파트너 플랫폼을 확인하세요.",
+    "เชิญผู้ให้บริการระบบหารือการแนะนำผลิตภัณฑ์ การประชาสัมพันธ์ร้านค้า และการประเมินเชื่อมต่อ พร้อมศึกษาขั้นตอนความร่วมมือและแพลตฟอร์มพันธมิตรเดิม",
+    "Chào đón nhà cung cấp hệ thống trao đổi giới thiệu sản phẩm, quảng bá cơ sở và đánh giá kết nối. Tìm hiểu quy trình hợp tác và nền tảng đối tác hiện có."
+  ],
+  "我們的系統": [
+    "我们的系统",
+    "Our products",
+    "製品一覧",
+    "제품 소개",
+    "ผลิตภัณฑ์ของเรา",
+    "Sản phẩm"
+  ],
+  "合作領域": [
+    "合作领域",
+    "Cooperation areas",
+    "協業分野",
+    "협력 분야",
+    "สาขาความร่วมมือ",
+    "Lĩnh vực hợp tác"
+  ],
+  "廠商合作": [
+    "厂商合作",
+    "Cooperate with us",
+    "事業者との協業",
+    "업체 협력",
+    "ร่วมมือกับเรา",
+    "Hợp tác cùng chúng tôi"
+  ],
+  "從數位產品出發，探索跨領域系統合作。": [
+    "从数字产品出发，探索跨领域系统合作。",
+    "Digital products that open possibilities for cross-sector cooperation.",
+    "デジタル製品を起点に、分野を越えたシステム協業へ。",
+    "디지털 제품에서 시작하는 분야 간 시스템 협력.",
+    "เริ่มจากผลิตภัณฑ์ดิจิทัล สู่ความร่วมมือด้านระบบข้ามสาขา",
+    "Từ sản phẩm số đến hợp tác hệ thống liên ngành."
+  ],
+  "產品與合作規劃，各有清楚的開放狀態。": [
+    "产品与合作规划，各有清楚的开放状态。",
+    "Clear availability for every product and cooperation plan.",
+    "製品と協業計画、それぞれの公開状況を明確に。",
+    "제품과 협력 계획의 공개 상태를 명확히 안내합니다.",
+    "ระบุสถานะการเปิดใช้ของแต่ละผลิตภัณฑ์และแผนความร่วมมืออย่างชัดเจน",
+    "Từng sản phẩm và kế hoạch hợp tác đều có trạng thái rõ ràng."
+  ],
+  "自有產品方向": [
+    "自有产品方向",
+    "Our own products",
+    "自社製品の方向性",
+    "자체 제품 방향",
+    "ผลิตภัณฑ์ของเรา",
+    "Định hướng sản phẩm riêng"
+  ],
+  "企業資安與夥伴協作": [
+    "企业资安与伙伴协作",
+    "Enterprise security and partner collaboration",
+    "企業のセキュリティとパートナー連携",
+    "기업 보안 및 파트너 협업",
+    "ความปลอดภัยองค์กรและการทำงานร่วมกับพันธมิตร",
+    "Bảo mật doanh nghiệp và cộng tác đối tác"
+  ],
+  "開放合作領域": [
+    "开放合作领域",
+    "Areas open for cooperation",
+    "協業を募集する分野",
+    "협력을 모색하는 분야",
+    "สาขาที่เปิดรับความร่วมมือ",
+    "Lĩnh vực chào đón hợp tác"
+  ],
+  "以上為合作方向，不代表已有合作廠商或已完成介接。": [
+    "以上为合作方向，不代表已有合作厂商或已完成对接。",
+    "These are areas for potential cooperation, not a list of confirmed partners or completed integrations.",
+    "これらは協業の方向性であり、提携済みの事業者や連携済みの機能を示すものではありません。",
+    "위 내용은 협력 방향이며, 기존 협력 업체나 완료된 연동을 의미하지 않습니다.",
+    "รายการนี้เป็นแนวทางความร่วมมือ ไม่ได้หมายความว่ามีพันธมิตรหรือเชื่อมต่อระบบเสร็จแล้ว",
+    "Đây là định hướng hợp tác, không phải danh sách đối tác đã xác nhận hay kết nối đã hoàn thành."
+  ],
+  "洽談合作": [
+    "洽谈合作",
+    "Discuss cooperation",
+    "協業を相談する",
+    "협력 문의",
+    "หารือความร่วมมือ",
+    "Trao đổi hợp tác"
+  ],
+  "合作規劃中": [
+    "合作规划中",
+    "Cooperation in planning",
+    "協業を計画中",
+    "협력 계획 중",
+    "อยู่ระหว่างวางแผนความร่วมมือ",
+    "Đang lên kế hoạch hợp tác"
+  ],
+  "從交流到合作": [
+    "从交流到合作",
+    "From conversation to cooperation",
+    "対話から協業へ",
+    "대화에서 협력으로",
+    "จากการพูดคุยสู่ความร่วมมือ",
+    "Từ trao đổi đến hợp tác"
+  ],
+  "合作如何開始": [
+    "合作如何开始",
+    "How cooperation starts",
+    "協業の進め方",
+    "협력 시작 절차",
+    "เริ่มร่วมมืออย่างไร",
+    "Bắt đầu hợp tác thế nào"
+  ],
+  "合作前，先了解": [
+    "合作前，先了解",
+    "Before we get started",
+    "協業を始める前に",
+    "협력 전 알아둘 사항",
+    "ก่อนเริ่มความร่วมมือ",
+    "Trước khi bắt đầu"
+  ],
+  "合作常見問題": [
+    "合作常见问题",
+    "Cooperation FAQ",
+    "協業についてのよくある質問",
+    "협력 관련 자주 묻는 질문",
+    "คำถามที่พบบ่อยเกี่ยวกับความร่วมมือ",
+    "Câu hỏi thường gặp về hợp tác"
+  ],
+  "從產品介紹開始，依實際需求確認合作範圍。": [
+    "从产品介绍开始，依实际需求确认合作范围。",
+    "Start with product introductions, then agree on the scope that meets real needs.",
+    "製品紹介から始め、実際のニーズに合わせて協業範囲を確認します。",
+    "제품 소개부터 시작해 실제 필요에 따라 협력 범위를 정합니다.",
+    "เริ่มจากการแนะนำผลิตภัณฑ์ แล้วกำหนดขอบเขตความร่วมมือตามความต้องการจริง",
+    "Bắt đầu từ giới thiệu sản phẩm, rồi thống nhất phạm vi hợp tác theo nhu cầu thực tế."
+  ],
+  "聊聊您的系統與合作想法": [
+    "聊聊您的系统与合作想法",
+    "Tell us about your system and ideas",
+    "システムと協業のアイデアをお聞かせください",
+    "시스템과 협력 아이디어를 들려주세요",
+    "พูดคุยเกี่ยวกับระบบและแนวคิดความร่วมมือของคุณ",
+    "Chia sẻ hệ thống và ý tưởng hợp tác của bạn"
+  ],
+  "歡迎提供公司或系統名稱、服務領域、官網與合作想法。": [
+    "欢迎提供公司或系统名称、服务领域、官网与合作想法。",
+    "Share your company or system name, service area, website and cooperation ideas.",
+    "会社名またはシステム名、サービス分野、公式サイト、協業のアイデアをお知らせください。",
+    "회사 또는 시스템 이름, 서비스 분야, 공식 웹사이트, 협력 아이디어를 알려주세요.",
+    "แจ้งชื่อบริษัทหรือระบบ สาขาบริการ เว็บไซต์ และแนวคิดความร่วมมือได้เลย",
+    "Vui lòng cung cấp tên công ty hoặc hệ thống, lĩnh vực dịch vụ, website và ý tưởng hợp tác."
+  ],
+  "洽談系統合作": [
+    "洽谈系统合作",
+    "Discuss system cooperation",
+    "システム協業を相談する",
+    "시스템 협력 문의",
+    "หารือความร่วมมือด้านระบบ",
+    "Trao đổi hợp tác hệ thống"
+  ],
+  "數位產品與系統合作": [
+    "数字产品与系统合作",
+    "Digital products and cooperation",
+    "デジタル製品とシステム協業",
+    "디지털 제품과 시스템 협력",
+    "ผลิตภัณฑ์ดิจิทัลและความร่วมมือด้านระบบ",
+    "Sản phẩm số và hợp tác hệ thống"
+  ],
+  "探索我們的系統": [
+    "探索我们的系统",
+    "Explore our products",
+    "製品を見る",
+    "제품 살펴보기",
+    "สำรวจผลิตภัณฑ์ของเรา",
+    "Khám phá sản phẩm"
+  ],
+  "從產品介紹與服務連結開始，歡迎各領域系統廠商一起探索合作。": [
+    "从产品介绍与服务链接开始，欢迎各领域系统厂商一起探索合作。",
+    "We welcome system providers across sectors to explore cooperation, starting with product introductions and service links.",
+    "製品紹介やサービスリンクを入口に、各分野のシステム事業者と協業の可能性を探ります。",
+    "제품 소개와 서비스 링크부터 시작해 다양한 분야의 시스템 업체와 협력을 모색합니다.",
+    "เชิญผู้ให้บริการระบบทุกสาขาร่วมสำรวจความร่วมมือ โดยเริ่มจากการแนะนำผลิตภัณฑ์และลิงก์บริการ",
+    "Chào đón nhà cung cấp hệ thống ở mọi lĩnh vực cùng khám phá hợp tác, bắt đầu bằng giới thiệu sản phẩm và liên kết dịch vụ."
+  ],
+  "讓專業系統，找到更多合作可能": [
+    "让专业系统，找到更多合作可能",
+    "More opportunities for specialist systems",
+    "専門システムに、より多くの協業の可能性を",
+    "전문 시스템을 위한 더 많은 협력 기회",
+    "เพิ่มโอกาสความร่วมมือให้ระบบเฉพาะทาง",
+    "Thêm cơ hội hợp tác cho hệ thống chuyên môn"
+  ],
+  "保留原有系統與服務關係，從一次交流開始。": [
+    "保留原有系统与服务关系，从一次交流开始。",
+    "Keep your systems and service relationships. Start with a conversation.",
+    "既存のシステムとサービス関係を大切に、まずは対話から。",
+    "기존 시스템과 서비스 관계를 유지하며 대화부터 시작합니다.",
+    "คงระบบและความสัมพันธ์ด้านบริการเดิมไว้ แล้วเริ่มจากการพูดคุย",
+    "Giữ hệ thống và quan hệ dịch vụ hiện có, bắt đầu từ một cuộc trao đổi."
+  ],
+  "KUANGUARD 是專注數位產品與跨領域系統合作的品牌，從餐飲、美業及學習服務的實際需求出發，逐步發展合適的數位工具。": [
+    "KUANGUARD 是专注数字产品与跨领域系统合作的品牌，从餐饮、美业及学习服务的实际需求出发，逐步发展合适的数字工具。",
+    "KUANGUARD focuses on digital products and system cooperation across sectors. We develop useful tools around real needs in dining, beauty and learning.",
+    "KUANGUARDはデジタル製品と分野を越えたシステム協業に取り組むブランドです。飲食、美容、学習の実際のニーズから、適切なデジタルツールを段階的に開発しています。",
+    "KUANGUARD는 디지털 제품과 분야 간 시스템 협력에 집중하는 브랜드입니다. 외식·뷰티·학습 서비스의 실제 필요를 바탕으로 적합한 도구를 단계적으로 개발합니다.",
+    "KUANGUARD เป็นแบรนด์ที่มุ่งเน้นผลิตภัณฑ์ดิจิทัลและความร่วมมือด้านระบบข้ามสาขา โดยพัฒนาเครื่องมือจากความต้องการจริงของร้านอาหาร ธุรกิจความงาม และการเรียนรู้",
+    "KUANGUARD tập trung vào sản phẩm số và hợp tác hệ thống liên ngành, từng bước phát triển công cụ phù hợp từ nhu cầu thực tế trong ẩm thực, làm đẹp và học tập."
+  ],
+  "攤點通提供餐飲點餐介紹與申請評估；美業預約服務為獨立規劃中的產品；StudyMesh 以學習資料、筆記及知識整理為方向，目前仍在開發中。": [
+    "攤點通提供餐饮点餐介绍与申请评估；美业预约服务为独立规划中的产品；StudyMesh 以学习资料、笔记及知识整理为方向，目前仍在开发中。",
+    "StallOrder offers food ordering information and applications for assessment. The beauty booking service is a separate planned product. StudyMesh focuses on learning materials, notes and knowledge organization and remains in development.",
+    "StallOrderは飲食注文の製品紹介と導入相談を提供しています。美容予約サービスは独立した製品として計画中です。StudyMeshは学習資料、ノート、知識の整理を目指し、現在も開発中です。",
+    "StallOrder는 음식 주문 제품 소개와 도입 검토 신청을 제공합니다. 뷰티 예약 서비스는 별도로 기획 중인 제품입니다. StudyMesh는 학습 자료·노트·지식 정리를 중심으로 개발 중입니다.",
+    "StallOrder มีข้อมูลระบบสั่งอาหารและรับคำขอประเมิน ส่วนบริการนัดหมายความงามเป็นผลิตภัณฑ์แยกที่อยู่ในแผน และ StudyMesh เน้นการจัดระเบียบสื่อการเรียนรู้ บันทึก และความรู้ โดยยังอยู่ระหว่างพัฒนา",
+    "StallOrder cung cấp thông tin đặt món và nhận đăng ký đánh giá. Dịch vụ đặt lịch làm đẹp là sản phẩm riêng đang được lên kế hoạch. StudyMesh hướng đến tài liệu, ghi chú và sắp xếp kiến thức, hiện vẫn đang phát triển."
+  ],
+  "我們歡迎各領域系統廠商，從產品介紹與服務連結開始洽談合作。共同入口與商家曝光仍屬合作規劃，既有企業資安服務與合作夥伴平台介紹亦持續保留。": [
+    "我们欢迎各领域系统厂商，从产品介绍与服务链接开始洽谈合作。共同入口与商家曝光仍属合作规划，既有企业资安服务与合作伙伴平台介绍亦持续保留。",
+    "We welcome system providers to discuss cooperation through product introductions and service links. A shared entry point and business visibility remain plans. Information about our enterprise security services and partner platform remains available.",
+    "各分野のシステム事業者と、製品紹介やサービスリンクから協業を話し合います。共通入口や店舗紹介は引き続き計画段階です。既存の企業セキュリティサービスとパートナープラットフォームの案内も継続します。",
+    "다양한 시스템 업체와 제품 소개 및 서비스 링크부터 협력을 논의합니다. 공동 진입점과 사업체 홍보는 계획 단계이며, 기존 기업 보안 서비스와 파트너 플랫폼 소개도 계속 제공합니다.",
+    "เรายินดีหารือกับผู้ให้บริการระบบทุกสาขา เริ่มจากการแนะนำผลิตภัณฑ์และลิงก์บริการ ช่องทางร่วมและการประชาสัมพันธ์ร้านค้ายังเป็นแผนความร่วมมือ ข้อมูลบริการความปลอดภัยองค์กรและแพลตฟอร์มพันธมิตรเดิมยังคงมีอยู่",
+    "Chúng tôi chào đón nhà cung cấp hệ thống trao đổi hợp tác từ giới thiệu sản phẩm và liên kết dịch vụ. Điểm truy cập chung và quảng bá cơ sở vẫn là kế hoạch. Thông tin dịch vụ bảo mật doanh nghiệp và nền tảng đối tác hiện có vẫn được giữ lại."
+  ],
+  "合作諮詢可於需求說明提供公司或系統名稱、服務領域、官網與合作想法。請勿提供 API 金鑰、客戶名單或其他敏感資料。": [
+    "合作咨询可于需求说明提供公司或系统名称、服务领域、官网与合作想法。请勿提供 API 金钥、客户名单或其他敏感资料。",
+    "For cooperation inquiries, include your company or system name, service area, website and ideas in the message. Do not include API keys, customer lists or other sensitive data.",
+    "協業のご相談では、会社名またはシステム名、サービス分野、公式サイト、アイデアをメッセージに記載してください。APIキー、顧客名簿、その他の機密情報は送らないでください。",
+    "협력 문의 내용에 회사 또는 시스템 이름, 서비스 분야, 공식 웹사이트, 아이디어를 적어 주세요. API 키, 고객 명단, 기타 민감한 정보는 보내지 마세요.",
+    "สำหรับการสอบถามความร่วมมือ โปรดใส่ชื่อบริษัทหรือระบบ สาขาบริการ เว็บไซต์ และแนวคิดในข้อความ ห้ามส่งคีย์ API รายชื่อลูกค้า หรือข้อมูลอ่อนไหวอื่น",
+    "Khi tư vấn hợp tác, hãy ghi tên công ty hoặc hệ thống, lĩnh vực dịch vụ, website và ý tưởng trong nội dung. Không cung cấp khóa API, danh sách khách hàng hoặc dữ liệu nhạy cảm khác."
+  ],
+  "系統合作諮詢": [
+    "系统合作咨询",
+    "System cooperation inquiry",
+    "システム協業のご相談",
+    "시스템 협력 문의",
+    "สอบถามความร่วมมือด้านระบบ",
+    "Tư vấn hợp tác hệ thống"
+  ],
+  "KUANGUARD｜數位產品與系統合作介紹": [
+    "KUANGUARD｜数字产品与系统合作介绍",
+    "KUANGUARD | Digital products and system partnerships",
+    "KUANGUARD｜デジタル製品とシステム協業",
+    "KUANGUARD｜디지털 제품 및 시스템 협력",
+    "KUANGUARD | ผลิตภัณฑ์ดิจิทัลและความร่วมมือด้านระบบ",
+    "KUANGUARD | Sản phẩm số và hợp tác hệ thống"
   ]
 }
